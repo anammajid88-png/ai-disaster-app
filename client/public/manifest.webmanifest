@@ -1,0 +1,54 @@
+{
+  "name": "AI Disaster App",
+  "short_name": "AI Disaster",
+  "description": "Smart, multilingual emergency guidance when every second matters. Safety steps for floods, fire, earthquakes, storms, road accidents and medical emergencies in Pakistan.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f6f9fd",
+  "theme_color": "#0b5cab",
+  "categories": ["health", "utilities", "education"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Emergency numbers",
+      "short_name": "Emergency",
+      "description": "Verified Pakistan emergency numbers, kit checklist and location",
+      "url": "/emergency"
+    },
+    {
+      "name": "Ask AI",
+      "short_name": "AI Help",
+      "description": "Describe your situation and get prioritised safety steps",
+      "url": "/ai"
+    }
+  ]
+}

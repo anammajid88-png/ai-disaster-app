@@ -1,0 +1,120 @@
+{
+  "id": "earthquake",
+  "order": 3,
+  "illustration": "earthquake",
+  "accent": "#b45309",
+  "accentSoft": "#fef3c7",
+  "riskLevel": "critical",
+  "season": "any",
+  "primaryContacts": ["rescue-1122", "edhi-115"],
+  "content": {
+    "en": {
+      "name": "Earthquake",
+      "tagline": "Tremors, aftershocks and building damage",
+      "description": "Most earthquake injuries come from falling objects and collapsing walls, not the ground itself. Drop, Cover and Hold On protects you in the first seconds.",
+      "rightNow": [
+        { "step": 1, "icon": "drop-cover-hold", "title": "Drop, Cover, Hold On", "text": "Drop to your knees, cover your head and neck, and hold on to something sturdy until the shaking stops.", "priority": "critical" },
+        { "step": 2, "icon": "away-from-window", "title": "Stay away from glass and walls", "text": "Move away from windows, mirrors, cupboards, heavy furniture and outer walls. Do not run for the stairs while shaking.", "priority": "critical" },
+        { "step": 3, "icon": "phone-call", "title": "After shaking, get out and call 1122", "text": "Once it stops, leave calmly by the stairs, gather in an open area and call Rescue 1122 if anyone is hurt or trapped.", "priority": "high" }
+      ],
+      "before": [
+        { "step": 1, "icon": "checklist", "title": "Secure heavy objects", "text": "Fix cupboards, shelves, TVs, water tanks and heaters to the wall, and keep heavy items on low shelves.", "priority": "high" },
+        { "step": 2, "icon": "under-table", "title": "Identify safe spots", "text": "In each room pick a strong table or an inner wall away from windows, and practise Drop-Cover-Hold with children.", "priority": "high" },
+        { "step": 3, "icon": "kit-bag", "title": "Keep a kit and shoes ready", "text": "Store a torch, whistle, water, medicines and closed shoes beside the bed for broken glass and night tremors.", "priority": "high" },
+        { "step": 4, "icon": "gas-off", "title": "Learn your shut-off points", "text": "Know where the gas valve and main electricity switch are, and make sure everyone at home can reach them.", "priority": "normal" },
+        { "step": 5, "icon": "helping-hand", "title": "Agree on a meeting point", "text": "Choose one open meeting place and one contact person outside the city in case local phones are jammed.", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "drop-cover-hold", "title": "If indoors, stay indoors", "text": "Drop, Cover and Hold On where you are. Most injuries happen to people trying to move between rooms or floors.", "priority": "critical" },
+        { "step": 2, "icon": "under-table", "title": "Protect your head and neck", "text": "Get under a strong table, or crouch beside an inner wall and cover your head with your arms, a pillow or a bag.", "priority": "critical" },
+        { "step": 3, "icon": "shelter-home", "title": "If outdoors, move to open ground", "text": "Go to a clear area away from buildings, walls, poles, trees, billboards and power lines, then crouch down.", "priority": "high" },
+        { "step": 4, "icon": "car-safe", "title": "If driving, stop safely", "text": "Pull over away from bridges, flyovers, poles and walls, stay in the vehicle with your seat belt on until shaking stops.", "priority": "high" },
+        { "step": 5, "icon": "blanket", "title": "If in bed, stay in bed", "text": "Stay lying down and cover your head with a pillow, unless you are under a heavy light or fan.", "priority": "normal" }
+      ],
+      "after": [
+        { "step": 1, "icon": "clock", "title": "Expect aftershocks", "text": "Aftershocks can be strong and can bring down already damaged walls. Repeat Drop-Cover-Hold each time.", "priority": "critical" },
+        { "step": 2, "icon": "gas-off", "title": "Check for gas and fire", "text": "If you smell gas, do not use switches, lighters or phones inside. Open windows, close the valve and go outside.", "priority": "critical" },
+        { "step": 3, "icon": "wall-crack", "title": "Inspect before you re-enter", "text": "Look for cracked columns, leaning walls, fallen plaster or a sagging roof. If unsure, stay out and get it checked.", "priority": "high" },
+        { "step": 4, "icon": "helping-hand", "title": "Help carefully", "text": "Help people nearby without entering unstable rubble. Tell rescue teams exactly where you heard or saw someone.", "priority": "high" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "no-entry", "title": "Do not use lifts", "text": "Lifts can jam or fall during aftershocks and power cuts. Use the stairs after the shaking stops.", "priority": "critical" },
+        { "step": 2, "icon": "no-entry", "title": "Do not run outside while shaking", "text": "Falling glass, balconies, parapets and signboards make doorways and streets the most dangerous places.", "priority": "critical" },
+        { "step": 3, "icon": "no-move-patient", "title": "Do not move a seriously injured person", "text": "Unless there is fire or immediate danger, wait for trained rescuers, especially with head, neck or back injury.", "priority": "high" },
+        { "step": 4, "icon": "away-from-window", "title": "Do not stand under damaged structures", "text": "Keep away from cracked walls, hanging slabs and damaged balconies while taking photos or waiting.", "priority": "high" }
+      ]
+    },
+    "ur": {
+      "name": "زلزلہ",
+      "tagline": "جھٹکے، آفٹر شاکس اور عمارتوں کا نقصان",
+      "description": "زلزلے میں زیادہ تر زخم گرنے والی چیزوں اور دیواروں سے آتے ہیں، زمین سے نہیں۔ پہلے چند سیکنڈ میں ڈراپ، کور اور ہولڈ آن آپ کی حفاظت کرتا ہے۔",
+      "rightNow": [
+        { "step": 1, "icon": "drop-cover-hold", "title": "جھکیں، ڈھانپیں، پکڑ لیں", "text": "گھٹنوں پر جھک جائیں، سر اور گردن ڈھانپیں، اور جھٹکے رکنے تک کسی مضبوط چیز کو پکڑے رکھیں۔", "priority": "critical" },
+        { "step": 2, "icon": "away-from-window", "title": "شیشے اور دیواروں سے دور رہیں", "text": "کھڑکیوں، آئینوں، الماریوں، بھاری فرنیچر اور بیرونی دیواروں سے ہٹ جائیں۔ جھٹکوں کے دوران سیڑھیوں کی طرف نہ دوڑیں۔", "priority": "critical" },
+        { "step": 3, "icon": "phone-call", "title": "جھٹکے رکنے پر باہر نکلیں اور 1122 کال کریں", "text": "رکنے کے بعد پرسکون انداز میں سیڑھیوں سے نکلیں، کھلی جگہ پر جمع ہوں اور کوئی زخمی یا پھنسا ہو تو ریسکیو 1122 کو کال کریں۔", "priority": "high" }
+      ],
+      "before": [
+        { "step": 1, "icon": "checklist", "title": "بھاری سامان مضبوط کریں", "text": "الماریاں، شیلف، ٹی وی، پانی کی ٹینکی اور گیزر دیوار سے کَس دیں، اور بھاری چیزیں نیچے والی شیلف پر رکھیں۔", "priority": "high" },
+        { "step": 2, "icon": "under-table", "title": "محفوظ جگہیں مقرر کریں", "text": "ہر کمرے میں مضبوط میز یا کھڑکی سے دور اندرونی دیوار منتخب کریں، اور بچوں کے ساتھ مشق کریں۔", "priority": "high" },
+        { "step": 3, "icon": "kit-bag", "title": "کٹ اور جوتے تیار رکھیں", "text": "ٹارچ، سیٹی، پانی، دوائیں اور بند جوتے بستر کے قریب رکھیں تاکہ ٹوٹے شیشے اور رات کے جھٹکوں میں کام آئیں۔", "priority": "high" },
+        { "step": 4, "icon": "gas-off", "title": "بند کرنے کے پوائنٹ سیکھیں", "text": "گیس والو اور بجلی کا مین سوئچ کہاں ہے یہ جانیں، اور یقینی بنائیں کہ گھر کے سب افراد وہاں پہنچ سکیں۔", "priority": "normal" },
+        { "step": 5, "icon": "helping-hand", "title": "ملنے کی جگہ طے کریں", "text": "ایک کھلی جگہ اور شہر سے باہر ایک رابطہ فرد طے کریں، تاکہ مقامی فون بند ہونے پر بھی رابطہ رہے۔", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "drop-cover-hold", "title": "اندر ہوں تو اندر ہی رہیں", "text": "جہاں ہیں وہیں جھکیں، ڈھانپیں اور پکڑ لیں۔ زیادہ تر زخم کمروں یا منزلوں کے درمیان بھاگنے والوں کو آتے ہیں۔", "priority": "critical" },
+        { "step": 2, "icon": "under-table", "title": "سر اور گردن کی حفاظت کریں", "text": "مضبوط میز کے نیچے آ جائیں، یا اندرونی دیوار کے ساتھ بیٹھ کر سر کو بازوؤں، تکیے یا بیگ سے ڈھانپ لیں۔", "priority": "critical" },
+        { "step": 3, "icon": "shelter-home", "title": "باہر ہوں تو کھلے میدان میں جائیں", "text": "عمارتوں، دیواروں، کھمبوں، درختوں، بل بورڈز اور بجلی کی تاروں سے دور کھلی جگہ پر جا کر بیٹھ جائیں۔", "priority": "high" },
+        { "step": 4, "icon": "car-safe", "title": "گاڑی میں ہوں تو محفوظ جگہ رکیں", "text": "پلوں، فلائی اوور، کھمبوں اور دیواروں سے دور گاڑی روکیں، سیٹ بیلٹ لگا کر جھٹکے رکنے تک اندر ہی بیٹھے رہیں۔", "priority": "high" },
+        { "step": 5, "icon": "blanket", "title": "بستر پر ہوں تو بستر پر رہیں", "text": "لیٹے رہیں اور سر تکیے سے ڈھانپ لیں، سوائے اس صورت میں کہ اوپر بھاری لائٹ یا پنکھا ہو۔", "priority": "normal" }
+      ],
+      "after": [
+        { "step": 1, "icon": "clock", "title": "آفٹر شاکس کی توقع رکھیں", "text": "بعد کے جھٹکے شدید ہو سکتے ہیں اور پہلے سے کمزور دیواریں گرا سکتے ہیں۔ ہر بار ڈراپ، کور، ہولڈ دہرائیں۔", "priority": "critical" },
+        { "step": 2, "icon": "gas-off", "title": "گیس اور آگ کی جانچ کریں", "text": "گیس کی بو آئے تو اندر سوئچ، لائٹر یا فون استعمال نہ کریں۔ کھڑکیاں کھولیں، والو بند کریں اور باہر نکل جائیں۔", "priority": "critical" },
+        { "step": 3, "icon": "wall-crack", "title": "واپس جانے سے پہلے معائنہ کریں", "text": "پھٹے ستون، جھکی دیواریں، گرا ہوا پلستر یا بیٹھی چھت دیکھیں۔ شک ہو تو اندر نہ جائیں اور جانچ کروائیں۔", "priority": "high" },
+        { "step": 4, "icon": "helping-hand", "title": "احتیاط سے مدد کریں", "text": "قریبی لوگوں کی مدد کریں مگر غیر مستحکم ملبے میں نہ گھسیں۔ ریسکیو ٹیم کو بتائیں کہ آواز یا فرد کہاں تھا۔", "priority": "high" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "no-entry", "title": "لفٹ استعمال نہ کریں", "text": "آفٹر شاکس اور بجلی بند ہونے پر لفٹ پھنس یا گر سکتی ہے۔ جھٹکے رکنے کے بعد سیڑھیاں استعمال کریں۔", "priority": "critical" },
+        { "step": 2, "icon": "no-entry", "title": "جھٹکوں کے دوران باہر نہ دوڑیں", "text": "گرتا شیشہ، بالکونیاں، منڈیریں اور سائن بورڈ دروازوں اور گلیوں کو سب سے خطرناک جگہ بنا دیتے ہیں۔", "priority": "critical" },
+        { "step": 3, "icon": "no-move-patient", "title": "شدید زخمی کو نہ ہلائیں", "text": "آگ یا فوری خطرہ نہ ہو تو تربیت یافتہ ریسکیو کا انتظار کریں، خاص طور پر سر، گردن یا کمر کی چوٹ میں۔", "priority": "high" },
+        { "step": 4, "icon": "away-from-window", "title": "خستہ عمارتوں کے نیچے نہ کھڑے ہوں", "text": "تصویریں بناتے یا انتظار کرتے ہوئے پھٹی دیواروں، جھولتے سلیب اور خراب بالکونیوں سے دور رہیں۔", "priority": "high" }
+      ]
+    },
+    "hi": {
+      "name": "भूकंप",
+      "tagline": "झटके, आफ़्टरशॉक और इमारतों को नुक़सान",
+      "description": "भूकंप में ज़्यादातर चोटें गिरती चीज़ों और दीवारों से आती हैं, ज़मीन से नहीं। पहले कुछ सेकंड में ड्रॉप, कवर और होल्ड ऑन आपकी रक्षा करता है।",
+      "rightNow": [
+        { "step": 1, "icon": "drop-cover-hold", "title": "झुकें, ढकें, पकड़ें", "text": "घुटनों पर झुक जाएँ, सिर और गर्दन ढकें, और झटके रुकने तक किसी मज़बूत चीज़ को पकड़े रहें।", "priority": "critical" },
+        { "step": 2, "icon": "away-from-window", "title": "शीशे और दीवारों से दूर रहें", "text": "खिड़कियों, शीशों, अलमारियों, भारी फ़र्नीचर और बाहरी दीवारों से हट जाएँ। झटकों के दौरान सीढ़ियों की ओर न दौड़ें।", "priority": "critical" },
+        { "step": 3, "icon": "phone-call", "title": "झटके रुकने पर बाहर निकलें और 1122 पर कॉल करें", "text": "रुकने के बाद शांति से सीढ़ियों से निकलें, खुली जगह पर इकट्ठा हों और कोई घायल या फँसा हो तो रेस्क्यू 1122 पर कॉल करें।", "priority": "high" }
+      ],
+      "before": [
+        { "step": 1, "icon": "checklist", "title": "भारी सामान बांधें", "text": "अलमारी, शेल्फ़, टीवी, पानी की टंकी और गीज़र दीवार से कसें, और भारी चीज़ें नीचे की शेल्फ़ पर रखें।", "priority": "high" },
+        { "step": 2, "icon": "under-table", "title": "सुरक्षित जगहें तय करें", "text": "हर कमरे में मज़बूत मेज़ या खिड़की से दूर भीतरी दीवार चुनें, और बच्चों के साथ अभ्यास करें।", "priority": "high" },
+        { "step": 3, "icon": "kit-bag", "title": "किट और जूते तैयार रखें", "text": "टॉर्च, सीटी, पानी, दवाएँ और बंद जूते बिस्तर के पास रखें, ताकि टूटे शीशे और रात के झटकों में काम आएँ।", "priority": "high" },
+        { "step": 4, "icon": "gas-off", "title": "बंद करने के पॉइंट जानें", "text": "गैस वाल्व और बिजली का मेन स्विच कहाँ है यह जानें, और सुनिश्चित करें कि घर के सभी लोग वहाँ पहुँच सकें।", "priority": "normal" },
+        { "step": 5, "icon": "helping-hand", "title": "मिलने की जगह तय करें", "text": "एक खुली जगह और शहर से बाहर एक संपर्क व्यक्ति तय करें, ताकि स्थानीय फ़ोन बंद होने पर भी संपर्क रहे।", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "drop-cover-hold", "title": "अंदर हों तो अंदर ही रहें", "text": "जहाँ हैं वहीं झुकें, ढकें और पकड़ें। ज़्यादातर चोटें कमरों या मंज़िलों के बीच भागने वालों को आती हैं।", "priority": "critical" },
+        { "step": 2, "icon": "under-table", "title": "सिर और गर्दन बचाएँ", "text": "मज़बूत मेज़ के नीचे आ जाएँ, या भीतरी दीवार के सहारे बैठकर सिर को बाहों, तकिए या बैग से ढक लें।", "priority": "critical" },
+        { "step": 3, "icon": "shelter-home", "title": "बाहर हों तो खुले मैदान में जाएँ", "text": "इमारतों, दीवारों, खंभों, पेड़ों, बिलबोर्ड और बिजली के तारों से दूर खुली जगह पर जाकर बैठ जाएँ।", "priority": "high" },
+        { "step": 4, "icon": "car-safe", "title": "गाड़ी में हों तो सुरक्षित जगह रोकें", "text": "पुलों, फ़्लाईओवर, खंभों और दीवारों से दूर गाड़ी रोकें, सीट बेल्ट लगाकर झटके रुकने तक अंदर बैठे रहें।", "priority": "high" },
+        { "step": 5, "icon": "blanket", "title": "बिस्तर पर हों तो बिस्तर पर रहें", "text": "लेटे रहें और सिर तकिए से ढक लें, सिवाय उस स्थिति में जब ऊपर भारी लाइट या पंखा हो।", "priority": "normal" }
+      ],
+      "after": [
+        { "step": 1, "icon": "clock", "title": "आफ़्टरशॉक की अपेक्षा रखें", "text": "बाद के झटके तेज़ हो सकते हैं और पहले से कमज़ोर दीवारें गिरा सकते हैं। हर बार ड्रॉप, कवर, होल्ड दोहराएँ।", "priority": "critical" },
+        { "step": 2, "icon": "gas-off", "title": "गैस और आग की जाँच करें", "text": "गैस की गंध आए तो अंदर स्विच, लाइटर या फ़ोन इस्तेमाल न करें। खिड़कियाँ खोलें, वाल्व बंद करें और बाहर निकलें।", "priority": "critical" },
+        { "step": 3, "icon": "wall-crack", "title": "लौटने से पहले जाँच करें", "text": "फटे खंभे, झुकी दीवारें, गिरा प्लास्टर या बैठी छत देखें। संदेह हो तो अंदर न जाएँ और जाँच कराएँ।", "priority": "high" },
+        { "step": 4, "icon": "helping-hand", "title": "सावधानी से मदद करें", "text": "आसपास के लोगों की मदद करें पर अस्थिर मलबे में न घुसें। बचाव दल को बताएँ कि आवाज़ या व्यक्ति कहाँ था।", "priority": "high" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "no-entry", "title": "लिफ़्ट इस्तेमाल न करें", "text": "आफ़्टरशॉक और बिजली जाने पर लिफ़्ट फँस या गिर सकती है। झटके रुकने के बाद सीढ़ियाँ इस्तेमाल करें।", "priority": "critical" },
+        { "step": 2, "icon": "no-entry", "title": "झटकों के दौरान बाहर न दौड़ें", "text": "गिरता शीशा, बालकनी, मुंडेर और साइनबोर्ड दरवाज़ों और गलियों को सबसे ख़तरनाक जगह बना देते हैं।", "priority": "critical" },
+        { "step": 3, "icon": "no-move-patient", "title": "गंभीर घायल को न हिलाएँ", "text": "आग या तत्काल ख़तरा न हो तो प्रशिक्षित बचाव दल का इंतज़ार करें, विशेषकर सिर, गर्दन या कमर की चोट में।", "priority": "high" },
+        { "step": 4, "icon": "away-from-window", "title": "क्षतिग्रस्त ढाँचों के नीचे न खड़े हों", "text": "फ़ोटो लेते या इंतज़ार करते समय फटी दीवारों, झूलते स्लैब और टूटी बालकनियों से दूर रहें।", "priority": "high" }
+      ]
+    }
+  }
+}

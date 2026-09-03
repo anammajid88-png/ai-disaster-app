@@ -1,0 +1,351 @@
+/* =====================================================================
+   Guidelines dialog.
+   ===================================================================== */
+
+.g-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  background: rgba(6, 26, 48, 0.55);
+  animation: fade-in var(--t-base) var(--ease);
+}
+
+@media (min-width: 720px) {
+  .g-overlay {
+    align-items: center;
+    padding: var(--space-6);
+  }
+}
+
+.g-modal {
+  display: flex;
+  width: 100%;
+  max-width: 760px;
+  max-height: 92vh;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  box-shadow: var(--shadow-lg);
+  animation: rise-in var(--t-slow) var(--ease);
+}
+
+@media (min-width: 720px) {
+  .g-modal {
+    max-height: 88vh;
+    border-radius: var(--radius-xl);
+  }
+}
+
+/* ---- Head ----------------------------------------------------------- */
+.g-modal__head {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--accent-soft);
+  border-bottom: 1px solid var(--border);
+}
+
+.g-modal__art {
+  width: 96px;
+  height: 60px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+}
+
+@media (max-width: 519px) {
+  .g-modal__art {
+    display: none;
+  }
+}
+
+.g-modal__heading {
+  min-width: 0;
+  padding-inline-end: var(--space-8);
+}
+
+.g-modal__eyebrow {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+}
+
+.g-modal__heading h2 {
+  margin-block: 2px var(--space-2);
+  font-size: var(--fs-h2);
+}
+
+.g-modal__heading p {
+  color: var(--text-soft);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+}
+
+.g-modal__close {
+  position: absolute;
+  top: var(--space-4);
+  inset-inline-end: var(--space-4);
+  display: grid;
+  place-items: center;
+  width: var(--touch);
+  height: var(--touch);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--ink-800);
+  cursor: pointer;
+}
+
+.g-modal__close:hover {
+  background: var(--white);
+  border-color: var(--border-strong);
+}
+
+/* ---- Body ----------------------------------------------------------- */
+.g-modal__body {
+  display: grid;
+  gap: var(--space-6);
+  padding: var(--space-5);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.g-section__title {
+  margin-bottom: var(--space-3);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+}
+
+/* ---- Immediate action ----------------------------------------------- */
+.g-now {
+  padding: var(--space-4);
+  background: var(--danger-soft);
+  border: 1px solid var(--danger-border);
+  border-radius: var(--radius-md);
+}
+
+.g-now__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  color: var(--danger);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+html[data-lang='ur'] .g-now__title,
+html[data-lang='hi'] .g-now__title {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.g-now .g-step {
+  background: var(--surface);
+}
+
+/* ---- Steps ---------------------------------------------------------- */
+.g-steps {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.g-step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  border-inline-start: 3px solid var(--priority-normal);
+}
+
+.g-step--critical {
+  border-inline-start-color: var(--priority-critical);
+}
+
+.g-step--high {
+  border-inline-start-color: var(--priority-high);
+}
+
+.g-step__num {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--ink-100);
+  color: var(--ink-700);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  /* Step numbers are digits: always read left-to-right. */
+  direction: ltr;
+}
+
+.g-step__icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+  color: var(--primary);
+}
+
+.g-step--critical .g-step__icon {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.g-step--high .g-step__icon {
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+
+.g-step__body {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.g-step__title {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+}
+
+.g-step__text {
+  margin-top: 2px;
+  color: var(--text-soft);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+}
+
+.g-step__flag {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  white-space: nowrap;
+}
+
+.g-step__flag--critical {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.g-step__flag--high {
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+
+/* Avoid list: same layout, unmistakably "do not". */
+.g-steps--avoid .g-step {
+  background: #fffbfb;
+}
+
+.g-steps--avoid .g-step__num {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+/* ---- Emergency numbers block ---------------------------------------- */
+.g-calls__list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+@media (min-width: 620px) {
+  .g-calls__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.g-calls__note {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+/* ---- Tabs ----------------------------------------------------------- */
+.g-tabs__bar {
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+  padding: var(--space-1);
+  overflow-x: auto;
+  background: var(--surface-muted);
+  border-radius: var(--radius-pill);
+  scrollbar-width: none;
+}
+
+.g-tabs__bar::-webkit-scrollbar {
+  display: none;
+}
+
+.g-tabs__btn {
+  flex: 1 0 auto;
+  min-height: 40px;
+  padding: var(--space-2) var(--space-4);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-soft);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--t-fast) var(--ease),
+    color var(--t-fast) var(--ease);
+}
+
+.g-tabs__btn:hover {
+  color: var(--primary);
+}
+
+.g-tabs__btn.is-active {
+  background: var(--surface);
+  color: var(--blue-800);
+  box-shadow: var(--shadow-xs);
+}
+
+.g-tabs__panel {
+  animation: fade-in var(--t-base) var(--ease);
+}
+
+.g-tabs__panel:focus-visible {
+  outline-offset: 4px;
+}
+
+/* ---- Foot ----------------------------------------------------------- */
+.g-modal__foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background: var(--surface-muted);
+  border-top: 1px solid var(--border);
+}
+
+.g-modal__foot .btn {
+  flex: 1 1 200px;
+}

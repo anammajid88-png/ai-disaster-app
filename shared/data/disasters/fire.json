@@ -1,0 +1,120 @@
+{
+  "id": "fire",
+  "order": 2,
+  "illustration": "fire",
+  "accent": "#dc2626",
+  "accentSoft": "#fee2e2",
+  "riskLevel": "critical",
+  "season": "any",
+  "primaryContacts": ["fire-16", "rescue-1122"],
+  "content": {
+    "en": {
+      "name": "Fire",
+      "tagline": "House, kitchen, gas cylinder and electrical fires",
+      "description": "Smoke kills more people than flames, and a small fire can fill a room in under two minutes. Getting out and staying out is always the priority.",
+      "rightNow": [
+        { "step": 1, "icon": "exit-door", "title": "Get out and stay out", "text": "Leave immediately, take everyone with you, close doors behind you and never go back inside for belongings.", "priority": "critical" },
+        { "step": 2, "icon": "phone-call", "title": "Call Fire Brigade 16", "text": "From outside, call 16 or Rescue 1122 and give the address, floor and whether anyone is still inside.", "priority": "critical" },
+        { "step": 3, "icon": "crawl-low", "title": "Stay below the smoke", "text": "If there is smoke, keep low, cover your nose and mouth with a damp cloth and move along the wall to the exit.", "priority": "critical" }
+      ],
+      "before": [
+        { "step": 1, "icon": "exit-door", "title": "Plan two ways out", "text": "Agree on two exit routes and one meeting point outside, and practise it once with the whole family.", "priority": "high" },
+        { "step": 2, "icon": "gas-off", "title": "Check gas and wiring", "text": "Inspect cylinder pipes and regulators for cracks, and get overloaded boards and old wiring repaired.", "priority": "high" },
+        { "step": 3, "icon": "extinguisher", "title": "Keep the right extinguisher", "text": "Keep a working ABC extinguisher or a fire blanket in the kitchen and learn how to use it before you need it.", "priority": "normal" },
+        { "step": 4, "icon": "checklist", "title": "Fit a smoke alarm", "text": "Install a smoke alarm outside sleeping areas and test the battery every month.", "priority": "normal" },
+        { "step": 5, "icon": "documents", "title": "Keep exits clear", "text": "Never store cylinders, petrol or clutter in stairways, corridors or in front of doors.", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "exit-door", "title": "Evacuate first", "text": "Warn everyone loudly, then leave. Do not stop to collect valuables or switch things off along the way.", "priority": "critical" },
+        { "step": 2, "icon": "crawl-low", "title": "Crawl low under smoke", "text": "Clean air stays near the floor. Crawl on hands and knees and keep your head about 30 cm above the ground.", "priority": "critical" },
+        { "step": 3, "icon": "away-from-window", "title": "Test doors before opening", "text": "Touch the door and handle with the back of your hand. If it is hot, use another route and keep that door shut.", "priority": "high" },
+        { "step": 4, "icon": "stop-drop-roll", "title": "If clothes catch fire", "text": "Stop, drop to the ground, cover your face and roll until the flames are out. Do not run.", "priority": "critical" },
+        { "step": 5, "icon": "blanket", "title": "Trapped? Seal and signal", "text": "Block door gaps with wet cloth, go to a window, signal with a torch or bright cloth and call for help by phone.", "priority": "critical" }
+      ],
+      "after": [
+        { "step": 1, "icon": "shelter-home", "title": "Do not re-enter", "text": "Wait for the fire service to declare the building safe. Hidden fire and smoke can restart in walls and ceilings.", "priority": "critical" },
+        { "step": 2, "icon": "first-aid", "title": "Treat burns correctly", "text": "Cool the burn with clean running water for at least 20 minutes, cover loosely and get medical care.", "priority": "critical" },
+        { "step": 3, "icon": "mask-smoke", "title": "Get checked for smoke", "text": "Anyone with cough, dizziness, sooty spit or breathing trouble needs medical assessment even if they look fine.", "priority": "high" },
+        { "step": 4, "icon": "gas-off", "title": "Have services inspected", "text": "Do not use gas or electricity again until the connection, meter and wiring are checked by a professional.", "priority": "high" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "water-drop", "title": "No water on oil or electrical fire", "text": "Water spreads burning oil and conducts current. Smother a pan fire with a lid or fire blanket instead.", "priority": "critical" },
+        { "step": 2, "icon": "no-entry", "title": "Do not use a lift", "text": "Lifts can stop at the fire floor or lose power. Always use the stairs.", "priority": "critical" },
+        { "step": 3, "icon": "no-entry", "title": "Do not go back for anything", "text": "No document, phone or valuable is worth re-entering a burning building for.", "priority": "critical" },
+        { "step": 4, "icon": "first-aid", "title": "No ice, toothpaste or butter on burns", "text": "These damage the skin further and increase infection risk. Only clean cool water and a clean cover.", "priority": "high" }
+      ]
+    },
+    "ur": {
+      "name": "آگ",
+      "tagline": "گھر، کچن، گیس سلنڈر اور بجلی سے لگنے والی آگ",
+      "description": "شعلوں سے زیادہ ہلاکتیں دھوئیں سے ہوتی ہیں، اور معمولی آگ دو منٹ میں پورا کمرہ بھر سکتی ہے۔ باہر نکلنا اور باہر ہی رہنا سب سے پہلی ترجیح ہے۔",
+      "rightNow": [
+        { "step": 1, "icon": "exit-door", "title": "فوراً باہر نکلیں اور باہر رہیں", "text": "سب کو ساتھ لے کر فوراً نکلیں، پیچھے دروازے بند کرتے جائیں اور سامان کے لیے ہرگز واپس اندر نہ جائیں۔", "priority": "critical" },
+        { "step": 2, "icon": "phone-call", "title": "فائر بریگیڈ 16 کو کال کریں", "text": "باہر آ کر 16 یا ریسکیو 1122 کو کال کریں اور پتہ، منزل اور یہ بتائیں کہ کوئی اندر رہ گیا ہے یا نہیں۔", "priority": "critical" },
+        { "step": 3, "icon": "crawl-low", "title": "دھوئیں سے نیچے رہیں", "text": "دھواں ہو تو نیچے جھک جائیں، ناک اور منہ گیلے کپڑے سے ڈھانپیں اور دیوار کے ساتھ ساتھ دروازے تک جائیں۔", "priority": "critical" }
+      ],
+      "before": [
+        { "step": 1, "icon": "exit-door", "title": "نکلنے کے دو راستے طے کریں", "text": "دو راستے اور باہر ایک ملنے کی جگہ طے کریں، اور پورے گھر کے ساتھ ایک بار مشق کریں۔", "priority": "high" },
+        { "step": 2, "icon": "gas-off", "title": "گیس اور وائرنگ چیک کریں", "text": "سلنڈر کے پائپ اور ریگولیٹر میں دراڑیں دیکھیں، اور اوورلوڈ بورڈ اور پرانی وائرنگ مرمت کروائیں۔", "priority": "high" },
+        { "step": 3, "icon": "extinguisher", "title": "درست فائر ایکسٹنگوشر رکھیں", "text": "کچن میں کام کرنے والا اے بی سی ایکسٹنگوشر یا فائر بلینکٹ رکھیں اور پہلے سے استعمال سیکھ لیں۔", "priority": "normal" },
+        { "step": 4, "icon": "checklist", "title": "اسموک الارم لگوائیں", "text": "سونے کے کمروں کے باہر اسموک الارم لگائیں اور ہر ماہ بیٹری چیک کریں۔", "priority": "normal" },
+        { "step": 5, "icon": "documents", "title": "راستے خالی رکھیں", "text": "سیڑھیوں، راہداریوں اور دروازوں کے سامنے سلنڈر، پٹرول یا فاضل سامان نہ رکھیں۔", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "exit-door", "title": "پہلے باہر نکلیں", "text": "بلند آواز سے سب کو خبردار کریں، پھر نکل جائیں۔ راستے میں قیمتی سامان لینے یا سوئچ بند کرنے کے لیے نہ رکیں۔", "priority": "critical" },
+        { "step": 2, "icon": "crawl-low", "title": "دھوئیں کے نیچے رینگ کر چلیں", "text": "صاف ہوا فرش کے قریب رہتی ہے۔ ہاتھوں اور گھٹنوں پر رینگیں اور سر زمین سے تقریباً 30 سینٹی میٹر اوپر رکھیں۔", "priority": "critical" },
+        { "step": 3, "icon": "away-from-window", "title": "دروازہ کھولنے سے پہلے جانچیں", "text": "ہاتھ کی پشت سے دروازہ اور ہینڈل چھو کر دیکھیں۔ گرم ہو تو دوسرا راستہ لیں اور وہ دروازہ بند رکھیں۔", "priority": "high" },
+        { "step": 4, "icon": "stop-drop-roll", "title": "کپڑوں کو آگ لگ جائے تو", "text": "رک جائیں، زمین پر لیٹ جائیں، چہرہ ڈھانپیں اور آگ بجھنے تک لوٹتے رہیں۔ بھاگیں ہرگز نہیں۔", "priority": "critical" },
+        { "step": 5, "icon": "blanket", "title": "پھنس جائیں تو بند کریں اور اشارہ دیں", "text": "دروازے کی جھریاں گیلے کپڑے سے بند کریں، کھڑکی پر جائیں، ٹارچ یا چمکدار کپڑے سے اشارہ دیں اور فون پر مدد مانگیں۔", "priority": "critical" }
+      ],
+      "after": [
+        { "step": 1, "icon": "shelter-home", "title": "دوبارہ اندر نہ جائیں", "text": "فائر سروس کے محفوظ قرار دینے تک انتظار کریں۔ دیواروں اور چھت میں چھپی آگ دوبارہ بھڑک سکتی ہے۔", "priority": "critical" },
+        { "step": 2, "icon": "first-aid", "title": "جلنے کا درست علاج", "text": "جلی ہوئی جگہ کو کم از کم 20 منٹ صاف بہتے پانی سے ٹھنڈا کریں، ڈھیلا ڈھانپیں اور طبی امداد لیں۔", "priority": "critical" },
+        { "step": 3, "icon": "mask-smoke", "title": "دھوئیں کا معائنہ کروائیں", "text": "کھانسی، چکر، کالے بلغم یا سانس کی تکلیف والے ہر فرد کو ڈاکٹر سے چیک کروائیں، چاہے وہ ٹھیک لگے۔", "priority": "high" },
+        { "step": 4, "icon": "gas-off", "title": "کنکشن کی جانچ کروائیں", "text": "کنکشن، میٹر اور وائرنگ کی ماہر سے جانچ کے بغیر گیس اور بجلی دوبارہ استعمال نہ کریں۔", "priority": "high" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "water-drop", "title": "تیل یا بجلی کی آگ پر پانی نہیں", "text": "پانی جلتا تیل پھیلاتا ہے اور کرنٹ منتقل کرتا ہے۔ کڑاہی کی آگ کو ڈھکن یا فائر بلینکٹ سے دبائیں۔", "priority": "critical" },
+        { "step": 2, "icon": "no-entry", "title": "لفٹ استعمال نہ کریں", "text": "لفٹ آگ والی منزل پر رک سکتی ہے یا بجلی بند ہو سکتی ہے۔ ہمیشہ سیڑھیاں استعمال کریں۔", "priority": "critical" },
+        { "step": 3, "icon": "no-entry", "title": "کسی چیز کے لیے واپس نہ جائیں", "text": "کوئی کاغذ، فون یا قیمتی چیز جلتی عمارت میں واپس جانے کے قابل نہیں۔", "priority": "critical" },
+        { "step": 4, "icon": "first-aid", "title": "جلنے پر برف، ٹوتھ پیسٹ یا مکھن نہیں", "text": "یہ جِلد کو مزید نقصان اور انفیکشن کا خطرہ بڑھاتے ہیں۔ صرف صاف ٹھنڈا پانی اور صاف کپڑا۔", "priority": "high" }
+      ]
+    },
+    "hi": {
+      "name": "आग",
+      "tagline": "घर, रसोई, गैस सिलेंडर और बिजली से लगने वाली आग",
+      "description": "लपटों से ज़्यादा मौतें धुएँ से होती हैं, और छोटी आग दो मिनट में पूरा कमरा भर सकती है। बाहर निकलना और बाहर ही रहना सबसे पहली प्राथमिकता है।",
+      "rightNow": [
+        { "step": 1, "icon": "exit-door", "title": "तुरंत बाहर निकलें और बाहर रहें", "text": "सबको साथ लेकर तुरंत निकलें, पीछे दरवाज़े बंद करते जाएँ और सामान के लिए कभी अंदर न लौटें।", "priority": "critical" },
+        { "step": 2, "icon": "phone-call", "title": "अग्निशमन 16 पर कॉल करें", "text": "बाहर आकर 16 या रेस्क्यू 1122 पर कॉल करें और पता, मंज़िल तथा यह बताएँ कि कोई अंदर रह गया है या नहीं।", "priority": "critical" },
+        { "step": 3, "icon": "crawl-low", "title": "धुएँ से नीचे रहें", "text": "धुआँ हो तो नीचे झुकें, नाक और मुँह गीले कपड़े से ढकें और दीवार के सहारे दरवाज़े तक जाएँ।", "priority": "critical" }
+      ],
+      "before": [
+        { "step": 1, "icon": "exit-door", "title": "निकलने के दो रास्ते तय करें", "text": "दो रास्ते और बाहर एक मिलने की जगह तय करें, और पूरे परिवार के साथ एक बार अभ्यास करें।", "priority": "high" },
+        { "step": 2, "icon": "gas-off", "title": "गैस और वायरिंग जाँचें", "text": "सिलेंडर के पाइप और रेगुलेटर में दरारें देखें, और ओवरलोड बोर्ड तथा पुरानी वायरिंग ठीक कराएँ।", "priority": "high" },
+        { "step": 3, "icon": "extinguisher", "title": "सही अग्निशामक रखें", "text": "रसोई में चालू ABC अग्निशामक या फ़ायर ब्लैंकेट रखें और पहले से उसका उपयोग सीख लें।", "priority": "normal" },
+        { "step": 4, "icon": "checklist", "title": "स्मोक अलार्म लगवाएँ", "text": "सोने के कमरों के बाहर स्मोक अलार्म लगाएँ और हर महीने बैटरी जाँचें।", "priority": "normal" },
+        { "step": 5, "icon": "documents", "title": "रास्ते खाली रखें", "text": "सीढ़ियों, गलियारों और दरवाज़ों के सामने सिलेंडर, पेट्रोल या बेकार सामान न रखें।", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "exit-door", "title": "पहले बाहर निकलें", "text": "ज़ोर से सबको सचेत करें, फिर निकल जाएँ। रास्ते में क़ीमती सामान लेने या स्विच बंद करने के लिए न रुकें।", "priority": "critical" },
+        { "step": 2, "icon": "crawl-low", "title": "धुएँ के नीचे रेंगकर चलें", "text": "साफ़ हवा फ़र्श के पास रहती है। हाथों और घुटनों पर रेंगें और सिर ज़मीन से लगभग 30 सेंटीमीटर ऊपर रखें।", "priority": "critical" },
+        { "step": 3, "icon": "away-from-window", "title": "दरवाज़ा खोलने से पहले जाँचें", "text": "हाथ की पीठ से दरवाज़ा और हैंडल छूकर देखें। गरम हो तो दूसरा रास्ता लें और वह दरवाज़ा बंद रखें।", "priority": "high" },
+        { "step": 4, "icon": "stop-drop-roll", "title": "कपड़ों में आग लग जाए तो", "text": "रुकें, ज़मीन पर लेट जाएँ, चेहरा ढकें और आग बुझने तक लोटें। दौड़ें नहीं।", "priority": "critical" },
+        { "step": 5, "icon": "blanket", "title": "फँस जाएँ तो सील करें और संकेत दें", "text": "दरवाज़े की दरारें गीले कपड़े से बंद करें, खिड़की पर जाएँ, टॉर्च या चमकीले कपड़े से संकेत दें और फ़ोन पर मदद मांगें।", "priority": "critical" }
+      ],
+      "after": [
+        { "step": 1, "icon": "shelter-home", "title": "दोबारा अंदर न जाएँ", "text": "अग्निशमन विभाग के सुरक्षित घोषित करने तक इंतज़ार करें। दीवारों और छत में छिपी आग फिर भड़क सकती है।", "priority": "critical" },
+        { "step": 2, "icon": "first-aid", "title": "जलने का सही उपचार", "text": "जले हिस्से को कम से कम 20 मिनट साफ़ बहते पानी से ठंडा करें, ढीला ढकें और चिकित्सा सहायता लें।", "priority": "critical" },
+        { "step": 3, "icon": "mask-smoke", "title": "धुएँ की जाँच कराएँ", "text": "खांसी, चक्कर, काले बलगम या सांस की तकलीफ़ वाले हर व्यक्ति की जाँच कराएँ, चाहे वह ठीक लगे।", "priority": "high" },
+        { "step": 4, "icon": "gas-off", "title": "कनेक्शन की जाँच कराएँ", "text": "कनेक्शन, मीटर और वायरिंग की विशेषज्ञ जाँच के बिना गैस और बिजली दोबारा इस्तेमाल न करें।", "priority": "high" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "water-drop", "title": "तेल या बिजली की आग पर पानी नहीं", "text": "पानी जलते तेल को फैलाता है और करंट पहुँचाता है। कड़ाही की आग को ढक्कन या फ़ायर ब्लैंकेट से दबाएँ।", "priority": "critical" },
+        { "step": 2, "icon": "no-entry", "title": "लिफ़्ट का इस्तेमाल न करें", "text": "लिफ़्ट आग वाली मंज़िल पर रुक सकती है या बिजली जा सकती है। हमेशा सीढ़ियाँ इस्तेमाल करें।", "priority": "critical" },
+        { "step": 3, "icon": "no-entry", "title": "किसी चीज़ के लिए न लौटें", "text": "कोई काग़ज़, फ़ोन या क़ीमती वस्तु जलती इमारत में लौटने योग्य नहीं है।", "priority": "critical" },
+        { "step": 4, "icon": "first-aid", "title": "जले पर बर्फ़, टूथपेस्ट या मक्खन नहीं", "text": "ये त्वचा को और नुक़सान तथा संक्रमण का ख़तरा बढ़ाते हैं। केवल साफ़ ठंडा पानी और साफ़ कपड़ा।", "priority": "high" }
+      ]
+    }
+  }
+}

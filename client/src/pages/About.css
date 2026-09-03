@@ -1,0 +1,194 @@
+/* =====================================================================
+   About page: readable long-form content, honest limits section.
+   ===================================================================== */
+
+.about {
+  max-width: var(--container-narrow);
+  padding-bottom: var(--space-10);
+}
+
+.about__block {
+  margin-bottom: var(--space-8);
+}
+
+.about__block h2 {
+  margin-bottom: var(--space-3);
+  font-size: var(--fs-h3);
+}
+
+.about__block p {
+  color: var(--text-soft);
+  line-height: var(--lh-body);
+}
+
+.about__block .about__lead {
+  font-size: var(--fs-lg);
+  color: var(--text);
+}
+
+/* ---- Quick facts ----------------------------------------------------- */
+.about__facts {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 600px) {
+  .about__facts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about__facts li {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  text-align: center;
+}
+
+.about__facts strong {
+  display: grid;
+  place-items: center;
+  min-height: 30px;
+  color: var(--primary);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+}
+
+.about__facts span {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+}
+
+/* ---- Lists ----------------------------------------------------------- */
+.about__list {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__list li {
+  color: var(--text-soft);
+  line-height: var(--lh-snug);
+}
+
+.about__list--icons li,
+.about__list--limits li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.about__icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.about__icon--stop {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+/* Numbered pipeline of how a question becomes an answer. */
+.about__list--steps {
+  counter-reset: about-step;
+  gap: var(--space-4);
+}
+
+.about__list--steps li {
+  position: relative;
+  counter-increment: about-step;
+  padding-inline-start: var(--space-10);
+}
+
+.about__list--steps li::before {
+  content: counter(about-step);
+  position: absolute;
+  inset-inline-start: 0;
+  top: -2px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+}
+
+.about__list--plain li,
+.about__list--limits li {
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+}
+
+.about__block--limits .about__list--limits li {
+  align-items: center;
+  background: var(--surface);
+  border-color: var(--danger-border);
+}
+
+.about__block .about__reviewed {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+/* ---- Disclaimer ------------------------------------------------------ */
+.about__disclaimer {
+  margin-bottom: var(--space-8);
+  padding: var(--space-5);
+  background: var(--blue-50);
+  border: 1px solid var(--blue-200);
+  border-radius: var(--radius-lg);
+}
+
+.about__disclaimer > p:first-of-type {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  color: var(--blue-900);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+}
+
+.about__disclaimer svg {
+  flex: 0 0 auto;
+  color: var(--warn);
+}
+
+.about__hackathon {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--blue-200);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+/* ---- Actions --------------------------------------------------------- */
+.about__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}

@@ -1,0 +1,150 @@
+/* =====================================================================
+   Design tokens - blue + white emergency design system.
+   One source of truth for colour, type, spacing, radius, shadow, motion.
+   ===================================================================== */
+
+:root {
+  /* ---- Brand blues ------------------------------------------------- */
+  --blue-950: #052445;
+  --blue-900: #06325f;
+  --blue-800: #084177;
+  --blue-700: #0b5cab; /* primary */
+  --blue-600: #1273cc;
+  --blue-500: #2f90e4;
+  --blue-300: #8ec5f5;
+  --blue-200: #c3e0fb;
+  --blue-100: #e1eefc;
+  --blue-50: #f2f8fe;
+
+  /* ---- Neutrals ---------------------------------------------------- */
+  --ink-900: #0f1b2d;
+  --ink-800: #1e2d42;
+  --ink-700: #35455c;
+  --ink-600: #4c5d75;
+  --ink-500: #6b7c94;
+  --ink-300: #a8b4c5;
+  --ink-200: #d3dbe6;
+  --ink-100: #e8edf4;
+  --white: #ffffff;
+
+  /* ---- Semantic ---------------------------------------------------- */
+  --page-bg: #f5f9fd;
+  --surface: var(--white);
+  --surface-muted: var(--blue-50);
+  --border: var(--ink-200);
+  --border-strong: var(--ink-300);
+
+  --text: var(--ink-900);
+  --text-soft: var(--ink-700);
+  --text-muted: var(--ink-500);
+  --text-on-dark: #eaf3fd;
+
+  --primary: var(--blue-700);
+  --primary-hover: var(--blue-800);
+  --primary-active: var(--blue-900);
+  --primary-soft: var(--blue-100);
+
+  --danger: #c62828;
+  --danger-hover: #a51f1f;
+  --danger-soft: #fdeceb;
+  --danger-border: #f4c3c0;
+
+  --warn: #a35400;
+  --warn-soft: #fff4e5;
+  --warn-border: #f6d9b0;
+
+  --success: #17703d;
+  --success-soft: #e8f6ed;
+  --success-border: #b7e0c7;
+
+  --info-soft: var(--blue-100);
+
+  /* ---- Priority accents (guidelines) ------------------------------- */
+  --priority-critical: var(--danger);
+  --priority-high: var(--warn);
+  --priority-normal: var(--blue-600);
+
+  /* ---- Typography -------------------------------------------------- */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Naskh reads far better than Nastaliq at small sizes on screen, and both
+     stacks use fonts already present on the device - nothing is downloaded. */
+  --font-urdu: 'Noto Naskh Arabic', 'Segoe UI', 'Urdu Typesetting', 'Jameel Noori Nastaleeq', Tahoma, serif;
+  --font-hindi: 'Noto Sans Devanagari', 'Nirmala UI', 'Mangal', system-ui, sans-serif;
+  --font-body: var(--font-sans);
+
+  /* Small text is never below 14px: this app is used under stress. */
+  --fs-xs: 0.8125rem; /* 13px - metadata only */
+  --fs-sm: 0.875rem; /* 14px */
+  --fs-base: 1rem; /* 16px */
+  --fs-md: 1.0625rem; /* 17px - body on wide screens */
+  --fs-lg: 1.1875rem;
+  --fs-h3: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+  --fs-h2: clamp(1.375rem, 1.15rem + 1.1vw, 1.875rem);
+  --fs-h1: clamp(1.875rem, 1.4rem + 2.6vw, 3rem);
+
+  --lh-tight: 1.22;
+  --lh-snug: 1.4;
+  --lh-body: 1.65;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ---- Spacing (4px base) ------------------------------------------ */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* ---- Radius ------------------------------------------------------ */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  /* ---- Shadows (subtle, no glow) ----------------------------------- */
+  --shadow-xs: 0 1px 2px rgba(15, 27, 45, 0.06);
+  --shadow-sm: 0 2px 6px rgba(15, 27, 45, 0.07);
+  --shadow-md: 0 6px 18px rgba(15, 27, 45, 0.09);
+  --shadow-lg: 0 16px 40px rgba(9, 34, 62, 0.16);
+  --ring: 0 0 0 3px rgba(18, 115, 204, 0.35);
+
+  /* ---- Motion: fast, never blocking -------------------------------- */
+  --t-fast: 120ms;
+  --t-base: 180ms;
+  --t-slow: 280ms;
+  --ease: cubic-bezier(0.2, 0.8, 0.3, 1);
+
+  /* ---- Layout ------------------------------------------------------ */
+  --container: 1160px;
+  --container-narrow: 780px;
+  --header-h: 64px;
+  --touch: 44px; /* minimum touch target */
+  --z-header: 100;
+  --z-banner: 150;
+  --z-modal: 200;
+  --z-toast: 300;
+}
+
+/* Language-aware typography. */
+html[data-lang='ur'] {
+  --font-body: var(--font-urdu);
+  --lh-body: 1.95; /* Arabic script needs more leading */
+  --lh-snug: 1.7;
+  --fs-base: 1.0625rem;
+  --fs-md: 1.125rem;
+}
+
+html[data-lang='hi'] {
+  --font-body: var(--font-hindi);
+  --lh-body: 1.75;
+}

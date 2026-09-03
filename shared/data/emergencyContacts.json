@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "lastReviewed": "2026-02-01",
+    "maintainerNote": "Internal, never rendered. Only nationally recognised Pakistan emergency numbers are listed. Numbers must not be edited without re-verifying against the official source recorded in each entry.",
+    "warning": {
+      "en": "Some services are not available in every district. If a number does not connect, try Rescue 1122 or Police 15.",
+      "ur": "کچھ سروسز ہر ضلع میں دستیاب نہیں ہوتیں۔ اگر کوئی نمبر نہ ملے تو ریسکیو 1122 یا پولیس 15 پر کال کریں۔",
+      "hi": "कुछ सेवाएँ हर ज़िले में उपलब्ध नहीं होतीं। यदि कोई नंबर न लगे तो रेस्क्यू 1122 या पुलिस 15 पर कॉल करें।"
+    }
+  },
+  "contacts": [
+    {
+      "id": "rescue-1122",
+      "number": "1122",
+      "priority": 1,
+      "icon": "ambulance",
+      "serviceType": "ambulance-fire-rescue",
+      "verified": true,
+      "source": {
+        "organisation": "Punjab Emergency Service (Rescue 1122)",
+        "url": "https://www.rescue.gov.pk/",
+        "verifiedOn": "2026-02-01"
+      },
+      "coverage": {
+        "en": "Punjab, Khyber Pakhtunkhwa and several other regions",
+        "ur": "پنجاب، خیبر پختونخوا اور کئی دیگر علاقے",
+        "hi": "पंजाब, ख़ैबर पख़्तूनख़्वा और कई अन्य क्षेत्र"
+      },
+      "name": {
+        "en": "Rescue Service",
+        "ur": "ریسکیو سروس",
+        "hi": "रेस्क्यू सेवा"
+      },
+      "type": {
+        "en": "Ambulance / Fire / Rescue",
+        "ur": "ایمبولینس / فائر / ریسکیو",
+        "hi": "एम्बुलेंस / अग्निशमन / बचाव"
+      },
+      "useWhen": {
+        "en": "Medical emergency, road accident, fire, flood rescue or building collapse.",
+        "ur": "طبی ہنگامی صورتحال، ٹریفک حادثہ، آگ، سیلاب میں ریسکیو یا عمارت گرنے پر۔",
+        "hi": "चिकित्सा आपातकाल, सड़क दुर्घटना, आग, बाढ़ में बचाव या इमारत गिरने पर।"
+      }
+    },
+    {
+      "id": "police-15",
+      "number": "15",
+      "priority": 2,
+      "icon": "police",
+      "serviceType": "police",
+      "verified": true,
+      "source": {
+        "organisation": "Police Emergency Helpline (Madadgar 15)",
+        "url": "https://www.punjabpolice.gov.pk/",
+        "verifiedOn": "2026-02-01"
+      },
+      "coverage": {
+        "en": "Nationwide",
+        "ur": "ملک بھر میں",
+        "hi": "पूरे देश में"
+      },
+      "name": {
+        "en": "Police Emergency",
+        "ur": "پولیس ہنگامی مدد",
+        "hi": "पुलिस आपातकाल"
+      },
+      "type": {
+        "en": "Police / Law & Order",
+        "ur": "پولیس / امنِ عامہ",
+        "hi": "पुलिस / कानून व्यवस्था"
+      },
+      "useWhen": {
+        "en": "Crime, violence, missing person, crowd danger or when an area must be secured.",
+        "ur": "جرم، تشدد، گمشدہ فرد، ہجوم کا خطرہ یا جب کسی علاقے کو محفوظ بنانا ہو۔",
+        "hi": "अपराध, हिंसा, गुमशुदा व्यक्ति, भीड़ का खतरा या किसी क्षेत्र को सुरक्षित करने के लिए।"
+      }
+    },
+    {
+      "id": "fire-16",
+      "number": "16",
+      "priority": 3,
+      "icon": "fire-truck",
+      "serviceType": "fire",
+      "verified": true,
+      "source": {
+        "organisation": "Municipal Fire Brigade emergency number",
+        "url": "https://www.ndma.gov.pk/",
+        "verifiedOn": "2026-02-01"
+      },
+      "coverage": {
+        "en": "Most city fire brigades",
+        "ur": "بیشتر شہری فائر بریگیڈ",
+        "hi": "अधिकांश शहरी अग्निशमन विभाग"
+      },
+      "name": {
+        "en": "Fire Brigade",
+        "ur": "فائر بریگیڈ",
+        "hi": "अग्निशमन विभाग"
+      },
+      "type": {
+        "en": "Fire Fighting",
+        "ur": "آگ بجھانے کی خدمات",
+        "hi": "आग बुझाने की सेवा"
+      },
+      "useWhen": {
+        "en": "Any fire, gas cylinder leak, electrical fire or smoke filling a building.",
+        "ur": "کسی بھی قسم کی آگ، گیس سلنڈر لیک، بجلی سے لگی آگ یا عمارت میں دھواں بھرنے پر۔",
+        "hi": "किसी भी प्रकार की आग, गैस सिलेंडर रिसाव, बिजली से लगी आग या इमारत में धुआं भरने पर।"
+      }
+    },
+    {
+      "id": "edhi-115",
+      "number": "115",
+      "priority": 4,
+      "icon": "heart-hands",
+      "serviceType": "ambulance",
+      "verified": true,
+      "source": {
+        "organisation": "Edhi Foundation Main Control Room",
+        "url": "https://edhi.org/",
+        "verifiedOn": "2026-02-01"
+      },
+      "coverage": {
+        "en": "Nationwide ambulance network",
+        "ur": "ملک بھر میں ایمبولینس نیٹ ورک",
+        "hi": "देशव्यापी एम्बुलेंस नेटवर्क"
+      },
+      "name": {
+        "en": "Edhi Main Control Room",
+        "ur": "ایدھی مرکزی کنٹرول روم",
+        "hi": "ईधी मुख्य नियंत्रण कक्ष"
+      },
+      "type": {
+        "en": "Ambulance / Welfare",
+        "ur": "ایمبولینس / فلاحی خدمات",
+        "hi": "एम्बुलेंस / कल्याण सेवा"
+      },
+      "useWhen": {
+        "en": "Ambulance transport, patient shifting and welfare assistance.",
+        "ur": "ایمبولینس، مریض کی منتقلی اور فلاحی مدد کے لیے۔",
+        "hi": "एम्बुलेंस, मरीज़ को ले जाने और कल्याण सहायता के लिए।"
+      }
+    },
+    {
+      "id": "motorway-130",
+      "number": "130",
+      "priority": 5,
+      "icon": "highway",
+      "serviceType": "highway-police",
+      "verified": true,
+      "source": {
+        "organisation": "National Highways & Motorway Police",
+        "url": "https://nhmp.gov.pk/",
+        "verifiedOn": "2026-02-01"
+      },
+      "coverage": {
+        "en": "National highways and motorways",
+        "ur": "قومی شاہراہیں اور موٹرویز",
+        "hi": "राष्ट्रीय राजमार्ग और मोटरवे"
+      },
+      "name": {
+        "en": "National Highways & Motorway Police",
+        "ur": "نیشنل ہائی ویز اینڈ موٹروے پولیس",
+        "hi": "नेशनल हाईवे और मोटरवे पुलिस"
+      },
+      "type": {
+        "en": "Highway Emergency / Road Accident",
+        "ur": "شاہراہ ہنگامی امداد / ٹریفک حادثہ",
+        "hi": "राजमार्ग आपातकाल / सड़क दुर्घटना"
+      },
+      "useWhen": {
+        "en": "Accident or breakdown on a motorway or national highway.",
+        "ur": "موٹروے یا قومی شاہراہ پر حادثہ یا گاڑی خراب ہونے پر۔",
+        "hi": "मोटरवे या राष्ट्रीय राजमार्ग पर दुर्घटना या गाड़ी खराब होने पर।"
+      }
+    }
+  ],
+  "disasterContactMap": {
+    "flood": ["rescue-1122", "police-15"],
+    "fire": ["fire-16", "rescue-1122"],
+    "earthquake": ["rescue-1122", "edhi-115"],
+    "storm": ["rescue-1122", "police-15"],
+    "road-accident": ["motorway-130", "rescue-1122"],
+    "medical-emergency": ["rescue-1122", "edhi-115"]
+  }
+}

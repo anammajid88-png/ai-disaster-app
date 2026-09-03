@@ -1,0 +1,68 @@
+/* =====================================================================
+   404 page: short, centred, still one tap from an emergency number.
+   ===================================================================== */
+
+.notfound {
+  max-width: 560px;
+  padding-block: var(--space-12) var(--space-16);
+  text-align: center;
+}
+
+.notfound__icon {
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto var(--space-5);
+  border-radius: var(--radius-lg);
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.notfound h1 {
+  font-size: var(--fs-h2);
+}
+
+.notfound__text {
+  margin-top: var(--space-3);
+  color: var(--text-soft);
+  line-height: var(--lh-body);
+}
+
+.notfound__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.notfound__calls {
+  margin-top: var(--space-10);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border);
+}
+
+.notfound__calls h2 {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.notfound__calls ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.notfound__disclaimer {
+  margin-top: var(--space-8);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}

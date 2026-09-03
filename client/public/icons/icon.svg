@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AI Disaster App">
+  <title>AI Disaster App</title>
+  <rect width="512" height="512" rx="112" fill="#0b5cab" />
+  <!-- Shield: protection, the core promise of the app. -->
+  <path
+    d="M256 104 132 148v112c0 82 52 137 124 156 72-19 124-74 124-156V148L256 104Z"
+    fill="#ffffff"
+    fill-opacity="0.14"
+    stroke="#ffffff"
+    stroke-width="18"
+    stroke-linejoin="round"
+  />
+  <!-- Cross: help and first aid. -->
+  <path
+    d="M256 186v140M186 256h140"
+    stroke="#ffffff"
+    stroke-width="34"
+    stroke-linecap="round"
+  />
+</svg>

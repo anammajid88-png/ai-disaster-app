@@ -1,0 +1,59 @@
+/* App shell: sticky footer layout + route transition states. */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1 1 auto;
+}
+
+/* Suspense fallback while a route chunk loads. Intentionally quiet: a full
+   skeleton would flash on fast connections. */
+.route-loader {
+  display: grid;
+  place-items: center;
+  min-height: 50vh;
+}
+
+.route-loader__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  animation: soft-pulse 1.2s ease-in-out infinite;
+}
+
+.crash {
+  max-width: var(--container-narrow);
+  text-align: center;
+}
+
+.crash p {
+  margin-block: var(--space-4) var(--space-6);
+}
+
+/* Shared page header used by every inner page. */
+.page-head {
+  padding-block: var(--space-8) var(--space-2);
+}
+
+.page-head__inner {
+  max-width: 68ch;
+}
+
+.page-head h1 {
+  margin-bottom: var(--space-3);
+}
+
+.page-head p {
+  color: var(--text-muted);
+  font-size: var(--fs-md);
+}

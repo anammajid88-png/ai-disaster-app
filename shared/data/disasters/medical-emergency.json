@@ -1,0 +1,120 @@
+{
+  "id": "medical-emergency",
+  "order": 6,
+  "illustration": "medical-emergency",
+  "accent": "#0f766e",
+  "accentSoft": "#ccfbf1",
+  "riskLevel": "critical",
+  "season": "any",
+  "primaryContacts": ["rescue-1122", "edhi-115"],
+  "content": {
+    "en": {
+      "name": "Medical Emergency",
+      "tagline": "Bleeding, unconsciousness, breathing and cardiac emergencies",
+      "description": "In the first minutes, only a few actions change the outcome: call for an ambulance, keep the airway open, stop heavy bleeding and start compressions if the heart has stopped.",
+      "rightNow": [
+        { "step": 1, "icon": "phone-call", "title": "Call 1122 or 115 now", "text": "Ask for an ambulance, give the exact address and say clearly whether the person is breathing and responding.", "priority": "critical" },
+        { "step": 2, "icon": "cpr-heart", "title": "Not breathing? Start compressions", "text": "Push hard and fast in the centre of the chest, about twice per second, and do not stop until help takes over.", "priority": "critical" },
+        { "step": 3, "icon": "bandage", "title": "Heavy bleeding? Press hard", "text": "Press directly on the wound with a clean cloth and keep firm continuous pressure. Do not lift to check.", "priority": "critical" }
+      ],
+      "before": [
+        { "step": 1, "icon": "first-aid", "title": "Keep a real first aid kit", "text": "Stock gauze, bandages, tape, gloves, antiseptic, scissors and a working thermometer, and replace expired items.", "priority": "high" },
+        { "step": 2, "icon": "documents", "title": "Write down medical details", "text": "Keep a note of each family member's conditions, allergies, blood group and regular medicines where others can find it.", "priority": "high" },
+        { "step": 3, "icon": "checklist", "title": "Learn basic first aid", "text": "Learn CPR, choking relief and bleeding control from a recognised course such as one run by Rescue 1122.", "priority": "high" },
+        { "step": 4, "icon": "phone-call", "title": "Know your nearest hospital", "text": "Find out in advance which nearby hospital has a 24-hour emergency room and how to reach it.", "priority": "normal" },
+        { "step": 5, "icon": "kit-bag", "title": "Keep essential medicines stocked", "text": "Never run to zero on heart, blood pressure, asthma, epilepsy or diabetes medicines, especially before monsoon.", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "eye-watch", "title": "Check response and breathing", "text": "Tap the shoulders and ask loudly. Look for normal breathing for up to 10 seconds before deciding what to do.", "priority": "critical" },
+        { "step": 2, "icon": "cpr-heart", "title": "Unresponsive and not breathing", "text": "Start chest compressions immediately, around 100 to 120 per minute, pressing at least 5 cm deep in an adult.", "priority": "critical" },
+        { "step": 3, "icon": "no-move-patient", "title": "Breathing but unconscious", "text": "Turn them gently onto their side so the airway stays clear, keep them warm and watch breathing continuously.", "priority": "critical" },
+        { "step": 4, "icon": "first-aid", "title": "Chest pain or stroke signs", "text": "Keep the person still and calm, sitting up if breathing is hard, and get an ambulance instead of driving yourself.", "priority": "critical" },
+        { "step": 5, "icon": "helping-hand", "title": "Seizure or choking", "text": "In a seizure, clear the area and protect the head, never restrain them. In choking, give firm back blows between the shoulder blades.", "priority": "high" }
+      ],
+      "after": [
+        { "step": 1, "icon": "phone-call", "title": "Hand over full information", "text": "Tell the paramedics what happened, what you did, and what medicines the person takes or was given.", "priority": "high" },
+        { "step": 2, "icon": "documents", "title": "Take the medicines along", "text": "Send the person's medicine list, prescriptions and previous reports with them to the hospital.", "priority": "normal" },
+        { "step": 3, "icon": "first-aid", "title": "Complete the follow-up", "text": "Finish the full course of treatment and attend follow-up visits, even if the person feels much better.", "priority": "normal" },
+        { "step": 4, "icon": "helping-hand", "title": "Look after the helpers too", "text": "Anyone who performed CPR or witnessed a serious emergency may need rest and support afterwards.", "priority": "normal" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "water-drop", "title": "Nothing by mouth to an unconscious person", "text": "No water, food, milk or tablets. It blocks the airway and can cause fatal choking.", "priority": "critical" },
+        { "step": 2, "icon": "no-move-patient", "title": "Do not shake or slap the patient", "text": "Shaking, slapping, or pulling a person with a possible neck or spine injury can cause permanent damage.", "priority": "critical" },
+        { "step": 3, "icon": "first-aid", "title": "Do not give unprescribed medicine", "text": "Do not give painkillers, injections or someone else's prescription. Some drugs make bleeding and heart events worse.", "priority": "critical" },
+        { "step": 4, "icon": "no-entry", "title": "Do not rely on home remedies", "text": "Do not delay an ambulance for local remedies, oil, ash or pressing a burn or wound with unclean material.", "priority": "high" }
+      ]
+    },
+    "ur": {
+      "name": "طبی ہنگامی صورتحال",
+      "tagline": "خون بہنا، بے ہوشی، سانس اور دل کی ہنگامی حالت",
+      "description": "پہلے چند منٹوں میں صرف چند کام نتیجہ بدلتے ہیں: ایمبولینس بلانا، سانس کا راستہ کھلا رکھنا، تیز خون بہنا روکنا، اور دل رک جانے پر سینے پر دباؤ شروع کرنا۔",
+      "rightNow": [
+        { "step": 1, "icon": "phone-call", "title": "ابھی 1122 یا 115 کو کال کریں", "text": "ایمبولینس مانگیں، مکمل پتہ بتائیں اور واضح کہیں کہ مریض سانس لے رہا ہے اور جواب دے رہا ہے یا نہیں۔", "priority": "critical" },
+        { "step": 2, "icon": "cpr-heart", "title": "سانس نہ ہو تو سی پی آر شروع کریں", "text": "سینے کے درمیان زور سے اور تیزی سے دباؤ دیں، تقریباً دو دبا فی سیکنڈ، اور مدد پہنچنے تک نہ رکیں۔", "priority": "critical" },
+        { "step": 3, "icon": "bandage", "title": "تیز خون بہے تو زور سے دبائیں", "text": "زخم پر صاف کپڑا رکھ کر مسلسل مضبوط دباؤ ڈالیں۔ دیکھنے کے لیے بار بار نہ ہٹائیں۔", "priority": "critical" }
+      ],
+      "before": [
+        { "step": 1, "icon": "first-aid", "title": "مکمل فرسٹ ایڈ کٹ رکھیں", "text": "گاز، پٹیاں، ٹیپ، دستانے، اینٹی سیپٹک، قینچی اور کام کرنے والا تھرمامیٹر رکھیں اور ایکسپائر اشیاء بدل دیں۔", "priority": "high" },
+        { "step": 2, "icon": "documents", "title": "طبی تفصیلات لکھ کر رکھیں", "text": "ہر فرد کی بیماریاں، الرجی، بلڈ گروپ اور مستقل دوائیں ایسی جگہ لکھ کر رکھیں جہاں دوسرے بھی دیکھ سکیں۔", "priority": "high" },
+        { "step": 3, "icon": "checklist", "title": "بنیادی فرسٹ ایڈ سیکھیں", "text": "سی پی آر، دم گھٹنے اور خون روکنے کی تربیت کسی تسلیم شدہ کورس، مثلاً ریسکیو 1122، سے حاصل کریں۔", "priority": "high" },
+        { "step": 4, "icon": "phone-call", "title": "قریبی اسپتال جانیں", "text": "پہلے سے معلوم کریں کہ قریب کون سا اسپتال 24 گھنٹے ایمرجنسی چلاتا ہے اور وہاں کیسے پہنچنا ہے۔", "priority": "normal" },
+        { "step": 5, "icon": "kit-bag", "title": "ضروری دوائیں ختم نہ ہونے دیں", "text": "دل، بلڈ پریشر، دمہ، مرگی یا ذیابیطس کی دوائیں کبھی ختم نہ ہونے دیں، خاص طور پر مون سون سے پہلے۔", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "eye-watch", "title": "ہوش اور سانس چیک کریں", "text": "کندھے تھپتھپا کر بلند آواز سے پکاریں۔ 10 سیکنڈ تک نارمل سانس دیکھیں، پھر فیصلہ کریں۔", "priority": "critical" },
+        { "step": 2, "icon": "cpr-heart", "title": "بے ہوش اور سانس نہیں", "text": "فوراً سینے پر دباؤ شروع کریں، منٹ میں تقریباً 100 سے 120 بار، بالغ میں کم از کم 5 سینٹی میٹر گہرا۔", "priority": "critical" },
+        { "step": 3, "icon": "no-move-patient", "title": "سانس ہے مگر بے ہوش ہے", "text": "آہستہ سے کروٹ پر لٹا دیں تاکہ سانس کا راستہ کھلا رہے، گرم رکھیں اور مسلسل سانس دیکھتے رہیں۔", "priority": "critical" },
+        { "step": 4, "icon": "first-aid", "title": "سینے میں درد یا فالج کی علامات", "text": "مریض کو بالکل ساکت اور پرسکون رکھیں، سانس مشکل ہو تو بٹھا دیں، اور خود گاڑی چلانے کے بجائے ایمبولینس بلائیں۔", "priority": "critical" },
+        { "step": 5, "icon": "helping-hand", "title": "دورہ یا دم گھٹنا", "text": "دورے میں ارد گرد جگہ خالی کریں اور سر بچائیں، جکڑیں ہرگز نہیں۔ دم گھٹنے پر کندھوں کے درمیان زور سے تھپکی دیں۔", "priority": "high" }
+      ],
+      "after": [
+        { "step": 1, "icon": "phone-call", "title": "پوری معلومات دیں", "text": "پیرامیڈکس کو بتائیں کیا ہوا، آپ نے کیا کیا، اور مریض کون سی دوائیں لیتا ہے یا اُسے کیا دیا گیا۔", "priority": "high" },
+        { "step": 2, "icon": "documents", "title": "دوائیں ساتھ بھیجیں", "text": "مریض کی دواؤں کی فہرست، نسخے اور پرانے ٹیسٹ رپورٹس اسپتال ساتھ بھیجیں۔", "priority": "normal" },
+        { "step": 3, "icon": "first-aid", "title": "علاج مکمل کریں", "text": "طبیعت بہتر لگنے پر بھی علاج کا پورا کورس اور فالو اپ وزٹ مکمل کریں۔", "priority": "normal" },
+        { "step": 4, "icon": "helping-hand", "title": "مدد کرنے والوں کا بھی خیال رکھیں", "text": "سی پی آر کرنے یا سنگین ہنگامی صورتحال دیکھنے والے فرد کو بھی آرام اور ذہنی سہارے کی ضرورت ہو سکتی ہے۔", "priority": "normal" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "water-drop", "title": "بے ہوش کو منہ سے کچھ نہ دیں", "text": "پانی، کھانا، دودھ یا گولی کچھ نہیں۔ یہ سانس کا راستہ بند کر کے جان لیوا دم گھٹنے کا سبب بنتا ہے۔", "priority": "critical" },
+        { "step": 2, "icon": "no-move-patient", "title": "مریض کو جھنجھوڑیں یا تھپڑ نہ ماریں", "text": "گردن یا ریڑھ کی چوٹ کے امکان میں جھنجھوڑنا، تھپڑ مارنا یا کھینچنا مستقل نقصان کر سکتا ہے۔", "priority": "critical" },
+        { "step": 3, "icon": "first-aid", "title": "بغیر نسخہ دوا نہ دیں", "text": "درد کش، انجیکشن یا کسی دوسرے کا نسخہ نہ دیں۔ بعض دوائیں خون بہنا اور دل کی حالت بگاڑ دیتی ہیں۔", "priority": "critical" },
+        { "step": 4, "icon": "no-entry", "title": "ٹوٹکوں پر بھروسہ نہ کریں", "text": "تیل، راکھ یا گندی چیز لگانے یا ٹوٹکوں کے لیے ایمبولینس میں تاخیر نہ کریں۔", "priority": "high" }
+      ]
+    },
+    "hi": {
+      "name": "चिकित्सा आपातकाल",
+      "tagline": "रक्तस्राव, बेहोशी, सांस और हृदय की आपात स्थिति",
+      "description": "पहले कुछ मिनटों में कुछ ही काम नतीजा बदलते हैं: एम्बुलेंस बुलाना, सांस का रास्ता खुला रखना, तेज़ रक्तस्राव रोकना, और दिल रुकने पर छाती पर दबाव शुरू करना।",
+      "rightNow": [
+        { "step": 1, "icon": "phone-call", "title": "अभी 1122 या 115 पर कॉल करें", "text": "एम्बुलेंस मांगें, पूरा पता बताएँ और स्पष्ट कहें कि व्यक्ति सांस ले रहा है और जवाब दे रहा है या नहीं।", "priority": "critical" },
+        { "step": 2, "icon": "cpr-heart", "title": "सांस न हो तो CPR शुरू करें", "text": "छाती के बीच ज़ोर से और तेज़ी से दबाव दें, लगभग दो बार प्रति सेकंड, और मदद आने तक न रुकें।", "priority": "critical" },
+        { "step": 3, "icon": "bandage", "title": "तेज़ रक्तस्राव हो तो ज़ोर से दबाएँ", "text": "घाव पर साफ़ कपड़ा रखकर लगातार मज़बूत दबाव डालें। देखने के लिए बार-बार न हटाएँ।", "priority": "critical" }
+      ],
+      "before": [
+        { "step": 1, "icon": "first-aid", "title": "पूरी फ़र्स्ट एड किट रखें", "text": "गॉज़, पट्टियाँ, टेप, दस्ताने, एंटीसेप्टिक, कैंची और चालू थर्मामीटर रखें और एक्सपायर सामान बदलें।", "priority": "high" },
+        { "step": 2, "icon": "documents", "title": "मेडिकल जानकारी लिखकर रखें", "text": "हर सदस्य की बीमारियाँ, एलर्जी, ब्लड ग्रुप और नियमित दवाएँ ऐसी जगह लिखें जहाँ दूसरे भी देख सकें।", "priority": "high" },
+        { "step": 3, "icon": "checklist", "title": "बुनियादी फ़र्स्ट एड सीखें", "text": "CPR, दम घुटने और रक्तस्राव रोकने का प्रशिक्षण किसी मान्यता प्राप्त कोर्स, जैसे रेस्क्यू 1122, से लें।", "priority": "high" },
+        { "step": 4, "icon": "phone-call", "title": "निकटतम अस्पताल जानें", "text": "पहले से पता करें कि पास का कौन सा अस्पताल 24 घंटे इमरजेंसी चलाता है और वहाँ कैसे पहुँचना है।", "priority": "normal" },
+        { "step": 5, "icon": "kit-bag", "title": "ज़रूरी दवाएँ ख़त्म न होने दें", "text": "हृदय, ब्लड प्रेशर, अस्थमा, मिर्गी या मधुमेह की दवाएँ कभी ख़त्म न होने दें, विशेषकर मानसून से पहले।", "priority": "normal" }
+      ],
+      "during": [
+        { "step": 1, "icon": "eye-watch", "title": "होश और सांस जाँचें", "text": "कंधे थपथपाकर ज़ोर से पुकारें। 10 सेकंड तक सामान्य सांस देखें, फिर निर्णय लें।", "priority": "critical" },
+        { "step": 2, "icon": "cpr-heart", "title": "बेहोश और सांस नहीं", "text": "तुरंत छाती पर दबाव शुरू करें, प्रति मिनट लगभग 100 से 120 बार, वयस्क में कम से कम 5 सेंटीमीटर गहरा।", "priority": "critical" },
+        { "step": 3, "icon": "no-move-patient", "title": "सांस है पर बेहोश है", "text": "धीरे से करवट पर लिटा दें ताकि सांस का रास्ता खुला रहे, गरम रखें और लगातार सांस देखते रहें।", "priority": "critical" },
+        { "step": 4, "icon": "first-aid", "title": "सीने में दर्द या स्ट्रोक के लक्षण", "text": "व्यक्ति को स्थिर और शांत रखें, सांस मुश्किल हो तो बैठा दें, और स्वयं गाड़ी चलाने के बजाय एम्बुलेंस बुलाएँ।", "priority": "critical" },
+        { "step": 5, "icon": "helping-hand", "title": "दौरा या दम घुटना", "text": "दौरे में आसपास जगह ख़ाली करें और सिर बचाएँ, कभी जकड़ें नहीं। दम घुटने पर कंधों के बीच ज़ोर से थपकी दें।", "priority": "high" }
+      ],
+      "after": [
+        { "step": 1, "icon": "phone-call", "title": "पूरी जानकारी सौंपें", "text": "पैरामेडिक्स को बताएँ क्या हुआ, आपने क्या किया, और व्यक्ति कौन सी दवाएँ लेता है या उसे क्या दिया गया।", "priority": "high" },
+        { "step": 2, "icon": "documents", "title": "दवाएँ साथ भेजें", "text": "व्यक्ति की दवाओं की सूची, पर्चे और पुरानी रिपोर्ट अस्पताल साथ भेजें।", "priority": "normal" },
+        { "step": 3, "icon": "first-aid", "title": "इलाज पूरा करें", "text": "तबीयत बेहतर लगने पर भी इलाज का पूरा कोर्स और फ़ॉलो-अप विज़िट पूरी करें।", "priority": "normal" },
+        { "step": 4, "icon": "helping-hand", "title": "मदद करने वालों का भी ध्यान रखें", "text": "CPR करने या गंभीर आपात स्थिति देखने वाले व्यक्ति को भी आराम और मानसिक सहारे की ज़रूरत हो सकती है।", "priority": "normal" }
+      ],
+      "avoid": [
+        { "step": 1, "icon": "water-drop", "title": "बेहोश को मुँह से कुछ न दें", "text": "पानी, खाना, दूध या गोली कुछ नहीं। यह सांस का रास्ता बंद करके जानलेवा दम घुटने का कारण बनता है।", "priority": "critical" },
+        { "step": 2, "icon": "no-move-patient", "title": "मरीज़ को झकझोरें या थप्पड़ न मारें", "text": "गर्दन या रीढ़ की चोट की आशंका में झकझोरना, थप्पड़ मारना या खींचना स्थायी नुक़सान कर सकता है।", "priority": "critical" },
+        { "step": 3, "icon": "first-aid", "title": "बिना पर्चे दवा न दें", "text": "दर्द निवारक, इंजेक्शन या किसी और का पर्चा न दें। कुछ दवाएँ रक्तस्राव और हृदय स्थिति बिगाड़ देती हैं।", "priority": "critical" },
+        { "step": 4, "icon": "no-entry", "title": "घरेलू नुस्ख़ों पर भरोसा न करें", "text": "तेल, राख या गंदी चीज़ लगाने या नुस्ख़ों के लिए एम्बुलेंस में देरी न करें।", "priority": "high" }
+      ]
+    }
+  }
+}

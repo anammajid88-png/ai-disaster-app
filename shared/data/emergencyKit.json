@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "recommendedFor": {
+      "en": "72 hours for one household",
+      "ur": "ایک گھرانے کے لیے 72 گھنٹے",
+      "hi": "एक परिवार के लिए 72 घंटे"
+    },
+    "maintainerNote": "Internal, never rendered. Based on general disaster preparedness guidance. Quantities should be adjusted for family size, children, elderly members and patients."
+  },
+  "items": [
+    {
+      "id": "drinking-water",
+      "icon": "water-drop",
+      "essential": true,
+      "label": { "en": "Drinking water", "ur": "پینے کا پانی", "hi": "पीने का पानी" },
+      "detail": {
+        "en": "About 4 litres per person per day, in sealed containers.",
+        "ur": "فی فرد روزانہ تقریباً 4 لیٹر، بند برتنوں میں۔",
+        "hi": "प्रति व्यक्ति प्रतिदिन लगभग 4 लीटर, बंद बर्तनों में।"
+      }
+    },
+    {
+      "id": "first-aid-kit",
+      "icon": "first-aid",
+      "essential": true,
+      "label": { "en": "First aid kit", "ur": "فرسٹ ایڈ کٹ", "hi": "फ़र्स्ट एड किट" },
+      "detail": {
+        "en": "Gauze, bandages, tape, gloves, antiseptic and scissors.",
+        "ur": "گاز، پٹیاں، ٹیپ، دستانے، اینٹی سیپٹک اور قینچی۔",
+        "hi": "गॉज़, पट्टियाँ, टेप, दस्ताने, एंटीसेप्टिक और कैंची।"
+      }
+    },
+    {
+      "id": "flashlight",
+      "icon": "flashlight",
+      "essential": true,
+      "label": { "en": "Flashlight", "ur": "ٹارچ", "hi": "टॉर्च" },
+      "detail": {
+        "en": "With spare batteries. Safer than candles in a gas leak.",
+        "ur": "اضافی بیٹریوں کے ساتھ۔ گیس لیک میں موم بتی سے محفوظ۔",
+        "hi": "अतिरिक्त बैटरी के साथ। गैस रिसाव में मोमबत्ती से सुरक्षित।"
+      }
+    },
+    {
+      "id": "medicines",
+      "icon": "medicine",
+      "essential": true,
+      "label": { "en": "Medicines", "ur": "دوائیں", "hi": "दवाएँ" },
+      "detail": {
+        "en": "At least one week of regular prescriptions, plus ORS.",
+        "ur": "کم از کم ایک ہفتے کی مستقل دوائیں، اور او آر ایس۔",
+        "hi": "कम से कम एक सप्ताह की नियमित दवाएँ, और ORS।"
+      }
+    },
+    {
+      "id": "documents",
+      "icon": "documents",
+      "essential": true,
+      "label": { "en": "Important documents", "ur": "اہم کاغذات", "hi": "ज़रूरी दस्तावेज़" },
+      "detail": {
+        "en": "CNIC, B-Form, property and medical papers in a waterproof bag.",
+        "ur": "شناختی کارڈ، ب فارم، جائیداد اور طبی کاغذات واٹر پروف بیگ میں۔",
+        "hi": "पहचान पत्र, बी-फ़ॉर्म, संपत्ति और मेडिकल काग़ज़ वॉटरप्रूफ़ बैग में।"
+      }
+    },
+    {
+      "id": "food",
+      "icon": "food",
+      "essential": true,
+      "label": { "en": "Food", "ur": "خوراک", "hi": "भोजन" },
+      "detail": {
+        "en": "Dry, ready-to-eat food that needs no cooking: biscuits, dates, nuts.",
+        "ur": "خشک اور فوری کھانے والی اشیاء جنہیں پکانا نہ پڑے: بسکٹ، کھجور، خشک میوہ۔",
+        "hi": "सूखा, तुरंत खाने योग्य भोजन जिसे पकाना न पड़े: बिस्कुट, खजूर, मेवे।"
+      }
+    },
+    {
+      "id": "power-bank",
+      "icon": "power-bank",
+      "essential": true,
+      "label": { "en": "Phone charger / power bank", "ur": "فون چارجر / پاور بینک", "hi": "फ़ोन चार्जर / पावर बैंक" },
+      "detail": {
+        "en": "Fully charged, with the right cable. Your phone is your lifeline.",
+        "ur": "مکمل چارج شدہ، درست کیبل کے ساتھ۔ فون آپ کا سب سے اہم سہارا ہے۔",
+        "hi": "पूरी तरह चार्ज, सही केबल के साथ। फ़ोन आपकी सबसे बड़ी ज़रूरत है।"
+      }
+    },
+    {
+      "id": "hygiene",
+      "icon": "hygiene",
+      "essential": false,
+      "label": { "en": "Hygiene supplies", "ur": "صفائی کا سامان", "hi": "स्वच्छता सामग्री" },
+      "detail": {
+        "en": "Soap, sanitiser, sanitary items, towel and rubbish bags.",
+        "ur": "صابن، سینیٹائزر، سینیٹری اشیاء، تولیہ اور کچرے کے تھیلے۔",
+        "hi": "साबुन, सैनिटाइज़र, सैनिटरी सामान, तौलिया और कचरा थैले।"
+      }
+    },
+    {
+      "id": "clothing",
+      "icon": "clothing",
+      "essential": false,
+      "label": { "en": "Emergency clothing", "ur": "ہنگامی کپڑے", "hi": "आपातकालीन कपड़े" },
+      "detail": {
+        "en": "One change per person plus closed shoes and a light sheet.",
+        "ur": "فی فرد ایک جوڑا، بند جوتے اور ہلکی چادر۔",
+        "hi": "प्रति व्यक्ति एक जोड़ी, बंद जूते और हल्की चादर।"
+      }
+    },
+    {
+      "id": "whistle",
+      "icon": "whistle",
+      "essential": true,
+      "label": { "en": "Whistle", "ur": "سیٹی", "hi": "सीटी" },
+      "detail": {
+        "en": "A whistle carries much further than shouting if you are trapped.",
+        "ur": "پھنس جانے پر سیٹی کی آواز چیخنے سے بہت دور تک جاتی ہے۔",
+        "hi": "फँसने पर सीटी की आवाज़ चिल्लाने से बहुत दूर तक जाती है।"
+      }
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "app": {
+    "name": "AI Disaster App",
+    "shortName": "AI Disaster",
+    "tagline": "Smart, multilingual emergency guidance when every second matters."
+  },
+  "nav": {
+    "home": "Home",
+    "ai": "AI Help",
+    "emergency": "Emergency",
+    "about": "About",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "skipToContent": "Skip to main content",
+    "primary": "Primary navigation"
+  },
+  "lang": {
+    "label": "Language",
+    "select": "Select language",
+    "en": "English",
+    "ur": "اردو",
+    "hi": "हिन्दी"
+  },
+  "status": {
+    "aiReady": "AI assistant ready",
+    "aiFallback": "AI offline - stored guidance",
+    "offline": "You are offline. Safety guidance and emergency numbers still work.",
+    "backOnline": "Connection restored.",
+    "checking": "Checking service status"
+  },
+  "home": {
+    "hero": {
+      "badge": "Built for Pakistan",
+      "title": "AI Disaster App",
+      "subtitle": "Ask in your own language and get clear, prioritised safety steps for floods, fire, earthquakes, storms, road accidents and medical emergencies.",
+      "ctaAi": "Ask AI",
+      "ctaEmergency": "Emergency Help",
+      "note": "Works in English, Urdu and Hindi. Core safety guidance works offline."
+    },
+    "stats": {
+      "disasters": "Disaster guides",
+      "languages": "Languages",
+      "contacts": "Verified numbers",
+      "offline": "Offline ready"
+    },
+    "disasters": {
+      "title": "Choose what is happening",
+      "subtitle": "Each guide opens with the actions that matter in the first minutes, then what to do before, during and after."
+    },
+    "how": {
+      "title": "How it helps",
+      "steps": [
+        {
+          "title": "Describe the situation",
+          "text": "Type or speak in English, Urdu or Hindi - Roman Urdu also works."
+        },
+        {
+          "title": "The AI identifies the hazard",
+          "text": "Your question is analysed by Qwen on our secure server, never in your browser."
+        },
+        {
+          "title": "You get prioritised steps",
+          "text": "Short, ordered actions in your language, with the correct verified number to call."
+        }
+      ]
+    },
+    "quickCall": {
+      "title": "Need help right now?",
+      "text": "Call an official service directly. This app cannot contact them for you.",
+      "cta": "See all emergency numbers"
+    }
+  },
+  "disaster": {
+    "viewGuidelines": "View Guidelines",
+    "askAi": "Ask AI about this",
+    "risk": {
+      "label": "Risk",
+      "critical": "Critical risk",
+      "high": "High risk",
+      "medium": "Moderate risk"
+    },
+    "season": {
+      "monsoon": "Most common in monsoon",
+      "summer": "Most common in summer",
+      "winter": "Most common in winter",
+      "any": "Can happen any time"
+    }
+  },
+  "guidelines": {
+    "rightNow": "What to do right now",
+    "before": "Before",
+    "during": "During",
+    "after": "After",
+    "avoid": "Avoid",
+    "sections": "Guideline sections",
+    "close": "Close guidelines",
+    "step": "Step",
+    "callNow": "Call now",
+    "callSection": "Emergency numbers for this situation",
+    "priority": {
+      "critical": "Critical",
+      "high": "Important",
+      "normal": "Advised"
+    },
+    "askAi": "Ask the AI about my situation",
+    "dialogLabel": "Safety guidelines"
+  },
+  "chat": {
+    "title": "AI Safety Assistant",
+    "subtitle": "Describe your situation in one or two lines. Answers are short on purpose.",
+    "placeholder": "For example: water is entering my house",
+    "placeholderListening": "Listening...",
+    "send": "Send",
+    "sendAria": "Send message",
+    "you": "You",
+    "assistant": "Assistant",
+    "typing": "Preparing safety steps",
+    "clear": "Clear chat",
+    "clearConfirm": "Clear this conversation?",
+    "mic": {
+      "start": "Speak your question",
+      "stop": "Stop recording",
+      "recording": "Recording - speak now",
+      "unsupported": "Voice input is not supported in this browser. You can still type your question.",
+      "denied": "Microphone permission was denied. You can still type your question.",
+      "error": "Voice input stopped unexpectedly. Please type your question."
+    },
+    "speak": {
+      "listen": "Listen",
+      "stop": "Stop",
+      "unsupported": "Text to speech is not available in this browser."
+    },
+    "suggestions": {
+      "title": "Try one of these",
+      "items": [
+        "What should I do if flood water enters my home?",
+        "What should I do during an earthquake?",
+        "There is a fire in my kitchen. What now?",
+        "Someone is bleeding badly. What should I do first?"
+      ]
+    },
+    "empty": {
+      "title": "How can I help?",
+      "text": "Ask about a disaster or emergency in Pakistan. In a real emergency, call the official service first."
+    },
+    "source": {
+      "ai": "AI answer",
+      "fallback": "Stored safety guidance",
+      "aiTitle": "Generated by Qwen on our server",
+      "fallbackTitle": "Taken from this app's verified safety content, not from the AI"
+    },
+    "detected": "Detected: {disaster}",
+    "urgent": "This looks urgent. If life is in danger, call an emergency service now.",
+    "notice": {
+      "notConfigured": "The AI service is not connected right now, so this answer comes from stored safety guidance.",
+      "unauthorized": "The AI service rejected our credentials. Showing stored safety guidance instead.",
+      "rateLimit": "The AI service is busy. Showing stored safety guidance - please try again in a moment.",
+      "timeout": "The AI service took too long to answer. Showing stored safety guidance.",
+      "unavailable": "The AI service is temporarily unavailable. Showing stored safety guidance.",
+      "network": "We could not reach the AI service. Showing stored safety guidance.",
+      "badResponse": "The AI service returned an unexpected answer. Showing stored safety guidance."
+    },
+    "disclaimerShort": "General guidance only. Call official services in a real emergency."
+  },
+  "emergency": {
+    "title": "Emergency Help",
+    "subtitle": "Verified Pakistan emergency numbers, a preparedness checklist and your approximate location.",
+    "contacts": {
+      "title": "Emergency numbers",
+      "subtitle": "Only nationally recognised Pakistan services are listed. Availability can vary by district.",
+      "call": "Call",
+      "callAria": "Call {name} at {number}",
+      "useWhen": "Use when",
+      "coverage": "Coverage",
+      "verified": "Verified",
+      "source": "Source",
+      "note": "This app cannot call for you and does not contact any service automatically. Tapping Call opens your phone dialler."
+    },
+    "tabs": {
+      "contacts": "Numbers",
+      "kit": "Emergency kit",
+      "location": "Location"
+    }
+  },
+  "kit": {
+    "title": "Emergency kit",
+    "subtitle": "Prepare these before a disaster. Your progress is saved on this device only.",
+    "progress": "{done} / {total} Ready",
+    "complete": "Your kit is complete. Check it again every few months.",
+    "essential": "Essential",
+    "reset": "Reset checklist",
+    "resetConfirm": "Clear all checked items?",
+    "itemAria": "Mark {item} as ready",
+    "recommendedFor": "Recommended for",
+    "note": "Adjust quantities for your family size, children, elderly members and patients."
+  },
+  "location": {
+    "title": "Your approximate location",
+    "subtitle": "Useful when you need to read out your coordinates to a rescue operator.",
+    "get": "Show my location",
+    "retry": "Try again",
+    "loading": "Getting your location...",
+    "unsupported": "This browser does not support location.",
+    "denied": "Location permission was denied. You can still use every other feature - tell the operator your nearest landmark instead.",
+    "unavailable": "Your location could not be determined right now. Try again outdoors or near a window.",
+    "timeout": "Getting your location took too long. Please try again.",
+    "coordinates": "Coordinates",
+    "accuracy": "Accuracy",
+    "accuracyValue": "about {meters} m",
+    "copy": "Copy coordinates",
+    "copied": "Copied",
+    "note": "Your location stays in your browser. It is never sent to our server or the AI."
+  },
+  "about": {
+    "title": "About AI Disaster App",
+    "subtitle": "Why this app exists and exactly what it does.",
+    "what": {
+      "title": "What is AI Disaster App?",
+      "text": "A multilingual web application that gives people in Pakistan clear, prioritised safety steps for the disasters they are most likely to face, and connects them with the official emergency numbers that already exist."
+    },
+    "why": {
+      "title": "Why it exists",
+      "text": "During a flood, fire or earthquake, people lose time searching for reliable advice, and most of that advice is written in English only. This app answers in the user's own language, keeps answers short, and works even when the network is weak - core guidance is stored on the device."
+    },
+    "who": {
+      "title": "Who it helps",
+      "items": [
+        "Households in flood- and monsoon-affected districts",
+        "People who read Urdu, Hindi or Roman Urdu more comfortably than English",
+        "Anyone who needs the correct emergency number quickly",
+        "Families preparing an emergency kit before a disaster"
+      ]
+    },
+    "how": {
+      "title": "How the AI works",
+      "items": [
+        "Your question goes to our own Node/Express server, never straight to the model.",
+        "The server adds a safety-focused system prompt and calls Alibaba Cloud Model Studio (Qwen).",
+        "The API key stays on the server and is never included in the browser bundle.",
+        "If the AI is unreachable, the app answers from its own verified guidance and says so clearly."
+      ]
+    },
+    "limits": {
+      "title": "What this app does not do",
+      "items": [
+        "It does not contact, dispatch or alert emergency services for you.",
+        "It does not track your location or monitor live conditions.",
+        "It does not provide live weather, flood levels or road closures.",
+        "It does not give medicine names, doses or medical treatment.",
+        "The AI assistant needs an internet connection; stored guidance does not."
+      ]
+    },
+    "stack": {
+      "title": "Technology",
+      "items": [
+        "React and Vite frontend, installable as a Progressive Web App",
+        "Node.js and Express REST API",
+        "Alibaba Cloud Model Studio (Qwen), OpenAI-compatible",
+        "Structured JSON safety content shared by the client and server"
+      ]
+    },
+    "sources": {
+      "title": "Where the content comes from",
+      "text": "Emergency numbers are stored with the organisation and verification date shown on the Emergency page. Safety steps follow general disaster preparedness practice from national disaster management and rescue guidance.",
+      "reviewed": "Contacts last reviewed"
+    },
+    "hackathon": "Built for the Alibaba Cloud AI Hackathon Pakistan 2026."
+  },
+  "footer": {
+    "sections": "Sections",
+    "safety": "Safety",
+    "emergencyNumbers": "Emergency numbers",
+    "builtFor": "Built for the Alibaba Cloud AI Hackathon Pakistan 2026.",
+    "rights": "Free to use. No account, no tracking.",
+    "poweredBy": "AI answers powered by Alibaba Cloud Model Studio (Qwen)."
+  },
+  "disclaimer": {
+    "full": "This application provides general safety information and does not replace official emergency services or professional medical advice.",
+    "short": "General safety information only - not a replacement for emergency services.",
+    "callNow": "In a real emergency, call an official service immediately."
+  },
+  "errors": {
+    "network": "We could not reach the server. Check your connection and try again.",
+    "server": "Something went wrong on our side. Please try again.",
+    "rateLimited": "Too many requests in a short time. Please wait a moment and try again.",
+    "emptyMessage": "Please type or speak your question first.",
+    "messageTooLong": "That message is too long. Please shorten it.",
+    "invalidRequest": "That request could not be understood. Please try again.",
+    "notFound": "We could not find what you were looking for.",
+    "offline": "You are offline, so the AI assistant is unavailable. Stored safety guidance, emergency numbers and your kit still work.",
+    "pageTitle": "Page not found",
+    "pageText": "The page you opened does not exist. Emergency guidance is one tap away.",
+    "goHome": "Go to home",
+    "boundaryTitle": "Something broke on this screen",
+    "boundaryText": "Reload the app to continue. If you need help right now, call Rescue 1122 or Police 15.",
+    "reload": "Reload app"
+  },
+  "common": {
+    "close": "Close",
+    "back": "Back",
+    "loading": "Loading...",
+    "retry": "Try again",
+    "more": "More",
+    "less": "Less",
+    "install": "Install app",
+    "installText": "Install AI Disaster App for faster access and offline safety guidance.",
+    "dismiss": "Not now"
+  }
+}

@@ -1,0 +1,101 @@
+.d-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+  transition:
+    transform var(--t-base) var(--ease),
+    box-shadow var(--t-base) var(--ease),
+    border-color var(--t-base) var(--ease);
+}
+
+.d-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--blue-200);
+  box-shadow: var(--shadow-md);
+}
+
+/* ---- Visual --------------------------------------------------------- */
+.d-card__visual {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: var(--accent-soft);
+  border-bottom: 1px solid var(--border);
+}
+
+.d-card__risk {
+  position: absolute;
+  top: var(--space-3);
+  inset-inline-end: var(--space-3);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.92);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  box-shadow: var(--shadow-xs);
+}
+
+/* Colour follows the real risk level in the data, never a rounded-down one. */
+.d-card__risk--critical {
+  color: var(--white);
+  background: var(--danger);
+}
+
+.d-card__risk--high {
+  color: var(--danger);
+}
+
+.d-card__risk--medium {
+  color: var(--warn);
+}
+
+/* ---- Body ----------------------------------------------------------- */
+.d-card__body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+}
+
+.d-card__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+}
+
+.d-card__title::before {
+  content: '';
+  width: 4px;
+  height: 1.1em;
+  flex: 0 0 auto;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+}
+
+.d-card__tagline {
+  color: var(--text-soft);
+  font-size: var(--fs-sm);
+}
+
+.d-card__season {
+  align-self: flex-start;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+}
+
+.d-card__actions {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: auto;
+  padding-top: var(--space-4);
+}

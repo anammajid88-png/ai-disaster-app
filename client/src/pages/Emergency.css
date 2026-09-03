@@ -1,0 +1,315 @@
+/* =====================================================================
+   Emergency page: numbers, kit checklist, location.
+   ===================================================================== */
+
+.emergency {
+  padding-bottom: var(--space-10);
+}
+
+/* ---- Tabs ----------------------------------------------------------- */
+.e-tabs {
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-6);
+  padding: var(--space-1);
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  scrollbar-width: none;
+}
+
+.e-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.e-tabs__btn {
+  flex: 1 0 auto;
+  min-height: var(--touch);
+  padding: var(--space-2) var(--space-5);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-soft);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--t-fast) var(--ease),
+    color var(--t-fast) var(--ease);
+}
+
+.e-tabs__btn:hover {
+  background: var(--blue-50);
+  color: var(--primary);
+}
+
+.e-tabs__btn.is-active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.e-panel {
+  animation: fade-in var(--t-base) var(--ease);
+}
+
+.e-panel__intro {
+  margin-block: var(--space-2) var(--space-4);
+  color: var(--text-muted);
+}
+
+.e-panel__note {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+.e-contacts {
+  margin-top: var(--space-5);
+}
+
+/* ---- Kit ------------------------------------------------------------ */
+.kit__head {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+@media (min-width: 760px) {
+  .kit__head {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+}
+
+.kit__head p {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+}
+
+.kit__progress {
+  min-width: 220px;
+}
+
+.kit__progress strong {
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--primary);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+}
+
+.kit__bar {
+  height: 8px;
+  overflow: hidden;
+  background: var(--ink-100);
+  border-radius: var(--radius-pill);
+}
+
+.kit__bar span {
+  display: block;
+  height: 100%;
+  background: var(--primary);
+  border-radius: var(--radius-pill);
+  transition: width var(--t-slow) var(--ease);
+}
+
+.kit__complete {
+  margin-bottom: var(--space-4);
+}
+
+.kit__list {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 900px) {
+  .kit__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.kit__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  min-height: 64px;
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition:
+    border-color var(--t-fast) var(--ease),
+    background-color var(--t-fast) var(--ease);
+}
+
+.kit__item:hover {
+  border-color: var(--blue-300);
+}
+
+.kit__item.is-checked {
+  background: var(--success-soft);
+  border-color: var(--success-border);
+}
+
+/* The native checkbox stays in the DOM for keyboard and screen readers. */
+.kit__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.kit__box {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  margin-top: 2px;
+  border: 2px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: transparent;
+  transition:
+    background-color var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease);
+}
+
+.kit__item.is-checked .kit__box {
+  background: var(--success);
+  border-color: var(--success);
+  color: var(--white);
+  animation: check-pop var(--t-slow) var(--ease);
+}
+
+.kit__checkbox:focus-visible + .kit__box {
+  outline: 3px solid var(--blue-600);
+  outline-offset: 2px;
+}
+
+.kit__icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+  color: var(--primary);
+}
+
+.kit__text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.kit__text strong {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+}
+
+.kit__text > span {
+  color: var(--text-soft);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+}
+
+.kit__essential {
+  padding: 1px var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--blue-800);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+}
+
+.kit__foot {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 760px) {
+  .kit__foot {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}
+
+.kit__note {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+/* ---- Location ------------------------------------------------------- */
+.loc {
+  max-width: 620px;
+}
+
+.loc__subtitle {
+  margin-block: var(--space-2) var(--space-5);
+  color: var(--text-muted);
+}
+
+.loc__message {
+  margin-top: var(--space-4);
+}
+
+.loc__result {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+  padding: var(--space-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+  animation: rise-in var(--t-base) var(--ease);
+}
+
+.loc__result dl {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.loc__result dt {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+}
+
+.loc__result dd {
+  margin: 2px 0 0;
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+}
+
+.loc__coords {
+  color: var(--primary);
+  font-size: var(--fs-lg);
+  letter-spacing: 0.01em;
+}
+
+.loc__result .btn {
+  justify-self: start;
+}
+
+.loc__note {
+  margin-top: var(--space-5);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}

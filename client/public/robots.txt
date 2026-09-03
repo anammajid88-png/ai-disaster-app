@@ -1,0 +1,6 @@
+# AI Disaster App - public safety information, fully crawlable.
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://ai-disaster-app.vercel.app/sitemap.xml
