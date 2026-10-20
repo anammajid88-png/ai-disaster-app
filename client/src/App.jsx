@@ -15,6 +15,18 @@ const Emergency = lazy(() => import('./pages/Emergency'));
 const About = lazy(() => import('./pages/About'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
+// Intelligence Feature Routes
+const IntelligenceLayout = lazy(() => import('./features/intelligence/IntelligenceLayout'));
+const IntelligenceHome = lazy(() => import('./features/intelligence/pages/IntelligenceHome'));
+const IntelligenceRisk = lazy(() => import('./features/intelligence/pages/IntelligenceRisk'));
+const IntelligenceSimulator = lazy(() => import('./features/intelligence/pages/IntelligenceSimulator'));
+const IntelligenceEvacuation = lazy(() => import('./features/intelligence/pages/IntelligenceEvacuation'));
+const IntelligenceResources = lazy(() => import('./features/intelligence/pages/IntelligenceResources'));
+const IntelligenceMap = lazy(() => import('./features/intelligence/pages/IntelligenceMap'));
+const IntelligenceLive = lazy(() => import('./features/intelligence/pages/IntelligenceLive'));
+const IntelligenceMethodology = lazy(() => import('./features/intelligence/pages/IntelligenceMethodology'));
+const IntelligenceDemo = lazy(() => import('./features/intelligence/pages/IntelligenceDemo'));
+
 /** Every navigation should start at the top of the new page. */
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -74,6 +86,20 @@ export default function App() {
               <Route path="/ai" element={<AiHelp />} />
               <Route path="/emergency" element={<Emergency />} />
               <Route path="/about" element={<About />} />
+
+              {/* Disaster Intelligence Progressive Feature */}
+              <Route path="/intelligence" element={<IntelligenceLayout />}>
+                <Route index element={<IntelligenceHome />} />
+                <Route path="risk" element={<IntelligenceRisk />} />
+                <Route path="simulator" element={<IntelligenceSimulator />} />
+                <Route path="evacuation" element={<IntelligenceEvacuation />} />
+                <Route path="resources" element={<IntelligenceResources />} />
+                <Route path="map" element={<IntelligenceMap />} />
+                <Route path="live" element={<IntelligenceLive />} />
+                <Route path="methodology" element={<IntelligenceMethodology />} />
+                <Route path="demo" element={<IntelligenceDemo />} />
+              </Route>
+
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

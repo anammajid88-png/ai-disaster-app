@@ -12,7 +12,8 @@
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "skipToContent": "Skip to main content",
-    "primary": "Primary navigation"
+    "primary": "Primary navigation",
+    "intelligence": "Intelligence"
   },
   "lang": {
     "label": "Language",
@@ -68,6 +69,12 @@
       "title": "Need help right now?",
       "text": "Call an official service directly. This app cannot contact them for you.",
       "cta": "See all emergency numbers"
+    },
+    "intelligence": {
+      "eyebrow": "Disaster Decision Support",
+      "title": "Explore Disaster Intelligence",
+      "subtitle": "Interactive risk maps, predictive flood simulation, and Dijkstra evacuation routing for Pakistan.",
+      "cta": "Launch Intelligence Suite"
     }
   },
   "disaster": {

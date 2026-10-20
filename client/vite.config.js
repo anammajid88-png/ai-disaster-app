@@ -9,18 +9,20 @@ const projectRoot = path.resolve(__dirname, '..');
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@shared': path.resolve(projectRoot, 'shared'),
-    },
+    alias: [
+      { find: '@/lib', replacement: path.resolve(__dirname, 'src/features/intelligence') },
+      { find: '@/data', replacement: path.resolve(__dirname, 'src/features/intelligence/data') },
+      { find: '@shared', replacement: path.resolve(projectRoot, 'shared') },
+      { find: '@', replacement: path.resolve(__dirname, 'src') },
+    ],
   },
   server: {
-    port: 5173,
+    port: 5174,
     fs: { allow: [projectRoot] },
-    // The browser never calls Model Studio directly - only our Express API.
+    // Integrated preview proxies to port 5001 to prevent conflicts with baseline on 5000
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'http://localhost:5001',
         changeOrigin: true,
       },
     },

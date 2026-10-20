@@ -1,5 +1,6 @@
-/* Global entry: tokens first, then base, then keyframes.
+/* Global entry: tokens first, then base, animations, and intelligence bridge.
    Component styles are colocated with their components. */
 @import './tokens.css';
 @import './base.css';
 @import './animations.css';
+@import './intelligence.css';

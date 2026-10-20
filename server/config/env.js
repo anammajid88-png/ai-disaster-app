@@ -36,7 +36,7 @@ const model = (process.env.ALIBABA_MODEL || '').trim();
 
 const config = {
   nodeEnv: process.env.NODE_ENV || 'development',
-  port: toInt(process.env.PORT, 5000),
+  port: toInt(process.env.PORT, 5001),
 
   corsOrigins: (process.env.CORS_ORIGIN || '')
     .split(',')
