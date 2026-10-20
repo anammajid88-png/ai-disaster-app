@@ -59,6 +59,7 @@ export default function ChatComposer({
           maxLength={MAX_LENGTH}
           value={value}
           lang={micLocale}
+          dir="auto"
           placeholder={mic.listening ? t('chat.placeholderListening') : t('chat.placeholder')}
           onChange={(event) => onChange(event.target.value)}
           onKeyDown={onKeyDown}
@@ -80,23 +81,17 @@ export default function ChatComposer({
           type="submit"
           className="composer__send"
           disabled={busy || !value.trim()}
-          aria-label={t('chat.sendAria')}
+          aria-label={t('chat.send')}
         >
-          <UiIcon name="send" size={22} className="icon-flip" />
+          <UiIcon name="send" size={20} />
         </button>
       </div>
 
-      <p className="composer__hint" aria-live="polite">
-        {mic.listening ? (
-          <span className="composer__recording">
-            <span className="composer__pulse" aria-hidden="true" />
-            {t('chat.mic.recording')}
-            {mic.interim ? <em>{mic.interim}</em> : null}
-          </span>
-        ) : null}
-        {micError ? <span className="composer__error">{micError}</span> : null}
-        {!mic.listening && !micError ? t('chat.disclaimerShort') : null}
-      </p>
+      {micError ? (
+        <p className="composer__error" role="status">
+          {micError}
+        </p>
+      ) : null}
     </form>
   );
 }

@@ -7,6 +7,7 @@ import path from 'node:path';
 const projectRoot = path.resolve(__dirname, '..');
 
 export default defineConfig({
+  base: process.env.VITE_BASE_PATH || '/',
   plugins: [react()],
   resolve: {
     alias: [

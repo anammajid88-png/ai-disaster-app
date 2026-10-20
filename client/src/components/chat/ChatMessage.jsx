@@ -28,7 +28,9 @@ export default function ChatMessage({ message, onSpeak, onStopSpeak, speakingId,
     return (
       <li className="msg msg--user">
         <p className="msg__role">{t('chat.you')}</p>
-        <div className="msg__bubble">{message.text}</div>
+        <div className="msg__bubble" dir="auto">
+          <bdi>{message.text}</bdi>
+        </div>
       </li>
     );
   }
@@ -52,7 +54,7 @@ export default function ChatMessage({ message, onSpeak, onStopSpeak, speakingId,
         </span>
       </p>
 
-      <div className="msg__bubble">
+      <div className="msg__bubble" dir="auto">
         {message.urgency === 'high' ? (
           <p className="msg__urgent">
             <SafetyIcon name="warning-triangle" size={18} />
@@ -67,10 +69,10 @@ export default function ChatMessage({ message, onSpeak, onStopSpeak, speakingId,
           </p>
         ) : null}
 
-        <div className="msg__text">
+        <div className="msg__text" dir="auto">
           {toLines(message.text).map((line) => (
-            <p key={line.key} className={line.isStep ? 'msg__step' : undefined}>
-              {line.text}
+            <p key={line.key} className={line.isStep ? 'msg__step' : undefined} dir="auto">
+              <bdi>{line.text}</bdi>
             </p>
           ))}
         </div>

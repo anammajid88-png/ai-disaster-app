@@ -22,7 +22,7 @@ This document describes the architectural integration of advanced geospatial, ri
 | **Styling** | Custom CSS (`tokens.css`) | Tailwind CSS + CSS Modules | **Design Tokens Bridge (`tokens.css` + `intelligence.css`)** |
 | **Map Rendering** | Leaflet (basic) | Mapbox GL / D3-geo SVG | **D3-geo SVG Vector Engine (`PakMap.jsx`)** |
 | **State Management** | React hooks (`useState`, `useContext`) | React hooks (`useReducer`, Context) | **React hooks (`useReducer`, Context, localStorage)** |
-| **Testing** | Node.js ESM test scripts | Vitest + Playwright | **Node scripts + Vitest suite (48 tests)** |
+| **Testing** | Node.js ESM test scripts | Vitest + Playwright | **Node scripts + Vitest suite (59 tests)** |
 | **Build Tooling** | Vite 5 (Rollup) | Turbopack / Webpack | **Vite 5 (with TS & `@/` alias resolution)** |
 
 ---
@@ -161,13 +161,13 @@ RAAH's donor components were styled using dark-mode CSS variables (`--surface-ba
 
 ## 5. Domain Engines & Theoretical Models
 
-### 5.1 INFORM Geometric Mean Risk Model (`risk/engine.ts`)
-The risk index adopts the internationally recognized INFORM formulation for humanitarian disaster analysis:
-$$ \text{Risk} = \sqrt[3]{\text{Hazard} \times \text{Vulnerability} \times \text{Lack of Coping Capacity}} $$
-- **Hazard ($H$)**: Probability and intensity of 8 hazards (Flood, Earthquake, Drought, Cyclone, Heatwave, Landslide, GLOF, Security).
-- **Vulnerability ($V$)**: Socio-economic indicators (Poverty rate, dependent population, building quality).
-- **Lack of Coping Capacity ($L$)**: Healthcare density, road accessibility, emergency shelter capacity.
-- **Normalization**: Scaled to 0–100 with 5 severity tiers: Very Low ($<20$), Low ($20–39$), Medium ($40–59$), High ($60–79$), Very High ($\ge 80$).
+### 5.1 Explainable Multi-Hazard Risk Screening Model (`risk/engine.ts`)
+The risk index adopts an INFORM-inspired weighted geometric mean screening formulation:
+$$ \text{Risk Index} = 100 \times \left(\frac{H}{10}\right)^{0.5} \times \left(\frac{E}{10}\right)^{0.3} \times \left(\frac{\max(A, 0.5)}{10}\right)^{0.2} $$
+- **Hazard ($H$, 0–10)**: Proximity to major river corridors ($10 \cdot e^{-d/15\text{km}}$), historical NDMA disaster records, and live 3-day precipitation.
+- **Exposure ($E$, 0–10)**: Gridded population magnitude tiers (tier 1 <250k up to tier 5 >3M).
+- **Access Constraints ($A$, 0–10)**: Road network density within 30 km, distance to primary highway junctions, and terrain difficulty.
+- **Classification Bands**: Low ($<30$), Moderate ($30–49$), High ($50–69$), Critical ($\ge 70$). Guaranteed $0$ risk if Hazard $= 0$.
 
 ### 5.2 Dijkstra Road Network Routing (`geo/graph.ts`)
 Evacuation and rescue routing executes a weighted shortest-path Dijkstra algorithm across Pakistan's major highway nodes:

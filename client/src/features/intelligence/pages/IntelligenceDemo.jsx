@@ -28,6 +28,7 @@ import { assessRegion } from '../risk/engine';
 import { regionById } from '../data/regions';
 import { PakMap, Marker, GeoLine } from '../components/PakMap';
 import { Card, Metric, ModeBadge, RiskBadge, SectionTitle } from '../components/primitives';
+import { formatCount, formatCountDelta, formatPercent, formatPercentPoints } from '../utils/formatters';
 
 const STEPS = [
   {
@@ -159,7 +160,7 @@ const STEPS = [
 
 export default function IntelligenceDemo() {
   const [stepIdx, setStepIdx] = useState(0);
-  const [showNotes, setShowNotes] = useState(true);
+  const [showNotes, setShowNotes] = useState(false);
 
   const step = STEPS[stepIdx];
 
@@ -181,6 +182,8 @@ export default function IntelligenceDemo() {
         setStepIdx((idx) => idx + 1);
       } else if (e.key === 'ArrowLeft' && stepIdx > 0) {
         setStepIdx((idx) => idx - 1);
+      } else if (e.key === 'p' || e.key === 'P') {
+        setShowNotes((prev) => !prev);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -196,10 +199,10 @@ export default function IntelligenceDemo() {
             <span className="demo-step-pill">
               Step {step.num} of {STEPS.length} · {step.kicker}
             </span>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 700, margin: '0.25rem 0' }}>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 700, margin: '0.25rem 0', color: '#ffffff' }}>
               {step.title}
             </h2>
-            <p style={{ margin: 0, fontSize: '0.85rem', opacity: 0.9 }}>
+            <p style={{ margin: 0, fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.95)' }}>
               {step.summary}
             </p>
           </div>
@@ -209,7 +212,8 @@ export default function IntelligenceDemo() {
               type="button"
               className="btn btn--secondary"
               onClick={() => setShowNotes(!showNotes)}
-              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
+              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem', color: showNotes ? 'var(--primary)' : undefined }}
+              title="Toggle presenter notes for speaker (Keyboard: P)"
             >
               {showNotes ? 'Hide Presenter Notes' : 'Show Presenter Notes'}
             </button>
@@ -219,6 +223,7 @@ export default function IntelligenceDemo() {
               onClick={() => setStepIdx((i) => Math.max(0, i - 1))}
               disabled={stepIdx === 0}
               style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
+              title="Previous step (Keyboard: Left Arrow)"
             >
               <ArrowLeft size={16} /> Prev
             </button>
@@ -228,6 +233,7 @@ export default function IntelligenceDemo() {
               onClick={() => setStepIdx((i) => Math.min(STEPS.length - 1, i + 1))}
               disabled={stepIdx === STEPS.length - 1}
               style={{ fontSize: '0.8rem', padding: '0.4rem 0.9rem' }}
+              title="Next step (Keyboard: Right Arrow)"
             >
               Next <ArrowRight size={16} />
             </button>
@@ -274,7 +280,10 @@ export default function IntelligenceDemo() {
                     r={step.num >= 3 ? 8 : 5}
                     color={step.num >= 3 ? '#ea580c' : '#0b5cab'}
                     pulse={step.num >= 3}
-                    label={`${s.name} (${s.population.toLocaleString()} pop)`}
+                    priority={step.num >= 3 ? 'high' : 'normal'}
+                    label={`${s.name} (${formatCount(s.population)} pop)`}
+                    text={s.name}
+                    labelPosition="right"
                     showLabel
                   />
                 ))}
@@ -285,7 +294,10 @@ export default function IntelligenceDemo() {
                     r={7}
                     shape="square"
                     color="#16a34a"
+                    priority="normal"
                     label={`${sh.name} (Shelter)`}
+                    text={`${sh.name} (Shelter)`}
+                    labelPosition="bottom"
                     showLabel
                   />
                 ))}
@@ -400,15 +412,15 @@ export default function IntelligenceDemo() {
                     <tbody>
                       <tr>
                         <td>Coverage</td>
-                        <td style={{ fontWeight: 700, color: 'var(--ok)' }}>{planB.metrics.coveragePct}%</td>
-                        <td>{planA.metrics.coveragePct}%</td>
-                        <td style={{ fontWeight: 700, color: 'var(--ok)' }}>+{planB.metrics.coveragePct - planA.metrics.coveragePct}%</td>
+                        <td style={{ fontWeight: 700, color: 'var(--ok)' }}>{formatPercent(planB.metrics.coveragePct)}</td>
+                        <td>{formatPercent(planA.metrics.coveragePct)}</td>
+                        <td style={{ fontWeight: 700, color: 'var(--ok)' }}>{formatPercentPoints(planB.metrics.coveragePct, planA.metrics.coveragePct)}</td>
                       </tr>
                       <tr>
                         <td>Unmet Demand</td>
-                        <td style={{ fontWeight: 700 }}>{planB.metrics.unmet.toLocaleString()}</td>
-                        <td>{planA.metrics.unmet.toLocaleString()}</td>
-                        <td style={{ color: 'var(--ok)', fontWeight: 700 }}>-{(planA.metrics.unmet - planB.metrics.unmet).toLocaleString()}</td>
+                        <td style={{ fontWeight: 700 }}>{formatCount(planB.metrics.unmet)}</td>
+                        <td>{formatCount(planA.metrics.unmet)}</td>
+                        <td style={{ color: 'var(--ok)', fontWeight: 700 }}>{formatCountDelta(planB.metrics.unmet, planA.metrics.unmet)}</td>
                       </tr>
                     </tbody>
                   </table>

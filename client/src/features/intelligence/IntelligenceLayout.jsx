@@ -11,21 +11,23 @@ import {
   Award,
 } from 'lucide-react';
 import { DemoNotice } from './components/primitives';
+import { useLanguage } from '../../i18n/LanguageProvider';
 
 const SUB_NAV = [
-  { to: '/intelligence', label: 'Overview', icon: Compass, end: true },
-  { to: '/intelligence/risk', label: 'Risk Index', icon: Activity },
-  { to: '/intelligence/simulator', label: 'Simulator', icon: Sliders },
-  { to: '/intelligence/evacuation', label: 'Evacuation', icon: RouteIcon },
-  { to: '/intelligence/resources', label: 'Resources', icon: Truck },
-  { to: '/intelligence/map', label: 'Map & Layers', icon: MapIcon },
-  { to: '/intelligence/live', label: 'Live Feeds', icon: Radio },
-  { to: '/intelligence/methodology', label: 'Methodology', icon: BookOpen },
-  { to: '/intelligence/demo', label: 'Judge Demo', icon: Award, highlight: true },
+  { to: '/intelligence', key: 'intelNav.overview', defaultLabel: 'Overview', icon: Compass, end: true },
+  { to: '/intelligence/risk', key: 'intelNav.risk', defaultLabel: 'Risk Index', icon: Activity },
+  { to: '/intelligence/simulator', key: 'intelNav.simulator', defaultLabel: 'Simulator', icon: Sliders },
+  { to: '/intelligence/evacuation', key: 'intelNav.evacuation', defaultLabel: 'Evacuation', icon: RouteIcon },
+  { to: '/intelligence/resources', key: 'intelNav.resources', defaultLabel: 'Resources', icon: Truck },
+  { to: '/intelligence/map', key: 'intelNav.map', defaultLabel: 'Map & Layers', icon: MapIcon },
+  { to: '/intelligence/live', key: 'intelNav.live', defaultLabel: 'Live Feeds', icon: Radio },
+  { to: '/intelligence/methodology', key: 'intelNav.methodology', defaultLabel: 'Methodology', icon: BookOpen },
+  { to: '/intelligence/demo', key: 'intelNav.demo', defaultLabel: 'Judge Demo', icon: Award, highlight: true },
 ];
 
 export default function IntelligenceLayout() {
   const { pathname } = useLocation();
+  const { t } = useLanguage();
 
   return (
     <div className="intel-shell">
@@ -33,9 +35,10 @@ export default function IntelligenceLayout() {
       <DemoNotice />
 
       {/* Secondary Intelligence Navigation Bar */}
-      <nav className="intel-nav" aria-label="Disaster Intelligence Navigation">
+      <nav className="intel-nav" aria-label={t('nav.primary') || 'Disaster Intelligence Navigation'}>
         {SUB_NAV.map((item) => {
           const Icon = item.icon;
+          const label = t(item.key) || item.defaultLabel;
           return (
             <NavLink
               key={item.to}
@@ -44,10 +47,11 @@ export default function IntelligenceLayout() {
               className={({ isActive }) =>
                 isActive ? 'intel-nav__link is-active' : 'intel-nav__link'
               }
+              style={{ whiteSpace: 'nowrap', flexShrink: 0 }}
             >
               <Icon size={16} />
-              <span>{item.label}</span>
-              {item.highlight && <span className="intel-nav__badge">9-Step</span>}
+              <span>{label}</span>
+              {item.highlight && <span className="intel-nav__badge">{t('intelNav.badge') || '9-Step'}</span>}
             </NavLink>
           );
         })}

@@ -15,6 +15,18 @@
     "primary": "Primary navigation",
     "intelligence": "Intelligence"
   },
+  "intelNav": {
+    "overview": "Overview",
+    "risk": "Risk Index",
+    "simulator": "Simulator",
+    "evacuation": "Evacuation",
+    "resources": "Resources",
+    "map": "Map & Layers",
+    "live": "Live Feeds",
+    "methodology": "Methodology",
+    "demo": "Judge Demo",
+    "badge": "9-Step"
+  },
   "lang": {
     "label": "Language",
     "select": "Select language",

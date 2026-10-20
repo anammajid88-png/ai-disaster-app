@@ -32,15 +32,15 @@ The application features a built-in interactive presentation mode accessible dir
 
 ---
 
-### Step 2: Explainable INFORM Multi-Hazard Risk Index
+### Step 2: Explainable Multi-Hazard Risk Index
 - **Visual**: Sortable district risk table with numeric scores (0–100) and multi-hazard breakdown badges.
 - **Presenter Script**:
-  > *"A major pitfall of modern AI in disaster management is the 'black box' problem—responders cannot trust an unexplainable number. In our Risk Index, we adopted the United Nations INFORM geometric mean methodology:*
+  > *"A major pitfall of modern AI in disaster management is the 'black box' problem—responders cannot trust an unexplainable number. In our Risk Index, we adopted an INFORM-inspired weighted geometric mean screening formulation:*
   > 
-  > $$\text{Risk} = \sqrt[3]{\text{Hazard} \times \text{Vulnerability} \times \text{Lack of Coping Capacity}}$$
+  > $$\text{Risk Index} = 100 \times \left(\frac{H}{10}\right)^{0.5} \times \left(\frac{E}{10}\right)^{0.3} \times \left(\frac{\max(A, 0.5)}{10}\right)^{0.2}$$
   > 
-  > *Every district score is 100% deterministic, transparent, and auditable across 8 distinct hazards, from riverine floods to seismic vulnerability."*
-- **Action**: Click on a district (e.g., **Dadu** or **Quetta**) to expand the component breakdown showing Hazard, Vulnerability, and Coping Capacity.
+  > *Where H is Hazard, E is Exposure, and A is Access Constraint. Every district score is 100% deterministic, transparent, and auditable across distinct hazards, from riverine floods to seismic vulnerability."*
+- **Action**: Click on a district (e.g., **Dadu** or **Quetta**) to expand the component breakdown showing Hazard, Exposure, and Access Constraints.
 
 ---
 

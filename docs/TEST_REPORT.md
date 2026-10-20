@@ -13,12 +13,12 @@ Test Suite                               Scope                 Result       Dura
 ========================================================================================
 1. Content & Locale Parity               App Shared / i18n     PASS (5/5)   ~250ms
 2. Intent & Urgency Detection            AI Detection Engine   PASS (35/35) ~180ms
-3. Intelligence Engines (Vitest)         Domain Logic / Math   PASS (48/48) 1.17s
-4. Vite Client Build                     Bundler Production    PASS         2.62s
+3. Intelligence Engines (Vitest)         Domain Logic / Math   PASS (59/59) 1.02s
+4. Vite Client Build                     Bundler Production    PASS         2.04s
 5. Dual Dev Server Health Checks         Port 5000 & 5001      PASS (2/2)   Instant
 6. Visual Regression (Playwright)        Desktop & Mobile      PASS (26/26) ~35s
 ========================================================================================
-Total Test Items Verified: 116 | Regressions Detected: 0
+Total Test Items Verified: 127 | Regressions Detected: 0
 ```
 
 ---
@@ -74,12 +74,13 @@ A comprehensive unit test suite was implemented in `client/tests/unit/` to valid
 | Test File | Covered Module | Tests | Status |
 |---|---|:---:|:---:|
 | `geometry.test.ts` | Bounding box, centroid calculation, Haversine geodesic distance, ray-casting point-in-polygon | 5 | **PASS** |
+| `formatters.test.ts` | Percentage points (`pp`), counts, deltas, precision rounding, duration, score formatters | 11 | **PASS** |
 | `url.test.ts` | Scenario state base64 URL serialization, deserialization, parameter round-trip integrity | 4 | **PASS** |
 | `providers.test.ts` | USGS seismic GeoJSON parsing, Open-Meteo weather response parsing, timeout & error handling | 6 | **PASS** |
 | `graph.test.ts` | Dijkstra weighted shortest-path algorithm, dynamic edge closure rerouting, unreachable handling | 6 | **PASS** |
-| `risk.test.ts` | INFORM geometric mean formulation, 8-hazard weighting, severity classification thresholds | 9 | **PASS** |
+| `risk.test.ts` | INFORM weighted geometric mean, 8-hazard weighting, severity classification thresholds | 9 | **PASS** |
 | `scenario.test.ts` | Preset disaster scenarios, parameter delta calculation, deterministic copilot recommendation generation | 18 | **PASS** |
-| **Total** | | **48** | **PASS** |
+| **Total** | | **59** | **PASS** |
 
 ### Execution Log:
 ```bash
@@ -88,16 +89,17 @@ A comprehensive unit test suite was implemented in `client/tests/unit/` to valid
 
  RUN  v2.1.9 C:/Users/imsha/.../integrated-app/client
 
- ✓ tests/unit/geometry.test.ts (5 tests) 3ms
- ✓ tests/unit/url.test.ts (4 tests) 5ms
- ✓ tests/unit/providers.test.ts (6 tests) 59ms
- ✓ tests/unit/graph.test.ts (6 tests) 30ms
- ✓ tests/unit/risk.test.ts (9 tests) 54ms
- ✓ tests/unit/scenario.test.ts (18 tests) 467ms
+ ✓ tests/unit/geometry.test.ts (5 tests) 4ms
+ ✓ tests/unit/formatters.test.ts (11 tests) 6ms
+ ✓ tests/unit/url.test.ts (4 tests) 4ms
+ ✓ tests/unit/providers.test.ts (6 tests) 55ms
+ ✓ tests/unit/graph.test.ts (6 tests) 27ms
+ ✓ tests/unit/risk.test.ts (9 tests) 44ms
+ ✓ tests/unit/scenario.test.ts (18 tests) 416ms
 
- Test Files  6 passed (6)
-      Tests  48 passed (48)
-   Duration  1.17s
+ Test Files  7 passed (7)
+      Tests  59 passed (59)
+   Duration  1.02s
 ```
 
 ---
@@ -121,7 +123,7 @@ Both desktop (1440×900) and mobile (390×844) viewports were captured and audit
 | `/intelligence/resources` | `desktop_intelligence_resources.png` | `mobile_intelligence_resources.png` | Fleet inventory (ambulances, rescue boats, mobile medical units), status badges (Available, Dispatched, Maintenance), dispatch action modal with event log. |
 | `/intelligence/map` | `desktop_intelligence_map.png` | `mobile_intelligence_map.png` | Full-scale D3-geo SVG vector map of Pakistan, layer toggles (Districts, Rivers, Road Network, Shelters), district click inspector. |
 | `/intelligence/live` | `desktop_intelligence_live.png` | `mobile_intelligence_live.png` | Real-time USGS earthquake feed + Open-Meteo weather API observations with live timestamp, magnitude filters, and clear error fallbacks. |
-| `/intelligence/methodology` | `desktop_intelligence_methodology.png` | `mobile_intelligence_methodology.png` | Formal mathematical formulations ($Risk = \sqrt[3]{H \cdot V \cdot L}$), data source citations, uncertainty disclosures, and safety disclaimers. |
+| `/intelligence/methodology` | `desktop_intelligence_methodology.png` | `mobile_intelligence_methodology.png` | Formal mathematical formulations ($Risk = 100 \cdot (H/10)^{0.5} \cdot (E/10)^{0.3} \cdot (A/10)^{0.2}$), data source citations, uncertainty disclosures, and safety disclaimers. |
 | `/intelligence/demo` | `desktop_intelligence_demo.png` | `mobile_intelligence_demo.png` | 9-step guided presentation mode for judges with Next/Back buttons and keyboard shortcuts (ArrowLeft/ArrowRight). |
 
 ---

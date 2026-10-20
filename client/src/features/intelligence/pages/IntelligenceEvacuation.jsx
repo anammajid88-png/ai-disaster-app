@@ -322,7 +322,10 @@ export default function IntelligenceEvacuation() {
                     r={9}
                     color="#ea580c"
                     pulse
+                    priority="high"
                     label={`Origin: ${origin.name}`}
+                    text={origin.name}
+                    labelPosition="right"
                     showLabel
                   />
                   {/* Shelters */}
@@ -333,7 +336,10 @@ export default function IntelligenceEvacuation() {
                       r={7}
                       shape="square"
                       color={d.id === result.best?.d?.id ? '#16a34a' : '#64748b'}
+                      priority={d.id === result.best?.d?.id ? 'high' : 'normal'}
                       label={`Shelter: ${d.name}`}
+                      text={d.name}
+                      labelPosition="bottom"
                       showLabel={d.id === result.best?.d?.id}
                       onSelect={() => {
                         setDestId(d.id);

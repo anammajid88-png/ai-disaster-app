@@ -26,6 +26,11 @@ function interpolate(text, values) {
 
 function readStoredLanguage() {
   try {
+    if (typeof window !== 'undefined' && window.location?.search) {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = params.get('lang');
+      if (urlLang && isSupported(urlLang)) return urlLang;
+    }
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored && isSupported(stored)) return stored;
   } catch {
@@ -67,38 +72,48 @@ export function LanguageProvider({ children }) {
    * t('chat.title')                     -> string
    * t('kit.progress', { done: 3, ... }) -> interpolated string
    * t('about.who.items')                -> array (returned as-is)
-   *
-   * Missing keys fall back to English, then to the key itself, so a screen can
-   * never render blank because of a translation gap.
    */
   const t = useCallback(
     (path, values) => {
-      const raw = lookup(DICTIONARIES[language.code], path) ?? lookup(DICTIONARIES.en, path);
+      const activeDict = DICTIONARIES[code];
+      const fallbackDict = DICTIONARIES[DEFAULT_LANGUAGE];
 
-      if (raw == null) {
-        if (import.meta.env.DEV) console.warn(`[i18n] missing key: ${path}`);
+      let entry = lookup(activeDict, path);
+      if (entry === undefined && activeDict !== fallbackDict) {
+        entry = lookup(fallbackDict, path);
+      }
+
+      if (entry === undefined) {
+        if (import.meta.env.DEV) {
+          console.warn(`[i18n] missing key: "${path}" in lang "${code}"`);
+        }
         return path;
       }
-      if (typeof raw === 'string') return interpolate(raw, values);
-      return raw;
+
+      if (typeof entry === 'string') {
+        return interpolate(entry, values);
+      }
+
+      return entry;
     },
-    [language.code]
+    [code]
   );
 
   /**
-   * Picks the correct block out of the shared safety JSON, which is keyed by
-   * language code, with an English safety net.
+   * Translates content objects that store { en, ur, hi } directly, e.g. disaster
+   * descriptions in shared/data.
    */
   const localize = useCallback(
-    (multilingual) => {
-      if (!multilingual) return '';
-      return multilingual[language.code] ?? multilingual.en ?? '';
+    (field) => {
+      if (!field || typeof field !== 'object') return '';
+      return field[code] || field[DEFAULT_LANGUAGE] || '';
     },
-    [language.code]
+    [code]
   );
 
   const value = useMemo(
     () => ({
+      code: language.code,
       language: language.code,
       languageMeta: language,
       languages: LANGUAGES,
@@ -116,6 +131,8 @@ export function LanguageProvider({ children }) {
 
 export function useLanguage() {
   const context = useContext(LanguageContext);
-  if (!context) throw new Error('useLanguage must be used inside <LanguageProvider>');
+  if (!context) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
   return context;
 }

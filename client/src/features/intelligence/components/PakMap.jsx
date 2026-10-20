@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import { geoMercator, geoPath } from 'd3-geo';
 import { select } from 'd3-selection';
 import { zoom as d3zoom, zoomIdentity } from 'd3-zoom';
-import { Minus, Plus, LocateFixed } from 'lucide-react';
+import { Minus, Plus, LocateFixed, Globe2 } from 'lucide-react';
 import { GEO_BASE, getRoadGraph } from '../geo/data';
 import { cx } from './primitives';
 
@@ -14,8 +14,11 @@ export const useMap = () => {
 };
 
 const BASE_ZOOM = 5.2;
-const PROVINCE_LABEL_MIN_K = { 'Islamabad Capital Territory': 9, 'Azad Jammu & Kashmir': 2.2 };
-const prefersReducedMotion = () => typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+const MIN_SCALE = 0.7;
+const MAX_SCALE = 12.0;
+const PROVINCE_LABEL_MIN_K = { 'Islamabad Capital Territory': 4.5, 'Azad Jammu & Kashmir': 2.0 };
+const prefersReducedMotion = () =>
+  typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 export function PakMap({
   view,
@@ -23,31 +26,49 @@ export function PakMap({
   overlay,
   screenOverlay,
   className = '',
-  ariaLabel = 'Map of Pakistan',
+  ariaLabel = 'Interactive Map of Pakistan (Use +/- to zoom, arrow keys to pan, 0 to reset)',
   closedEdges,
-  minHeight = 360,
+  minHeight = 380,
   controls = true,
 }) {
   const wrapRef = useRef(null);
   const svgRef = useRef(null);
   const zoomRef = useRef(null);
-  const [size, setSize] = useState({ width: 800, height: 600 });
+  const [size, setSize] = useState({ width: 800, height: 500 });
   const [t, setT] = useState(zoomIdentity);
+  const tRef = useRef(zoomIdentity);
+  const isDraggingRef = useRef(false);
 
+  // ResizeObserver with threshold to avoid thrashing
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
     const ro = new ResizeObserver(([entry]) => {
       const { width, height } = entry.contentRect;
-      if (width > 0 && height > 0) setSize({ width: Math.round(width), height: Math.round(height) });
+      if (width > 0 && height > 0) {
+        setSize((prev) => {
+          if (Math.abs(prev.width - width) < 2 && Math.abs(prev.height - height) < 2) {
+            return prev;
+          }
+          return { width: Math.round(width), height: Math.round(height) };
+        });
+      }
     });
     ro.observe(el);
     return () => ro.disconnect();
   }, []);
 
+  // Standard Natural Earth projection fitted to container size
   const projection = useMemo(
-    () => geoMercator().fitExtent([[12, 12], [size.width - 12, size.height - 12]], { type: 'FeatureCollection', features: GEO_BASE.country }),
-    [size.width, size.height],
+    () =>
+      geoMercator().fitExtent(
+        [
+          [16, 16],
+          [Math.max(100, size.width - 16), Math.max(100, size.height - 16)],
+        ],
+        { type: 'FeatureCollection', features: GEO_BASE.country }
+      ),
+    [size.width, size.height]
   );
   const path = useMemo(() => geoPath(projection), [projection]);
 
@@ -92,82 +113,162 @@ export function PakMap({
       .join('');
   }, [closedEdges, projection]);
 
-  useEffect(() => {
-    const svg = svgRef.current;
-    if (!svg) return;
-    const z = d3zoom()
-      .scaleExtent([0.8, 120])
-      .on('zoom', (ev) => setT(ev.transform));
-    zoomRef.current = z;
-    select(svg).call(z).on('dblclick.zoom', null);
-    return () => {
-      select(svg).on('.zoom', null);
-    };
-  }, []);
-
+  // Transform calculation for a given view center & zoom
   const transformFor = useCallback(
     (v) => {
+      if (!v || !v.center) return zoomIdentity;
       const k = Math.pow(2, v.zoom - BASE_ZOOM);
       const pt = projection(v.center);
       if (!pt) return zoomIdentity;
       const [x, y] = pt;
       return zoomIdentity.translate(size.width / 2 - x * k, size.height / 2 - y * k).scale(k);
     },
-    [projection, size.width, size.height],
+    [projection, size.width, size.height]
   );
 
-  const animateTo = useCallback(
-    (target) => {
-      const svg = svgRef.current;
-      const z = zoomRef.current;
-      if (!svg || !z) return;
-      const sel = select(svg);
-      if (prefersReducedMotion()) {
-        z.transform(sel, target);
-        return;
-      }
-      const from = { ...t };
-      const start = performance.now();
-      const dur = 750;
-      let raf = 0;
-      const step = (now) => {
-        const u = Math.min(1, (now - start) / dur);
-        const e = u < 0.5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2;
-        const k = from.k * Math.pow(target.k / from.k, e);
-        const x = from.x + (target.x - from.x) * e;
-        const y = from.y + (target.y - from.y) * e;
-        z.transform(sel, zoomIdentity.translate(x, y).scale(k));
-        if (u < 1) raf = requestAnimationFrame(step);
-      };
-      raf = requestAnimationFrame(step);
-      return () => cancelAnimationFrame(raf);
-    },
-    [t],
-  );
-
-  const viewKey = view ? `${view.center.join(',')}@${view.zoom}` : 'none';
-  const sizeKey = `${size.width}x${size.height}`;
-  const placed = useRef(false);
-  const prevView = useRef(viewKey);
+  // Initialize D3 zoom
   useEffect(() => {
-    if (!view) return;
     const svg = svgRef.current;
-    if (!svg || !zoomRef.current) return;
-    const target = transformFor(view);
-    if (!placed.current || prevView.current === viewKey) {
-      zoomRef.current.transform(select(svg), target);
-      placed.current = true;
-    } else {
-      animateTo(target);
-    }
-    prevView.current = viewKey;
-  }, [viewKey, sizeKey, transformFor, animateTo, view]);
+    if (!svg) return;
 
-  const zoomBy = (factor) => {
+    const z = d3zoom()
+      .scaleExtent([MIN_SCALE, MAX_SCALE])
+      .on('start', () => {
+        isDraggingRef.current = true;
+      })
+      .on('zoom', (ev) => {
+        tRef.current = ev.transform;
+        setT(ev.transform);
+      })
+      .on('end', () => {
+        isDraggingRef.current = false;
+      });
+
+    zoomRef.current = z;
+    const sel = select(svg);
+    sel.call(z).on('dblclick.zoom', null);
+
+    return () => {
+      sel.on('.zoom', null);
+    };
+  }, []);
+
+  // Update zoom when view prop changes to a DIFFERENT view
+  const prevViewKeyRef = useRef('');
+  const initialPlacedRef = useRef(false);
+  const viewKey = view ? `${view.center.join(',')}@${view.zoom}` : 'none';
+
+  useEffect(() => {
     const svg = svgRef.current;
-    if (svg && zoomRef.current) zoomRef.current.scaleBy(select(svg), factor);
-  };
-  const reset = () => animateTo(view ? transformFor(view) : zoomIdentity);
+    const z = zoomRef.current;
+    if (!svg || !z) return;
+
+    if (!view) {
+      if (!initialPlacedRef.current) {
+        z.transform(select(svg), zoomIdentity);
+        initialPlacedRef.current = true;
+      }
+      return;
+    }
+
+    // Only update if viewKey has genuinely changed or on initial mount
+    if (viewKey !== prevViewKeyRef.current || !initialPlacedRef.current) {
+      const target = transformFor(view);
+      const sel = select(svg);
+
+      if (!initialPlacedRef.current || prefersReducedMotion()) {
+        z.transform(sel, target);
+      } else {
+        // Smoothly animate to newly selected scenario / view
+        sel.transition().duration(650).call(z.transform, target);
+      }
+
+      initialPlacedRef.current = true;
+      prevViewKeyRef.current = viewKey;
+    }
+  }, [viewKey, transformFor, view]);
+
+  // Zoom helpers
+  const zoomBy = useCallback((factor) => {
+    const svg = svgRef.current;
+    const z = zoomRef.current;
+    if (!svg || !z) return;
+    const sel = select(svg);
+    if (prefersReducedMotion()) {
+      z.scaleBy(sel, factor);
+    } else {
+      sel.transition().duration(250).call(z.scaleBy, factor);
+    }
+  }, []);
+
+  const panBy = useCallback((dx, dy) => {
+    const svg = svgRef.current;
+    const z = zoomRef.current;
+    if (!svg || !z) return;
+    const current = tRef.current;
+    const next = zoomIdentity.translate(current.x + dx, current.y + dy).scale(current.k);
+    const sel = select(svg);
+    if (prefersReducedMotion()) {
+      z.transform(sel, next);
+    } else {
+      sel.transition().duration(150).call(z.transform, next);
+    }
+  }, []);
+
+  const resetToScenario = useCallback(() => {
+    const svg = svgRef.current;
+    const z = zoomRef.current;
+    if (!svg || !z) return;
+    const target = view ? transformFor(view) : zoomIdentity;
+    const sel = select(svg);
+    if (prefersReducedMotion()) {
+      z.transform(sel, target);
+    } else {
+      sel.transition().duration(400).call(z.transform, target);
+    }
+  }, [view, transformFor]);
+
+  const fitToPakistan = useCallback(() => {
+    const svg = svgRef.current;
+    const z = zoomRef.current;
+    if (!svg || !z) return;
+    const sel = select(svg);
+    if (prefersReducedMotion()) {
+      z.transform(sel, zoomIdentity);
+    } else {
+      sel.transition().duration(400).call(z.transform, zoomIdentity);
+    }
+  }, []);
+
+  // Keyboard accessibility
+  const handleKeyDown = useCallback(
+    (e) => {
+      if (e.target !== wrapRef.current && e.target !== svgRef.current) return;
+      if (e.key === '+' || e.key === '=') {
+        e.preventDefault();
+        zoomBy(1.35);
+      } else if (e.key === '-' || e.key === '_') {
+        e.preventDefault();
+        zoomBy(1 / 1.35);
+      } else if (e.key === '0') {
+        e.preventDefault();
+        resetToScenario();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        panBy(50, 0);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        panBy(-50, 0);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        panBy(0, 50);
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        panBy(0, -50);
+      }
+    },
+    [zoomBy, panBy, resetToScenario]
+  );
 
   const api = useMemo(() => {
     const kmRef = (at) => {
@@ -190,11 +291,28 @@ export function PakMap({
     };
   }, [projection, path, t, size.width, size.height]);
 
-  const showProvinceLabels = layers.labels && t.k < 3.5 && size.width > 420;
+  const showProvinceLabels = layers.labels && t.k < 3.2 && size.width > 420;
+  const isZoomInDisabled = t.k >= MAX_SCALE - 0.1;
+  const isZoomOutDisabled = t.k <= MIN_SCALE + 0.05;
 
   return (
-    <div ref={wrapRef} className={cx('map-viewport', className)} style={{ minHeight }}>
-      <svg ref={svgRef} width={size.width} height={size.height} style={{ display: 'block', cursor: 'grab' }} role="img" aria-label={ariaLabel}>
+    <div
+      ref={wrapRef}
+      className={cx('map-viewport', className)}
+      style={{ minHeight, position: 'relative', outline: 'none' }}
+      tabIndex={0}
+      onKeyDown={handleKeyDown}
+      role="region"
+      aria-label={ariaLabel}
+    >
+      <svg
+        ref={svgRef}
+        width={size.width}
+        height={size.height}
+        style={{ display: 'block', cursor: isDraggingRef.current ? 'grabbing' : 'grab', userSelect: 'none' }}
+        role="img"
+        aria-label={ariaLabel}
+      >
         <defs>
           <pattern id="pak-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
             <line x1="0" y1="0" x2="0" y2="6" stroke="var(--critical, #c62828)" strokeWidth="1.2" strokeOpacity="0.55" />
@@ -233,6 +351,7 @@ export function PakMap({
             {closedPath && <path d={closedPath} fill="none" stroke="var(--critical, #c62828)" strokeWidth={2.8} strokeDasharray="4 3" vectorEffect="non-scaling-stroke" />}
             {overlay}
           </g>
+
           {showProvinceLabels && (
             <g pointerEvents="none">
               {base.provinces.map((p) => {
@@ -253,33 +372,94 @@ export function PakMap({
               })}
             </g>
           )}
+
           {screenOverlay}
         </MapCtx.Provider>
       </svg>
+
       {controls && (
-        <div className="map-controls">
-          <button type="button" className="map-btn" title="Zoom in" onClick={() => zoomBy(1.5)}>
-            <Plus size={16} />
+        <div className="map-controls" role="toolbar" aria-label="Map viewport controls">
+          <button
+            type="button"
+            className="map-btn"
+            title="Zoom in (Keyboard: +)"
+            aria-label="Zoom in"
+            disabled={isZoomInDisabled}
+            onClick={() => zoomBy(1.4)}
+          >
+            <Plus size={18} />
           </button>
-          <button type="button" className="map-btn" title="Zoom out" onClick={() => zoomBy(1 / 1.5)}>
-            <Minus size={16} />
+          <button
+            type="button"
+            className="map-btn"
+            title="Zoom out (Keyboard: -)"
+            aria-label="Zoom out"
+            disabled={isZoomOutDisabled}
+            onClick={() => zoomBy(1 / 1.4)}
+          >
+            <Minus size={18} />
           </button>
-          <button type="button" className="map-btn" title="Reset view" onClick={reset}>
-            <LocateFixed size={16} />
+          <button
+            type="button"
+            className="map-btn"
+            title="Reset to scenario focus (Keyboard: 0)"
+            aria-label="Reset to scenario focus"
+            onClick={resetToScenario}
+          >
+            <LocateFixed size={18} />
           </button>
+          <button
+            type="button"
+            className="map-btn"
+            title="Fit to entire Pakistan"
+            aria-label="Fit to entire Pakistan"
+            onClick={fitToPakistan}
+          >
+            <Globe2 size={18} />
+          </button>
+          <div className="map-zoom-readout" aria-live="polite" title={`Current map scale: ${t.k.toFixed(1)}x`}>
+            {t.k.toFixed(1)}x
+          </div>
         </div>
       )}
-      <div style={{ position: 'absolute', bottom: 4, left: 8, fontSize: '0.6875rem', color: 'var(--muted)', pointerEvents: 'none' }}>
-        Map data: Natural Earth 1:10m (Public domain). Boundaries are indicative.
+
+      <div style={{ position: 'absolute', bottom: 4, left: 8, fontSize: '0.6875rem', color: 'var(--muted)', pointerEvents: 'none', background: 'rgba(255,255,255,0.7)', padding: '2px 6px', borderRadius: 4 }}>
+        Natural Earth 1:10m (Demonstration vectors). Use controls or mouse wheel to zoom.
       </div>
     </div>
   );
 }
 
-export function Marker({ at, r = 6, color = 'var(--accent)', label = '', text, onSelect, selected = false, pulse = false, shape = 'circle', showLabel = false, children }) {
+export function Marker({
+  at,
+  r = 6,
+  color = 'var(--accent)',
+  label = '',
+  text,
+  onSelect,
+  selected = false,
+  pulse = false,
+  shape = 'circle',
+  showLabel = false,
+  priority = 'normal', // 'high' | 'normal' | 'low'
+  labelPosition = 'right', // 'right' | 'bottom' | 'top'
+  children,
+}) {
   const map = useMap();
   const [x, y] = map.toScreen(at);
-  if (x < -40 || y < -40 || x > map.width + 40 || y > map.height + 40) return null;
+  if (x < -60 || y < -60 || x > map.width + 60 || y > map.height + 60) return null;
+
+  // Decluttering logic based on zoom level:
+  // - At low zoom (k < 1.6), only high priority or pulse/selected markers show text
+  // - At mid zoom (k >= 1.6), normal markers show text
+  // - At high zoom (k >= 2.5), all markers show text
+  const shouldRenderLabel =
+    showLabel &&
+    (selected ||
+      pulse ||
+      priority === 'high' ||
+      map.k >= 2.4 ||
+      (priority === 'normal' && map.k >= 1.5));
 
   const common = { fill: color, stroke: selected ? 'var(--text)' : '#ffffff', strokeWidth: selected ? 2.5 : 1.5 };
   const shapeEl =
@@ -292,6 +472,10 @@ export function Marker({ at, r = 6, color = 'var(--accent)', label = '', text, o
     ) : (
       <circle r={r} {...common} />
     );
+
+  const labelX = labelPosition === 'bottom' ? 0 : r + 5;
+  const labelY = labelPosition === 'bottom' ? r + 13 : labelPosition === 'top' ? -r - 5 : 4;
+  const labelAnchor = labelPosition === 'bottom' || labelPosition === 'top' ? 'middle' : 'start';
 
   return (
     <g
@@ -312,19 +496,21 @@ export function Marker({ at, r = 6, color = 'var(--accent)', label = '', text, o
       {pulse && <circle r={r * 1.8} fill={color} opacity={0.35} />}
       {shapeEl}
       {children}
-      {showLabel && (
+      {shouldRenderLabel && (
         <text
-          x={r + 4}
-          y={4}
+          x={labelX}
+          y={labelY}
+          textAnchor={labelAnchor}
           style={{
             pointerEvents: 'none',
-            fill: 'var(--text)',
+            fill: 'var(--text, #1d2d3d)',
             fontSize: '11px',
-            fontWeight: 600,
+            fontWeight: selected || pulse ? 700 : 600,
             paintOrder: 'stroke',
             stroke: '#ffffff',
             strokeWidth: 3,
-            strokeLinejoin: 'round'
+            strokeLinejoin: 'round',
+            fontFamily: 'inherit',
           }}
         >
           {text ?? label}
@@ -344,7 +530,7 @@ export function GeoLine({ coords, lines, color = 'var(--accent)', widthPx = 2, w
           const pt = map.project(p);
           return `${i ? 'L' : 'M'}${pt[0].toFixed(1)},${pt[1].toFixed(1)}`;
         })
-        .join(''),
+        .join('')
     )
     .join('');
   if (!d) return null;

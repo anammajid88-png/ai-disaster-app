@@ -187,24 +187,24 @@ export default function IntelligenceMethodology() {
           )}
 
           {activeSection === 'sources' && (
-            <Card title="Registered External Data Sources & Attributions">
-              <div style={{ overflowX: 'auto' }}>
-                <table className="intel-table">
+            <Card title="Registered External Data Sources & Attributions" subtitle="Full provenance, custodians, and licensing records for all bundled data">
+              <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+                <table className="intel-table" style={{ width: '100%', minWidth: '580px', tableLayout: 'auto' }}>
                   <thead>
                     <tr>
-                      <th>Source Name</th>
-                      <th>Provider / Custodian</th>
-                      <th>Data Mode</th>
-                      <th>License</th>
+                      <th style={{ width: '30%', whiteSpace: 'nowrap' }}>Source Name</th>
+                      <th style={{ width: '28%', whiteSpace: 'nowrap' }}>Provider / Custodian</th>
+                      <th style={{ width: '22%', whiteSpace: 'nowrap' }}>Data Mode</th>
+                      <th style={{ width: '20%', whiteSpace: 'nowrap' }}>License</th>
                     </tr>
                   </thead>
                   <tbody>
                     {SOURCES.map((s) => (
                       <tr key={s.id}>
-                        <td><strong>{s.name}</strong></td>
-                        <td style={{ color: 'var(--muted)' }}>{s.provider}</td>
+                        <td><strong style={{ color: 'var(--text)' }}>{s.name}</strong></td>
+                        <td style={{ color: 'var(--text-soft)' }}>{s.provider}</td>
                         <td><ModeBadge mode={s.mode} /></td>
-                        <td style={{ fontSize: '0.75rem' }}>{s.license}</td>
+                        <td style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>{s.license}</td>
                       </tr>
                     ))}
                   </tbody>

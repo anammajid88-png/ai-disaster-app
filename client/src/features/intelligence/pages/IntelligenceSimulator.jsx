@@ -17,6 +17,13 @@ import { SCENARIOS, scenarioById } from '../scenario/definitions';
 import { computePlan, hazardAt, stateAt } from '../scenario/engine';
 import { PakMap, Marker, GeoLine, GeoCircle } from '../components/PakMap';
 import { Card, Metric, ModeBadge, SectionTitle, Slider, Tabs, Toggle } from '../components/primitives';
+import {
+  formatCount,
+  formatCountDelta,
+  formatPercent,
+  formatPercentPoints,
+  formatScore,
+} from '../utils/formatters';
 
 export default function IntelligenceSimulator() {
   const [scenarioId, setScenarioId] = useState('south-punjab-flood');
@@ -56,7 +63,7 @@ export default function IntelligenceSimulator() {
   const currentState = useMemo(() => stateAt(def, params, params.hour), [def, params]);
   const footprint = useMemo(() => hazardAt(def, params, params.hour), [def, params]);
 
-  const coverageDiff = plan.metrics.coveragePct - baselinePlan.metrics.coveragePct;
+  const coverageDelta = plan.metrics.coveragePct - baselinePlan.metrics.coveragePct;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -92,36 +99,41 @@ export default function IntelligenceSimulator() {
       <div className="intel-grid intel-grid--4">
         <Metric
           label="Exposed Population"
-          value={currentState.exposedPeople.toLocaleString()}
+          value={formatCount(currentState.exposedPeople)}
           mode="simulated"
           hint={`At hour T+${params.hour} of ${def.durationH}h timeline`}
           tone="critical"
         />
         <Metric
           label="Rescue Coverage"
-          value={`${plan.metrics.coveragePct}%`}
+          value={formatPercent(plan.metrics.coveragePct)}
           mode="simulated"
-          delta={{ value: coverageDiff, goodWhen: 'up', suffix: '% vs uncoordinated' }}
+          delta={{
+            value: coverageDelta,
+            formatted: formatPercentPoints(plan.metrics.coveragePct, baselinePlan.metrics.coveragePct),
+            goodWhen: 'up',
+            suffix: ' vs uncoordinated',
+          }}
           hint="Assisted citizens over demand"
           tone={plan.metrics.coveragePct >= 75 ? 'ok' : 'caution'}
         />
         <Metric
           label="Sheltered Demand"
-          value={`${plan.metrics.sheltered.toLocaleString()} / ${plan.metrics.shelterCapacity.toLocaleString()}`}
+          value={`${formatCount(plan.metrics.sheltered)} / ${formatCount(plan.metrics.shelterCapacity)}`}
           mode="simulated"
-          hint={`Unmet demand: ${plan.metrics.unmet.toLocaleString()}`}
+          hint={`Unmet demand: ${formatCount(plan.metrics.unmet)} citizens`}
         />
         <Metric
           label="Response Readiness"
           value={plan.readiness.score}
           unit="/100"
           mode="simulated"
-          hint={`Grade: ${plan.readiness.grade} (${plan.bottlenecks.length} active bottlenecks)`}
+          hint={`Readiness: ${formatScore(plan.readiness.score)} · ${plan.bottlenecks.length} active bottlenecks`}
           tone={plan.readiness.score >= 70 ? 'ok' : 'caution'}
         />
       </div>
 
-      {/* Main Grid: Controls (Left), Interactive Map (Center/Right) */}
+      {/* Main Grid: Controls (Left), Interactive Map & Benchmark (Center/Right) */}
       <div className="intel-grid intel-grid--split">
         {/* Controls Column */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -159,12 +171,10 @@ export default function IntelligenceSimulator() {
                         key={cl.id}
                         label={cl.label}
                         checked={isClosed}
-                        onChange={(checked) =>
+                        onChange={(chk) =>
                           setParams((prev) => ({
                             ...prev,
-                            closures: checked
-                              ? [...prev.closures, cl.id]
-                              : prev.closures.filter((x) => x !== cl.id),
+                            closures: chk ? [...prev.closures, cl.id] : prev.closures.filter((x) => x !== cl.id),
                           }))
                         }
                       />
@@ -172,29 +182,16 @@ export default function IntelligenceSimulator() {
                   })}
                 </div>
               )}
-
-              {/* Strategy comparison selector */}
-              <div style={{ borderTop: '1px solid var(--border)', paddingTop: '0.75rem' }}>
-                <label style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text)', display: 'block', marginBottom: '0.4rem' }}>
-                  Planning Strategy:
-                </label>
-                <Tabs
-                  label="Planning Strategy"
-                  value={params.strategy}
-                  onChange={(st) => setParams((prev) => ({ ...prev, strategy: st }))}
-                  tabs={[
-                    { value: 'coordinated', label: 'Coordinated AI Planner' },
-                    { value: 'uncoordinated', label: 'Uncoordinated Local Baseline' },
-                  ]}
-                />
-              </div>
             </div>
           </Card>
 
-          {/* Active Bottlenecks Alert */}
+          {/* Operational Bottlenecks Card */}
           {plan.bottlenecks.length > 0 && (
-            <Card title="Operational Bottlenecks" mode="simulated">
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            <Card
+              title={`Operational Bottlenecks (${plan.bottlenecks.length})`}
+              mode="simulated"
+            >
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 {plan.bottlenecks.map((b) => (
                   <div
                     key={b.id}
@@ -254,6 +251,7 @@ export default function IntelligenceSimulator() {
                 value={params.hour}
                 onChange={(e) => setParams((prev) => ({ ...prev, hour: Number(e.target.value) }))}
                 className="intel-slider"
+                aria-label="Timeline clock in hours"
               />
             </div>
           </div>
@@ -266,7 +264,7 @@ export default function IntelligenceSimulator() {
               closedEdges={currentState.closedEdges}
               screenOverlay={
                 <g>
-                  {/* Settlements */}
+                  {/* Settlements with decluttered labels */}
                   {def.settlements.map((s) => {
                     const st = plan.settlements.find((x) => x.settlement.id === s.id);
                     const isExposed = (st?.exposedPeople || 0) > 0;
@@ -274,14 +272,18 @@ export default function IntelligenceSimulator() {
                       <Marker
                         key={s.id}
                         at={s.coord}
-                        r={isExposed ? 7 : 4}
+                        r={isExposed ? 7 : 5}
                         color={isExposed ? '#ea580c' : 'var(--accent)'}
-                        label={`${s.name}: ${s.population.toLocaleString()} pop`}
+                        pulse={isExposed}
+                        priority={isExposed ? 'high' : 'normal'}
+                        label={`${s.name} (${formatCount(s.population)} pop)`}
+                        text={s.name}
+                        labelPosition="right"
                         showLabel
                       />
                     );
                   })}
-                  {/* Shelters */}
+                  {/* Shelters positioned with bottom labels to prevent collisions */}
                   {def.shelters.map((sh) => (
                     <Marker
                       key={sh.id}
@@ -289,7 +291,10 @@ export default function IntelligenceSimulator() {
                       r={7}
                       shape="square"
                       color="#16a34a"
-                      label={`${sh.name} (Capacity: ${sh.capacity.toLocaleString()})`}
+                      priority="normal"
+                      label={`${sh.name} (Capacity: ${formatCount(sh.capacity)})`}
+                      text={`${sh.name} (Shelter)`}
+                      labelPosition="bottom"
                       showLabel
                     />
                   ))}
@@ -305,52 +310,53 @@ export default function IntelligenceSimulator() {
             mode="simulated"
           >
             <div style={{ overflowX: 'auto' }}>
-              <table className="intel-table">
+              <table className="intel-table" style={{ width: '100%', tableLayout: 'auto' }}>
                 <thead>
                   <tr>
-                    <th>Outcome Metric</th>
-                    <th>Coordinated AI Planner</th>
-                    <th>Uncoordinated Baseline</th>
-                    <th>Performance Gain</th>
+                    <th style={{ width: '28%' }}>Outcome Metric</th>
+                    <th style={{ width: '24%' }}>Coordinated AI Planner</th>
+                    <th style={{ width: '24%' }}>Uncoordinated Baseline</th>
+                    <th style={{ width: '24%' }}>Performance Gain</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td><strong>Citizens Assisted & Served</strong></td>
                     <td style={{ fontWeight: 700, color: 'var(--ok)' }}>
-                      {plan.metrics.served.toLocaleString()}
+                      {formatCount(plan.metrics.served)}
                     </td>
                     <td style={{ color: 'var(--muted)' }}>
-                      {baselinePlan.metrics.served.toLocaleString()}
+                      {formatCount(baselinePlan.metrics.served)}
                     </td>
                     <td style={{ fontWeight: 700, color: 'var(--ok)' }}>
-                      +{(plan.metrics.served - baselinePlan.metrics.served).toLocaleString()} ({coverageDiff > 0 ? `+${coverageDiff}%` : 'Parity'})
+                      {formatCountDelta(plan.metrics.served, baselinePlan.metrics.served)} ({formatPercentPoints(plan.metrics.coveragePct, baselinePlan.metrics.coveragePct)})
                     </td>
                   </tr>
                   <tr>
                     <td><strong>Unmet Evacuation Demand</strong></td>
                     <td style={{ fontWeight: 700, color: plan.metrics.unmet > 0 ? 'var(--critical)' : 'var(--ok)' }}>
-                      {plan.metrics.unmet.toLocaleString()}
+                      {formatCount(plan.metrics.unmet)}
                     </td>
                     <td style={{ color: 'var(--critical)' }}>
-                      {baselinePlan.metrics.unmet.toLocaleString()}
+                      {formatCount(baselinePlan.metrics.unmet)}
                     </td>
                     <td style={{ fontWeight: 700, color: 'var(--ok)' }}>
-                      -{(baselinePlan.metrics.unmet - plan.metrics.unmet).toLocaleString()} reduction
+                      {formatCountDelta(plan.metrics.unmet, baselinePlan.metrics.unmet)} reduction
                     </td>
                   </tr>
                   <tr>
                     <td><strong>Shelter Utilization Efficiency</strong></td>
-                    <td>{plan.metrics.sheltered.toLocaleString()} / {plan.metrics.shelterCapacity.toLocaleString()}</td>
-                    <td>{baselinePlan.metrics.sheltered.toLocaleString()} / {baselinePlan.metrics.shelterCapacity.toLocaleString()}</td>
+                    <td>{formatCount(plan.metrics.sheltered)} / {formatCount(plan.metrics.shelterCapacity)}</td>
+                    <td>{formatCount(baselinePlan.metrics.sheltered)} / {formatCount(baselinePlan.metrics.shelterCapacity)}</td>
                     <td>Balanced cross-district assignment</td>
                   </tr>
                   <tr>
                     <td><strong>Readiness Score</strong></td>
-                    <td style={{ fontWeight: 700 }}>{plan.readiness.score}/100</td>
-                    <td>{baselinePlan.readiness.score}/100</td>
+                    <td style={{ fontWeight: 700 }}>{formatScore(plan.readiness.score)}</td>
+                    <td>{formatScore(baselinePlan.readiness.score)}</td>
                     <td style={{ fontWeight: 700, color: 'var(--ok)' }}>
-                      +{plan.readiness.score - baselinePlan.readiness.score} points
+                      {plan.readiness.score - baselinePlan.readiness.score > 0 ? '+' : ''}
+                      {plan.readiness.score - baselinePlan.readiness.score} points
                     </td>
                   </tr>
                 </tbody>
