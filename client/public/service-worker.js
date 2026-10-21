@@ -5,21 +5,43 @@
    numbers must open with no network. The AI assistant is never cached and
    never faked - /api requests always go to the network so the app can
    honestly report that the assistant is unavailable.
+
+   Base Path: Dynamically derived from self.registration.scope so the
+   service worker works universally whether deployed at root (/) on Vercel
+   or under a subpath (/anam/) on an experimental server.
    ===================================================================== */
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL_CACHE = `ai-disaster-shell-${VERSION}`;
 const ASSET_CACHE = `ai-disaster-assets-${VERSION}`;
+
+// Dynamically determine the base path from registration scope
+const getBasePath = () => {
+  try {
+    const scope = self.registration ? self.registration.scope : self.location.origin + '/';
+    const pathname = new URL(scope).pathname;
+    return pathname.endsWith('/') ? pathname : pathname + '/';
+  } catch {
+    return '/';
+  }
+};
+
+const BASE = getBasePath();
+
+const resolvePath = (p) => {
+  const clean = p.startsWith('/') ? p.slice(1) : p;
+  return `${BASE}${clean}`;
+};
 
 /* Everything needed to render the app offline apart from hashed bundles,
    which are picked up on first visit by the runtime handler below. */
 const SHELL_ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.webmanifest',
-  '/icons/icon.svg',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
+  BASE,
+  resolvePath('index.html'),
+  resolvePath('manifest.webmanifest'),
+  resolvePath('icons/icon.svg'),
+  resolvePath('icons/icon-192.png'),
+  resolvePath('icons/icon-512.png'),
 ];
 
 self.addEventListener('install', (event) => {
@@ -58,16 +80,18 @@ self.addEventListener('message', (event) => {
 
 async function networkFirstDocument(request) {
   const cache = await caches.open(SHELL_CACHE);
+  const indexKey = resolvePath('index.html');
 
   try {
     const response = await fetch(request);
-    if (response && response.ok) cache.put('/index.html', response.clone());
+    if (response && response.ok) cache.put(indexKey, response.clone());
     return response;
   } catch {
     // Any in-app route falls back to the cached shell; the router takes over.
     return (
       (await cache.match(request)) ||
-      (await cache.match('/index.html')) ||
+      (await cache.match(indexKey)) ||
+      (await cache.match(BASE)) ||
       Response.error()
     );
   }
@@ -112,23 +136,26 @@ self.addEventListener('fetch', (event) => {
 
   if (url.origin !== self.location.origin) return;
 
+  const path = url.pathname;
+  const relativePath = path.startsWith(BASE) ? '/' + path.slice(BASE.length) : path;
+
   // The assistant is online-only. Never serve a stale or invented answer.
-  if (url.pathname.startsWith('/api/')) return;
+  if (relativePath.startsWith('/api/')) return;
 
   if (request.mode === 'navigate') {
     event.respondWith(networkFirstDocument(request));
     return;
   }
 
-  if (url.pathname.startsWith('/assets/')) {
+  if (relativePath.startsWith('/assets/')) {
     event.respondWith(cacheFirstAsset(request));
     return;
   }
 
   if (
-    url.pathname.startsWith('/icons/') ||
-    url.pathname === '/manifest.webmanifest' ||
-    url.pathname === '/og-image.png'
+    relativePath.startsWith('/icons/') ||
+    relativePath === '/manifest.webmanifest' ||
+    relativePath === '/og-image.png'
   ) {
     event.respondWith(staleWhileRevalidate(request));
   }

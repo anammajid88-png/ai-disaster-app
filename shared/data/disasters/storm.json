@@ -6,42 +6,171 @@
   "accentSoft": "#e0e7ff",
   "riskLevel": "high",
   "season": "monsoon",
-  "primaryContacts": ["rescue-1122", "police-15"],
+  "primaryContacts": [
+    "rescue-1122",
+    "police-15"
+  ],
   "content": {
     "en": {
       "name": "Storm / Heavy Rain",
       "tagline": "Windstorms, thunderstorms, hail and heavy monsoon rain",
       "description": "Storms combine three separate dangers: flying debris, lightning and sudden urban flooding. Being indoors, away from windows and away from electricity handles all three.",
       "rightNow": [
-        { "step": 1, "icon": "shelter-home", "title": "Get inside a solid building", "text": "Move indoors now. A shed, tin roof, under a tree or a signboard is not shelter in a windstorm.", "priority": "critical" },
-        { "step": 2, "icon": "away-from-window", "title": "Move away from windows", "text": "Stay in an inner room. Wind and hail can shatter glass and drive debris straight through it.", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "Unplug and stay off wires", "text": "Unplug electronics, avoid wet switches, and never touch a fallen wire or a pole standing in water.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Get inside a solid building",
+          "text": "Move indoors now. A shed, tin roof, under a tree or a signboard is not shelter in a windstorm.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "away-from-window",
+          "title": "Move away from windows",
+          "text": "Stay in an inner room. Wind and hail can shatter glass and drive debris straight through it.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Unplug and stay off wires",
+          "text": "Unplug electronics, avoid wet switches, and never touch a fallen wire or a pole standing in water.",
+          "priority": "high"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "radio", "title": "Follow the forecast", "text": "Check PMD warnings during monsoon season and know whether your area gets urban flooding or windstorms.", "priority": "high" },
-        { "step": 2, "icon": "roof-secure", "title": "Secure the roof and yard", "text": "Tie down loose sheets, water tanks, solar panels, flower pots, boards and anything that can become a missile.", "priority": "high" },
-        { "step": 3, "icon": "tree-hazard", "title": "Trim weak branches", "text": "Cut dead branches near your roof, wires and parking area before the season starts.", "priority": "normal" },
-        { "step": 4, "icon": "flashlight", "title": "Prepare for a power cut", "text": "Charge phones and power banks, keep a torch ready, and avoid depending on candles.", "priority": "high" },
-        { "step": 5, "icon": "water-drop", "title": "Clear the drains", "text": "Clean roof drains and the drain outside your gate so rain water does not back up into the house.", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "radio",
+          "title": "Follow the forecast",
+          "text": "Check PMD warnings during monsoon season and know whether your area gets urban flooding or windstorms.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "roof-secure",
+          "title": "Secure the roof and yard",
+          "text": "Tie down loose sheets, water tanks, solar panels, flower pots, boards and anything that can become a missile.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "tree-hazard",
+          "title": "Trim weak branches",
+          "text": "Cut dead branches near your roof, wires and parking area before the season starts.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "flashlight",
+          "title": "Prepare for a power cut",
+          "text": "Charge phones and power banks, keep a torch ready, and avoid depending on candles.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "water-drop",
+          "title": "Clear the drains",
+          "text": "Clean roof drains and the drain outside your gate so rain water does not back up into the house.",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "shelter-home", "title": "Stay indoors until it passes", "text": "Remain in an inner room on a lower floor and wait at least 30 minutes after the last thunder before going out.", "priority": "critical" },
-        { "step": 2, "icon": "lightning", "title": "Avoid all lightning risks", "text": "Do not stand in open ground, on a roof or near a tree, pole or metal railing. Do not shelter under a tree.", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "Do not touch water and power together", "text": "Avoid taps, wet floors near sockets, and metal window frames while lightning is active.", "priority": "high" },
-        { "step": 4, "icon": "car-safe", "title": "If driving, stop somewhere safe", "text": "Pull over away from trees, hoardings and poles, keep hazard lights on and wait. Do not enter flooded underpasses.", "priority": "high" },
-        { "step": 5, "icon": "radio", "title": "Keep one channel of information", "text": "Follow official alerts on one charged phone and save battery for emergency calls.", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Stay indoors until it passes",
+          "text": "Remain in an inner room on a lower floor and wait at least 30 minutes after the last thunder before going out.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "lightning",
+          "title": "Avoid all lightning risks",
+          "text": "Do not stand in open ground, on a roof or near a tree, pole or metal railing. Do not shelter under a tree.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Do not touch water and power together",
+          "text": "Avoid taps, wet floors near sockets, and metal window frames while lightning is active.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "If driving, stop somewhere safe",
+          "text": "Pull over away from trees, hoardings and poles, keep hazard lights on and wait. Do not enter flooded underpasses.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "radio",
+          "title": "Keep one channel of information",
+          "text": "Follow official alerts on one charged phone and save battery for emergency calls.",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "electric-hazard", "title": "Report fallen wires", "text": "Assume every fallen wire is live. Keep people and animals far away and inform the power utility or Rescue 1122.", "priority": "critical" },
-        { "step": 2, "icon": "wall-crack", "title": "Check roof, walls and tanks", "text": "Look for loose sheets, cracked parapets, leaning poles and damaged water tanks before using the area.", "priority": "high" },
-        { "step": 3, "icon": "water-drop", "title": "Drain standing water", "text": "Remove standing water within a day where possible to reduce mosquito breeding and dengue risk.", "priority": "normal" },
-        { "step": 4, "icon": "helping-hand", "title": "Check on neighbours", "text": "Check on elderly neighbours, people living alone and anyone whose roof or wall was damaged.", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "electric-hazard",
+          "title": "Report fallen wires",
+          "text": "Assume every fallen wire is live. Keep people and animals far away and inform the power utility or Rescue 1122.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "wall-crack",
+          "title": "Check roof, walls and tanks",
+          "text": "Look for loose sheets, cracked parapets, leaning poles and damaged water tanks before using the area.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Drain standing water",
+          "text": "Remove standing water within a day where possible to reduce mosquito breeding and dengue risk.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "Check on neighbours",
+          "text": "Check on elderly neighbours, people living alone and anyone whose roof or wall was damaged.",
+          "priority": "normal"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "tree-hazard", "title": "Do not shelter under trees or boards", "text": "Trees attract lightning and billboards, tin sheets and poles fall first in high wind.", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "Do not cross flooded underpasses", "text": "Water depth in an underpass is impossible to judge and vehicles stall and fill within seconds.", "priority": "critical" },
-        { "step": 3, "icon": "roof-secure", "title": "Do not go on the roof during a storm", "text": "Do not climb up to fix a sheet, antenna or dish while wind and lightning are active.", "priority": "critical" },
-        { "step": 4, "icon": "electric-hazard", "title": "Do not use damaged appliances", "text": "Get water-damaged inverters, generators, motors and boards checked before switching them on.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "tree-hazard",
+          "title": "Do not shelter under trees or boards",
+          "text": "Trees attract lightning and billboards, tin sheets and poles fall first in high wind.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Do not cross flooded underpasses",
+          "text": "Water depth in an underpass is impossible to judge and vehicles stall and fill within seconds.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "roof-secure",
+          "title": "Do not go on the roof during a storm",
+          "text": "Do not climb up to fix a sheet, antenna or dish while wind and lightning are active.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "electric-hazard",
+          "title": "Do not use damaged appliances",
+          "text": "Get water-damaged inverters, generators, motors and boards checked before switching them on.",
+          "priority": "high"
+        }
       ]
     },
     "ur": {
@@ -49,35 +178,161 @@
       "tagline": "آندھی، گرج چمک، ژالہ باری اور شدید مون سون بارش",
       "description": "طوفان تین الگ خطرے ساتھ لاتا ہے: اڑتا ملبہ، آسمانی بجلی اور اچانک شہری سیلاب۔ اندر رہنا، کھڑکیوں سے دور اور بجلی سے دور رہنا ان تینوں سے بچاتا ہے۔",
       "rightNow": [
-        { "step": 1, "icon": "shelter-home", "title": "پکی عمارت میں چلے جائیں", "text": "ابھی اندر جائیں۔ آندھی میں چھپر، ٹین کی چھت، درخت کے نیچے یا سائن بورڈ پناہ نہیں ہے۔", "priority": "critical" },
-        { "step": 2, "icon": "away-from-window", "title": "کھڑکیوں سے دور ہو جائیں", "text": "اندرونی کمرے میں رہیں۔ ہوا اور ژالہ شیشہ توڑ کر ملبہ اندر پھینک سکتے ہیں۔", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "پلگ نکالیں اور تاروں سے دور رہیں", "text": "بجلی کے آلات کے پلگ نکال دیں، گیلے سوئچ سے بچیں، اور گری ہوئی تار یا پانی میں کھڑے کھمبے کو ہرگز نہ چھوئیں۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "پکی عمارت میں چلے جائیں",
+          "text": "ابھی اندر جائیں۔ آندھی میں چھپر، ٹین کی چھت، درخت کے نیچے یا سائن بورڈ پناہ نہیں ہے۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "away-from-window",
+          "title": "کھڑکیوں سے دور ہو جائیں",
+          "text": "اندرونی کمرے میں رہیں۔ ہوا اور ژالہ شیشہ توڑ کر ملبہ اندر پھینک سکتے ہیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "پلگ نکالیں اور تاروں سے دور رہیں",
+          "text": "بجلی کے آلات کے پلگ نکال دیں، گیلے سوئچ سے بچیں، اور گری ہوئی تار یا پانی میں کھڑے کھمبے کو ہرگز نہ چھوئیں۔",
+          "priority": "high"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "radio", "title": "موسم کی پیشگوئی دیکھیں", "text": "مون سون میں محکمہ موسمیات کی وارننگ دیکھیں اور جانیں کہ آپ کے علاقے میں شہری سیلاب آتا ہے یا آندھی۔", "priority": "high" },
-        { "step": 2, "icon": "roof-secure", "title": "چھت اور صحن محفوظ کریں", "text": "ڈھیلی چادریں، پانی کی ٹینکی، سولر پینل، گملے اور بورڈ باندھ دیں تاکہ وہ ہوا میں نہ اڑیں۔", "priority": "high" },
-        { "step": 3, "icon": "tree-hazard", "title": "کمزور شاخیں کاٹ دیں", "text": "موسم شروع ہونے سے پہلے چھت، تاروں اور پارکنگ کے قریب خشک شاخیں کاٹ دیں۔", "priority": "normal" },
-        { "step": 4, "icon": "flashlight", "title": "بجلی جانے کی تیاری کریں", "text": "فون اور پاور بینک چارج رکھیں، ٹارچ تیار رکھیں، اور موم بتی پر انحصار نہ کریں۔", "priority": "high" },
-        { "step": 5, "icon": "water-drop", "title": "نالیاں صاف کریں", "text": "چھت کے پرنالے اور گیٹ کے باہر کی نالی صاف کریں تاکہ بارش کا پانی گھر میں واپس نہ آئے۔", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "radio",
+          "title": "موسم کی پیشگوئی دیکھیں",
+          "text": "مون سون میں محکمہ موسمیات کی وارننگ دیکھیں اور جانیں کہ آپ کے علاقے میں شہری سیلاب آتا ہے یا آندھی۔",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "roof-secure",
+          "title": "چھت اور صحن محفوظ کریں",
+          "text": "ڈھیلی چادریں، پانی کی ٹینکی، سولر پینل، گملے اور بورڈ باندھ دیں تاکہ وہ ہوا میں نہ اڑیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "tree-hazard",
+          "title": "کمزور شاخیں کاٹ دیں",
+          "text": "موسم شروع ہونے سے پہلے چھت، تاروں اور پارکنگ کے قریب خشک شاخیں کاٹ دیں۔",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "flashlight",
+          "title": "بجلی جانے کی تیاری کریں",
+          "text": "فون اور پاور بینک چارج رکھیں، ٹارچ تیار رکھیں، اور موم بتی پر انحصار نہ کریں۔",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "water-drop",
+          "title": "نالیاں صاف کریں",
+          "text": "چھت کے پرنالے اور گیٹ کے باہر کی نالی صاف کریں تاکہ بارش کا پانی گھر میں واپس نہ آئے۔",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "shelter-home", "title": "طوفان گزرنے تک اندر رہیں", "text": "نیچے والی منزل کے اندرونی کمرے میں رہیں اور آخری گرج کے بعد کم از کم 30 منٹ باہر نہ نکلیں۔", "priority": "critical" },
-        { "step": 2, "icon": "lightning", "title": "آسمانی بجلی سے بچیں", "text": "کھلے میدان، چھت پر، یا درخت، کھمبے اور لوہے کی جنگلے کے قریب نہ کھڑے ہوں۔ درخت کے نیچے پناہ نہ لیں۔", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "پانی اور بجلی ساتھ نہ چھوئیں", "text": "بجلی چمکنے کے دوران نل، ساکٹ کے قریب گیلے فرش اور لوہے کے کھڑکی فریم سے بچیں۔", "priority": "high" },
-        { "step": 4, "icon": "car-safe", "title": "گاڑی میں ہوں تو محفوظ جگہ رکیں", "text": "درختوں، بورڈز اور کھمبوں سے دور گاڑی روکیں، ہیزرڈ لائٹ آن رکھیں اور انتظار کریں۔ ڈوبے انڈر پاس میں نہ جائیں۔", "priority": "high" },
-        { "step": 5, "icon": "radio", "title": "معلومات کا ایک ذریعہ رکھیں", "text": "ایک چارج شدہ فون پر سرکاری اطلاعات دیکھیں اور بیٹری ہنگامی کالز کے لیے بچائیں۔", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "طوفان گزرنے تک اندر رہیں",
+          "text": "نیچے والی منزل کے اندرونی کمرے میں رہیں اور آخری گرج کے بعد کم از کم 30 منٹ باہر نہ نکلیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "lightning",
+          "title": "آسمانی بجلی سے بچیں",
+          "text": "کھلے میدان، چھت پر، یا درخت، کھمبے اور لوہے کی جنگلے کے قریب نہ کھڑے ہوں۔ درخت کے نیچے پناہ نہ لیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "پانی اور بجلی ساتھ نہ چھوئیں",
+          "text": "بجلی چمکنے کے دوران نل، ساکٹ کے قریب گیلے فرش اور لوہے کے کھڑکی فریم سے بچیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "گاڑی میں ہوں تو محفوظ جگہ رکیں",
+          "text": "درختوں، بورڈز اور کھمبوں سے دور گاڑی روکیں، ہیزرڈ لائٹ آن رکھیں اور انتظار کریں۔ ڈوبے انڈر پاس میں نہ جائیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "radio",
+          "title": "معلومات کا ایک ذریعہ رکھیں",
+          "text": "ایک چارج شدہ فون پر سرکاری اطلاعات دیکھیں اور بیٹری ہنگامی کالز کے لیے بچائیں۔",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "electric-hazard", "title": "گری ہوئی تاروں کی اطلاع دیں", "text": "ہر گری ہوئی تار کو زندہ سمجھیں۔ لوگوں اور جانوروں کو دور رکھیں اور بجلی کے ادارے یا ریسکیو 1122 کو بتائیں۔", "priority": "critical" },
-        { "step": 2, "icon": "wall-crack", "title": "چھت، دیواریں اور ٹینکی چیک کریں", "text": "ڈھیلی چادریں، پھٹی منڈیر، جھکے کھمبے اور خراب پانی کی ٹینکی استعمال سے پہلے دیکھ لیں۔", "priority": "high" },
-        { "step": 3, "icon": "water-drop", "title": "کھڑا پانی نکالیں", "text": "جہاں ممکن ہو ایک دن کے اندر کھڑا پانی نکال دیں تاکہ مچھر اور ڈینگی کا خطرہ کم ہو۔", "priority": "normal" },
-        { "step": 4, "icon": "helping-hand", "title": "پڑوسیوں کا حال پوچھیں", "text": "بزرگ پڑوسیوں، اکیلے رہنے والوں اور جن کی چھت یا دیوار خراب ہوئی ہو اُن کی خیریت معلوم کریں۔", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "electric-hazard",
+          "title": "گری ہوئی تاروں کی اطلاع دیں",
+          "text": "ہر گری ہوئی تار کو زندہ سمجھیں۔ لوگوں اور جانوروں کو دور رکھیں اور بجلی کے ادارے یا ریسکیو 1122 کو بتائیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "wall-crack",
+          "title": "چھت، دیواریں اور ٹینکی چیک کریں",
+          "text": "ڈھیلی چادریں، پھٹی منڈیر، جھکے کھمبے اور خراب پانی کی ٹینکی استعمال سے پہلے دیکھ لیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "کھڑا پانی نکالیں",
+          "text": "جہاں ممکن ہو ایک دن کے اندر کھڑا پانی نکال دیں تاکہ مچھر اور ڈینگی کا خطرہ کم ہو۔",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "پڑوسیوں کا حال پوچھیں",
+          "text": "بزرگ پڑوسیوں، اکیلے رہنے والوں اور جن کی چھت یا دیوار خراب ہوئی ہو اُن کی خیریت معلوم کریں۔",
+          "priority": "normal"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "tree-hazard", "title": "درخت یا بورڈ کے نیچے پناہ نہیں", "text": "درخت آسمانی بجلی کو کھینچتے ہیں اور بل بورڈ، ٹین کی چادریں اور کھمبے تیز ہوا میں پہلے گرتے ہیں۔", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "ڈوبے انڈر پاس سے نہ گزریں", "text": "انڈر پاس میں پانی کی گہرائی کا اندازہ ناممکن ہے اور گاڑی سیکنڈوں میں بند ہو کر بھر جاتی ہے۔", "priority": "critical" },
-        { "step": 3, "icon": "roof-secure", "title": "طوفان میں چھت پر نہ جائیں", "text": "ہوا اور بجلی کے دوران چادر، اینٹینا یا ڈش ٹھیک کرنے کے لیے اوپر نہ چڑھیں۔", "priority": "critical" },
-        { "step": 4, "icon": "electric-hazard", "title": "خراب آلات استعمال نہ کریں", "text": "پانی سے متاثر انورٹر، جنریٹر، موٹر اور بورڈ چلانے سے پہلے جانچ کروائیں۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "tree-hazard",
+          "title": "درخت یا بورڈ کے نیچے پناہ نہیں",
+          "text": "درخت آسمانی بجلی کو کھینچتے ہیں اور بل بورڈ، ٹین کی چادریں اور کھمبے تیز ہوا میں پہلے گرتے ہیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "ڈوبے انڈر پاس سے نہ گزریں",
+          "text": "انڈر پاس میں پانی کی گہرائی کا اندازہ ناممکن ہے اور گاڑی سیکنڈوں میں بند ہو کر بھر جاتی ہے۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "roof-secure",
+          "title": "طوفان میں چھت پر نہ جائیں",
+          "text": "ہوا اور بجلی کے دوران چادر، اینٹینا یا ڈش ٹھیک کرنے کے لیے اوپر نہ چڑھیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "electric-hazard",
+          "title": "خراب آلات استعمال نہ کریں",
+          "text": "پانی سے متاثر انورٹر، جنریٹر، موٹر اور بورڈ چلانے سے پہلے جانچ کروائیں۔",
+          "priority": "high"
+        }
       ]
     },
     "hi": {
@@ -85,35 +340,647 @@
       "tagline": "आंधी, गरज-चमक, ओलावृष्टि और भारी मानसून बारिश",
       "description": "तूफ़ान तीन अलग ख़तरे साथ लाता है: उड़ता मलबा, आकाशीय बिजली और अचानक शहरी जलभराव। अंदर रहना, खिड़कियों से दूर और बिजली से दूर रहना इन तीनों से बचाता है।",
       "rightNow": [
-        { "step": 1, "icon": "shelter-home", "title": "पक्की इमारत में जाएँ", "text": "अभी अंदर जाएँ। आंधी में छप्पर, टीन की छत, पेड़ के नीचे या साइनबोर्ड आश्रय नहीं है।", "priority": "critical" },
-        { "step": 2, "icon": "away-from-window", "title": "खिड़कियों से दूर हो जाएँ", "text": "भीतरी कमरे में रहें। हवा और ओले शीशा तोड़कर मलबा अंदर फेंक सकते हैं।", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "प्लग निकालें और तारों से दूर रहें", "text": "उपकरणों के प्लग निकाल दें, गीले स्विच से बचें, और गिरे तार या पानी में खड़े खंभे को कभी न छुएँ।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "पक्की इमारत में जाएँ",
+          "text": "अभी अंदर जाएँ। आंधी में छप्पर, टीन की छत, पेड़ के नीचे या साइनबोर्ड आश्रय नहीं है।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "away-from-window",
+          "title": "खिड़कियों से दूर हो जाएँ",
+          "text": "भीतरी कमरे में रहें। हवा और ओले शीशा तोड़कर मलबा अंदर फेंक सकते हैं।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "प्लग निकालें और तारों से दूर रहें",
+          "text": "उपकरणों के प्लग निकाल दें, गीले स्विच से बचें, और गिरे तार या पानी में खड़े खंभे को कभी न छुएँ।",
+          "priority": "high"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "radio", "title": "मौसम पूर्वानुमान देखें", "text": "मानसून में मौसम विभाग की चेतावनी देखें और जानें कि आपके क्षेत्र में जलभराव होता है या आंधी।", "priority": "high" },
-        { "step": 2, "icon": "roof-secure", "title": "छत और आँगन सुरक्षित करें", "text": "ढीली चादरें, पानी की टंकी, सोलर पैनल, गमले और बोर्ड बांध दें ताकि वे हवा में न उड़ें।", "priority": "high" },
-        { "step": 3, "icon": "tree-hazard", "title": "कमज़ोर शाखाएँ काटें", "text": "मौसम शुरू होने से पहले छत, तारों और पार्किंग के पास सूखी शाखाएँ काट दें।", "priority": "normal" },
-        { "step": 4, "icon": "flashlight", "title": "बिजली जाने की तैयारी करें", "text": "फ़ोन और पावर बैंक चार्ज रखें, टॉर्च तैयार रखें, और मोमबत्ती पर निर्भर न रहें।", "priority": "high" },
-        { "step": 5, "icon": "water-drop", "title": "नालियाँ साफ़ करें", "text": "छत के परनाले और गेट के बाहर की नाली साफ़ करें ताकि बारिश का पानी घर में न लौटे।", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "radio",
+          "title": "मौसम पूर्वानुमान देखें",
+          "text": "मानसून में मौसम विभाग की चेतावनी देखें और जानें कि आपके क्षेत्र में जलभराव होता है या आंधी।",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "roof-secure",
+          "title": "छत और आँगन सुरक्षित करें",
+          "text": "ढीली चादरें, पानी की टंकी, सोलर पैनल, गमले और बोर्ड बांध दें ताकि वे हवा में न उड़ें।",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "tree-hazard",
+          "title": "कमज़ोर शाखाएँ काटें",
+          "text": "मौसम शुरू होने से पहले छत, तारों और पार्किंग के पास सूखी शाखाएँ काट दें।",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "flashlight",
+          "title": "बिजली जाने की तैयारी करें",
+          "text": "फ़ोन और पावर बैंक चार्ज रखें, टॉर्च तैयार रखें, और मोमबत्ती पर निर्भर न रहें।",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "water-drop",
+          "title": "नालियाँ साफ़ करें",
+          "text": "छत के परनाले और गेट के बाहर की नाली साफ़ करें ताकि बारिश का पानी घर में न लौटे।",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "shelter-home", "title": "तूफ़ान गुज़रने तक अंदर रहें", "text": "नीचे की मंज़िल के भीतरी कमरे में रहें और आख़िरी गरज के बाद कम से कम 30 मिनट बाहर न निकलें।", "priority": "critical" },
-        { "step": 2, "icon": "lightning", "title": "आकाशीय बिजली से बचें", "text": "खुले मैदान, छत पर, या पेड़, खंभे और लोहे की रेलिंग के पास न खड़े हों। पेड़ के नीचे शरण न लें।", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "पानी और बिजली साथ न छुएँ", "text": "बिजली चमकने के दौरान नल, सॉकेट के पास गीले फ़र्श और लोहे के खिड़की फ़्रेम से बचें।", "priority": "high" },
-        { "step": 4, "icon": "car-safe", "title": "गाड़ी में हों तो सुरक्षित जगह रोकें", "text": "पेड़ों, होर्डिंग और खंभों से दूर गाड़ी रोकें, हैज़र्ड लाइट चालू रखें और इंतज़ार करें। डूबे अंडरपास में न जाएँ।", "priority": "high" },
-        { "step": 5, "icon": "radio", "title": "सूचना का एक स्रोत रखें", "text": "एक चार्ज फ़ोन पर आधिकारिक चेतावनी देखें और बैटरी आपातकालीन कॉल के लिए बचाएँ।", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "तूफ़ान गुज़रने तक अंदर रहें",
+          "text": "नीचे की मंज़िल के भीतरी कमरे में रहें और आख़िरी गरज के बाद कम से कम 30 मिनट बाहर न निकलें।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "lightning",
+          "title": "आकाशीय बिजली से बचें",
+          "text": "खुले मैदान, छत पर, या पेड़, खंभे और लोहे की रेलिंग के पास न खड़े हों। पेड़ के नीचे शरण न लें।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "पानी और बिजली साथ न छुएँ",
+          "text": "बिजली चमकने के दौरान नल, सॉकेट के पास गीले फ़र्श और लोहे के खिड़की फ़्रेम से बचें।",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "गाड़ी में हों तो सुरक्षित जगह रोकें",
+          "text": "पेड़ों, होर्डिंग और खंभों से दूर गाड़ी रोकें, हैज़र्ड लाइट चालू रखें और इंतज़ार करें। डूबे अंडरपास में न जाएँ।",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "radio",
+          "title": "सूचना का एक स्रोत रखें",
+          "text": "एक चार्ज फ़ोन पर आधिकारिक चेतावनी देखें और बैटरी आपातकालीन कॉल के लिए बचाएँ।",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "electric-hazard", "title": "गिरे तारों की सूचना दें", "text": "हर गिरे तार को ज़िंदा मानें। लोगों और जानवरों को दूर रखें और बिजली विभाग या रेस्क्यू 1122 को बताएँ।", "priority": "critical" },
-        { "step": 2, "icon": "wall-crack", "title": "छत, दीवारें और टंकी जाँचें", "text": "ढीली चादरें, फटी मुंडेर, झुके खंभे और क्षतिग्रस्त पानी की टंकी उपयोग से पहले देख लें।", "priority": "high" },
-        { "step": 3, "icon": "water-drop", "title": "जमा पानी निकालें", "text": "जहाँ संभव हो एक दिन के भीतर जमा पानी निकाल दें, जिससे मच्छर और डेंगू का ख़तरा घटे।", "priority": "normal" },
-        { "step": 4, "icon": "helping-hand", "title": "पड़ोसियों का हाल पूछें", "text": "बुज़ुर्ग पड़ोसियों, अकेले रहने वालों और जिनकी छत या दीवार क्षतिग्रस्त हुई हो उनका हाल जानें।", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "electric-hazard",
+          "title": "गिरे तारों की सूचना दें",
+          "text": "हर गिरे तार को ज़िंदा मानें। लोगों और जानवरों को दूर रखें और बिजली विभाग या रेस्क्यू 1122 को बताएँ।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "wall-crack",
+          "title": "छत, दीवारें और टंकी जाँचें",
+          "text": "ढीली चादरें, फटी मुंडेर, झुके खंभे और क्षतिग्रस्त पानी की टंकी उपयोग से पहले देख लें।",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "जमा पानी निकालें",
+          "text": "जहाँ संभव हो एक दिन के भीतर जमा पानी निकाल दें, जिससे मच्छर और डेंगू का ख़तरा घटे।",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "पड़ोसियों का हाल पूछें",
+          "text": "बुज़ुर्ग पड़ोसियों, अकेले रहने वालों और जिनकी छत या दीवार क्षतिग्रस्त हुई हो उनका हाल जानें।",
+          "priority": "normal"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "tree-hazard", "title": "पेड़ या बोर्ड के नीचे शरण नहीं", "text": "पेड़ बिजली को खींचते हैं और बिलबोर्ड, टीन की चादरें तथा खंभे तेज़ हवा में पहले गिरते हैं।", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "डूबे अंडरपास से न गुज़रें", "text": "अंडरपास में पानी की गहराई का अंदाज़ा असंभव है और गाड़ी सेकंडों में बंद होकर भर जाती है।", "priority": "critical" },
-        { "step": 3, "icon": "roof-secure", "title": "तूफ़ान में छत पर न जाएँ", "text": "हवा और बिजली के दौरान चादर, एंटीना या डिश ठीक करने के लिए ऊपर न चढ़ें।", "priority": "critical" },
-        { "step": 4, "icon": "electric-hazard", "title": "क्षतिग्रस्त उपकरण इस्तेमाल न करें", "text": "पानी से प्रभावित इनवर्टर, जनरेटर, मोटर और बोर्ड चलाने से पहले जाँच कराएँ।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "tree-hazard",
+          "title": "पेड़ या बोर्ड के नीचे शरण नहीं",
+          "text": "पेड़ बिजली को खींचते हैं और बिलबोर्ड, टीन की चादरें तथा खंभे तेज़ हवा में पहले गिरते हैं।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "डूबे अंडरपास से न गुज़रें",
+          "text": "अंडरपास में पानी की गहराई का अंदाज़ा असंभव है और गाड़ी सेकंडों में बंद होकर भर जाती है।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "roof-secure",
+          "title": "तूफ़ान में छत पर न जाएँ",
+          "text": "हवा और बिजली के दौरान चादर, एंटीना या डिश ठीक करने के लिए ऊपर न चढ़ें।",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "electric-hazard",
+          "title": "क्षतिग्रस्त उपकरण इस्तेमाल न करें",
+          "text": "पानी से प्रभावित इनवर्टर, जनरेटर, मोटर और बोर्ड चलाने से पहले जाँच कराएँ।",
+          "priority": "high"
+        }
+      ]
+    },
+    "zh-CN": {
+      "name": "暴风雨与强降水",
+      "tagline": "大风、雷暴、冰雹与季风强降雨防范",
+      "description": "暴风雨集高空飞落物、雷击及瞬间积水三大危险于一体。置身坚固建筑内、远离窗户和带电设备可全面防范危险。",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "迅速进入坚固建筑避险",
+          "text": "立即进入坚固建筑物室内。棚屋、铁皮顶、树下及大型广告牌在暴风中均不具备防护力。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "away-from-window",
+          "title": "远离所有窗户与玻璃门",
+          "text": "躲在无窗的内室房间。强风与冰雹极易击碎窗户玻璃并将高空杂物径直贯穿室内。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "拔掉电器插头并远离电线",
+          "text": "拔下贵重电器插头，严禁触碰潮湿电闸，严禁触碰断落电线及浸泡在积水中的电杆。",
+          "priority": "high"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "radio",
+          "title": "关注气象部门风暴预报",
+          "text": "季风期密切关注巴基斯坦气象局（PMD）预警，提前掌握所在区域内涝与阵风风险。",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "roof-secure",
+          "title": "加固屋顶设施与庭院杂物",
+          "text": "牢固捆扎固定活动铁皮瓦、楼顶水箱、太阳能板、花盆及一切易被大风刮飞的悬挂物。",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "tree-hazard",
+          "title": "提前修剪危险枯树枝",
+          "text": "在风暴季来临前，及时修剪住宅屋顶、电线及车棚周边的枯死松动大树枝。",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "flashlight",
+          "title": "做好突发停电应急准备",
+          "text": "充满手机与应急充电宝，备好手电筒与应急照明，避免在强风环境下依赖明火蜡烛。",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "water-drop",
+          "title": "疏通屋顶与院落排水系统",
+          "text": "彻底清理楼顶雨水管及大门口排水沟杂物落叶，防止短时强暴雨积水倒灌入室。",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "留在室内直至风暴彻底过去",
+          "text": "留在低楼层的内室房间，在最后一声雷响过后至少等待30分钟，方可安全外出。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "lightning",
+          "title": "规避一切可能的雷击风险",
+          "text": "严禁停留在开阔操场、楼顶，严禁靠近大树、金属栏杆及旗杆；严禁在大树下避雨。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "严防积水与电力相互传导",
+          "text": "雷暴活跃期间，避免使用水龙头流水冲淋，远离带电插座旁的湿滑地面和金属窗框。",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "行车中就近寻找安全处停靠",
+          "text": "将车辆驶离大树、高空广告牌及电线杆，打开危险报警闪光灯在车内等待，切勿驶入积水涵洞。",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "radio",
+          "title": "保持畅通的官方信息渠道",
+          "text": "使用一台手机关注官方救灾通报，节省电池电量以便在突发危急时拨打求救电话。",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "electric-hazard",
+          "title": "立即报告坠地断落电线",
+          "text": "将所有断落地面的电线一律视作带电危险物，疏导人员远离，并立即向电力部门或1122报修。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "wall-crack",
+          "title": "细致检查屋顶墙体与水箱",
+          "text": "全面检查是否有瓦片松动、女儿墙裂痕、电杆倾斜或水箱破损，排查安全后再使用该区域。",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "及时清除排干庭院积水",
+          "text": "在一天内彻底排干房前屋后花盆水槽积水，有效遏制蚊虫孳生，防范登革热传播。",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "主动探望邻里孤寡老人",
+          "text": "主动排查走访独居老人、行动不便家庭以及住宅受风雨损伤的邻里，提供必要帮扶。",
+          "priority": "normal"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "tree-hazard",
+          "title": "严禁在大树或广告招牌下避雨",
+          "text": "孤立大树极易引来雷击，广告牌、铁皮瓦及老化电杆在烈风中极易折断砸伤行人。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "严禁驾车涉水穿越积水涵洞",
+          "text": "立交桥下积水涵洞深度极难凭目测判断，车辆一旦熄火漂浮会在数十秒内迅速灭顶。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "roof-secure",
+          "title": "狂风暴雨期间严禁攀爬楼顶",
+          "text": "严禁在强阵风与雷电交加时爬上屋顶抢修铁皮天线或卫星锅，防范高空坠落。",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "electric-hazard",
+          "title": "严禁擅自使用受潮进水电器",
+          "text": "进水受潮的逆变器、发电机、水泵及配电箱在通电前必须由专业电工彻底检修干燥。",
+          "priority": "high"
+        }
+      ]
+    },
+    "fr": {
+      "name": "Tempête & Fortes Pluies",
+      "tagline": "Vents violents, orages, grêle et pluies torrentielles",
+      "description": "Les tempêtes cumulent trois dangers : projectiles volants, foudre et inondations soudaines. Rester à l'intérieur, loin des vitres et de l'électricité protège de tous ces risques.",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Entrer dans un bâtiment en dur",
+          "text": "Abritez-vous immédiatement dans un bâtiment solide. Hangars, toits en tôle et arbres ne protègent pas des vents violents.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "away-from-window",
+          "title": "S'éloigner des fenêtres",
+          "text": "Restez dans une pièce centrale. Les rafales et la grêle peuvent pulvériser le verre et projeter des débris à l'intérieur.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Débrancher et fuir les câbles",
+          "text": "Débranchez les appareils, évitez les prises mouillées et ne touchez jamais un câble tombé au sol ou immergé.",
+          "priority": "high"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "radio",
+          "title": "Surveiller les prévisions météo",
+          "text": "Suivez les bulletins du PMD pendant la mousson pour savoir si votre zone risque des submersions ou tempêtes.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "roof-secure",
+          "title": "Sécuriser le toit et la cour",
+          "text": "Amarrez tôles lâches, réservoirs d'eau, panneaux solaires, pots de fleurs et tout objet susceptible de s'envoler.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "tree-hazard",
+          "title": "Élaguer les branches fragiles",
+          "text": "Coupez les branches mortes à proximité de votre toiture, des câbles électriques et de votre stationnement.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "flashlight",
+          "title": "Anticiper les coupures de courant",
+          "text": "Rechargez téléphones et batteries de secours; gardez une lampe torche prête et évitez l'usage de bougies.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "water-drop",
+          "title": "Nettoyer rigoles et gouttières",
+          "text": "Dégagez les évacuations de toit et le caniveau devant votre portail pour éviter tout refoulement dans la maison.",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Rester à l'abri jusqu'à l'accalmie",
+          "text": "Restez dans une pièce intérieure au rez-de-chaussée et attendez au moins 30 minutes après le dernier coup de tonnerre.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "lightning",
+          "title": "Éviter tout risque de foudre",
+          "text": "Ne restez pas en plein champ, sur un toit, près d'un arbre, d'un pylône ou d'une rambarde métallique. Ne vous abritez pas sous un arbre.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Ne pas associer eau et électricité",
+          "text": "Évitez les robinets, les sols humides proches de prises et les encadrements métalliques pendant l'orage.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "En voiture, s'arrêter en lieu sûr",
+          "text": "Garez-vous loin des arbres et panneaux d'affichage, allumez les feux de détresse et ne franchissez aucun passage souterrain inondé.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "radio",
+          "title": "Conserver un canal d'information",
+          "text": "Suivez les alertes officielles sur un téléphone chargé et préservez la batterie pour les appels d'urgence.",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "electric-hazard",
+          "title": "Signaler les câbles rompus",
+          "text": "Considérez tout câble tombé au sol comme sous tension. Maintenez les gens à distance et alertez le 1122.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "wall-crack",
+          "title": "Vérifier toits, murs et cuves",
+          "text": "Repérez tôles descellées, murets fissurés, poteaux penchés et citernes endommagées avant d'accéder à la zone.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Évacuer les eaux stagnantes",
+          "text": "Videz les eaux croupies sous 24 heures pour limiter la prolifération des moustiques et le risque de dengue.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "Prendre des nouvelles des voisins",
+          "text": "Rendez visite aux voisins âgés, aux personnes isolées ou dont l'habitation a souffert des intempéries.",
+          "priority": "normal"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "tree-hazard",
+          "title": "Ne pas s'abriter sous les arbres",
+          "text": "Les arbres attirent la foudre; panneaux d'affichage et tôles s'arrachent en premier sous les bourrasques.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Ne pas s'engager sous les ponts inondés",
+          "text": "La profondeur d'eau dans un passage sous voie est trompeuse; un moteur cale et l'habitacle se remplit en quelques secondes.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "roof-secure",
+          "title": "Ne pas monter sur le toit pendant l'orage",
+          "text": "Ne tentez pas de réparer une tôle ou une antenne sous les rafales et les éclairs.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "electric-hazard",
+          "title": "Ne pas brancher d'appareils humides",
+          "text": "Faites examiner onduleurs, générateurs et moteurs ayant pris l'eau avant toute remise sous tension.",
+          "priority": "high"
+        }
+      ]
+    },
+    "de": {
+      "name": "Sturm & Starkregen",
+      "tagline": "Sturmböen, Gewitter, Hagel und monsunartige Niederschläge",
+      "description": "Stürme verbinden drei Gefahren: umherfliegende Trümmer, Blitzeinschlag und plötzliche Sturzfluten. Drinnen bleiben und Abstand halten schützt vor allen dreien.",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "In einem festen Gebäude Schutz suchen",
+          "text": "Gehen Sie sofort ins Haus. Schuppen, Wellblechdächer und Bäume bieten bei Sturm keinerlei verlässlichen Schutz.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "away-from-window",
+          "title": "Fensterbereiche meiden",
+          "text": "Halten Sie sich in einem innenliegenden Raum auf; Sturm und Hagel können Glasscheiben zersplittern und Trümmer durchschlagen.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Geräte ausstecken, Leitungen meiden",
+          "text": "Ziehen Sie empfindliche Stecker; berühren Sie niemals nasse Schalter oder am Boden liegende Stromkabel.",
+          "priority": "high"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "radio",
+          "title": "Wetterwarnungen verfolgen",
+          "text": "Achten Sie während des Monsuns auf Vorhersagen des Wetterdienstes PMD bezüglich Starkregen und Sturmböen.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "roof-secure",
+          "title": "Dach und Gartenbereich sichern",
+          "text": "Befestigen Sie lose Wellbleche, Wassertanks, Solarmodule, Blumentöpfe und alles, was durch Wind zum Geschoss werden kann.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "tree-hazard",
+          "title": "Morsche Äste zurückschneiden",
+          "text": "Schneiden Sie abgestorbene Äste nahe Dächern, Freileitungen und Pkw-Stellplätzen rechtzeitig vor der Sturmsaison ab.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "flashlight",
+          "title": "Auf Stromausfälle vorbereiten",
+          "text": "Laden Sie Smartphones und Powerbanks auf; halten Sie Taschenlampen bereit und vermeiden Sie brennende Kerzen bei Zugluft.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "water-drop",
+          "title": "Abflüsse und Rinnen reinigen",
+          "text": "Befreien Sie Dachrinnen und Hofabläufe von Schmutz, damit Regenmassen ungehindert ablaufen und nicht ins Haus dringen.",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Im Gebäude ausharren bis Sturm nachlässt",
+          "text": "Bleiben Sie in einem innenliegenden Raum im Erdgeschoss und warten Sie mindestens 30 Minuten nach dem letzten Donner ab.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "lightning",
+          "title": "Blitzschlagrisiken konsequent meiden",
+          "text": "Meiden Sie Freiflächen, Dächer, Bäume, Metallzäune und Masten; niemals unter einzelnen Bäumen unterstellen.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Keinen Kontakt zu Wasser und Strom",
+          "text": "Vermeiden Sie fließendes Wasser aus Hähnen sowie den Kontakt zu Metallrahmen, solange ein Gewitter aktiv ist.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "Im Fahrzeug sicher anhalten",
+          "text": "Halten Sie abseits von Bäumen und Plakatwänden mit Warnblinker an; meiden Sie überflutete Unterführungen.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "radio",
+          "title": "Einen Informationskanal offenhalten",
+          "text": "Verfolgen Sie offizielle Notfallhinweise auf einem Telefon und schonen Sie den Akku für Notrufe.",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "electric-hazard",
+          "title": "Herabgefallene Stromkabel melden",
+          "text": "Behandeln Sie jedes Bodenkabel als lebensgefährlich stromführend; halten Sie Passanten fern und rufen Sie 1122.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "wall-crack",
+          "title": "Dächer, Mauern und Tanks kontrollieren",
+          "text": "Prüfen Sie Dacheindeckung, Risse in Brüstungen und Wassertanks auf Beschädigungen, bevor Sie den Bereich nutzen.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Stehendes Wasser umgehend beseitigen",
+          "text": "Beseitigen Sie Pfützen und Wasseransammlungen innerhalb von 24 Stunden, um Mückenbrut und Dengue-Fieber vorzubeugen.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "Nach Nachbarn sehen",
+          "text": "Schauen Sie nach älteren und hilfebedürftigen Nachbarn sowie nach Häusern mit sichtbaren Sturmschäden.",
+          "priority": "normal"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "tree-hazard",
+          "title": "Nicht unter Bäumen oder Schildern unterstellen",
+          "text": "Bäume ziehen Blitze an; Werbetafeln, Schilder und Äste brechen bei Starkwind zuerst ab.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Überflutete Unterführungen niemals durchfahren",
+          "text": "Die Wassertiefe unter Brücken ist nicht abschätzbar; Motoren saugen Wasser an und Fahrzeuge versinken in Sekunden.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "roof-secure",
+          "title": "Während des Sturms niemals aufs Dach steigen",
+          "text": "Versuchen Sie keinesfalls, bei Starkwind oder Blitzschlag Antennen oder lose Ziegel auf dem Dach zu richten.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "electric-hazard",
+          "title": "Nass gewordene Elektrogeräte nicht einschalten",
+          "text": "Feucht gewordene Wechselrichter, Pumpen oder Verteiler müssen vor Wiederinbetriebnahme fachmännisch geprüft werden.",
+          "priority": "high"
+        }
       ]
     }
   }

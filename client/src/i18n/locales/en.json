@@ -32,7 +32,10 @@
     "select": "Select language",
     "en": "English",
     "ur": "اردو",
-    "hi": "हिन्दी"
+    "hi": "हिन्दी",
+    "zh-CN": "简体中文",
+    "fr": "Français",
+    "de": "Deutsch"
   },
   "status": {
     "aiReady": "AI assistant ready",

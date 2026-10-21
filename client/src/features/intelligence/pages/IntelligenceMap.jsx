@@ -109,12 +109,12 @@ export default function IntelligenceMap() {
 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Toggle
-                  label="Real-time Seismic Events"
-                  description="USGS earthquakes in Pakistan bounding box"
+                  label="Seismic Event Monitor"
+                  description="USGS earthquake monitoring in Pakistan bounding box"
                   checked={layers.quakes}
                   onChange={(v) => setLayers((prev) => ({ ...prev, quakes: v }))}
                 />
-                <ModeBadge mode="live" />
+                <ModeBadge mode="simulated" />
               </div>
             </div>
           </Card>
@@ -201,18 +201,18 @@ export default function IntelligenceMap() {
                     shape="circle"
                     color="#dc2626"
                     pulse
-                    label="M5.1 — Quetta (USGS Feed)"
+                    label="M5.1 — Quetta (Simulated Benchmark)"
                     showLabel
                     onSelect={() =>
                       setFeatureInfo({
-                        title: 'USGS Seismic Event: M5.1 Quetta',
+                        title: 'Seismic Event: M5.1 Quetta (Simulated)',
                         lines: [
                           'Magnitude: 5.1',
                           'Depth: 10 km',
-                          'Source: USGS Earthquake Hazards Program',
+                          'Source: USGS Earthquake Hazards Program Benchmark',
                           'Region: 24 km NW of Quetta, Balochistan',
                         ],
-                        mode: 'live',
+                        mode: 'simulated',
                       })
                     }
                   />

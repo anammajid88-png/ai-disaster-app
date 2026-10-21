@@ -21,7 +21,8 @@ const verifiedContactLines = emergencyContacts.contacts
 const SCRIPT_INSTRUCTION = {
   arabic: 'Reply in Urdu using Urdu (Arabic) script.',
   devanagari: 'Reply in Hindi using Devanagari script.',
-  latin: 'Reply in the same Roman/Latin script the user typed in, not in Urdu or Devanagari script.',
+  han: 'Reply in Simplified Chinese characters (简体中文).',
+  latin: 'Reply in the same Roman/Latin script the user typed in, not in Urdu, Devanagari or Han script.',
   native: 'Reply in the user\'s selected language.',
 };
 
@@ -29,6 +30,9 @@ const LANGUAGE_INSTRUCTION = {
   en: 'Reply in clear, simple English.',
   ur: 'Reply in Urdu. Keep the vocabulary simple and everyday, not literary.',
   hi: 'Reply in Hindi. Keep the vocabulary simple and everyday, not literary.',
+  'zh-CN': 'Reply in clear, direct Simplified Chinese (简体中文).',
+  fr: 'Reply in clear, simple French.',
+  de: 'Reply in clear, simple German.',
 };
 
 function buildSystemPrompt({ language, script, disasterType, urgency }) {

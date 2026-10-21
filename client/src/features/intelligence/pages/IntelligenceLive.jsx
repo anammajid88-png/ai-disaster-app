@@ -25,13 +25,13 @@ export default function IntelligenceLive() {
         setQuakes((prev) => ({ ...prev, status: 'unavailable' }));
       }
     } catch {
-      // Offline fallback: provide historical/cached baseline sample
+      // Offline fallback: provide historical sample benchmark
       setQuakes({
         data: [
-          { id: 'usgs-1', magnitude: 4.8, depthKm: 15, place: '22 km E of Quetta', time: Date.now() - 3600000 * 14, coord: [67.2, 30.2], url: 'https://earthquake.usgs.gov' },
-          { id: 'usgs-2', magnitude: 4.5, depthKm: 32, place: '45 km N of Khuzdar', time: Date.now() - 3600000 * 48, coord: [66.6, 28.2], url: 'https://earthquake.usgs.gov' },
+          { id: 'usgs-1', magnitude: 4.8, depthKm: 15, place: '22 km E of Quetta (Sample)', time: Date.now() - 3600000 * 14, coord: [67.2, 30.2], url: 'https://earthquake.usgs.gov' },
+          { id: 'usgs-2', magnitude: 4.5, depthKm: 32, place: '45 km N of Khuzdar (Sample)', time: Date.now() - 3600000 * 48, coord: [66.6, 28.2], url: 'https://earthquake.usgs.gov' },
         ],
-        status: 'cached',
+        status: 'sample',
         checkedAt: new Date().toISOString(),
       });
     }
@@ -47,14 +47,14 @@ export default function IntelligenceLive() {
         setForecast((prev) => ({ ...prev, status: 'unavailable' }));
       }
     } catch {
-      // Offline fallback
+      // Offline fallback: sample benchmark data
       setForecast({
         data: REGIONS.map((r, i) => ({
           regionId: r.id,
           rain3dMm: [42, 68, 15, 4, 85, 20, 12, 5, 18, 62, 74, 30][i] || 25,
           retrievedAt: new Date().toISOString(),
         })),
-        status: 'cached',
+        status: 'sample',
         checkedAt: new Date().toISOString(),
       });
     }
@@ -96,7 +96,7 @@ export default function IntelligenceLive() {
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <span style={{ color: 'var(--muted)' }}>Status:</span>
               <strong style={{ color: quakes.status === 'live' ? 'var(--ok)' : 'var(--warn)' }}>
-                {quakes.status === 'live' ? 'Connected (Live HTTP 200)' : 'Cached / Offline Baseline'}
+                {quakes.status === 'live' ? 'Connected (Live HTTP 200)' : 'Sample Benchmark (Offline Fallback)'}
               </strong>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -123,7 +123,7 @@ export default function IntelligenceLive() {
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <span style={{ color: 'var(--muted)' }}>Status:</span>
               <strong style={{ color: forecast.status === 'live' ? 'var(--ok)' : 'var(--warn)' }}>
-                {forecast.status === 'live' ? 'Connected (Live HTTP 200)' : 'Cached / Offline Baseline'}
+                {forecast.status === 'live' ? 'Connected (Live HTTP 200)' : 'Sample Benchmark (Offline Fallback)'}
               </strong>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>

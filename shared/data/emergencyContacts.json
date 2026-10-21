@@ -3,11 +3,14 @@
     "country": "Pakistan",
     "countryCode": "PK",
     "lastReviewed": "2026-02-01",
-    "maintainerNote": "Internal, never rendered. Only nationally recognised Pakistan emergency numbers are listed. Numbers must not be edited without re-verifying against the official source recorded in each entry.",
+    "maintainerNote": "Internal, never rendered. Listed contacts include verified national emergency services and recognized charitable ambulance networks in Pakistan. Numbers must not be edited without re-verifying against official sources.",
     "warning": {
       "en": "Some services are not available in every district. If a number does not connect, try Rescue 1122 or Police 15.",
       "ur": "کچھ سروسز ہر ضلع میں دستیاب نہیں ہوتیں۔ اگر کوئی نمبر نہ ملے تو ریسکیو 1122 یا پولیس 15 پر کال کریں۔",
-      "hi": "कुछ सेवाएँ हर ज़िले में उपलब्ध नहीं होतीं। यदि कोई नंबर न लगे तो रेस्क्यू 1122 या पुलिस 15 पर कॉल करें।"
+      "hi": "कुछ सेवाएँ हर ज़िले में उपलब्ध नहीं होतीं। यदि कोई नंबर न लगे तो रेस्क्यू 1122 या पुलिस 15 पर कॉल करें।",
+      "zh-CN": "部分服务可能并非覆盖所有行政区。如果某个号码无法接通，请尝试拨打 Rescue 1122 或 Police 15。",
+      "fr": "Certains services ne sont pas disponibles dans tous les districts. Si un numéro ne répond pas, essayez Rescue 1122 ou Police 15.",
+      "de": "Einige Dienste sind nicht in allen Bezirken verfügbar. Falls eine Nummer nicht erreichbar ist, wählen Sie Rescue 1122 oder Police 15."
     }
   },
   "contacts": [
@@ -26,22 +29,34 @@
       "coverage": {
         "en": "Punjab, Khyber Pakhtunkhwa and several other regions",
         "ur": "پنجاب، خیبر پختونخوا اور کئی دیگر علاقے",
-        "hi": "पंजाब, ख़ैबर पख़्तूनख़्वा और कई अन्य क्षेत्र"
+        "hi": "पंजाब, ख़ैबर पख़्तूनख़्वा और कई अन्य क्षेत्र",
+        "zh-CN": "旁遮普省、开伯尔-普赫图赫瓦省及多个其他主要区域",
+        "fr": "Pendjab, Khyber Pakhtunkhwa et plusieurs autres régions",
+        "de": "Punjab, Khyber Pakhtunkhwa und mehrere weitere Regionen"
       },
       "name": {
         "en": "Rescue Service",
         "ur": "ریسکیو سروس",
-        "hi": "रेस्क्यू सेवा"
+        "hi": "रेस्क्यू सेवा",
+        "zh-CN": "应急救援服务 (Rescue 1122)",
+        "fr": "Service d'urgence Rescue 1122",
+        "de": "Rettungsdienst Rescue 1122"
       },
       "type": {
         "en": "Ambulance / Fire / Rescue",
         "ur": "ایمبولینس / فائر / ریسکیو",
-        "hi": "एम्बुलेंस / अग्निशमन / बचाव"
+        "hi": "एम्बुलेंस / अग्निशमन / बचाव",
+        "zh-CN": "救护车 / 消防 / 灾害搜救",
+        "fr": "Ambulance / Pompiers / Sauvetage",
+        "de": "Krankenwagen / Feuerwehr / Rettung"
       },
       "useWhen": {
         "en": "Medical emergency, road accident, fire, flood rescue or building collapse.",
         "ur": "طبی ہنگامی صورتحال، ٹریفک حادثہ، آگ، سیلاب میں ریسکیو یا عمارت گرنے پر۔",
-        "hi": "चिकित्सा आपातकाल, सड़क दुर्घटना, आग, बाढ़ में बचाव या इमारत गिरने पर।"
+        "hi": "चिकित्सा आपातकाल, सड़क दुर्घटना, आग, बाढ़ में बचाव या इमारत गिरने पर।",
+        "zh-CN": "医疗急救、交通事故、火灾、洪涝搜救或建筑物倒塌。",
+        "fr": "Urgence médicale, accident de la route, incendie, sauvetage lors d'inondations ou effondrement de bâtiment.",
+        "de": "Medizinischer Notfall, Verkehrsunfall, Brand, Hochwasserrettung oder Gebäudeeinsturz."
       }
     },
     {
@@ -59,22 +74,34 @@
       "coverage": {
         "en": "Nationwide",
         "ur": "ملک بھر میں",
-        "hi": "पूरे देश में"
+        "hi": "पूरे देश में",
+        "zh-CN": "全国范围",
+        "fr": "À l'échelle nationale",
+        "de": "Landesweit"
       },
       "name": {
         "en": "Police Emergency",
         "ur": "پولیس ہنگامی مدد",
-        "hi": "पुलिस आपातकाल"
+        "hi": "पुलिस आपातकाल",
+        "zh-CN": "警察紧急求助 (Police 15)",
+        "fr": "Police d'urgence (Police 15)",
+        "de": "Polizeinotruf (Police 15)"
       },
       "type": {
         "en": "Police / Law & Order",
         "ur": "پولیس / امنِ عامہ",
-        "hi": "पुलिस / कानून व्यवस्था"
+        "hi": "पुलिस / कानून व्यवस्था",
+        "zh-CN": "警察 / 维持治安",
+        "fr": "Police / Maintien de l'ordre",
+        "de": "Polizei / Öffentliche Sicherheit"
       },
       "useWhen": {
         "en": "Crime, violence, missing person, crowd danger or when an area must be secured.",
         "ur": "جرم، تشدد، گمشدہ فرد، ہجوم کا خطرہ یا جب کسی علاقے کو محفوظ بنانا ہو۔",
-        "hi": "अपराध, हिंसा, गुमशुदा व्यक्ति, भीड़ का खतरा या किसी क्षेत्र को सुरक्षित करने के लिए।"
+        "hi": "अपराध, हिंसा, गुमशुदा व्यक्ति, भीड़ का खतरा या किसी क्षेत्र को सुरक्षित करने के लिए।",
+        "zh-CN": "犯罪、暴力事件、人员走失、人群危险或需要封锁现场时。",
+        "fr": "Crime, violence, personne disparue, danger de foule ou sécurisation de périmètre.",
+        "de": "Straftaten, Gewalt, vermisste Personen, Gefahrenlagen oder Absicherung von Gefahrenbereichen."
       }
     },
     {
@@ -92,22 +119,34 @@
       "coverage": {
         "en": "Most city fire brigades",
         "ur": "بیشتر شہری فائر بریگیڈ",
-        "hi": "अधिकांश शहरी अग्निशमन विभाग"
+        "hi": "अधिकांश शहरी अग्निशमन विभाग",
+        "zh-CN": "多数城市消防队",
+        "fr": "Majorité des brigades de pompiers urbaines",
+        "de": "Die meisten städtischen Feuerwehren"
       },
       "name": {
         "en": "Fire Brigade",
         "ur": "فائر بریگیڈ",
-        "hi": "अग्निशमन विभाग"
+        "hi": "अग्निशमन विभाग",
+        "zh-CN": "市政消防队 (Fire Brigade 16)",
+        "fr": "Brigade des sapeurs-pompiers (16)",
+        "de": "Feuerwehr (16)"
       },
       "type": {
         "en": "Fire Fighting",
         "ur": "آگ بجھانے کی خدمات",
-        "hi": "आग बुझाने की सेवा"
+        "hi": "आग बुझाने की सेवा",
+        "zh-CN": "灭火救援",
+        "fr": "Lutte contre l'incendie",
+        "de": "Brandbekämpfung"
       },
       "useWhen": {
         "en": "Any fire, gas cylinder leak, electrical fire or smoke filling a building.",
         "ur": "کسی بھی قسم کی آگ، گیس سلنڈر لیک، بجلی سے لگی آگ یا عمارت میں دھواں بھرنے پر۔",
-        "hi": "किसी भी प्रकार की आग, गैस सिलेंडर रिसाव, बिजली से लगी आग या इमारत में धुआं भरने पर।"
+        "hi": "किसी भी प्रकार की आग, गैस सिलेंडर रिसाव, बिजली से लगी आग या इमारत में धुआं भरने पर।",
+        "zh-CN": "任何火灾、煤气罐泄漏、电气起火或浓烟充满建筑物时。",
+        "fr": "Tout incendie, fuite de bouteille de gaz, feu d'origine électrique ou bâtiment enfumé.",
+        "de": "Jeder Brand, Gasflaschenleck, Kabelbrand oder verrauchte Gebäude."
       }
     },
     {
@@ -125,22 +164,34 @@
       "coverage": {
         "en": "Nationwide ambulance network",
         "ur": "ملک بھر میں ایمبولینس نیٹ ورک",
-        "hi": "देशव्यापी एम्बुलेंस नेटवर्क"
+        "hi": "देशव्यापी एम्बुलेंस नेटवर्क",
+        "zh-CN": "全国救护车与慈善救援网络",
+        "fr": "Réseau national d'ambulances",
+        "de": "Landesweites Rettungs- und Hilfsnetz"
       },
       "name": {
         "en": "Edhi Main Control Room",
         "ur": "ایدھی مرکزی کنٹرول روم",
-        "hi": "ईधी मुख्य नियंत्रण कक्ष"
+        "hi": "ईधी मुख्य नियंत्रण कक्ष",
+        "zh-CN": "艾德希总控中心 (Edhi 115)",
+        "fr": "Centre de régulation Edhi (115)",
+        "de": "Edhi-Einsatzzentrale (115)"
       },
       "type": {
         "en": "Ambulance / Welfare",
         "ur": "ایمبولینس / فلاحی خدمات",
-        "hi": "एम्बुलेंस / कल्याण सेवा"
+        "hi": "एम्बुलेंस / कल्याण सेवा",
+        "zh-CN": "救护车 / 人道主义救助",
+        "fr": "Ambulance / Aide humanitaire",
+        "de": "Krankenwagen / Wohlfahrtsdienst"
       },
       "useWhen": {
         "en": "Ambulance transport, patient shifting and welfare assistance.",
         "ur": "ایمبولینس، مریض کی منتقلی اور فلاحی مدد کے لیے۔",
-        "hi": "एम्बुलेंस, मरीज़ को ले जाने और कल्याण सहायता के लिए।"
+        "hi": "एम्बुलेंस, मरीज़ को ले जाने और कल्याण सहायता के लिए।",
+        "zh-CN": "急救转运、病患转院及人道主义救助。",
+        "fr": "Transport en ambulance, transfert de patients et secours d'assistance.",
+        "de": "Krankentransport, Verlegung von Patienten und soziale Notfallhilfe."
       }
     },
     {
@@ -158,31 +209,108 @@
       "coverage": {
         "en": "National highways and motorways",
         "ur": "قومی شاہراہیں اور موٹرویز",
-        "hi": "राष्ट्रीय राजमार्ग और मोटरवे"
+        "hi": "राष्ट्रीय राजमार्ग और मोटरवे",
+        "zh-CN": "国家国道与高速公路网络",
+        "fr": "Autoroutes et routes nationales",
+        "de": "Nationalstraßen und Autobahnen"
       },
       "name": {
         "en": "National Highways & Motorway Police",
         "ur": "نیشنل ہائی ویز اینڈ موٹروے پولیس",
-        "hi": "नेशनल हाईवे और मोटरवे पुलिस"
+        "hi": "नेशनल हाईवे और मोटरवे पुलिस",
+        "zh-CN": "国家公路与高速巡警 (NHMP 130)",
+        "fr": "Police des autoroutes et routes nationales (130)",
+        "de": "Autobahn- und Fernstraßenpolizei (130)"
       },
       "type": {
         "en": "Highway Emergency / Road Accident",
         "ur": "شاہراہ ہنگامی امداد / ٹریفک حادثہ",
-        "hi": "राजमार्ग आपातकाल / सड़क दुर्घटना"
+        "hi": "राजमार्ग आपातकाल / सड़क दुर्घटना",
+        "zh-CN": "公路应急 / 交通事故",
+        "fr": "Urgence autoroutière / Accident",
+        "de": "Autobahn-Notruf / Verkehrsunfall"
       },
       "useWhen": {
         "en": "Accident or breakdown on a motorway or national highway.",
         "ur": "موٹروے یا قومی شاہراہ پر حادثہ یا گاڑی خراب ہونے پر۔",
-        "hi": "मोटरवे या राष्ट्रीय राजमार्ग पर दुर्घटना या गाड़ी खराब होने पर।"
+        "hi": "मोटरवे या राष्ट्रीय राजमार्ग पर दुर्घटना या गाड़ी खराब होने पर।",
+        "zh-CN": "在高速公路或国道上发生交通事故或车辆故障时。",
+        "fr": "Accident ou panne mécanique sur une autoroute ou route nationale.",
+        "de": "Unfall oder Panne auf Autobahnen oder Nationalstraßen."
+      }
+    },
+    {
+      "id": "alkhidmat-1023",
+      "number": "1023",
+      "priority": 6,
+      "icon": "ambulance",
+      "serviceType": "charitable-ambulance",
+      "verified": true,
+      "source": {
+        "organisation": "Alkhidmat Foundation Pakistan (Disaster Management & Health Services)",
+        "url": "https://alkhidmat.org/",
+        "verifiedOn": "2026-02-01"
+      },
+      "coverage": {
+        "en": "Major cities & regional emergency centers across Pakistan (network may vary by district)",
+        "ur": "پاکستان بھر کے بڑے شہر اور علاقائی مراکز (دستیابی ضلعی سطح پر مختلف ہو سکتی ہے)",
+        "hi": "पाकिस्तान के प्रमुख शहर और क्षेत्रीय केंद्र (ज़िले के अनुसार उपलब्धता भिन्न हो सकती है)",
+        "zh-CN": "巴基斯坦主要城市和区域应急中心（网络可用性因地区而异）",
+        "fr": "Grandes villes et centres d'urgence régionaux au Pakistan (la couverture peut varier selon le district)",
+        "de": "Großstädte und regionale Notfallzentren in Pakistan (Verfügbarkeit kann je nach Bezirk variieren)"
+      },
+      "name": {
+        "en": "Alkhidmat Disaster & Ambulance Service",
+        "ur": "الخدمت ڈیزاسٹر و ایمبولینس سروس",
+        "hi": "अल-ख़िदमत आपदा एवं एम्बुलेंस सेवा",
+        "zh-CN": "Alkhidmat 救灾与救护车服务",
+        "fr": "Service d'ambulance et de secours Alkhidmat",
+        "de": "Alkhidmat Notfall- und Ambulanzdienst"
+      },
+      "type": {
+        "en": "Charitable Ambulance / Disaster Relief",
+        "ur": "فلاحی ایمبولینس / امدادِ باہمی",
+        "hi": "कल्याणकारी एम्बुलेंस / आपदा राहत",
+        "zh-CN": "慈善救护车 / 救灾援助",
+        "fr": "Ambulance caritative / Secours d'urgence",
+        "de": "Gemeinnütziger Krankentransport / Katastrophenhilfe"
+      },
+      "useWhen": {
+        "en": "Emergency patient shifting, flood relief assistance, or when government services (1122) are delayed.",
+        "ur": "مریض کی ہنگامی منتقلی، سیلاب میں امداد، یا جب سرکاری سروسز (1122) میں تاخیر ہو۔",
+        "hi": "मरीज़ को आपातकालीन रूप से ले जाने, बाढ़ राहत, या जब सरकारी सेवाओं (1122) में देरी हो।",
+        "zh-CN": "紧急转运病患、洪灾救援援助，或在政府急救服务（1122）延迟时使用。",
+        "fr": "Transport d'urgence de patients, secours lors d'inondations, ou en cas de délai des services publics (1122).",
+        "de": "Notfall-Krankentransport, Fluthilfe oder wenn staatliche Rettungsdienste (1122) verzögert sind."
       }
     }
   ],
   "disasterContactMap": {
-    "flood": ["rescue-1122", "police-15"],
-    "fire": ["fire-16", "rescue-1122"],
-    "earthquake": ["rescue-1122", "edhi-115"],
-    "storm": ["rescue-1122", "police-15"],
-    "road-accident": ["motorway-130", "rescue-1122"],
-    "medical-emergency": ["rescue-1122", "edhi-115"]
+    "flood": [
+      "rescue-1122",
+      "police-15",
+      "alkhidmat-1023"
+    ],
+    "fire": [
+      "fire-16",
+      "rescue-1122"
+    ],
+    "earthquake": [
+      "rescue-1122",
+      "edhi-115"
+    ],
+    "storm": [
+      "rescue-1122",
+      "police-15"
+    ],
+    "road-accident": [
+      "motorway-130",
+      "rescue-1122"
+    ],
+    "medical-emergency": [
+      "rescue-1122",
+      "edhi-115",
+      "alkhidmat-1023"
+    ]
   }
 }

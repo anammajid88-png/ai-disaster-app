@@ -6,42 +6,171 @@
   "accentSoft": "#fee2e2",
   "riskLevel": "critical",
   "season": "any",
-  "primaryContacts": ["fire-16", "rescue-1122"],
+  "primaryContacts": [
+    "fire-16",
+    "rescue-1122"
+  ],
   "content": {
     "en": {
       "name": "Fire",
       "tagline": "House, kitchen, gas cylinder and electrical fires",
       "description": "Smoke kills more people than flames, and a small fire can fill a room in under two minutes. Getting out and staying out is always the priority.",
       "rightNow": [
-        { "step": 1, "icon": "exit-door", "title": "Get out and stay out", "text": "Leave immediately, take everyone with you, close doors behind you and never go back inside for belongings.", "priority": "critical" },
-        { "step": 2, "icon": "phone-call", "title": "Call Fire Brigade 16", "text": "From outside, call 16 or Rescue 1122 and give the address, floor and whether anyone is still inside.", "priority": "critical" },
-        { "step": 3, "icon": "crawl-low", "title": "Stay below the smoke", "text": "If there is smoke, keep low, cover your nose and mouth with a damp cloth and move along the wall to the exit.", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Get out and stay out",
+          "text": "Leave immediately, take everyone with you, close doors behind you and never go back inside for belongings.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "Call Fire Brigade 16",
+          "text": "From outside, call 16 or Rescue 1122 and give the address, floor and whether anyone is still inside.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "crawl-low",
+          "title": "Stay below the smoke",
+          "text": "If there is smoke, keep low, cover your nose and mouth with a damp cloth and move along the wall to the exit.",
+          "priority": "critical"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "exit-door", "title": "Plan two ways out", "text": "Agree on two exit routes and one meeting point outside, and practise it once with the whole family.", "priority": "high" },
-        { "step": 2, "icon": "gas-off", "title": "Check gas and wiring", "text": "Inspect cylinder pipes and regulators for cracks, and get overloaded boards and old wiring repaired.", "priority": "high" },
-        { "step": 3, "icon": "extinguisher", "title": "Keep the right extinguisher", "text": "Keep a working ABC extinguisher or a fire blanket in the kitchen and learn how to use it before you need it.", "priority": "normal" },
-        { "step": 4, "icon": "checklist", "title": "Fit a smoke alarm", "text": "Install a smoke alarm outside sleeping areas and test the battery every month.", "priority": "normal" },
-        { "step": 5, "icon": "documents", "title": "Keep exits clear", "text": "Never store cylinders, petrol or clutter in stairways, corridors or in front of doors.", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Plan two ways out",
+          "text": "Agree on two exit routes and one meeting point outside, and practise it once with the whole family.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "Check gas and wiring",
+          "text": "Inspect cylinder pipes and regulators for cracks, and get overloaded boards and old wiring repaired.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "extinguisher",
+          "title": "Keep the right extinguisher",
+          "text": "Keep a working ABC extinguisher or a fire blanket in the kitchen and learn how to use it before you need it.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "checklist",
+          "title": "Fit a smoke alarm",
+          "text": "Install a smoke alarm outside sleeping areas and test the battery every month.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "documents",
+          "title": "Keep exits clear",
+          "text": "Never store cylinders, petrol or clutter in stairways, corridors or in front of doors.",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "exit-door", "title": "Evacuate first", "text": "Warn everyone loudly, then leave. Do not stop to collect valuables or switch things off along the way.", "priority": "critical" },
-        { "step": 2, "icon": "crawl-low", "title": "Crawl low under smoke", "text": "Clean air stays near the floor. Crawl on hands and knees and keep your head about 30 cm above the ground.", "priority": "critical" },
-        { "step": 3, "icon": "away-from-window", "title": "Test doors before opening", "text": "Touch the door and handle with the back of your hand. If it is hot, use another route and keep that door shut.", "priority": "high" },
-        { "step": 4, "icon": "stop-drop-roll", "title": "If clothes catch fire", "text": "Stop, drop to the ground, cover your face and roll until the flames are out. Do not run.", "priority": "critical" },
-        { "step": 5, "icon": "blanket", "title": "Trapped? Seal and signal", "text": "Block door gaps with wet cloth, go to a window, signal with a torch or bright cloth and call for help by phone.", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Evacuate first",
+          "text": "Warn everyone loudly, then leave. Do not stop to collect valuables or switch things off along the way.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "crawl-low",
+          "title": "Crawl low under smoke",
+          "text": "Clean air stays near the floor. Crawl on hands and knees and keep your head about 30 cm above the ground.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "away-from-window",
+          "title": "Test doors before opening",
+          "text": "Touch the door and handle with the back of your hand. If it is hot, use another route and keep that door shut.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "stop-drop-roll",
+          "title": "If clothes catch fire",
+          "text": "Stop, drop to the ground, cover your face and roll until the flames are out. Do not run.",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "blanket",
+          "title": "Trapped? Seal and signal",
+          "text": "Block door gaps with wet cloth, go to a window, signal with a torch or bright cloth and call for help by phone.",
+          "priority": "critical"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "shelter-home", "title": "Do not re-enter", "text": "Wait for the fire service to declare the building safe. Hidden fire and smoke can restart in walls and ceilings.", "priority": "critical" },
-        { "step": 2, "icon": "first-aid", "title": "Treat burns correctly", "text": "Cool the burn with clean running water for at least 20 minutes, cover loosely and get medical care.", "priority": "critical" },
-        { "step": 3, "icon": "mask-smoke", "title": "Get checked for smoke", "text": "Anyone with cough, dizziness, sooty spit or breathing trouble needs medical assessment even if they look fine.", "priority": "high" },
-        { "step": 4, "icon": "gas-off", "title": "Have services inspected", "text": "Do not use gas or electricity again until the connection, meter and wiring are checked by a professional.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Do not re-enter",
+          "text": "Wait for the fire service to declare the building safe. Hidden fire and smoke can restart in walls and ceilings.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "Treat burns correctly",
+          "text": "Cool the burn with clean running water for at least 20 minutes, cover loosely and get medical care.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "mask-smoke",
+          "title": "Get checked for smoke",
+          "text": "Anyone with cough, dizziness, sooty spit or breathing trouble needs medical assessment even if they look fine.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "gas-off",
+          "title": "Have services inspected",
+          "text": "Do not use gas or electricity again until the connection, meter and wiring are checked by a professional.",
+          "priority": "high"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "water-drop", "title": "No water on oil or electrical fire", "text": "Water spreads burning oil and conducts current. Smother a pan fire with a lid or fire blanket instead.", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "Do not use a lift", "text": "Lifts can stop at the fire floor or lose power. Always use the stairs.", "priority": "critical" },
-        { "step": 3, "icon": "no-entry", "title": "Do not go back for anything", "text": "No document, phone or valuable is worth re-entering a burning building for.", "priority": "critical" },
-        { "step": 4, "icon": "first-aid", "title": "No ice, toothpaste or butter on burns", "text": "These damage the skin further and increase infection risk. Only clean cool water and a clean cover.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "water-drop",
+          "title": "No water on oil or electrical fire",
+          "text": "Water spreads burning oil and conducts current. Smother a pan fire with a lid or fire blanket instead.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Do not use a lift",
+          "text": "Lifts can stop at the fire floor or lose power. Always use the stairs.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "Do not go back for anything",
+          "text": "No document, phone or valuable is worth re-entering a burning building for.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "No ice, toothpaste or butter on burns",
+          "text": "These damage the skin further and increase infection risk. Only clean cool water and a clean cover.",
+          "priority": "high"
+        }
       ]
     },
     "ur": {
@@ -49,35 +178,161 @@
       "tagline": "گھر، کچن، گیس سلنڈر اور بجلی سے لگنے والی آگ",
       "description": "شعلوں سے زیادہ ہلاکتیں دھوئیں سے ہوتی ہیں، اور معمولی آگ دو منٹ میں پورا کمرہ بھر سکتی ہے۔ باہر نکلنا اور باہر ہی رہنا سب سے پہلی ترجیح ہے۔",
       "rightNow": [
-        { "step": 1, "icon": "exit-door", "title": "فوراً باہر نکلیں اور باہر رہیں", "text": "سب کو ساتھ لے کر فوراً نکلیں، پیچھے دروازے بند کرتے جائیں اور سامان کے لیے ہرگز واپس اندر نہ جائیں۔", "priority": "critical" },
-        { "step": 2, "icon": "phone-call", "title": "فائر بریگیڈ 16 کو کال کریں", "text": "باہر آ کر 16 یا ریسکیو 1122 کو کال کریں اور پتہ، منزل اور یہ بتائیں کہ کوئی اندر رہ گیا ہے یا نہیں۔", "priority": "critical" },
-        { "step": 3, "icon": "crawl-low", "title": "دھوئیں سے نیچے رہیں", "text": "دھواں ہو تو نیچے جھک جائیں، ناک اور منہ گیلے کپڑے سے ڈھانپیں اور دیوار کے ساتھ ساتھ دروازے تک جائیں۔", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "فوراً باہر نکلیں اور باہر رہیں",
+          "text": "سب کو ساتھ لے کر فوراً نکلیں، پیچھے دروازے بند کرتے جائیں اور سامان کے لیے ہرگز واپس اندر نہ جائیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "فائر بریگیڈ 16 کو کال کریں",
+          "text": "باہر آ کر 16 یا ریسکیو 1122 کو کال کریں اور پتہ، منزل اور یہ بتائیں کہ کوئی اندر رہ گیا ہے یا نہیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "crawl-low",
+          "title": "دھوئیں سے نیچے رہیں",
+          "text": "دھواں ہو تو نیچے جھک جائیں، ناک اور منہ گیلے کپڑے سے ڈھانپیں اور دیوار کے ساتھ ساتھ دروازے تک جائیں۔",
+          "priority": "critical"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "exit-door", "title": "نکلنے کے دو راستے طے کریں", "text": "دو راستے اور باہر ایک ملنے کی جگہ طے کریں، اور پورے گھر کے ساتھ ایک بار مشق کریں۔", "priority": "high" },
-        { "step": 2, "icon": "gas-off", "title": "گیس اور وائرنگ چیک کریں", "text": "سلنڈر کے پائپ اور ریگولیٹر میں دراڑیں دیکھیں، اور اوورلوڈ بورڈ اور پرانی وائرنگ مرمت کروائیں۔", "priority": "high" },
-        { "step": 3, "icon": "extinguisher", "title": "درست فائر ایکسٹنگوشر رکھیں", "text": "کچن میں کام کرنے والا اے بی سی ایکسٹنگوشر یا فائر بلینکٹ رکھیں اور پہلے سے استعمال سیکھ لیں۔", "priority": "normal" },
-        { "step": 4, "icon": "checklist", "title": "اسموک الارم لگوائیں", "text": "سونے کے کمروں کے باہر اسموک الارم لگائیں اور ہر ماہ بیٹری چیک کریں۔", "priority": "normal" },
-        { "step": 5, "icon": "documents", "title": "راستے خالی رکھیں", "text": "سیڑھیوں، راہداریوں اور دروازوں کے سامنے سلنڈر، پٹرول یا فاضل سامان نہ رکھیں۔", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "نکلنے کے دو راستے طے کریں",
+          "text": "دو راستے اور باہر ایک ملنے کی جگہ طے کریں، اور پورے گھر کے ساتھ ایک بار مشق کریں۔",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "گیس اور وائرنگ چیک کریں",
+          "text": "سلنڈر کے پائپ اور ریگولیٹر میں دراڑیں دیکھیں، اور اوورلوڈ بورڈ اور پرانی وائرنگ مرمت کروائیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "extinguisher",
+          "title": "درست فائر ایکسٹنگوشر رکھیں",
+          "text": "کچن میں کام کرنے والا اے بی سی ایکسٹنگوشر یا فائر بلینکٹ رکھیں اور پہلے سے استعمال سیکھ لیں۔",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "checklist",
+          "title": "اسموک الارم لگوائیں",
+          "text": "سونے کے کمروں کے باہر اسموک الارم لگائیں اور ہر ماہ بیٹری چیک کریں۔",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "documents",
+          "title": "راستے خالی رکھیں",
+          "text": "سیڑھیوں، راہداریوں اور دروازوں کے سامنے سلنڈر، پٹرول یا فاضل سامان نہ رکھیں۔",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "exit-door", "title": "پہلے باہر نکلیں", "text": "بلند آواز سے سب کو خبردار کریں، پھر نکل جائیں۔ راستے میں قیمتی سامان لینے یا سوئچ بند کرنے کے لیے نہ رکیں۔", "priority": "critical" },
-        { "step": 2, "icon": "crawl-low", "title": "دھوئیں کے نیچے رینگ کر چلیں", "text": "صاف ہوا فرش کے قریب رہتی ہے۔ ہاتھوں اور گھٹنوں پر رینگیں اور سر زمین سے تقریباً 30 سینٹی میٹر اوپر رکھیں۔", "priority": "critical" },
-        { "step": 3, "icon": "away-from-window", "title": "دروازہ کھولنے سے پہلے جانچیں", "text": "ہاتھ کی پشت سے دروازہ اور ہینڈل چھو کر دیکھیں۔ گرم ہو تو دوسرا راستہ لیں اور وہ دروازہ بند رکھیں۔", "priority": "high" },
-        { "step": 4, "icon": "stop-drop-roll", "title": "کپڑوں کو آگ لگ جائے تو", "text": "رک جائیں، زمین پر لیٹ جائیں، چہرہ ڈھانپیں اور آگ بجھنے تک لوٹتے رہیں۔ بھاگیں ہرگز نہیں۔", "priority": "critical" },
-        { "step": 5, "icon": "blanket", "title": "پھنس جائیں تو بند کریں اور اشارہ دیں", "text": "دروازے کی جھریاں گیلے کپڑے سے بند کریں، کھڑکی پر جائیں، ٹارچ یا چمکدار کپڑے سے اشارہ دیں اور فون پر مدد مانگیں۔", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "پہلے باہر نکلیں",
+          "text": "بلند آواز سے سب کو خبردار کریں، پھر نکل جائیں۔ راستے میں قیمتی سامان لینے یا سوئچ بند کرنے کے لیے نہ رکیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "crawl-low",
+          "title": "دھوئیں کے نیچے رینگ کر چلیں",
+          "text": "صاف ہوا فرش کے قریب رہتی ہے۔ ہاتھوں اور گھٹنوں پر رینگیں اور سر زمین سے تقریباً 30 سینٹی میٹر اوپر رکھیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "away-from-window",
+          "title": "دروازہ کھولنے سے پہلے جانچیں",
+          "text": "ہاتھ کی پشت سے دروازہ اور ہینڈل چھو کر دیکھیں۔ گرم ہو تو دوسرا راستہ لیں اور وہ دروازہ بند رکھیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "stop-drop-roll",
+          "title": "کپڑوں کو آگ لگ جائے تو",
+          "text": "رک جائیں، زمین پر لیٹ جائیں، چہرہ ڈھانپیں اور آگ بجھنے تک لوٹتے رہیں۔ بھاگیں ہرگز نہیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "blanket",
+          "title": "پھنس جائیں تو بند کریں اور اشارہ دیں",
+          "text": "دروازے کی جھریاں گیلے کپڑے سے بند کریں، کھڑکی پر جائیں، ٹارچ یا چمکدار کپڑے سے اشارہ دیں اور فون پر مدد مانگیں۔",
+          "priority": "critical"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "shelter-home", "title": "دوبارہ اندر نہ جائیں", "text": "فائر سروس کے محفوظ قرار دینے تک انتظار کریں۔ دیواروں اور چھت میں چھپی آگ دوبارہ بھڑک سکتی ہے۔", "priority": "critical" },
-        { "step": 2, "icon": "first-aid", "title": "جلنے کا درست علاج", "text": "جلی ہوئی جگہ کو کم از کم 20 منٹ صاف بہتے پانی سے ٹھنڈا کریں، ڈھیلا ڈھانپیں اور طبی امداد لیں۔", "priority": "critical" },
-        { "step": 3, "icon": "mask-smoke", "title": "دھوئیں کا معائنہ کروائیں", "text": "کھانسی، چکر، کالے بلغم یا سانس کی تکلیف والے ہر فرد کو ڈاکٹر سے چیک کروائیں، چاہے وہ ٹھیک لگے۔", "priority": "high" },
-        { "step": 4, "icon": "gas-off", "title": "کنکشن کی جانچ کروائیں", "text": "کنکشن، میٹر اور وائرنگ کی ماہر سے جانچ کے بغیر گیس اور بجلی دوبارہ استعمال نہ کریں۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "دوبارہ اندر نہ جائیں",
+          "text": "فائر سروس کے محفوظ قرار دینے تک انتظار کریں۔ دیواروں اور چھت میں چھپی آگ دوبارہ بھڑک سکتی ہے۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "جلنے کا درست علاج",
+          "text": "جلی ہوئی جگہ کو کم از کم 20 منٹ صاف بہتے پانی سے ٹھنڈا کریں، ڈھیلا ڈھانپیں اور طبی امداد لیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "mask-smoke",
+          "title": "دھوئیں کا معائنہ کروائیں",
+          "text": "کھانسی، چکر، کالے بلغم یا سانس کی تکلیف والے ہر فرد کو ڈاکٹر سے چیک کروائیں، چاہے وہ ٹھیک لگے۔",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "gas-off",
+          "title": "کنکشن کی جانچ کروائیں",
+          "text": "کنکشن، میٹر اور وائرنگ کی ماہر سے جانچ کے بغیر گیس اور بجلی دوبارہ استعمال نہ کریں۔",
+          "priority": "high"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "water-drop", "title": "تیل یا بجلی کی آگ پر پانی نہیں", "text": "پانی جلتا تیل پھیلاتا ہے اور کرنٹ منتقل کرتا ہے۔ کڑاہی کی آگ کو ڈھکن یا فائر بلینکٹ سے دبائیں۔", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "لفٹ استعمال نہ کریں", "text": "لفٹ آگ والی منزل پر رک سکتی ہے یا بجلی بند ہو سکتی ہے۔ ہمیشہ سیڑھیاں استعمال کریں۔", "priority": "critical" },
-        { "step": 3, "icon": "no-entry", "title": "کسی چیز کے لیے واپس نہ جائیں", "text": "کوئی کاغذ، فون یا قیمتی چیز جلتی عمارت میں واپس جانے کے قابل نہیں۔", "priority": "critical" },
-        { "step": 4, "icon": "first-aid", "title": "جلنے پر برف، ٹوتھ پیسٹ یا مکھن نہیں", "text": "یہ جِلد کو مزید نقصان اور انفیکشن کا خطرہ بڑھاتے ہیں۔ صرف صاف ٹھنڈا پانی اور صاف کپڑا۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "water-drop",
+          "title": "تیل یا بجلی کی آگ پر پانی نہیں",
+          "text": "پانی جلتا تیل پھیلاتا ہے اور کرنٹ منتقل کرتا ہے۔ کڑاہی کی آگ کو ڈھکن یا فائر بلینکٹ سے دبائیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "لفٹ استعمال نہ کریں",
+          "text": "لفٹ آگ والی منزل پر رک سکتی ہے یا بجلی بند ہو سکتی ہے۔ ہمیشہ سیڑھیاں استعمال کریں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "کسی چیز کے لیے واپس نہ جائیں",
+          "text": "کوئی کاغذ، فون یا قیمتی چیز جلتی عمارت میں واپس جانے کے قابل نہیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "جلنے پر برف، ٹوتھ پیسٹ یا مکھن نہیں",
+          "text": "یہ جِلد کو مزید نقصان اور انفیکشن کا خطرہ بڑھاتے ہیں۔ صرف صاف ٹھنڈا پانی اور صاف کپڑا۔",
+          "priority": "high"
+        }
       ]
     },
     "hi": {
@@ -85,35 +340,647 @@
       "tagline": "घर, रसोई, गैस सिलेंडर और बिजली से लगने वाली आग",
       "description": "लपटों से ज़्यादा मौतें धुएँ से होती हैं, और छोटी आग दो मिनट में पूरा कमरा भर सकती है। बाहर निकलना और बाहर ही रहना सबसे पहली प्राथमिकता है।",
       "rightNow": [
-        { "step": 1, "icon": "exit-door", "title": "तुरंत बाहर निकलें और बाहर रहें", "text": "सबको साथ लेकर तुरंत निकलें, पीछे दरवाज़े बंद करते जाएँ और सामान के लिए कभी अंदर न लौटें।", "priority": "critical" },
-        { "step": 2, "icon": "phone-call", "title": "अग्निशमन 16 पर कॉल करें", "text": "बाहर आकर 16 या रेस्क्यू 1122 पर कॉल करें और पता, मंज़िल तथा यह बताएँ कि कोई अंदर रह गया है या नहीं।", "priority": "critical" },
-        { "step": 3, "icon": "crawl-low", "title": "धुएँ से नीचे रहें", "text": "धुआँ हो तो नीचे झुकें, नाक और मुँह गीले कपड़े से ढकें और दीवार के सहारे दरवाज़े तक जाएँ।", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "तुरंत बाहर निकलें और बाहर रहें",
+          "text": "सबको साथ लेकर तुरंत निकलें, पीछे दरवाज़े बंद करते जाएँ और सामान के लिए कभी अंदर न लौटें।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "अग्निशमन 16 पर कॉल करें",
+          "text": "बाहर आकर 16 या रेस्क्यू 1122 पर कॉल करें और पता, मंज़िल तथा यह बताएँ कि कोई अंदर रह गया है या नहीं।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "crawl-low",
+          "title": "धुएँ से नीचे रहें",
+          "text": "धुआँ हो तो नीचे झुकें, नाक और मुँह गीले कपड़े से ढकें और दीवार के सहारे दरवाज़े तक जाएँ।",
+          "priority": "critical"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "exit-door", "title": "निकलने के दो रास्ते तय करें", "text": "दो रास्ते और बाहर एक मिलने की जगह तय करें, और पूरे परिवार के साथ एक बार अभ्यास करें।", "priority": "high" },
-        { "step": 2, "icon": "gas-off", "title": "गैस और वायरिंग जाँचें", "text": "सिलेंडर के पाइप और रेगुलेटर में दरारें देखें, और ओवरलोड बोर्ड तथा पुरानी वायरिंग ठीक कराएँ।", "priority": "high" },
-        { "step": 3, "icon": "extinguisher", "title": "सही अग्निशामक रखें", "text": "रसोई में चालू ABC अग्निशामक या फ़ायर ब्लैंकेट रखें और पहले से उसका उपयोग सीख लें।", "priority": "normal" },
-        { "step": 4, "icon": "checklist", "title": "स्मोक अलार्म लगवाएँ", "text": "सोने के कमरों के बाहर स्मोक अलार्म लगाएँ और हर महीने बैटरी जाँचें।", "priority": "normal" },
-        { "step": 5, "icon": "documents", "title": "रास्ते खाली रखें", "text": "सीढ़ियों, गलियारों और दरवाज़ों के सामने सिलेंडर, पेट्रोल या बेकार सामान न रखें।", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "निकलने के दो रास्ते तय करें",
+          "text": "दो रास्ते और बाहर एक मिलने की जगह तय करें, और पूरे परिवार के साथ एक बार अभ्यास करें।",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "गैस और वायरिंग जाँचें",
+          "text": "सिलेंडर के पाइप और रेगुलेटर में दरारें देखें, और ओवरलोड बोर्ड तथा पुरानी वायरिंग ठीक कराएँ।",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "extinguisher",
+          "title": "सही अग्निशामक रखें",
+          "text": "रसोई में चालू ABC अग्निशामक या फ़ायर ब्लैंकेट रखें और पहले से उसका उपयोग सीख लें।",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "checklist",
+          "title": "स्मोक अलार्म लगवाएँ",
+          "text": "सोने के कमरों के बाहर स्मोक अलार्म लगाएँ और हर महीने बैटरी जाँचें।",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "documents",
+          "title": "रास्ते खाली रखें",
+          "text": "सीढ़ियों, गलियारों और दरवाज़ों के सामने सिलेंडर, पेट्रोल या बेकार सामान न रखें।",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "exit-door", "title": "पहले बाहर निकलें", "text": "ज़ोर से सबको सचेत करें, फिर निकल जाएँ। रास्ते में क़ीमती सामान लेने या स्विच बंद करने के लिए न रुकें।", "priority": "critical" },
-        { "step": 2, "icon": "crawl-low", "title": "धुएँ के नीचे रेंगकर चलें", "text": "साफ़ हवा फ़र्श के पास रहती है। हाथों और घुटनों पर रेंगें और सिर ज़मीन से लगभग 30 सेंटीमीटर ऊपर रखें।", "priority": "critical" },
-        { "step": 3, "icon": "away-from-window", "title": "दरवाज़ा खोलने से पहले जाँचें", "text": "हाथ की पीठ से दरवाज़ा और हैंडल छूकर देखें। गरम हो तो दूसरा रास्ता लें और वह दरवाज़ा बंद रखें।", "priority": "high" },
-        { "step": 4, "icon": "stop-drop-roll", "title": "कपड़ों में आग लग जाए तो", "text": "रुकें, ज़मीन पर लेट जाएँ, चेहरा ढकें और आग बुझने तक लोटें। दौड़ें नहीं।", "priority": "critical" },
-        { "step": 5, "icon": "blanket", "title": "फँस जाएँ तो सील करें और संकेत दें", "text": "दरवाज़े की दरारें गीले कपड़े से बंद करें, खिड़की पर जाएँ, टॉर्च या चमकीले कपड़े से संकेत दें और फ़ोन पर मदद मांगें।", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "पहले बाहर निकलें",
+          "text": "ज़ोर से सबको सचेत करें, फिर निकल जाएँ। रास्ते में क़ीमती सामान लेने या स्विच बंद करने के लिए न रुकें।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "crawl-low",
+          "title": "धुएँ के नीचे रेंगकर चलें",
+          "text": "साफ़ हवा फ़र्श के पास रहती है। हाथों और घुटनों पर रेंगें और सिर ज़मीन से लगभग 30 सेंटीमीटर ऊपर रखें।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "away-from-window",
+          "title": "दरवाज़ा खोलने से पहले जाँचें",
+          "text": "हाथ की पीठ से दरवाज़ा और हैंडल छूकर देखें। गरम हो तो दूसरा रास्ता लें और वह दरवाज़ा बंद रखें।",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "stop-drop-roll",
+          "title": "कपड़ों में आग लग जाए तो",
+          "text": "रुकें, ज़मीन पर लेट जाएँ, चेहरा ढकें और आग बुझने तक लोटें। दौड़ें नहीं।",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "blanket",
+          "title": "फँस जाएँ तो सील करें और संकेत दें",
+          "text": "दरवाज़े की दरारें गीले कपड़े से बंद करें, खिड़की पर जाएँ, टॉर्च या चमकीले कपड़े से संकेत दें और फ़ोन पर मदद मांगें।",
+          "priority": "critical"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "shelter-home", "title": "दोबारा अंदर न जाएँ", "text": "अग्निशमन विभाग के सुरक्षित घोषित करने तक इंतज़ार करें। दीवारों और छत में छिपी आग फिर भड़क सकती है।", "priority": "critical" },
-        { "step": 2, "icon": "first-aid", "title": "जलने का सही उपचार", "text": "जले हिस्से को कम से कम 20 मिनट साफ़ बहते पानी से ठंडा करें, ढीला ढकें और चिकित्सा सहायता लें।", "priority": "critical" },
-        { "step": 3, "icon": "mask-smoke", "title": "धुएँ की जाँच कराएँ", "text": "खांसी, चक्कर, काले बलगम या सांस की तकलीफ़ वाले हर व्यक्ति की जाँच कराएँ, चाहे वह ठीक लगे।", "priority": "high" },
-        { "step": 4, "icon": "gas-off", "title": "कनेक्शन की जाँच कराएँ", "text": "कनेक्शन, मीटर और वायरिंग की विशेषज्ञ जाँच के बिना गैस और बिजली दोबारा इस्तेमाल न करें।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "दोबारा अंदर न जाएँ",
+          "text": "अग्निशमन विभाग के सुरक्षित घोषित करने तक इंतज़ार करें। दीवारों और छत में छिपी आग फिर भड़क सकती है।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "जलने का सही उपचार",
+          "text": "जले हिस्से को कम से कम 20 मिनट साफ़ बहते पानी से ठंडा करें, ढीला ढकें और चिकित्सा सहायता लें।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "mask-smoke",
+          "title": "धुएँ की जाँच कराएँ",
+          "text": "खांसी, चक्कर, काले बलगम या सांस की तकलीफ़ वाले हर व्यक्ति की जाँच कराएँ, चाहे वह ठीक लगे।",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "gas-off",
+          "title": "कनेक्शन की जाँच कराएँ",
+          "text": "कनेक्शन, मीटर और वायरिंग की विशेषज्ञ जाँच के बिना गैस और बिजली दोबारा इस्तेमाल न करें।",
+          "priority": "high"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "water-drop", "title": "तेल या बिजली की आग पर पानी नहीं", "text": "पानी जलते तेल को फैलाता है और करंट पहुँचाता है। कड़ाही की आग को ढक्कन या फ़ायर ब्लैंकेट से दबाएँ।", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "लिफ़्ट का इस्तेमाल न करें", "text": "लिफ़्ट आग वाली मंज़िल पर रुक सकती है या बिजली जा सकती है। हमेशा सीढ़ियाँ इस्तेमाल करें।", "priority": "critical" },
-        { "step": 3, "icon": "no-entry", "title": "किसी चीज़ के लिए न लौटें", "text": "कोई काग़ज़, फ़ोन या क़ीमती वस्तु जलती इमारत में लौटने योग्य नहीं है।", "priority": "critical" },
-        { "step": 4, "icon": "first-aid", "title": "जले पर बर्फ़, टूथपेस्ट या मक्खन नहीं", "text": "ये त्वचा को और नुक़सान तथा संक्रमण का ख़तरा बढ़ाते हैं। केवल साफ़ ठंडा पानी और साफ़ कपड़ा।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "water-drop",
+          "title": "तेल या बिजली की आग पर पानी नहीं",
+          "text": "पानी जलते तेल को फैलाता है और करंट पहुँचाता है। कड़ाही की आग को ढक्कन या फ़ायर ब्लैंकेट से दबाएँ।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "लिफ़्ट का इस्तेमाल न करें",
+          "text": "लिफ़्ट आग वाली मंज़िल पर रुक सकती है या बिजली जा सकती है। हमेशा सीढ़ियाँ इस्तेमाल करें।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "किसी चीज़ के लिए न लौटें",
+          "text": "कोई काग़ज़, फ़ोन या क़ीमती वस्तु जलती इमारत में लौटने योग्य नहीं है।",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "जले पर बर्फ़, टूथपेस्ट या मक्खन नहीं",
+          "text": "ये त्वचा को और नुक़सान तथा संक्रमण का ख़तरा बढ़ाते हैं। केवल साफ़ ठंडा पानी और साफ़ कपड़ा।",
+          "priority": "high"
+        }
+      ]
+    },
+    "zh-CN": {
+      "name": "火灾险情",
+      "tagline": "住宅、厨房、燃气罐与电气火灾应对",
+      "description": "烟气窒息造成的死亡远多于火焰直接灼伤，小火可在两分钟内吞噬整个房间。迅速撤离并保持在室外始终是首要原则。",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "迅速撤离，切勿返还",
+          "text": "立即撤离，带领所有人离开，顺手关闭身后房门，严禁为取财物重返火场。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "拨打火警电话 16",
+          "text": "撤离到室外安全区域后，立即拨打 16 或 1122，准确报出地址、楼层及是否有人员被困。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "crawl-low",
+          "title": "压低身姿避开浓烟",
+          "text": "若有浓烟，保持低姿贴地爬行，用湿毛巾或衣物捂住口鼻，沿墙壁摸索逃生。",
+          "priority": "critical"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "规划两条逃生通道",
+          "text": "同全家人商定两条不同的逃生路线及室外集结点，并组织家庭成员进行实地演练。",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "排查燃气管线与电气线路",
+          "text": "定期检查燃气软管及减压阀是否老化开裂，及时维修老化破损电线，杜绝插座过载。",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "extinguisher",
+          "title": "常备合格灭火器材",
+          "text": "在厨房常备干粉灭火器或灭火毯，并在发生险情前熟悉其正确拔销使用方法。",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "checklist",
+          "title": "安装独立式烟感报警器",
+          "text": "在卧室门外通道安装独立烟雾报警器，每月定期按测试键检测电池状态。",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "documents",
+          "title": "确保疏散走廊畅通",
+          "text": "严禁在楼梯间、走廊及疏散通道堆放易燃杂物、汽油桶或停放电动自行车。",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "逃生疏散第一位",
+          "text": "大声呼喊警示所有人立即撤离，切勿因收拾贵重物品或关停电器耽误逃生黄金时间。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "crawl-low",
+          "title": "低姿爬行穿过烟气层",
+          "text": "新鲜空气集中在靠近地面约30厘米处，双手双膝着地向前爬行，护住呼吸道。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "away-from-window",
+          "title": "开门前务必试触门把手",
+          "text": "使用手背试探门面与金属把手；若发烫说明门外已被烈火封锁，切勿开门，另选通道。",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "stop-drop-roll",
+          "title": "身上的衣物起火怎么办",
+          "text": "立即停下、就地躺倒、双手捂脸并来回打滚直至扑灭火苗，切勿惊慌奔跑。",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "blanket",
+          "title": "若被困室内及时封堵求救",
+          "text": "用浸湿毛巾或床单紧塞门缝防烟，移至靠窗处挥舞鲜艳衣物或手电发信号并电话求援。",
+          "priority": "critical"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "严禁重返着火建筑",
+          "text": "必须等待消防救援队确认建筑彻底安全后方可进入；墙体内残留阴燃极易复燃。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "科学正确处理烧烫伤",
+          "text": "用洁净流动冷水持续冲洗伤处降温至少20分钟，无菌纱布松散覆盖，尽快就医。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "mask-smoke",
+          "title": "全面排查吸入性烟气损伤",
+          "text": "凡接触浓烟并伴有咳嗽、头晕、咳黑色痰或呼吸困难者，无论外表如何均须就医检查。",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "gas-off",
+          "title": "专业检测水电燃气系统",
+          "text": "在专业人员对燃气管网、电表及入户线缆全面排查修复前，严禁恢复通电通气。",
+          "priority": "high"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "water-drop",
+          "title": "油锅起火或电气火灾严禁泼水",
+          "text": "水遇热油会发生剧烈爆燃飞溅，遇带电设备会引发触电；应使用锅盖平推覆盖窒息灭火。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "火灾发生时严禁搭乘电梯",
+          "text": "电梯极易因高温断电迫降在起火楼层造成窒息被困；务必经安全防烟楼梯疏散。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "严禁重返火场拿取财物",
+          "text": "任何贵重证件、手机或钱物都无法与生命相比，绝不重返充满有毒浓烟的室内。",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "烧伤处严禁涂抹牙膏、黄油或冰敷",
+          "text": "乱涂偏方会导致创面严重感染并加深创伤组织坏死；仅能使用清洁冷水降温保护。",
+          "priority": "high"
+        }
+      ]
+    },
+    "fr": {
+      "name": "Incendie",
+      "tagline": "Feux domestiques, feux de cuisine, bouteilles de gaz et courts-circuits",
+      "description": "La fumée tue bien plus que les flammes et envahit une pièce en moins de deux minutes. Évacuer et rester dehors est la règle absolue.",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Sortir et rester dehors",
+          "text": "Sortez immédiatement avec tous les occupants, fermez les portes derrière vous et ne retournez jamais à l'intérieur.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "Appeler les pompiers au 16",
+          "text": "Depuis l'extérieur, composez le 16 ou le 1122 en indiquant l'adresse précise, l'étage et si des personnes sont coincées.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "crawl-low",
+          "title": "Rester sous la fumée",
+          "text": "Baissez-vous au ras du sol, protégez nez et bouche avec un tissu humide et progressez le long des murs vers la sortie.",
+          "priority": "critical"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Prévoir deux issues de secours",
+          "text": "Fixez deux itinéraires de fuite et un point de rassemblement extérieur, et effectuez un exercice avec vos proches.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "Vérifier gaz et électricité",
+          "text": "Inspectez tuyaux et détendeurs de gaz; faites réparer sans délai les prises surchargées et câblages vétustes.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "extinguisher",
+          "title": "S'équiper d'un extincteur adapté",
+          "text": "Disposez d'un extincteur ABC ou d'une couverture anti-feu dans la cuisine et apprenez son fonctionnement.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "checklist",
+          "title": "Poser des détecteurs de fumée",
+          "text": "Installez un avertisseur autonome de fumée près des chambres et testez la pile chaque mois.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "documents",
+          "title": "Dégager les voies d'évacuation",
+          "text": "Ne stockez jamais de bouteilles de gaz, solvants ou objets encombrants dans les escaliers ou devant les portes.",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Évacuer immédiatement",
+          "text": "Donnez l'alerte à voix haute et sortez sans délai. Ne perdez pas de temps à ramasser des objets précieux.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "crawl-low",
+          "title": "Ramper sous la fumée",
+          "text": "L'air respirable reste près du sol. Avancez à quatre pattes en maintenant la tête à 30 cm du plancher.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "away-from-window",
+          "title": "Tester les portes avant d'ouvrir",
+          "text": "Touchez la poignée et la porte avec le dos de la main; si c'est chaud, n'ouvrez pas et empruntez une autre issue.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "stop-drop-roll",
+          "title": "Vêtements en feu : s'arrêter, se rouler",
+          "text": "Arrêtez-vous, allongez-vous au sol, couvrez votre visage et roulez sur vous-même. Ne courez surtout pas.",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "blanket",
+          "title": "Piégé ? Calfeutrer et signaler",
+          "text": "Bloquez le bas des portes avec du linge mouillé, allez à la fenêtre, signalez votre présence et appelez les secours.",
+          "priority": "critical"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Ne jamais réintégrer les lieux",
+          "text": "Attendez le feu vert officiel des pompiers. Des feux couvés invisibles peuvent reprendre dans les cloisons.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "Refroidir les brûlures à l'eau",
+          "text": "Faites couler de l'eau tiède propre sur la brûlure pendant 20 minutes, couvrez sans serrer et consultez d'urgence.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "mask-smoke",
+          "title": "Consulter pour inhalation de fumées",
+          "text": "Toute personne ayant inhalé des fumées (toux, crachats noirs, vertiges) doit subir un examen médical d'urgence.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "gas-off",
+          "title": "Faire contrôler les installations",
+          "text": "Ne rouvrez ni le gaz ni le compteur électrique avant l'inspection et la certification par un professionnel.",
+          "priority": "high"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "water-drop",
+          "title": "Pas d'eau sur l'huile ou feux électriques",
+          "text": "L'eau projette l'huile enflammée et conduit le courant. Étouffez les flammes d'une poêle avec un couvercle.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Ne jamais prendre l'ascenseur",
+          "text": "Les ascenseurs risquent de se bloquer à l'étage sinistré par rupture de courant. Empruntez les escaliers.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "Ne faire demi-tour sous aucun prétexte",
+          "text": "Aucun document ni bien matériel ne mérite de risquer sa vie dans une atmosphère toxique.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "Ni dentifrice ni beurre sur les brûlures",
+          "text": "Ces remèdes aggravent la brûlure et provoquent de graves infections. Uniquement de l'eau propre et fraîche.",
+          "priority": "high"
+        }
+      ]
+    },
+    "de": {
+      "name": "Brände & Feuer",
+      "tagline": "Wohnungs-, Küchen-, Gasflaschen- und Elektrobrände",
+      "description": "Brandgase töten schneller als Flammen; ein Entstehungsbrand füllt Räume in unter zwei Minuten mit Giftgas. Flucht ins Freie hat oberste Priorität.",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Sofort flüchten und draußen bleiben",
+          "text": "Verlassen Sie sofort mit allen Mitbewohnern das Haus, Türen hinter sich schließen und niemals zurückkehren.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "Feuerwehr über Notruf 16 rufen",
+          "text": "Wählen Sie von draußen Notruf 16 oder 1122 mit Angabe von Adresse, Stockwerk und vermissten Personen.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "crawl-low",
+          "title": "Unterhalb der Rauchschicht bleiben",
+          "text": "Kriechen Sie bei Rauchentwicklung am Boden, Mund und Nase mit feuchtem Tuch schützen, an der Wand orientieren.",
+          "priority": "critical"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Zwei Fluchtwege planen",
+          "text": "Legen Sie zwei Fluchtwege und einen Treffpunkt draußen fest und üben Sie den Ablauf mit der Familie.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "Gasleitungen und Elektrik prüfen",
+          "text": "Gasschläuche und Druckminderer auf Risse prüfen; überlastete Mehrfachstecker und alte Kabel umgehend erneuern.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "extinguisher",
+          "title": "Geeignete Feuerlöscher bereithalten",
+          "text": "Einen geprüften ABC-Löscher oder eine Löschdecke in der Küche bereithalten und Bedienung vorab einprägen.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "checklist",
+          "title": "Rauchwarnmelder installieren",
+          "text": "Installieren Sie Rauchmelder vor Schlafräumen und prüfen Sie die Funktionsfähigkeit monatlich per Testknopf.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "documents",
+          "title": "Fluchtwege stets freihalten",
+          "text": "Niemals Gasflaschen, Benzin oder Gerümpel in Treppenhäusern oder vor Notausgängen abstellen.",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "exit-door",
+          "title": "Menschenrettung geht vor",
+          "text": "Rufen Sie Mitbewohner laut warnend zusammen und verlassen Sie das Gebäude; keine Wertsachen zusammensuchen.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "crawl-low",
+          "title": "Auf Händen und Knien kriechen",
+          "text": "Atembare Luft befindet sich in Bodennähe. Kriechen Sie mit dem Kopf etwa 30 cm über dem Fußboden.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "away-from-window",
+          "title": "Türen vor dem Öffnen abtasten",
+          "text": "Prüfen Sie Klinke und Türblatt mit dem Handrücken; ist sie heiß, geschlossen halten und Ausweichweg wählen.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "stop-drop-roll",
+          "title": "Brennende Kleidung : Stoppen, Wälzen",
+          "text": "Sofort stehenbleiben, hinlegen, Gesicht schützen und am Boden wälzen, bis Flammen erloschen sind. Nicht rennen.",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "blanket",
+          "title": "Eingeschlossen? Abdichten und winken",
+          "text": "Türritzen mit nassen Tüchern abdichten, ans Fenster treten, mit hellem Tuch aufmerksam machen und 1122 anrufen.",
+          "priority": "critical"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Brandstelle keinesfalls betreten",
+          "text": "Betreten Sie das Haus erst nach Freigabe durch die Feuerwehr. Versteckte Glutnester können erneut zünden.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "Brandwunden mit Wasser kühlen",
+          "text": "Brandwunden sofort mindestens 20 Minuten mit sauberem, fließendem Wasser kühlen, locker abdecken und zum Arzt.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "mask-smoke",
+          "title": "Rauchgasinhalation ärztlich abklären",
+          "text": "Jeder Betroffene mit Husten, Schwindel, Rußspuren im Mund oder Atemnot benötigt sofortige Notfallversorgung.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "gas-off",
+          "title": "Versorgungsleitungen prüfen lassen",
+          "text": "Gas- und Stromzufuhr erst nach fachmännischer Überprüfung und Freigabe durch Elektriker wieder in Betrieb nehmen.",
+          "priority": "high"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "water-drop",
+          "title": "Kein Wasser auf Fett- oder Elektrobrände",
+          "text": "Wasser führt bei Fettbränden zur Fettexplosion und bei Strom zu tödlichem Schlag; Topf mit Deckel ersticken.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Niemals den Aufzug benutzen",
+          "text": "Aufzüge bleiben bei Stromausfall im Rauch stecken. Benutzen Sie immer das Treppenhaus.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "Niemals für Besitztümer umkehren",
+          "text": "Kein Handy, Ausweis oder Geld ist es wert, das Leben in tödlichen Brandgasen aufs Spiel zu setzen.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "Keine Zahnpasta oder Hausmittel auf Brandwunden",
+          "text": "Zahnpasta, Mehl oder Butter führen zu schweren Gewebeinfektionen; ausschließlich sauberes Kühlwasser verwenden.",
+          "priority": "high"
+        }
       ]
     }
   }

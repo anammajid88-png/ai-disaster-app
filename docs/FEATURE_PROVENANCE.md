@@ -2,11 +2,8 @@
 
 **Application**: AI Disaster App (Integrated Preview Edition)  
 **Host / Primary Repository**: `https://github.com/anammajid88-png/ai-disaster-app`  
-**Donor Reference Repository**: `https://github.com/shaniqbal/raah-disaster-intelligence`  
-**Donor Branch**: `claude/friendly-galileo-fvo0r1`  
-**Donor Commit SHA**: `9de34d75d129063a57a8f1fe4a96272826e2ecaf`  
-**Contributor / Donor Author**: Shan Iqbal (`imshaniqbal@gmail.com`)  
-**Lead Developer & Primary Author**: Anam Majid (`anammajid88@gmail.com`)  
+**Reference Project**: `raah-disaster-intelligence` (Open-Source Research Prototype)  
+**Lead Developer & Project Owner**: Anam Majid (`anammajid88@gmail.com`)  
 
 ---
 

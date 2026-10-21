@@ -15,6 +15,9 @@ const HEADINGS = {
   en: { rightNow: 'Do this right now', during: 'During', call: 'Call' },
   ur: { rightNow: 'ابھی یہ کریں', during: 'دوران', call: 'کال کریں' },
   hi: { rightNow: 'अभी यह करें', during: 'दौरान', call: 'कॉल करें' },
+  'zh-CN': { rightNow: '立即执行', during: '应对期间', call: '呼叫' },
+  fr: { rightNow: 'À faire immédiatement', during: 'Pendant', call: 'Appeler' },
+  de: { rightNow: 'Sofortmaßnahmen', during: 'Währenddessen', call: 'Anrufen' },
 };
 
 const NO_MATCH = {
@@ -29,6 +32,18 @@ const NO_MATCH = {
   hi: [
     'एक पंक्ति में बताएँ क्या हो रहा है, जैसे "घर में पानी आ रहा है" या "रसोई में आग लग गई है", मैं तुरंत उठाए जाने वाले क़दम बताऊँगा।',
     'अगर अभी किसी की जान ख़तरे में है तो पहले रेस्क्यू 1122 या पुलिस 15 पर कॉल करें।',
+  ].join('\n'),
+  'zh-CN': [
+    '请用一句话告诉我发生了什么，例如“洪水正在进入我的房屋”或“厨房起火了”，我将为您提供即刻应对步骤。',
+    '如果有人正面临生命危险，请立即优先拨打 救援电话 1122 或 报警电话 15。',
+  ].join('\n'),
+  fr: [
+    'Décrivez ce qui se passe en une phrase, par exemple "l\'eau entre dans ma maison" ou "il y a un incendie dans la cuisine", et je vous donnerai les mesures immédiates.',
+    'Si quelqu\'un est en danger immédiat, appelez d\'abord les secours 1122 ou la police 15.',
+  ].join('\n'),
+  de: [
+    'Beschreiben Sie in einem Satz, was passiert, z. B. "Wasser dringt in mein Haus ein" oder "In der Küche brennt es", und ich gebe Ihnen die Sofortmaßnahmen.',
+    'Wenn jemand in akuter Lebensgefahr schwebt, rufen Sie zuerst Rettung 1122 oder Polizei 15.',
   ].join('\n'),
 };
 

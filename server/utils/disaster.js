@@ -17,36 +17,54 @@ const DISASTER_KEYWORDS = {
     en: ['flood', 'flooding', 'flooded', 'water level', 'water entered', 'water entering', 'water is entering', 'water coming', 'water is coming', 'water rising', 'water is rising', 'water inside', 'water in my house', 'water in the house', 'water in the street', 'knee deep', 'waist deep', 'drown', 'overflow', 'river', 'dam', 'monsoon water', 'waterlogged', 'sewage water'],
     ur: ['سیلاب', 'پانی', 'ڈوب', 'طغیانی', 'نالہ', 'دریا', 'بارش کا پانی'],
     hi: ['बाढ़', 'पानी', 'डूब', 'नदी', 'जलभराव', 'बहाव'],
-    roman: ['sailab', 'seelab', 'pani', 'paani', 'pani bhar', 'doob', 'doob', 'nala', 'darya', 'flood'],
+    zh: ['洪水', '淹水', '涨水', '水位', '进水', '被淹', '溺水', '暴雨积水'],
+    fr: ['inondation', 'inonde', 'eau monte', 'noyade', 'crue', 'submersion'],
+    de: ['hochwasser', 'ueberschwemmung', 'überschwemmung', 'wasser steigt', 'ertrinken', 'flut'],
+    roman: ['sailab', 'seelab', 'pani', 'paani', 'pani bhar', 'doob', 'nala', 'darya', 'flood'],
   },
   fire: {
     en: ['fire', 'flame', 'flames', 'burning', 'burnt', 'smoke', 'gas leak', 'cylinder', 'short circuit', 'blaze', 'stove', 'kitchen fire', 'lpg'],
     ur: ['آگ', 'شعلہ', 'جل', 'دھواں', 'گیس', 'سلنڈر', 'چولہا', 'آتشزدگی'],
     hi: ['आग', 'ज्वाला', 'जल', 'धुआं', 'धुआँ', 'गैस', 'सिलेंडर', 'चूल्हा'],
+    zh: ['火灾', '着火', '起火', '火焰', '浓烟', '燃气泄漏', '煤气', '短路'],
+    fr: ['incendie', 'feu', 'flammes', 'fumee', 'fumée', 'fuite de gaz', 'court-circuit'],
+    de: ['brand', 'feuer', 'flammen', 'rauch', 'gasleck', 'kurzschluss'],
     roman: ['aag', 'jal rahi', 'jal raha', 'dhuan', 'dhuaan', 'gas leak', 'cylinder', 'chulha', 'shortcircuit', 'fire'],
   },
   earthquake: {
     en: ['earthquake', 'quake', 'tremor', 'aftershock', 'shaking', 'building collapse', 'collapsed', 'trapped under', 'rubble', 'seismic'],
     ur: ['زلزلہ', 'زلزلے', 'جھٹکے', 'ہل', 'ملبہ', 'عمارت گر', 'دیوار گر'],
     hi: ['भूकंप', 'भूकम्प', 'झटके', 'हिल', 'मलबा', 'इमारत गिर'],
+    zh: ['地震', '余震', '震动', '房屋倒塌', '废墟', '晃动'],
+    fr: ['seisme', 'séisme', 'tremblement de terre', 'secousse', 'effondrement'],
+    de: ['erdbeben', 'nachbeben', 'erschuetterung', 'erschütterung', 'einsturz'],
     roman: ['zalzala', 'zalzale', 'bhukamp', 'bhookamp', 'jhatke', 'hil raha', 'malba', 'earthquake', 'building gir'],
   },
   storm: {
     en: ['storm', 'thunder', 'lightning', 'heavy rain', 'rainfall', 'wind', 'windstorm', 'hail', 'cyclone', 'gale', 'roof blown'],
     ur: ['طوفان', 'آندھی', 'بجلی', 'گرج', 'تیز بارش', 'ژالہ', 'ہوا'],
     hi: ['तूफान', 'तूफ़ान', 'आंधी', 'बिजली', 'गरज', 'तेज बारिश', 'ओले', 'हवा'],
+    zh: ['暴风雨', '台风', '雷电', '雷暴', '大风', '冰雹', '飓风'],
+    fr: ['tempete', 'tempête', 'orage', 'foudre', 'tonnerre', 'cyclone', 'ouragan'],
+    de: ['sturm', 'gewitter', 'blitz', 'donner', 'unwetter', 'zyklon', 'hagel'],
     roman: ['toofan', 'toofaan', 'aandhi', 'andhi', 'bijli', 'garaj', 'tez barish', 'baarish', 'storm', 'hawa'],
   },
   'road-accident': {
     en: ['accident', 'crash', 'collision', 'car hit', 'bike hit', 'motorway', 'road', 'vehicle', 'truck', 'hit and run', 'overturned'],
     ur: ['حادثہ', 'ایکسیڈنٹ', 'ٹکر', 'گاڑی', 'موٹر سائیکل', 'سڑک', 'ٹرک'],
     hi: ['दुर्घटना', 'एक्सीडेंट', 'टक्कर', 'गाड़ी', 'मोटरसाइकिल', 'सड़क', 'ट्रक'],
+    zh: ['车祸', '交通事故', '相撞', '撞车', '翻车'],
+    fr: ['accident de la route', 'accident', 'collision', 'vehicule', 'véhicule'],
+    de: ['verkehrsunfall', 'unfall', 'kollision', 'zusammenstoss', 'zusammenstoß'],
     roman: ['accident', 'haadsa', 'hadsa', 'takkar', 'gaari', 'gari', 'motorcycle', 'sarak', 'road accident', 'truck'],
   },
   'medical-emergency': {
     en: ['bleeding', 'unconscious', 'not breathing', 'breathing', 'heart attack', 'chest pain', 'cpr', 'choking', 'seizure', 'fracture', 'burn wound', 'snake bite', 'poison', 'faint', 'stroke', 'injured', 'wound', 'pregnant', 'diabetic'],
     ur: ['خون', 'بے ہوش', 'سانس', 'دل کا دورہ', 'سینے میں درد', 'دم گھٹ', 'دورہ', 'فریکچر', 'زخم', 'زہر', 'سانپ', 'زخمی'],
     hi: ['खून', 'बेहोश', 'सांस', 'दिल का दौरा', 'सीने में दर्द', 'दम घुट', 'दौरा', 'फ्रैक्चर', 'घाव', 'जहर', 'सांप', 'घायल'],
+    zh: ['流血', '昏迷', '失去知觉', '停止呼吸', '呼吸困难', '心脏病', '骨折', '烧伤', '中毒', '蛇咬', '重伤'],
+    fr: ['hemorragie', 'hémorragie', 'saigne', 'inconscient', 'ne respire plus', 'arret cardiaque', 'arrêt cardiaque', 'etouffement'],
+    de: ['blutung', 'bewusstlos', 'atmet nicht', 'herzinfarkt', 'herzstillstand', 'atemnot', 'fraktur', 'knochenbruch'],
     roman: ['khoon', 'behosh', 'be hosh', 'saans', 'dil ka dora', 'seene mein dard', 'dam ghut', 'dora', 'fracture', 'zakhm', 'zakhmi', 'zeher', 'saanp', 'chot', 'dard', 'bemar', 'bimar'],
   },
 };
@@ -56,6 +74,9 @@ const URGENCY_MARKERS = [
   'help', 'emergency', 'now', 'right now', 'urgent', 'immediately', 'quick', 'save', 'dying', 'trapped', 'stuck',
   'مدد', 'ہنگامی', 'ابھی', 'فوری', 'جلدی', 'بچاؤ', 'پھنس',
   'मदद', 'आपातकाल', 'अभी', 'तुरंत', 'जल्दी', 'बचाओ', 'फंस',
+  '救命', '紧急', '马上', '立刻', '危险',
+  'aidez-moi', 'urgence', 'immediatement', 'immédiatement', 'sauver',
+  'hilfe', 'notfall', 'sofort', 'dringend', 'rettung',
   'madad', 'madat', 'bachao', 'jaldi', 'foran', 'fori', 'abhi', 'phans', 'phansa', 'phasa',
 ];
 
@@ -67,6 +88,9 @@ const CRITICAL_MARKERS = [
   'seizure', 'severe bleeding', 'heavy bleeding', 'bleeding a lot', 'drowning', 'electrocuted',
   'سانس نہیں', 'سانس بند', 'بے ہوش', 'دل کا دورہ', 'سینے میں درد', 'دم گھٹ', 'شدید خون', 'ڈوب رہا',
   'सांस नहीं', 'सांस बंद', 'बेहोश', 'दिल का दौरा', 'सीने में दर्द', 'दम घुट', 'तेज खून', 'डूब रहा',
+  '没有呼吸', '停止呼吸', '失去知觉', '昏迷', '心脏病发作', '大出血', '溺水',
+  'ne respire plus', 'inconscient', 'arret cardiaque', 'arrêt cardiaque', 'saignement abondant',
+  'atmet nicht', 'bewusstlos', 'herzstillstand', 'starke blutung',
   'saans nahi', 'sans nahi', 'saans band', 'behosh', 'be hosh', 'dil ka dora', 'dam ghut', 'doob raha',
 ];
 
@@ -76,15 +100,15 @@ const ACTIVE_PATTERNS = [
   /\bmy (house|home|kitchen|room|street|car|father|mother|child|brother|sister)\b/i,
   /میرے|میری|مجھے|ہمارے/,
   /मेरे|मेरी|मुझे|हमारे/,
+  /我的|我们/,
+  /\b(mon|ma|mes|notre)\b/i,
+  /\b(mein|meine|unser)\b/i,
   /\bmere\b|\bmera\b|\bmeri\b|\bmujhe\b|\bhamare\b/i,
 ];
 
 const normalize = (text) =>
   String(text || '')
     .toLowerCase()
-    // Strip the Devanagari nukta and Arabic/Urdu diacritics so that spellings
-    // like "ख़ून" and "खून" - identical to a reader, different codepoints - are
-    // treated as the same word.
     .normalize('NFD')
     .replace(/[\u093C\u0640\u064B-\u0652\u0670]/g, '')
     .normalize('NFC')
@@ -92,27 +116,14 @@ const normalize = (text) =>
     .trim();
 
 const LATIN_ONLY = /^[\p{Script=Latin}\p{N}\s'-]+$/u;
+const HAN_REGEX = /[\u4E00-\u9FFF]/;
 // A letter or a combining mark - i.e. "still inside the same word".
 const WORD_CONTINUES = /^[\p{L}\p{M}]/u;
 
-/**
- * Does `haystack` contain `keyword` as a word rather than as a fragment?
- *
- * Short Urdu and Hindi stems collide badly with unrelated words: "ہل" (shake)
- * sits inside "پہلے" (first), "جل" (burn) inside "جلدی" (quickly), and "जल"
- * inside "जलभराव" (waterlogging). Plain substring matching therefore routed a
- * bleeding question to earthquake guidance. For non-Latin keywords we require
- * that the match is not followed by more of the same word. Trailing position is
- * enough: these scripts inflect by suffix, and checking the front would break
- * the common "<stem> رہا ہے" phrasings this list is built around.
- *
- * Latin keywords keep substring matching on purpose, so stems such as "drown"
- * still catch "drowning".
- */
 function matchesKeyword(haystack, keyword) {
   const index = haystack.indexOf(keyword);
   if (index === -1) return false;
-  if (keyword.includes(' ') || LATIN_ONLY.test(keyword)) return true;
+  if (keyword.includes(' ') || LATIN_ONLY.test(keyword) || HAN_REGEX.test(keyword)) return true;
 
   return !WORD_CONTINUES.test(haystack.slice(index + keyword.length));
 }

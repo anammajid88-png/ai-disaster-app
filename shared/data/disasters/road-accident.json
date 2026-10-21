@@ -6,42 +6,171 @@
   "accentSoft": "#ffedd5",
   "riskLevel": "high",
   "season": "any",
-  "primaryContacts": ["motorway-130", "rescue-1122"],
+  "primaryContacts": [
+    "motorway-130",
+    "rescue-1122"
+  ],
   "content": {
     "en": {
       "name": "Road Accident",
       "tagline": "Vehicle crashes on roads, highways and motorways",
       "description": "After a crash the biggest risk is a second crash into the same spot. Make the scene visible and safe first, then help the injured and call for trained rescue.",
       "rightNow": [
-        { "step": 1, "icon": "hazard-lights", "title": "Make the scene visible", "text": "Switch on hazard lights, and if you can do it safely place a warning triangle or object well behind the vehicle.", "priority": "critical" },
-        { "step": 2, "icon": "phone-call", "title": "Call 1122, or 130 on a motorway", "text": "Give the road name, direction, nearest landmark or kilometre marker, number of vehicles and number of injured.", "priority": "critical" },
-        { "step": 3, "icon": "no-move-patient", "title": "Do not move the injured", "text": "Unless there is fire, smoke or fuel leaking, leave injured people where they are and support the head and neck.", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "hazard-lights",
+          "title": "Make the scene visible",
+          "text": "Switch on hazard lights, and if you can do it safely place a warning triangle or object well behind the vehicle.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "Call 1122, or 130 on a motorway",
+          "text": "Give the road name, direction, nearest landmark or kilometre marker, number of vehicles and number of injured.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-move-patient",
+          "title": "Do not move the injured",
+          "text": "Unless there is fire, smoke or fuel leaking, leave injured people where they are and support the head and neck.",
+          "priority": "critical"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "checklist", "title": "Wear the belt, wear the helmet", "text": "Seat belts and a properly fastened helmet remain the two changes that save the most lives on Pakistani roads.", "priority": "high" },
-        { "step": 2, "icon": "car-safe", "title": "Keep the vehicle roadworthy", "text": "Check brakes, tyres, lights and indicators regularly, and keep a spare tyre and jack that actually work.", "priority": "high" },
-        { "step": 3, "icon": "first-aid", "title": "Carry a small kit", "text": "Keep a basic first aid kit, torch, warning triangle and reflective vest in the vehicle.", "priority": "normal" },
-        { "step": 4, "icon": "phone-call", "title": "Save emergency numbers", "text": "Save 1122 and 130 in your phone and teach family members which number to use where.", "priority": "normal" },
-        { "step": 5, "icon": "clock", "title": "Avoid fatigue and speed", "text": "Do not drive when very tired, and keep enough following distance to stop in the space you can actually see.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "checklist",
+          "title": "Wear the belt, wear the helmet",
+          "text": "Seat belts and a properly fastened helmet remain the two changes that save the most lives on Pakistani roads.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "car-safe",
+          "title": "Keep the vehicle roadworthy",
+          "text": "Check brakes, tyres, lights and indicators regularly, and keep a spare tyre and jack that actually work.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "first-aid",
+          "title": "Carry a small kit",
+          "text": "Keep a basic first aid kit, torch, warning triangle and reflective vest in the vehicle.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "phone-call",
+          "title": "Save emergency numbers",
+          "text": "Save 1122 and 130 in your phone and teach family members which number to use where.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "clock",
+          "title": "Avoid fatigue and speed",
+          "text": "Do not drive when very tired, and keep enough following distance to stop in the space you can actually see.",
+          "priority": "high"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "warning-triangle", "title": "Move to a safe position", "text": "Get yourself and passengers off the carriageway to the shoulder or behind a barrier, not between two vehicles.", "priority": "critical" },
-        { "step": 2, "icon": "gas-off", "title": "Switch off the engine", "text": "Turn off the ignition, do not smoke, and keep everyone away if you smell petrol or diesel.", "priority": "high" },
-        { "step": 3, "icon": "bandage", "title": "Control heavy bleeding", "text": "Press firmly on a bleeding wound with a clean cloth and keep pressing until help arrives.", "priority": "critical" },
-        { "step": 4, "icon": "cpr-heart", "title": "Check breathing", "text": "If someone is unresponsive and not breathing normally, start chest compressions and tell the operator immediately.", "priority": "critical" },
-        { "step": 5, "icon": "helping-hand", "title": "Stay and reassure", "text": "Stay with the injured, keep them warm and talking, and do not let a crowd move or crowd them.", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "warning-triangle",
+          "title": "Move to a safe position",
+          "text": "Get yourself and passengers off the carriageway to the shoulder or behind a barrier, not between two vehicles.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "Switch off the engine",
+          "text": "Turn off the ignition, do not smoke, and keep everyone away if you smell petrol or diesel.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "bandage",
+          "title": "Control heavy bleeding",
+          "text": "Press firmly on a bleeding wound with a clean cloth and keep pressing until help arrives.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "cpr-heart",
+          "title": "Check breathing",
+          "text": "If someone is unresponsive and not breathing normally, start chest compressions and tell the operator immediately.",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "helping-hand",
+          "title": "Stay and reassure",
+          "text": "Stay with the injured, keep them warm and talking, and do not let a crowd move or crowd them.",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "documents", "title": "Record the details", "text": "Note vehicle numbers, take photos of the scene from a safe distance and get names of witnesses.", "priority": "normal" },
-        { "step": 2, "icon": "first-aid", "title": "Get checked even if you feel fine", "text": "Internal injury, concussion and neck injury can appear hours later. Get a medical check the same day.", "priority": "high" },
-        { "step": 3, "icon": "phone-call", "title": "Report to the right authority", "text": "Report the accident to the police station or motorway police, and inform your insurance if you have cover.", "priority": "normal" },
-        { "step": 4, "icon": "car-safe", "title": "Clear the road when allowed", "text": "Once the police allow it, move the damaged vehicle off the carriageway to prevent further crashes.", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "documents",
+          "title": "Record the details",
+          "text": "Note vehicle numbers, take photos of the scene from a safe distance and get names of witnesses.",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "Get checked even if you feel fine",
+          "text": "Internal injury, concussion and neck injury can appear hours later. Get a medical check the same day.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "Report to the right authority",
+          "text": "Report the accident to the police station or motorway police, and inform your insurance if you have cover.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "Clear the road when allowed",
+          "text": "Once the police allow it, move the damaged vehicle off the carriageway to prevent further crashes.",
+          "priority": "normal"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "no-move-patient", "title": "Do not pull people out of vehicles", "text": "Dragging a casualty can turn a survivable spinal injury into permanent paralysis. Wait for trained rescuers.", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "Do not stand in the traffic lane", "text": "Never stand in front of, behind, or between vehicles on a live road, especially at night or in rain.", "priority": "critical" },
-        { "step": 3, "icon": "water-drop", "title": "Do not give food or water", "text": "An injured or semi-conscious person can choke. Do not give anything to eat, drink or any medicine.", "priority": "high" },
-        { "step": 4, "icon": "helping-hand", "title": "Do not let a crowd take over", "text": "Untrained handling and lifting causes further injury. Ask bystanders to keep the road clear instead.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "no-move-patient",
+          "title": "Do not pull people out of vehicles",
+          "text": "Dragging a casualty can turn a survivable spinal injury into permanent paralysis. Wait for trained rescuers.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Do not stand in the traffic lane",
+          "text": "Never stand in front of, behind, or between vehicles on a live road, especially at night or in rain.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Do not give food or water",
+          "text": "An injured or semi-conscious person can choke. Do not give anything to eat, drink or any medicine.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "Do not let a crowd take over",
+          "text": "Untrained handling and lifting causes further injury. Ask bystanders to keep the road clear instead.",
+          "priority": "high"
+        }
       ]
     },
     "ur": {
@@ -49,35 +178,161 @@
       "tagline": "سڑکوں، شاہراہوں اور موٹرویز پر گاڑیوں کے حادثات",
       "description": "حادثے کے بعد سب سے بڑا خطرہ اُسی جگہ دوسرا حادثہ ہے۔ پہلے جگہ کو نمایاں اور محفوظ بنائیں، پھر زخمیوں کی مدد کریں اور تربیت یافتہ ریسکیو بلائیں۔",
       "rightNow": [
-        { "step": 1, "icon": "hazard-lights", "title": "جگہ کو نمایاں کریں", "text": "ہیزرڈ لائٹس آن کریں، اور اگر محفوظ ہو تو گاڑی سے خاصے فاصلے پر پیچھے وارننگ ٹرائینگل یا کوئی نشان رکھ دیں۔", "priority": "critical" },
-        { "step": 2, "icon": "phone-call", "title": "1122 کو کال کریں، موٹروے پر 130", "text": "سڑک کا نام، سمت، قریبی نشانی یا کلومیٹر، گاڑیوں کی تعداد اور زخمیوں کی تعداد بتائیں۔", "priority": "critical" },
-        { "step": 3, "icon": "no-move-patient", "title": "زخمی کو نہ ہلائیں", "text": "آگ، دھواں یا تیل کے رساؤ کے سوا زخمی کو وہیں رہنے دیں اور سر و گردن کو سہارا دیں۔", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "hazard-lights",
+          "title": "جگہ کو نمایاں کریں",
+          "text": "ہیزرڈ لائٹس آن کریں، اور اگر محفوظ ہو تو گاڑی سے خاصے فاصلے پر پیچھے وارننگ ٹرائینگل یا کوئی نشان رکھ دیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "1122 کو کال کریں، موٹروے پر 130",
+          "text": "سڑک کا نام، سمت، قریبی نشانی یا کلومیٹر، گاڑیوں کی تعداد اور زخمیوں کی تعداد بتائیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-move-patient",
+          "title": "زخمی کو نہ ہلائیں",
+          "text": "آگ، دھواں یا تیل کے رساؤ کے سوا زخمی کو وہیں رہنے دیں اور سر و گردن کو سہارا دیں۔",
+          "priority": "critical"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "checklist", "title": "بیلٹ باندھیں، ہیلمٹ پہنیں", "text": "سیٹ بیلٹ اور درست باندھا ہوا ہیلمٹ پاکستانی سڑکوں پر سب سے زیادہ جانیں بچانے والی دو تبدیلیاں ہیں۔", "priority": "high" },
-        { "step": 2, "icon": "car-safe", "title": "گاڑی کو درست حالت میں رکھیں", "text": "بریک، ٹائر، لائٹس اور انڈیکیٹر باقاعدگی سے چیک کریں، اور کام کرنے والا اسٹیپنی اور جیک رکھیں۔", "priority": "high" },
-        { "step": 3, "icon": "first-aid", "title": "چھوٹی کٹ ساتھ رکھیں", "text": "گاڑی میں بنیادی فرسٹ ایڈ کٹ، ٹارچ، وارننگ ٹرائینگل اور ریفلیکٹو جیکٹ رکھیں۔", "priority": "normal" },
-        { "step": 4, "icon": "phone-call", "title": "ہنگامی نمبر محفوظ کریں", "text": "1122 اور 130 فون میں محفوظ کریں اور گھر والوں کو بتائیں کہ کہاں کون سا نمبر استعمال ہوتا ہے۔", "priority": "normal" },
-        { "step": 5, "icon": "clock", "title": "تھکن اور تیز رفتاری سے بچیں", "text": "شدید نیند یا تھکن میں گاڑی نہ چلائیں، اور اتنا فاصلہ رکھیں کہ نظر آنے والی جگہ میں گاڑی رک سکے۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "checklist",
+          "title": "بیلٹ باندھیں، ہیلمٹ پہنیں",
+          "text": "سیٹ بیلٹ اور درست باندھا ہوا ہیلمٹ پاکستانی سڑکوں پر سب سے زیادہ جانیں بچانے والی دو تبدیلیاں ہیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "car-safe",
+          "title": "گاڑی کو درست حالت میں رکھیں",
+          "text": "بریک، ٹائر، لائٹس اور انڈیکیٹر باقاعدگی سے چیک کریں، اور کام کرنے والا اسٹیپنی اور جیک رکھیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "first-aid",
+          "title": "چھوٹی کٹ ساتھ رکھیں",
+          "text": "گاڑی میں بنیادی فرسٹ ایڈ کٹ، ٹارچ، وارننگ ٹرائینگل اور ریفلیکٹو جیکٹ رکھیں۔",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "phone-call",
+          "title": "ہنگامی نمبر محفوظ کریں",
+          "text": "1122 اور 130 فون میں محفوظ کریں اور گھر والوں کو بتائیں کہ کہاں کون سا نمبر استعمال ہوتا ہے۔",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "clock",
+          "title": "تھکن اور تیز رفتاری سے بچیں",
+          "text": "شدید نیند یا تھکن میں گاڑی نہ چلائیں، اور اتنا فاصلہ رکھیں کہ نظر آنے والی جگہ میں گاڑی رک سکے۔",
+          "priority": "high"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "warning-triangle", "title": "محفوظ جگہ پر ہٹ جائیں", "text": "خود اور سواریوں کو سڑک سے ہٹا کر کنارے یا رکاوٹ کے پیچھے لے جائیں، دو گاڑیوں کے درمیان نہیں۔", "priority": "critical" },
-        { "step": 2, "icon": "gas-off", "title": "انجن بند کریں", "text": "چابی بند کریں، سگریٹ نہ جلائیں، اور پٹرول یا ڈیزل کی بو آنے پر سب کو دور رکھیں۔", "priority": "high" },
-        { "step": 3, "icon": "bandage", "title": "تیز خون بہنا روکیں", "text": "زخم پر صاف کپڑے سے مضبوطی سے دباؤ ڈالیں اور مدد آنے تک دباؤ برقرار رکھیں۔", "priority": "critical" },
-        { "step": 4, "icon": "cpr-heart", "title": "سانس چیک کریں", "text": "کوئی جواب نہ دے اور نارمل سانس نہ لے رہا ہو تو سینے پر دباؤ (سی پی آر) شروع کریں اور آپریٹر کو فوراً بتائیں۔", "priority": "critical" },
-        { "step": 5, "icon": "helping-hand", "title": "ساتھ رہیں اور حوصلہ دیں", "text": "زخمی کے پاس رہیں، اُسے گرم اور باتوں میں مشغول رکھیں، اور ہجوم کو اُسے ہلانے یا گھیرنے نہ دیں۔", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "warning-triangle",
+          "title": "محفوظ جگہ پر ہٹ جائیں",
+          "text": "خود اور سواریوں کو سڑک سے ہٹا کر کنارے یا رکاوٹ کے پیچھے لے جائیں، دو گاڑیوں کے درمیان نہیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "انجن بند کریں",
+          "text": "چابی بند کریں، سگریٹ نہ جلائیں، اور پٹرول یا ڈیزل کی بو آنے پر سب کو دور رکھیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "bandage",
+          "title": "تیز خون بہنا روکیں",
+          "text": "زخم پر صاف کپڑے سے مضبوطی سے دباؤ ڈالیں اور مدد آنے تک دباؤ برقرار رکھیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "cpr-heart",
+          "title": "سانس چیک کریں",
+          "text": "کوئی جواب نہ دے اور نارمل سانس نہ لے رہا ہو تو سینے پر دباؤ (سی پی آر) شروع کریں اور آپریٹر کو فوراً بتائیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "helping-hand",
+          "title": "ساتھ رہیں اور حوصلہ دیں",
+          "text": "زخمی کے پاس رہیں، اُسے گرم اور باتوں میں مشغول رکھیں، اور ہجوم کو اُسے ہلانے یا گھیرنے نہ دیں۔",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "documents", "title": "تفصیلات نوٹ کریں", "text": "گاڑیوں کے نمبر لکھیں، محفوظ فاصلے سے تصویریں لیں اور گواہوں کے نام لے لیں۔", "priority": "normal" },
-        { "step": 2, "icon": "first-aid", "title": "ٹھیک لگنے پر بھی چیک اپ کرائیں", "text": "اندرونی چوٹ، سر اور گردن کی چوٹ گھنٹوں بعد ظاہر ہو سکتی ہے۔ اُسی دن ڈاکٹر سے معائنہ کرائیں۔", "priority": "high" },
-        { "step": 3, "icon": "phone-call", "title": "متعلقہ ادارے کو اطلاع دیں", "text": "حادثے کی اطلاع تھانے یا موٹروے پولیس کو دیں، اور انشورنس ہو تو کمپنی کو بھی بتائیں۔", "priority": "normal" },
-        { "step": 4, "icon": "car-safe", "title": "اجازت ملنے پر سڑک خالی کریں", "text": "پولیس کی اجازت کے بعد خراب گاڑی سڑک سے ہٹا دیں تاکہ مزید حادثات نہ ہوں۔", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "documents",
+          "title": "تفصیلات نوٹ کریں",
+          "text": "گاڑیوں کے نمبر لکھیں، محفوظ فاصلے سے تصویریں لیں اور گواہوں کے نام لے لیں۔",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "ٹھیک لگنے پر بھی چیک اپ کرائیں",
+          "text": "اندرونی چوٹ، سر اور گردن کی چوٹ گھنٹوں بعد ظاہر ہو سکتی ہے۔ اُسی دن ڈاکٹر سے معائنہ کرائیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "متعلقہ ادارے کو اطلاع دیں",
+          "text": "حادثے کی اطلاع تھانے یا موٹروے پولیس کو دیں، اور انشورنس ہو تو کمپنی کو بھی بتائیں۔",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "اجازت ملنے پر سڑک خالی کریں",
+          "text": "پولیس کی اجازت کے بعد خراب گاڑی سڑک سے ہٹا دیں تاکہ مزید حادثات نہ ہوں۔",
+          "priority": "normal"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "no-move-patient", "title": "زخمی کو گاڑی سے کھینچ کر نہ نکالیں", "text": "کھینچنے سے ریڑھ کی ہڈی کی قابلِ علاج چوٹ مستقل معذوری بن سکتی ہے۔ تربیت یافتہ ریسکیو کا انتظار کریں۔", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "ٹریفک لین میں نہ کھڑے ہوں", "text": "چلتی سڑک پر گاڑیوں کے آگے، پیچھے یا درمیان کبھی نہ کھڑے ہوں، خاص طور پر رات یا بارش میں۔", "priority": "critical" },
-        { "step": 3, "icon": "water-drop", "title": "کھانا یا پانی نہ دیں", "text": "زخمی یا نیم بے ہوش شخص کا دم گھٹ سکتا ہے۔ کھانے، پینے یا دوا کی کوئی چیز نہ دیں۔", "priority": "high" },
-        { "step": 4, "icon": "helping-hand", "title": "ہجوم کو قابو میں رکھیں", "text": "غیر تربیت یافتہ اٹھانا مزید نقصان دیتا ہے۔ لوگوں سے کہیں کہ سڑک خالی رکھنے میں مدد کریں۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "no-move-patient",
+          "title": "زخمی کو گاڑی سے کھینچ کر نہ نکالیں",
+          "text": "کھینچنے سے ریڑھ کی ہڈی کی قابلِ علاج چوٹ مستقل معذوری بن سکتی ہے۔ تربیت یافتہ ریسکیو کا انتظار کریں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "ٹریفک لین میں نہ کھڑے ہوں",
+          "text": "چلتی سڑک پر گاڑیوں کے آگے، پیچھے یا درمیان کبھی نہ کھڑے ہوں، خاص طور پر رات یا بارش میں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "کھانا یا پانی نہ دیں",
+          "text": "زخمی یا نیم بے ہوش شخص کا دم گھٹ سکتا ہے۔ کھانے، پینے یا دوا کی کوئی چیز نہ دیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "ہجوم کو قابو میں رکھیں",
+          "text": "غیر تربیت یافتہ اٹھانا مزید نقصان دیتا ہے۔ لوگوں سے کہیں کہ سڑک خالی رکھنے میں مدد کریں۔",
+          "priority": "high"
+        }
       ]
     },
     "hi": {
@@ -85,35 +340,647 @@
       "tagline": "सड़कों, राजमार्गों और मोटरवे पर वाहन दुर्घटनाएँ",
       "description": "दुर्घटना के बाद सबसे बड़ा ख़तरा उसी जगह दूसरी टक्कर है। पहले जगह को दिखाई देने योग्य और सुरक्षित बनाएँ, फिर घायलों की मदद करें और प्रशिक्षित बचाव दल बुलाएँ।",
       "rightNow": [
-        { "step": 1, "icon": "hazard-lights", "title": "जगह को दिखाई देने योग्य बनाएँ", "text": "हैज़र्ड लाइट चालू करें, और सुरक्षित हो तो गाड़ी से काफ़ी पीछे चेतावनी त्रिकोण या कोई चिह्न रख दें।", "priority": "critical" },
-        { "step": 2, "icon": "phone-call", "title": "1122 पर कॉल करें, मोटरवे पर 130", "text": "सड़क का नाम, दिशा, निकटतम पहचान या किलोमीटर, वाहनों की संख्या और घायलों की संख्या बताएँ।", "priority": "critical" },
-        { "step": 3, "icon": "no-move-patient", "title": "घायल को न हिलाएँ", "text": "आग, धुएँ या तेल रिसाव के अलावा घायल को वहीं रहने दें और सिर व गर्दन को सहारा दें।", "priority": "critical" }
+        {
+          "step": 1,
+          "icon": "hazard-lights",
+          "title": "जगह को दिखाई देने योग्य बनाएँ",
+          "text": "हैज़र्ड लाइट चालू करें, और सुरक्षित हो तो गाड़ी से काफ़ी पीछे चेतावनी त्रिकोण या कोई चिह्न रख दें।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "1122 पर कॉल करें, मोटरवे पर 130",
+          "text": "सड़क का नाम, दिशा, निकटतम पहचान या किलोमीटर, वाहनों की संख्या और घायलों की संख्या बताएँ।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-move-patient",
+          "title": "घायल को न हिलाएँ",
+          "text": "आग, धुएँ या तेल रिसाव के अलावा घायल को वहीं रहने दें और सिर व गर्दन को सहारा दें।",
+          "priority": "critical"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "checklist", "title": "बेल्ट लगाएँ, हेलमेट पहनें", "text": "सीट बेल्ट और ठीक से बंधा हेलमेट सबसे ज़्यादा जान बचाने वाले दो बदलाव हैं।", "priority": "high" },
-        { "step": 2, "icon": "car-safe", "title": "वाहन को दुरुस्त रखें", "text": "ब्रेक, टायर, लाइट और इंडिकेटर नियमित जाँचें, और काम करने वाला स्टेपनी तथा जैक रखें।", "priority": "high" },
-        { "step": 3, "icon": "first-aid", "title": "छोटी किट रखें", "text": "वाहन में बुनियादी फ़र्स्ट एड किट, टॉर्च, चेतावनी त्रिकोण और रिफ़्लेक्टिव जैकेट रखें।", "priority": "normal" },
-        { "step": 4, "icon": "phone-call", "title": "आपातकालीन नंबर सेव करें", "text": "1122 और 130 फ़ोन में सेव करें और परिवार को बताएँ कि कहाँ कौन सा नंबर इस्तेमाल होता है।", "priority": "normal" },
-        { "step": 5, "icon": "clock", "title": "थकान और तेज़ रफ़्तार से बचें", "text": "अत्यधिक थकान में गाड़ी न चलाएँ, और इतनी दूरी रखें कि दिखने वाली जगह में गाड़ी रुक सके।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "checklist",
+          "title": "बेल्ट लगाएँ, हेलमेट पहनें",
+          "text": "सीट बेल्ट और ठीक से बंधा हेलमेट सबसे ज़्यादा जान बचाने वाले दो बदलाव हैं।",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "car-safe",
+          "title": "वाहन को दुरुस्त रखें",
+          "text": "ब्रेक, टायर, लाइट और इंडिकेटर नियमित जाँचें, और काम करने वाला स्टेपनी तथा जैक रखें।",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "first-aid",
+          "title": "छोटी किट रखें",
+          "text": "वाहन में बुनियादी फ़र्स्ट एड किट, टॉर्च, चेतावनी त्रिकोण और रिफ़्लेक्टिव जैकेट रखें।",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "phone-call",
+          "title": "आपातकालीन नंबर सेव करें",
+          "text": "1122 और 130 फ़ोन में सेव करें और परिवार को बताएँ कि कहाँ कौन सा नंबर इस्तेमाल होता है।",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "clock",
+          "title": "थकान और तेज़ रफ़्तार से बचें",
+          "text": "अत्यधिक थकान में गाड़ी न चलाएँ, और इतनी दूरी रखें कि दिखने वाली जगह में गाड़ी रुक सके।",
+          "priority": "high"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "warning-triangle", "title": "सुरक्षित जगह पर हटें", "text": "स्वयं और सवारियों को सड़क से हटाकर किनारे या बैरियर के पीछे ले जाएँ, दो गाड़ियों के बीच नहीं।", "priority": "critical" },
-        { "step": 2, "icon": "gas-off", "title": "इंजन बंद करें", "text": "चाबी बंद करें, धूम्रपान न करें, और पेट्रोल या डीज़ल की गंध आने पर सबको दूर रखें।", "priority": "high" },
-        { "step": 3, "icon": "bandage", "title": "तेज़ रक्तस्राव रोकें", "text": "घाव पर साफ़ कपड़े से मज़बूती से दबाव डालें और मदद आने तक दबाव बनाए रखें।", "priority": "critical" },
-        { "step": 4, "icon": "cpr-heart", "title": "सांस जाँचें", "text": "कोई जवाब न दे और सामान्य सांस न ले रहा हो तो छाती पर दबाव (CPR) शुरू करें और ऑपरेटर को तुरंत बताएँ।", "priority": "critical" },
-        { "step": 5, "icon": "helping-hand", "title": "साथ रहें और ढाढ़स दें", "text": "घायल के पास रहें, उसे गरम और बातों में लगाए रखें, और भीड़ को उसे हिलाने या घेरने न दें।", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "warning-triangle",
+          "title": "सुरक्षित जगह पर हटें",
+          "text": "स्वयं और सवारियों को सड़क से हटाकर किनारे या बैरियर के पीछे ले जाएँ, दो गाड़ियों के बीच नहीं।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "इंजन बंद करें",
+          "text": "चाबी बंद करें, धूम्रपान न करें, और पेट्रोल या डीज़ल की गंध आने पर सबको दूर रखें।",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "bandage",
+          "title": "तेज़ रक्तस्राव रोकें",
+          "text": "घाव पर साफ़ कपड़े से मज़बूती से दबाव डालें और मदद आने तक दबाव बनाए रखें।",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "cpr-heart",
+          "title": "सांस जाँचें",
+          "text": "कोई जवाब न दे और सामान्य सांस न ले रहा हो तो छाती पर दबाव (CPR) शुरू करें और ऑपरेटर को तुरंत बताएँ।",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "helping-hand",
+          "title": "साथ रहें और ढाढ़स दें",
+          "text": "घायल के पास रहें, उसे गरम और बातों में लगाए रखें, और भीड़ को उसे हिलाने या घेरने न दें।",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "documents", "title": "विवरण दर्ज करें", "text": "वाहनों के नंबर लिखें, सुरक्षित दूरी से फ़ोटो लें और गवाहों के नाम ले लें।", "priority": "normal" },
-        { "step": 2, "icon": "first-aid", "title": "ठीक लगने पर भी जाँच कराएँ", "text": "आंतरिक चोट, सिर और गर्दन की चोट घंटों बाद दिख सकती है। उसी दिन डॉक्टर से जाँच कराएँ।", "priority": "high" },
-        { "step": 3, "icon": "phone-call", "title": "संबंधित अधिकारी को सूचित करें", "text": "दुर्घटना की सूचना थाने या मोटरवे पुलिस को दें, और बीमा हो तो कंपनी को भी बताएँ।", "priority": "normal" },
-        { "step": 4, "icon": "car-safe", "title": "अनुमति मिलने पर सड़क खाली करें", "text": "पुलिस की अनुमति के बाद क्षतिग्रस्त वाहन सड़क से हटा दें ताकि और दुर्घटनाएँ न हों।", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "documents",
+          "title": "विवरण दर्ज करें",
+          "text": "वाहनों के नंबर लिखें, सुरक्षित दूरी से फ़ोटो लें और गवाहों के नाम ले लें।",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "ठीक लगने पर भी जाँच कराएँ",
+          "text": "आंतरिक चोट, सिर और गर्दन की चोट घंटों बाद दिख सकती है। उसी दिन डॉक्टर से जाँच कराएँ।",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "संबंधित अधिकारी को सूचित करें",
+          "text": "दुर्घटना की सूचना थाने या मोटरवे पुलिस को दें, और बीमा हो तो कंपनी को भी बताएँ।",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "अनुमति मिलने पर सड़क खाली करें",
+          "text": "पुलिस की अनुमति के बाद क्षतिग्रस्त वाहन सड़क से हटा दें ताकि और दुर्घटनाएँ न हों।",
+          "priority": "normal"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "no-move-patient", "title": "घायल को गाड़ी से खींचकर न निकालें", "text": "खींचने से रीढ़ की ठीक होने वाली चोट स्थायी विकलांगता बन सकती है। प्रशिक्षित बचाव दल का इंतज़ार करें।", "priority": "critical" },
-        { "step": 2, "icon": "no-entry", "title": "ट्रैफ़िक लेन में न खड़े हों", "text": "चलती सड़क पर गाड़ियों के आगे, पीछे या बीच कभी न खड़े हों, विशेषकर रात या बारिश में।", "priority": "critical" },
-        { "step": 3, "icon": "water-drop", "title": "खाना या पानी न दें", "text": "घायल या अर्धचेतन व्यक्ति का दम घुट सकता है। खाने, पीने या दवा की कोई चीज़ न दें।", "priority": "high" },
-        { "step": 4, "icon": "helping-hand", "title": "भीड़ को हावी न होने दें", "text": "अप्रशिक्षित उठाना और संभालना और नुक़सान करता है। लोगों से सड़क खाली रखने में मदद मांगें।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "no-move-patient",
+          "title": "घायल को गाड़ी से खींचकर न निकालें",
+          "text": "खींचने से रीढ़ की ठीक होने वाली चोट स्थायी विकलांगता बन सकती है। प्रशिक्षित बचाव दल का इंतज़ार करें।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "ट्रैफ़िक लेन में न खड़े हों",
+          "text": "चलती सड़क पर गाड़ियों के आगे, पीछे या बीच कभी न खड़े हों, विशेषकर रात या बारिश में।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "खाना या पानी न दें",
+          "text": "घायल या अर्धचेतन व्यक्ति का दम घुट सकता है। खाने, पीने या दवा की कोई चीज़ न दें।",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "भीड़ को हावी न होने दें",
+          "text": "अप्रशिक्षित उठाना और संभालना और नुक़सान करता है। लोगों से सड़क खाली रखने में मदद मांगें।",
+          "priority": "high"
+        }
+      ]
+    },
+    "zh-CN": {
+      "name": "交通事故",
+      "tagline": "公路、干道与高速公路车祸应急处置",
+      "description": "事故发生后最大的次生风险是后方车辆二次相撞。首先确保现场清晰可见并设立警示，再全力救助伤者并呼叫专业救援。",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "hazard-lights",
+          "title": "开启危险警示，设立标志",
+          "text": "立即开启双闪危险警示灯；在确保人身安全前提下，将三角警示牌置于事故车后方足够远的位置。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "拨打 1122 或高速公路 130",
+          "text": "向接警员清晰说明路名、行车方向、临近地标公里桩、事故车辆数以及伤员人数。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-move-patient",
+          "title": "切勿盲目挪动伤员",
+          "text": "除非现场有起火、浓烟或严重漏油爆炸危险，严禁盲目拖动伤者，双手固定其头颈部位。",
+          "priority": "critical"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "checklist",
+          "title": "全程系好安全带，骑行佩戴头盔",
+          "text": "在巴基斯坦道路交通中，规范系扣安全带和佩戴安全头盔是挽救生命的最关键措施。",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "car-safe",
+          "title": "保持车辆良好技术工况",
+          "text": "定期检查刹车制动、轮胎花纹气压、车灯转向灯，车上务必备有完好的备胎与千斤顶。",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "first-aid",
+          "title": "车内常备应急急救包",
+          "text": "在机动车内常备便携急救药箱、强光手电、三角警示牌及反光背心。",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "phone-call",
+          "title": "手机存好紧急救援号码",
+          "text": "将救援电话 1122 及高速公路巡警电话 130 存入手机，并告知同乘家人各自用途。",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "clock",
+          "title": "杜绝疲劳驾驶与超速行驶",
+          "text": "感到疲劳困倦切勿强行驾车，随时保持足够的跟车制动距离，确保护航视野清晰。",
+          "priority": "high"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "warning-triangle",
+          "title": "转移至路侧护栏外安全地带",
+          "text": "指引司乘人员迅速撤离车行道，站在路肩外或金属防撞护栏外侧，切勿逗留在两车之间。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "立即关闭车辆发动机",
+          "text": "切断点火开关熄火，现场严禁吸烟；若闻到汽油或柴油泄漏气味，疏导所有人远离上风向。",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "bandage",
+          "title": "针对大出血处用力压迫止血",
+          "text": "用洁净敷料或衣物紧紧按压住喷血喷涌的伤口，持续用力压迫直至专业急救员到场。",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "cpr-heart",
+          "title": "迅速观察伤者是否有呼吸",
+          "text": "若伤者呼之不应且无正常呼吸，立即开始心肺复苏胸外按压，并同步告知急救调度中心。",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "helping-hand",
+          "title": "守护在伤员身旁安抚情绪",
+          "text": "守护伤员做好保暖，持续温和对话保持清醒，坚决制止围观群众盲目拖拽挤压伤者。",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "documents",
+          "title": "准确记录现场细节与证据",
+          "text": "在安全地带拍摄记录涉事车牌、事故全景碰撞位置，并记录目击证人联系方式。",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "即使感觉良好也须就医检查",
+          "text": "内出血、脑震荡及颈部挥鞭样损伤往往数小时后才显现症状，当天务必到医院全面检查。",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "向管辖交警部门报案备案",
+          "text": "向现场辖区交警或高速公路交警报案登记事故责任认定，并向保险公司报案理赔。",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "在警方许可后安全移开车辆",
+          "text": "经现场交警勘验并允许后，将受损车辆移至应急车道或拖离行车道，防止二次事故。",
+          "priority": "normal"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "no-move-patient",
+          "title": "严禁强行将伤者拉出车外",
+          "text": "粗暴拖拉极易导致原本可愈合的颈椎脊髓损伤恶化为终身瘫痪；务必等待专业工具施救。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "严禁在通行车道内停留围观",
+          "text": "切勿在通行的行车道前后逗留徘徊，尤其在夜间、雨天或视线不良时极易被后车撞击。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "严禁向伤员喂食水分或食物",
+          "text": "伤员在惊恐或意识模糊下进食进水极易发生窒息猝死，现场切勿给伤者任何食物或药品。",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "切勿任由未受训群众擅自搬运",
+          "text": "未经专业培训的抬动会加重骨折与血管撕裂，应指派热心路人协助疏导后方来车警戒。",
+          "priority": "high"
+        }
+      ]
+    },
+    "fr": {
+      "name": "Accident de la Route",
+      "tagline": "Collisions sur rues, routes nationales et autoroutes",
+      "description": "Après un choc, le plus grand danger est le suraccident. Balisez et sécurisez la zone d'abord, puis secourez les victimes et alertez les secours.",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "hazard-lights",
+          "title": "Rendre la zone visible",
+          "text": "Allumez les feux de détresse; posez le triangle de signalisation bien en amont si cela peut se faire sans danger.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "Appeler le 1122 ou le 130 sur autoroute",
+          "text": "Précisez l'axe, le sens, le repère kilométrique ou repère visuel, le nombre de véhicules et le nombre de blessés.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-move-patient",
+          "title": "Ne pas déplacer les blessés",
+          "text": "Sauf risque immédiat d'incendie, de fumée ou de fuite de carburant, laissez les blessés en place en maintenant tête et cou.",
+          "priority": "critical"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "checklist",
+          "title": "Ceinture attachée, casque sanglé",
+          "text": "La ceinture de sécurité et le casque moto restent les deux mesures qui sauvent le plus de vies sur les routes pakistanaises.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "car-safe",
+          "title": "Entretenir l'état du véhicule",
+          "text": "Vérifiez freins, pneus, feux et clignotants; assurez-vous de la présence d'une roue de secours opérationnelle et d'un cric.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "first-aid",
+          "title": "Avoir un kit de sécurité",
+          "text": "Gardez une trousse de premiers secours, une lampe torche, un triangle et un gilet rétroréfléchissant dans le véhicule.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "phone-call",
+          "title": "Enregistrer les numéros d'urgence",
+          "text": "Enregistrez le 1122 et le 130 dans votre répertoire et expliquez leur rôle aux membres de votre famille.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "clock",
+          "title": "Éviter fatigue et excès de vitesse",
+          "text": "Ne conduisez pas en état de somnolence et maintenez une distance de sécurité suffisante pour vous arrêter.",
+          "priority": "high"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "warning-triangle",
+          "title": "Se mettre en lieu sûr",
+          "text": "Évacuez les occupants hors de la chaussée vers le bas-côté ou derrière les barrières de sécurité, jamais entre les véhicules.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "Couper le moteur",
+          "text": "Coupez le contact, ne fumez pas et éloignez tout le monde en cas d'odeur suspecte d'essence ou de gazole.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "bandage",
+          "title": "Comprimer les hémorragies graves",
+          "text": "Appuyez fermement sur une plaie qui saigne abondamment avec un tissu propre et maintenez la pression sans relâcher.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "cpr-heart",
+          "title": "Contrôler la respiration",
+          "text": "Si une personne est inconsciente et ne respire pas normalement, débutez les compressions thoraciques et prévenez le 1122.",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "helping-hand",
+          "title": "Rester auprès des blessés",
+          "text": "Restez près des victimes, couvrez-les, parlez-leur pour les rassurer et empêchez les badauds de les bousculer.",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "documents",
+          "title": "Relever les informations clés",
+          "text": "Notez l'immatriculation des véhicules, photographiez la scène depuis un lieu sûr et recueillez les coordonnées des témoins.",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "Consulter même sans douleur apparente",
+          "text": "Hémorragies internes, commotions et traumatismes cervicaux peuvent survenir à retardement. Consultez le jour même.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "Déclarer l'accident aux autorités",
+          "text": "Signalez l'accident au poste de police ou à la police autoroutière et informez votre compagnie d'assurance.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "Dégager la voie dès accord",
+          "text": "Dès que la police l'autorise, faites dégager les véhicules accidentés de la chaussée pour prévenir tout suraccident.",
+          "priority": "normal"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "no-move-patient",
+          "title": "Ne pas extraire les blessés de force",
+          "text": "Tirer sur un blessé peut transformer une fracture vertébrale en paralysie irréversible. Attendez les équipes de désincarcération.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Ne pas stationner sur les voies de circulation",
+          "text": "Ne restez jamais sur la chaussée, devant ou derrière un véhicule arrêté, particulièrement de nuit ou sous la pluie.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Ne donner ni à boire ni à manger",
+          "text": "Une personne blessée ou étourdie risque une fausse route mortelle. Ne donnez aucun aliment, boisson ou médicament.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "Ne pas laisser la foule manipuler les blessés",
+          "text": "Des manipulations inexpérimentées aggravent les lésions. Demandez plutôt aux passants de sécuriser la circulation.",
+          "priority": "high"
+        }
+      ]
+    },
+    "de": {
+      "name": "Verkehrsunfall",
+      "tagline": "Kollisionen auf Straßen, Bundesstraßen und Autobahnen",
+      "description": "Nach einem Unfall drohen verheerende Folgeunfälle. Unfallstelle sofort absichern und sichtbar machen, dann Erste Hilfe leisten und 1122 rufen.",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "hazard-lights",
+          "title": "Unfallstelle sofort absichern",
+          "text": "Warnblinkanlage einschalten; wenn gefahrlos möglich, Warndreieck in ausreichendem Abstand hinter dem Fahrzeug aufstellen.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "phone-call",
+          "title": "Notruf 1122 oder Autobahnpolizei 130 rufen",
+          "text": "Straße, Fahrtrichtung, Kilometerstein, Landmarken sowie Anzahl der beteiligten Fahrzeuge und Verletzten durchgeben.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-move-patient",
+          "title": "Verletzte nicht unnötig bewegen",
+          "text": "Außer bei Brandgefahr oder Benzinaustritt Verletzte im Fahrzeug belassen und Kopf/Nacken vorsichtig stützen.",
+          "priority": "critical"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "checklist",
+          "title": "Gurt anlegen, Helm tragen",
+          "text": "Sicherheitsgurte im Auto und fest verschlossene Motorradhelme retten auf pakistanischen Straßen die meisten Leben.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "car-safe",
+          "title": "Fahrzeug verkehrssicher halten",
+          "text": "Bremsen, Reifen, Lichtanlage regelmäßig überprüfen; intaktes Reserverad und Wagenheber stets mitführen.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "first-aid",
+          "title": "Notfallausrüstung im Fahrzeug mitführen",
+          "text": "Verbandskasten, Warnweste, Warndreieck und Taschenlampe griffbereit im Auto aufbewahren.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "phone-call",
+          "title": "Notrufnummern speichern",
+          "text": "Speichern Sie 1122 und 130 im Smartphone und erklären Sie Mitfahrern, welche Nummer wo gilt.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "clock",
+          "title": "Übermüdung und Raserei vermeiden",
+          "text": "Fahren Sie niemals übermüdet und halten Sie stets ausreichenden Sicherheitsabstand zum vorausfahrenden Verkehr ein.",
+          "priority": "high"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "warning-triangle",
+          "title": "In den sicheren Seitenbereich flüchten",
+          "text": "Bringen Sie sich und Insassen hinter die Leitplanke oder auf den Seitenstreifen – niemals zwischen zwei Fahrzeugen stehen.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "gas-off",
+          "title": "Fahrzeugmotor sofort abstellen",
+          "text": "Zündung ausschalten, Rauchverbot einhalten; bei Benzin- oder Dieselgeruch alle Personen in den Windschatten bringen.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "bandage",
+          "title": "Starke Blutungen sofort abdrücken",
+          "text": "Drücken Sie mit sauberem Tuch fest und kontinuierlich auf spritzende Wunden, bis die Rettungskräfte eintreffen.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "cpr-heart",
+          "title": "Atmung und Bewusstsein prüfen",
+          "text": "Reagiert die Person nicht und atmet nicht normal, sofort mit Herzdruckmassage beginnen und Notrufzentrale informieren.",
+          "priority": "critical"
+        },
+        {
+          "step": 5,
+          "icon": "helping-hand",
+          "title": "Verletzte betreuen und beruhigen",
+          "text": "Bei den Verletzten bleiben, wärmen, beruhigend zusprechen und verhindern, dass Umstehende die Personen zerren.",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "documents",
+          "title": "Unfalldaten und Fotos aufnehmen",
+          "text": "Kennzeichen notieren, Fotos der Endlage aus sicherer Entfernung machen und Namen von Zeugen festhalten.",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "first-aid",
+          "title": "Auch bei Beschwerdefreiheit zum Arzt",
+          "text": "Innere Blutungen, Gehirnerschütterungen und Schleudertraumen treten oft verzögert auf; noch am selben Tag untersuchen lassen.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "Unfall polizeilich melden",
+          "text": "Unfall bei der Polizei oder Autobahnpolizei protokollieren lassen und unverzüglich der Kfz-Versicherung melden.",
+          "priority": "normal"
+        },
+        {
+          "step": 4,
+          "icon": "car-safe",
+          "title": "Fahrbahn nach Freigabe räumen",
+          "text": "Sobald die Polizei es gestattet, beschädigte Fahrzeuge von der Fahrbahn entfernen lassen, um Folgekollisionen zu vermeiden.",
+          "priority": "normal"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "no-move-patient",
+          "title": "Verletzte niemals gewaltsam herausziehen",
+          "text": "Ungeschultes Ziehen kann Wirbelsäulenverletzungen zur Querschnittslähmung führen; auf Rettungsdienst warten.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "no-entry",
+          "title": "Nicht auf aktiven Fahrspuren verweilen",
+          "text": "Niemals vor, hinter oder zwischen verunfallten Fahrzeugen auf der Fahrbahn stehen, besonders bei Dunkelheit oder Regen.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Verletzten kein Wasser oder Essen geben",
+          "text": "Bei Schock oder Bewusstseinstrübung droht Ersticken; niemals Getränke, Speisen oder Schmerzmittel verabreichen.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "helping-hand",
+          "title": "Keine unsachgemäßen Bergungen durch Passanten",
+          "text": "Unkoordinierte Griffe verschlimmern Brüche; Passanten sollten stattdessen den rückwärtigen Verkehr warnen.",
+          "priority": "high"
+        }
       ]
     }
   }

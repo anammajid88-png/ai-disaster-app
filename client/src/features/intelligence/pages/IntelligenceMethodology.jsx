@@ -234,7 +234,7 @@ export default function IntelligenceMethodology() {
                 </p>
                 <ul>
                   <li><strong>Primary Authorship:</strong> The AI Disaster App was conceived and built by student <strong>Anam Majid</strong>.</li>
-                  <li><strong>Contributed Module Attributions:</strong> Deterministic disaster intelligence modules (risk index, Dijkstra routing, scenario simulator, and judge demo) were ported from Shan Iqbal's RAAH reference implementation.</li>
+                  <li><strong>Contributed Module Attributions:</strong> Deterministic disaster intelligence modules (risk index, Dijkstra routing, scenario simulator, and judge demo) were ported from the RAAH Disaster Intelligence open-source reference project.</li>
                   <li><strong>Truthful Provenance:</strong> No git history was falsified, no unauthorized commits or stealth trailers were added, and all ported modules are explicitly catalogued in <code>docs/FEATURE_PROVENANCE.md</code>.</li>
                 </ul>
               </div>

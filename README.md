@@ -551,7 +551,8 @@ For the **Islamabad National Final-Round Presentation**, the original applicatio
 
 ### Attributions & Provenance
 In adherence to hackathon ethics and academic integrity:
-- **Reference Implementation**: Algorithmic domain engines (risk formulas, road graph, scenario definitions) were adapted from the open-source research prototype **RAAH Disaster Intelligence** (`https://github.com/shaniqbal/raah-disaster-intelligence`, authored by Shan Iqbal).
+- **Reference Implementation**: Algorithmic domain engines (risk formulas, road graph, scenario definitions) were adapted from the open-source research prototype **RAAH Disaster Intelligence**.
+- **Project Owner**: Conceived, designed, and developed by **Anam Majid** (`https://github.com/anammajid88-png/ai-disaster-app`).
 - **Primary Ownership**: The original AI Disaster App remains the primary project, retaining its React 18 + Vite 5 + Express 4 architecture, Git history, and emergency assistance UX.
 - **Documentation**: Comprehensive engineering documentation is provided in the repository:
   - [`docs/ORIGINAL_BASELINE.md`](docs/ORIGINAL_BASELINE.md) - Frozen commit baselines and test reports.

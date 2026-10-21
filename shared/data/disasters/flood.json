@@ -6,42 +6,171 @@
   "accentSoft": "#e0f2fe",
   "riskLevel": "high",
   "season": "monsoon",
-  "primaryContacts": ["rescue-1122", "police-15"],
+  "primaryContacts": [
+    "rescue-1122",
+    "police-15"
+  ],
   "content": {
     "en": {
       "name": "Flood",
       "tagline": "Rising water, urban flooding and flash floods",
       "description": "Flood water rises faster than people expect and carries hidden electricity, sewage and debris. Height and distance from moving water keep you alive.",
       "rightNow": [
-        { "step": 1, "icon": "stairs", "title": "Get everyone higher", "text": "Move all people, especially children, elderly and patients, to the highest safe floor or higher ground now.", "priority": "critical" },
-        { "step": 2, "icon": "electric-hazard", "title": "Cut power and gas", "text": "If the main switch and your hands are dry and reachable, turn off electricity and close the gas valve.", "priority": "critical" },
-        { "step": 3, "icon": "phone-call", "title": "Call Rescue 1122", "text": "Give your exact address, how many people are with you and who needs help walking.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "Get everyone higher",
+          "text": "Move all people, especially children, elderly and patients, to the highest safe floor or higher ground now.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "Cut power and gas",
+          "text": "If the main switch and your hands are dry and reachable, turn off electricity and close the gas valve.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "Call Rescue 1122",
+          "text": "Give your exact address, how many people are with you and who needs help walking.",
+          "priority": "high"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "eye-watch", "title": "Know your risk", "text": "Find out if your street, basement or nearby nullah floods, and identify the nearest higher ground.", "priority": "normal" },
-        { "step": 2, "icon": "kit-bag", "title": "Pack a grab bag", "text": "Keep water, medicines, torch, power bank, cash and a whistle in one bag near the door.", "priority": "high" },
-        { "step": 3, "icon": "water-drop", "title": "Store clean water", "text": "Fill sealed containers with drinking water. Piped water is often unsafe during and after a flood.", "priority": "high" },
-        { "step": 4, "icon": "documents", "title": "Protect documents", "text": "Seal CNIC, property papers and medical records in plastic and keep photos on your phone.", "priority": "normal" },
-        { "step": 5, "icon": "sandbag", "title": "Raise and block", "text": "Move valuables and electrical items up, and block low doors and drains with sandbags where possible.", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "eye-watch",
+          "title": "Know your risk",
+          "text": "Find out if your street, basement or nearby nullah floods, and identify the nearest higher ground.",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "kit-bag",
+          "title": "Pack a grab bag",
+          "text": "Keep water, medicines, torch, power bank, cash and a whistle in one bag near the door.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Store clean water",
+          "text": "Fill sealed containers with drinking water. Piped water is often unsafe during and after a flood.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "documents",
+          "title": "Protect documents",
+          "text": "Seal CNIC, property papers and medical records in plastic and keep photos on your phone.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "sandbag",
+          "title": "Raise and block",
+          "text": "Move valuables and electrical items up, and block low doors and drains with sandbags where possible.",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "stairs", "title": "Move to higher ground", "text": "Go up, not out, if water surrounds the building. Move outside only along a route you can see is dry.", "priority": "critical" },
-        { "step": 2, "icon": "water-flow", "title": "Never enter moving water", "text": "Ankle-deep moving water can knock an adult down, and knee-deep water can carry a car away.", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "Treat water as live", "text": "Stay away from poles, wires, meters and submerged sockets. Do not use wet appliances.", "priority": "critical" },
-        { "step": 4, "icon": "radio", "title": "Follow official alerts", "text": "Keep one phone charged and follow PDMA, NDMA and local rescue announcements only.", "priority": "high" },
-        { "step": 5, "icon": "kit-bag", "title": "Take only essentials", "text": "If you must evacuate, carry your grab bag and documents. Leave furniture and heavy items behind.", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "Move to higher ground",
+          "text": "Go up, not out, if water surrounds the building. Move outside only along a route you can see is dry.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "water-flow",
+          "title": "Never enter moving water",
+          "text": "Ankle-deep moving water can knock an adult down, and knee-deep water can carry a car away.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Treat water as live",
+          "text": "Stay away from poles, wires, meters and submerged sockets. Do not use wet appliances.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "radio",
+          "title": "Follow official alerts",
+          "text": "Keep one phone charged and follow PDMA, NDMA and local rescue announcements only.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "kit-bag",
+          "title": "Take only essentials",
+          "text": "If you must evacuate, carry your grab bag and documents. Leave furniture and heavy items behind.",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "shelter-home", "title": "Return only when cleared", "text": "Go back only after authorities confirm it is safe, in daylight, and with someone who knows you are there.", "priority": "high" },
-        { "step": 2, "icon": "boil-water", "title": "Boil or treat all water", "text": "Boil drinking water for at least one minute, or use safe purification tablets, until supply is declared clean.", "priority": "critical" },
-        { "step": 3, "icon": "wall-crack", "title": "Check the building", "text": "Look for cracks, tilting walls, sagging ceilings or a gas smell. If anything seems wrong, stay out and report it.", "priority": "high" },
-        { "step": 4, "icon": "first-aid", "title": "Watch for illness and wounds", "text": "Wash cuts, cover them, and get medical help for fever, diarrhoea or skin infection after contact with flood water.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Return only when cleared",
+          "text": "Go back only after authorities confirm it is safe, in daylight, and with someone who knows you are there.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "boil-water",
+          "title": "Boil or treat all water",
+          "text": "Boil drinking water for at least one minute, or use safe purification tablets, until supply is declared clean.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "wall-crack",
+          "title": "Check the building",
+          "text": "Look for cracks, tilting walls, sagging ceilings or a gas smell. If anything seems wrong, stay out and report it.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "Watch for illness and wounds",
+          "text": "Wash cuts, cover them, and get medical help for fever, diarrhoea or skin infection after contact with flood water.",
+          "priority": "high"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "no-swim", "title": "Do not swim or play in flood water", "text": "It hides sewage, sharp debris, open manholes and live current.", "priority": "critical" },
-        { "step": 2, "icon": "electric-hazard", "title": "Do not touch wet wiring", "text": "Never restore power or use a wet generator, inverter or appliance until an electrician checks it.", "priority": "critical" },
-        { "step": 3, "icon": "no-entry", "title": "Do not cross barriers", "text": "Do not drive or walk past a closed road, bridge or barrier, even if others are doing it.", "priority": "high" },
-        { "step": 4, "icon": "water-drop", "title": "Do not drink untreated water", "text": "Flood water and unfiltered supply water cause cholera, typhoid and hepatitis.", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "no-swim",
+          "title": "Do not swim or play in flood water",
+          "text": "It hides sewage, sharp debris, open manholes and live current.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "Do not touch wet wiring",
+          "text": "Never restore power or use a wet generator, inverter or appliance until an electrician checks it.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "Do not cross barriers",
+          "text": "Do not drive or walk past a closed road, bridge or barrier, even if others are doing it.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "water-drop",
+          "title": "Do not drink untreated water",
+          "text": "Flood water and unfiltered supply water cause cholera, typhoid and hepatitis.",
+          "priority": "high"
+        }
       ]
     },
     "ur": {
@@ -49,35 +178,161 @@
       "tagline": "پانی کی سطح بلند ہونا، شہری سیلاب اور اچانک سیلاب",
       "description": "سیلابی پانی توقع سے زیادہ تیزی سے بڑھتا ہے اور اس میں بجلی، گندا پانی اور ملبہ چھپا ہوتا ہے۔ بلندی پر جانا اور بہتے پانی سے دور رہنا ہی جان بچاتا ہے۔",
       "rightNow": [
-        { "step": 1, "icon": "stairs", "title": "سب کو اوپر لے جائیں", "text": "تمام افراد، خاص طور پر بچوں، بزرگوں اور مریضوں کو ابھی سب سے اوپر والی محفوظ منزل یا بلند جگہ پر منتقل کریں۔", "priority": "critical" },
-        { "step": 2, "icon": "electric-hazard", "title": "بجلی اور گیس بند کریں", "text": "اگر مین سوئچ اور آپ کے ہاتھ خشک ہیں اور آسانی سے پہنچ سکتے ہیں تو بجلی بند کریں اور گیس والو بند کر دیں۔", "priority": "critical" },
-        { "step": 3, "icon": "phone-call", "title": "ریسکیو 1122 کو کال کریں", "text": "اپنا مکمل پتہ بتائیں، آپ کے ساتھ کتنے افراد ہیں اور کون چلنے میں مدد کا محتاج ہے۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "سب کو اوپر لے جائیں",
+          "text": "تمام افراد، خاص طور پر بچوں، بزرگوں اور مریضوں کو ابھی سب سے اوپر والی محفوظ منزل یا بلند جگہ پر منتقل کریں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "بجلی اور گیس بند کریں",
+          "text": "اگر مین سوئچ اور آپ کے ہاتھ خشک ہیں اور آسانی سے پہنچ سکتے ہیں تو بجلی بند کریں اور گیس والو بند کر دیں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "ریسکیو 1122 کو کال کریں",
+          "text": "اپنا مکمل پتہ بتائیں، آپ کے ساتھ کتنے افراد ہیں اور کون چلنے میں مدد کا محتاج ہے۔",
+          "priority": "high"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "eye-watch", "title": "اپنے خطرے کو جانیں", "text": "معلوم کریں کہ آپ کی گلی، تہہ خانہ یا قریبی نالہ سیلاب میں بھرتا ہے یا نہیں، اور قریب ترین بلند جگہ کی نشاندہی کریں۔", "priority": "normal" },
-        { "step": 2, "icon": "kit-bag", "title": "ہنگامی بیگ تیار رکھیں", "text": "پانی، دوائیں، ٹارچ، پاور بینک، نقد رقم اور سیٹی ایک بیگ میں دروازے کے قریب رکھیں۔", "priority": "high" },
-        { "step": 3, "icon": "water-drop", "title": "صاف پانی ذخیرہ کریں", "text": "بند برتنوں میں پینے کا پانی بھر لیں۔ سیلاب کے دوران اور بعد میں نل کا پانی عموماً غیر محفوظ ہوتا ہے۔", "priority": "high" },
-        { "step": 4, "icon": "documents", "title": "کاغذات محفوظ کریں", "text": "شناختی کارڈ، جائیداد کے کاغذات اور طبی ریکارڈ پلاسٹک میں بند کریں اور تصاویر فون میں رکھیں۔", "priority": "normal" },
-        { "step": 5, "icon": "sandbag", "title": "سامان اوپر کریں اور راستے بند کریں", "text": "قیمتی اور بجلی کا سامان اوپر منتقل کریں اور نیچے کے دروازے اور نالیاں ریت کی بوریوں سے بند کریں۔", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "eye-watch",
+          "title": "اپنے خطرے کو جانیں",
+          "text": "معلوم کریں کہ آپ کی گلی، تہہ خانہ یا قریبی نالہ سیلاب میں بھرتا ہے یا نہیں، اور قریب ترین بلند جگہ کی نشاندہی کریں۔",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "kit-bag",
+          "title": "ہنگامی بیگ تیار رکھیں",
+          "text": "پانی، دوائیں، ٹارچ، پاور بینک، نقد رقم اور سیٹی ایک بیگ میں دروازے کے قریب رکھیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "صاف پانی ذخیرہ کریں",
+          "text": "بند برتنوں میں پینے کا پانی بھر لیں۔ سیلاب کے دوران اور بعد میں نل کا پانی عموماً غیر محفوظ ہوتا ہے۔",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "documents",
+          "title": "کاغذات محفوظ کریں",
+          "text": "شناختی کارڈ، جائیداد کے کاغذات اور طبی ریکارڈ پلاسٹک میں بند کریں اور تصاویر فون میں رکھیں۔",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "sandbag",
+          "title": "سامان اوپر کریں اور راستے بند کریں",
+          "text": "قیمتی اور بجلی کا سامان اوپر منتقل کریں اور نیچے کے دروازے اور نالیاں ریت کی بوریوں سے بند کریں۔",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "stairs", "title": "بلند جگہ پر جائیں", "text": "اگر عمارت کے چاروں طرف پانی ہے تو باہر نہ نکلیں، اوپر جائیں۔ باہر صرف اُس راستے سے جائیں جو نظر آ رہا ہو کہ خشک ہے۔", "priority": "critical" },
-        { "step": 2, "icon": "water-flow", "title": "بہتے پانی میں ہرگز نہ اتریں", "text": "ٹخنوں تک بہتا پانی بالغ آدمی کو گرا سکتا ہے اور گھٹنوں تک پانی گاڑی کو بہا لے جا سکتا ہے۔", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "پانی کو بجلی زدہ سمجھیں", "text": "کھمبوں، تاروں، میٹر اور ڈوبے ہوئے ساکٹ سے دور رہیں۔ گیلے بجلی کے آلات استعمال نہ کریں۔", "priority": "critical" },
-        { "step": 4, "icon": "radio", "title": "سرکاری اطلاعات پر عمل کریں", "text": "ایک فون چارج رکھیں اور صرف پی ڈی ایم اے، این ڈی ایم اے اور مقامی ریسکیو کے اعلانات پر عمل کریں۔", "priority": "high" },
-        { "step": 5, "icon": "kit-bag", "title": "صرف ضروری سامان لیں", "text": "اگر نکلنا پڑے تو ہنگامی بیگ اور کاغذات ساتھ لیں۔ فرنیچر اور بھاری سامان چھوڑ دیں۔", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "بلند جگہ پر جائیں",
+          "text": "اگر عمارت کے چاروں طرف پانی ہے تو باہر نہ نکلیں، اوپر جائیں۔ باہر صرف اُس راستے سے جائیں جو نظر آ رہا ہو کہ خشک ہے۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "water-flow",
+          "title": "بہتے پانی میں ہرگز نہ اتریں",
+          "text": "ٹخنوں تک بہتا پانی بالغ آدمی کو گرا سکتا ہے اور گھٹنوں تک پانی گاڑی کو بہا لے جا سکتا ہے۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "پانی کو بجلی زدہ سمجھیں",
+          "text": "کھمبوں، تاروں، میٹر اور ڈوبے ہوئے ساکٹ سے دور رہیں۔ گیلے بجلی کے آلات استعمال نہ کریں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "radio",
+          "title": "سرکاری اطلاعات پر عمل کریں",
+          "text": "ایک فون چارج رکھیں اور صرف پی ڈی ایم اے، این ڈی ایم اے اور مقامی ریسکیو کے اعلانات پر عمل کریں۔",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "kit-bag",
+          "title": "صرف ضروری سامان لیں",
+          "text": "اگر نکلنا پڑے تو ہنگامی بیگ اور کاغذات ساتھ لیں۔ فرنیچر اور بھاری سامان چھوڑ دیں۔",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "shelter-home", "title": "اجازت ملنے پر ہی واپس جائیں", "text": "صرف اس وقت واپس جائیں جب حکام محفوظ قرار دیں، دن کی روشنی میں جائیں اور کسی کو اپنی موجودگی کا بتا دیں۔", "priority": "high" },
-        { "step": 2, "icon": "boil-water", "title": "پانی ابال کر پئیں", "text": "پینے کا پانی کم از کم ایک منٹ ابالیں یا محفوظ گولیاں استعمال کریں، جب تک سپلائی صاف قرار نہ دی جائے۔", "priority": "critical" },
-        { "step": 3, "icon": "wall-crack", "title": "عمارت کا جائزہ لیں", "text": "دراڑیں، جھکی ہوئی دیواریں، بیٹھی ہوئی چھت یا گیس کی بو دیکھیں۔ کوئی خرابی ہو تو اندر نہ جائیں اور اطلاع دیں۔", "priority": "high" },
-        { "step": 4, "icon": "first-aid", "title": "بیماری اور زخموں کا خیال رکھیں", "text": "زخم دھو کر ڈھانپیں، اور سیلابی پانی کے بعد بخار، دست یا جِلد کے انفیکشن پر فوراً ڈاکٹر سے رجوع کریں۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "اجازت ملنے پر ہی واپس جائیں",
+          "text": "صرف اس وقت واپس جائیں جب حکام محفوظ قرار دیں، دن کی روشنی میں جائیں اور کسی کو اپنی موجودگی کا بتا دیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "boil-water",
+          "title": "پانی ابال کر پئیں",
+          "text": "پینے کا پانی کم از کم ایک منٹ ابالیں یا محفوظ گولیاں استعمال کریں، جب تک سپلائی صاف قرار نہ دی جائے۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "wall-crack",
+          "title": "عمارت کا جائزہ لیں",
+          "text": "دراڑیں، جھکی ہوئی دیواریں، بیٹھی ہوئی چھت یا گیس کی بو دیکھیں۔ کوئی خرابی ہو تو اندر نہ جائیں اور اطلاع دیں۔",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "بیماری اور زخموں کا خیال رکھیں",
+          "text": "زخم دھو کر ڈھانپیں، اور سیلابی پانی کے بعد بخار، دست یا جِلد کے انفیکشن پر فوراً ڈاکٹر سے رجوع کریں۔",
+          "priority": "high"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "no-swim", "title": "سیلابی پانی میں تیرنا یا کھیلنا نہیں", "text": "اس میں گٹر کا پانی، تیز ملبہ، کھلے مین ہول اور زندہ کرنٹ چھپا ہوتا ہے۔", "priority": "critical" },
-        { "step": 2, "icon": "electric-hazard", "title": "گیلی وائرنگ کو ہاتھ نہ لگائیں", "text": "بجلی بحال نہ کریں اور گیلا جنریٹر، انورٹر یا آلہ الیکٹریشن کی جانچ سے پہلے استعمال نہ کریں۔", "priority": "critical" },
-        { "step": 3, "icon": "no-entry", "title": "رکاوٹیں پار نہ کریں", "text": "بند سڑک، پل یا رکاوٹ سے آگے نہ جائیں، چاہے دوسرے جا رہے ہوں۔", "priority": "high" },
-        { "step": 4, "icon": "water-drop", "title": "غیر صاف پانی نہ پئیں", "text": "سیلابی اور غیر فلٹر شدہ پانی ہیضہ، ٹائیفائیڈ اور ہیپاٹائٹس کا سبب بنتا ہے۔", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "no-swim",
+          "title": "سیلابی پانی میں تیرنا یا کھیلنا نہیں",
+          "text": "اس میں گٹر کا پانی، تیز ملبہ، کھلے مین ہول اور زندہ کرنٹ چھپا ہوتا ہے۔",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "گیلی وائرنگ کو ہاتھ نہ لگائیں",
+          "text": "بجلی بحال نہ کریں اور گیلا جنریٹر، انورٹر یا آلہ الیکٹریشن کی جانچ سے پہلے استعمال نہ کریں۔",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "رکاوٹیں پار نہ کریں",
+          "text": "بند سڑک، پل یا رکاوٹ سے آگے نہ جائیں، چاہے دوسرے جا رہے ہوں۔",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "water-drop",
+          "title": "غیر صاف پانی نہ پئیں",
+          "text": "سیلابی اور غیر فلٹر شدہ پانی ہیضہ، ٹائیفائیڈ اور ہیپاٹائٹس کا سبب بنتا ہے۔",
+          "priority": "high"
+        }
       ]
     },
     "hi": {
@@ -85,35 +340,647 @@
       "tagline": "पानी का बढ़ना, शहरी जलभराव और अचानक बाढ़",
       "description": "बाढ़ का पानी अपेक्षा से बहुत तेज़ी से बढ़ता है और उसमें बिजली, गंदा पानी तथा मलबा छिपा रहता है। ऊँचाई पर जाना और बहते पानी से दूर रहना ही जान बचाता है।",
       "rightNow": [
-        { "step": 1, "icon": "stairs", "title": "सबको ऊपर ले जाएँ", "text": "सभी लोगों को, विशेष रूप से बच्चों, बुज़ुर्गों और मरीज़ों को अभी सबसे ऊपरी सुरक्षित मंज़िल या ऊँची जगह पर ले जाएँ।", "priority": "critical" },
-        { "step": 2, "icon": "electric-hazard", "title": "बिजली और गैस बंद करें", "text": "यदि मेन स्विच और आपके हाथ सूखे हैं और पहुँच में हैं, तो बिजली बंद करें और गैस वाल्व बंद कर दें।", "priority": "critical" },
-        { "step": 3, "icon": "phone-call", "title": "रेस्क्यू 1122 पर कॉल करें", "text": "अपना पूरा पता बताएँ, आपके साथ कितने लोग हैं और किसे चलने में मदद चाहिए।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "सबको ऊपर ले जाएँ",
+          "text": "सभी लोगों को, विशेष रूप से बच्चों, बुज़ुर्गों और मरीज़ों को अभी सबसे ऊपरी सुरक्षित मंज़िल या ऊँची जगह पर ले जाएँ।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "बिजली और गैस बंद करें",
+          "text": "यदि मेन स्विच और आपके हाथ सूखे हैं और पहुँच में हैं, तो बिजली बंद करें और गैस वाल्व बंद कर दें।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "रेस्क्यू 1122 पर कॉल करें",
+          "text": "अपना पूरा पता बताएँ, आपके साथ कितने लोग हैं और किसे चलने में मदद चाहिए।",
+          "priority": "high"
+        }
       ],
       "before": [
-        { "step": 1, "icon": "eye-watch", "title": "अपना जोखिम जानें", "text": "पता करें कि आपकी गली, तहख़ाना या पास का नाला भरता है या नहीं, और निकटतम ऊँची जगह चिह्नित करें।", "priority": "normal" },
-        { "step": 2, "icon": "kit-bag", "title": "आपातकालीन बैग तैयार रखें", "text": "पानी, दवाएँ, टॉर्च, पावर बैंक, नकद और सीटी एक बैग में दरवाज़े के पास रखें।", "priority": "high" },
-        { "step": 3, "icon": "water-drop", "title": "साफ़ पानी जमा करें", "text": "बंद बर्तनों में पीने का पानी भर लें। बाढ़ के दौरान और बाद में नल का पानी अक्सर असुरक्षित होता है।", "priority": "high" },
-        { "step": 4, "icon": "documents", "title": "दस्तावेज़ सुरक्षित करें", "text": "पहचान पत्र, संपत्ति के काग़ज़ और मेडिकल रिकॉर्ड प्लास्टिक में बंद करें और फ़ोन में फ़ोटो रखें।", "priority": "normal" },
-        { "step": 5, "icon": "sandbag", "title": "सामान ऊपर करें और रास्ते रोकें", "text": "क़ीमती और बिजली का सामान ऊपर ले जाएँ, और नीचे के दरवाज़े तथा नालियाँ रेत की बोरियों से रोकें।", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "eye-watch",
+          "title": "अपना जोखिम जानें",
+          "text": "पता करें कि आपकी गली, तहख़ाना या पास का नाला भरता है या नहीं, और निकटतम ऊँची जगह चिह्नित करें।",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "kit-bag",
+          "title": "आपातकालीन बैग तैयार रखें",
+          "text": "पानी, दवाएँ, टॉर्च, पावर बैंक, नकद और सीटी एक बैग में दरवाज़े के पास रखें।",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "साफ़ पानी जमा करें",
+          "text": "बंद बर्तनों में पीने का पानी भर लें। बाढ़ के दौरान और बाद में नल का पानी अक्सर असुरक्षित होता है।",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "documents",
+          "title": "दस्तावेज़ सुरक्षित करें",
+          "text": "पहचान पत्र, संपत्ति के काग़ज़ और मेडिकल रिकॉर्ड प्लास्टिक में बंद करें और फ़ोन में फ़ोटो रखें।",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "sandbag",
+          "title": "सामान ऊपर करें और रास्ते रोकें",
+          "text": "क़ीमती और बिजली का सामान ऊपर ले जाएँ, और नीचे के दरवाज़े तथा नालियाँ रेत की बोरियों से रोकें।",
+          "priority": "normal"
+        }
       ],
       "during": [
-        { "step": 1, "icon": "stairs", "title": "ऊँची जगह पर जाएँ", "text": "यदि इमारत के चारों ओर पानी है तो बाहर न निकलें, ऊपर जाएँ। बाहर केवल उस रास्ते से जाएँ जो दिख रहा हो कि सूखा है।", "priority": "critical" },
-        { "step": 2, "icon": "water-flow", "title": "बहते पानी में कभी न उतरें", "text": "टख़नों तक बहता पानी एक वयस्क को गिरा सकता है और घुटनों तक पानी कार को बहा सकता है।", "priority": "critical" },
-        { "step": 3, "icon": "electric-hazard", "title": "पानी को बिजलीयुक्त मानें", "text": "खंभों, तारों, मीटर और डूबे हुए सॉकेट से दूर रहें। गीले बिजली उपकरण इस्तेमाल न करें।", "priority": "critical" },
-        { "step": 4, "icon": "radio", "title": "आधिकारिक चेतावनी मानें", "text": "एक फ़ोन चार्ज रखें और केवल PDMA, NDMA तथा स्थानीय बचाव दल की घोषणाओं का पालन करें।", "priority": "high" },
-        { "step": 5, "icon": "kit-bag", "title": "केवल ज़रूरी सामान लें", "text": "यदि निकलना पड़े तो आपातकालीन बैग और दस्तावेज़ साथ लें। फ़र्नीचर और भारी सामान छोड़ दें।", "priority": "normal" }
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "ऊँची जगह पर जाएँ",
+          "text": "यदि इमारत के चारों ओर पानी है तो बाहर न निकलें, ऊपर जाएँ। बाहर केवल उस रास्ते से जाएँ जो दिख रहा हो कि सूखा है।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "water-flow",
+          "title": "बहते पानी में कभी न उतरें",
+          "text": "टख़नों तक बहता पानी एक वयस्क को गिरा सकता है और घुटनों तक पानी कार को बहा सकता है।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "पानी को बिजलीयुक्त मानें",
+          "text": "खंभों, तारों, मीटर और डूबे हुए सॉकेट से दूर रहें। गीले बिजली उपकरण इस्तेमाल न करें।",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "radio",
+          "title": "आधिकारिक चेतावनी मानें",
+          "text": "एक फ़ोन चार्ज रखें और केवल PDMA, NDMA तथा स्थानीय बचाव दल की घोषणाओं का पालन करें।",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "kit-bag",
+          "title": "केवल ज़रूरी सामान लें",
+          "text": "यदि निकलना पड़े तो आपातकालीन बैग और दस्तावेज़ साथ लें। फ़र्नीचर और भारी सामान छोड़ दें।",
+          "priority": "normal"
+        }
       ],
       "after": [
-        { "step": 1, "icon": "shelter-home", "title": "अनुमति मिलने पर ही लौटें", "text": "तभी लौटें जब अधिकारी सुरक्षित घोषित करें, दिन के उजाले में जाएँ और किसी को अपनी मौजूदगी बताएँ।", "priority": "high" },
-        { "step": 2, "icon": "boil-water", "title": "पानी उबालकर पिएँ", "text": "पीने का पानी कम से कम एक मिनट उबालें या सुरक्षित गोलियाँ इस्तेमाल करें, जब तक आपूर्ति साफ़ घोषित न हो।", "priority": "critical" },
-        { "step": 3, "icon": "wall-crack", "title": "इमारत की जाँच करें", "text": "दरारें, झुकी दीवारें, बैठी छत या गैस की गंध देखें। कुछ भी ग़लत लगे तो अंदर न जाएँ और सूचना दें।", "priority": "high" },
-        { "step": 4, "icon": "first-aid", "title": "बीमारी और घावों का ध्यान रखें", "text": "घाव धोकर ढकें, और बाढ़ के पानी के बाद बुख़ार, दस्त या त्वचा संक्रमण पर तुरंत डॉक्टर से मिलें।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "अनुमति मिलने पर ही लौटें",
+          "text": "तभी लौटें जब अधिकारी सुरक्षित घोषित करें, दिन के उजाले में जाएँ और किसी को अपनी मौजूदगी बताएँ।",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "boil-water",
+          "title": "पानी उबालकर पिएँ",
+          "text": "पीने का पानी कम से कम एक मिनट उबालें या सुरक्षित गोलियाँ इस्तेमाल करें, जब तक आपूर्ति साफ़ घोषित न हो।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "wall-crack",
+          "title": "इमारत की जाँच करें",
+          "text": "दरारें, झुकी दीवारें, बैठी छत या गैस की गंध देखें। कुछ भी ग़लत लगे तो अंदर न जाएँ और सूचना दें।",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "बीमारी और घावों का ध्यान रखें",
+          "text": "घाव धोकर ढकें, और बाढ़ के पानी के बाद बुख़ार, दस्त या त्वचा संक्रमण पर तुरंत डॉक्टर से मिलें।",
+          "priority": "high"
+        }
       ],
       "avoid": [
-        { "step": 1, "icon": "no-swim", "title": "बाढ़ के पानी में तैरना या खेलना नहीं", "text": "इसमें सीवेज, नुकीला मलबा, खुले मैनहोल और ज़िंदा करंट छिपा होता है।", "priority": "critical" },
-        { "step": 2, "icon": "electric-hazard", "title": "गीली वायरिंग को न छुएँ", "text": "बिजली बहाल न करें और गीला जनरेटर, इनवर्टर या उपकरण इलेक्ट्रिशियन की जाँच से पहले इस्तेमाल न करें।", "priority": "critical" },
-        { "step": 3, "icon": "no-entry", "title": "अवरोध पार न करें", "text": "बंद सड़क, पुल या बैरियर से आगे न जाएँ, चाहे दूसरे जा रहे हों।", "priority": "high" },
-        { "step": 4, "icon": "water-drop", "title": "अनुपचारित पानी न पिएँ", "text": "बाढ़ का और बिना फ़िल्टर पानी हैज़ा, टाइफ़ॉइड और हेपेटाइटिस फैलाता है।", "priority": "high" }
+        {
+          "step": 1,
+          "icon": "no-swim",
+          "title": "बाढ़ के पानी में तैरना या खेलना नहीं",
+          "text": "इसमें सीवेज, नुकीला मलबा, खुले मैनहोल और ज़िंदा करंट छिपा होता है।",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "गीली वायरिंग को न छुएँ",
+          "text": "बिजली बहाल न करें और गीला जनरेटर, इनवर्टर या उपकरण इलेक्ट्रिशियन की जाँच से पहले इस्तेमाल न करें।",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "अवरोध पार न करें",
+          "text": "बंद सड़क, पुल या बैरियर से आगे न जाएँ, चाहे दूसरे जा रहे हों।",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "water-drop",
+          "title": "अनुपचारित पानी न पिएँ",
+          "text": "बाढ़ का और बिना फ़िल्टर पानी हैज़ा, टाइफ़ॉइड और हेपेटाइटिस फैलाता है।",
+          "priority": "high"
+        }
+      ]
+    },
+    "zh-CN": {
+      "name": "洪水与内涝",
+      "tagline": "水位上涨、城市内涝与突发山洪",
+      "description": "洪水上涨速度往往超出预期，并夹杂漏电、污水及杂物。身处高处并远离流动水流是保全生命的关键。",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "迅速转移至高处",
+          "text": "立即将所有人，尤其是儿童、老人及病患转移至最高安全楼层或附近高地。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "切断电源与燃气",
+          "text": "在确保双手干燥且总闸安全可及的前提下，立即关闭室内总电源及燃气阀门。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "拨打救援电话 1122",
+          "text": "清晰说明具体受困地址、受困人数以及是否有行动不便人员需要急救。",
+          "priority": "high"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "eye-watch",
+          "title": "掌握周边水患风险",
+          "text": "排查所在街道、地下室或临近排水渠的积水历史，明确最近的安全避难高地。",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "kit-bag",
+          "title": "准备应急随身包",
+          "text": "备好便携应急包，装入饮用水、常备药品、手电筒、充电宝、现金及应急哨，置于门旁。",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "储备清洁饮用水",
+          "text": "使用密封容器储备清洁饮用水。洪涝期间及退水后市政自来水常受污染不可直饮。",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "documents",
+          "title": "妥善防水保存证件",
+          "text": "将身份证、房产证及重要病历装入密封防水袋，并在手机中留存清晰电子备份。",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "sandbag",
+          "title": "抬高物资并筑防阻水",
+          "text": "将贵重物品和电器垫高放置，视情况在低矮门口和排水口堆放沙袋阻截倒灌。",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "就地向建筑高层转移",
+          "text": "若洪水已包围建筑，切勿贸然外出，立即向上转移；仅在确认路面干燥坚固时撤离。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "water-flow",
+          "title": "切勿涉足流动洪水中",
+          "text": "脚踝深的急流足以冲倒成年人，膝盖深的急流即可轻易冲走机动车辆。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "将所有积水视作带电",
+          "text": "严禁靠近电线杆、下垂电线、电表箱和被淹插座；严禁在潮湿环境下开启电器。",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "radio",
+          "title": "密切关注官方预警",
+          "text": "保持至少一部手机电量充足，严格听从国家防灾委（NDMA）及当地应急救援指示。",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "kit-bag",
+          "title": "撤离仅携带核心物品",
+          "text": "接获疏散指令时仅携带急救包和重要证件，切勿因搬运笨重家具物品延误避险。",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "官方确认安全后再返回",
+          "text": "仅在官方明确通报安全后于日间返回，并确保外界有亲友知晓您的具体行程。",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "boil-water",
+          "title": "所有饮水必须煮沸或净化",
+          "text": "饮用水至少持续沸腾一分钟，或使用安全净水药片消毒，直至供水彻底达标。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "wall-crack",
+          "title": "仔细检查房屋结构隐患",
+          "text": "排查房屋立柱裂纹、墙体倾斜、天花板下垂或燃气泄漏异味；发现异常切勿入内。",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "警惕外伤感染与疫病",
+          "text": "彻底清洗包扎伤口；接触洪水后如出现发热、腹泻或皮肤溃烂，须立即就医。",
+          "priority": "high"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "no-swim",
+          "title": "严禁在洪水中游泳或嬉戏",
+          "text": "浑浊洪水中隐藏着生活污水、尖锐杂物、敞开的无盖窨井以及致命漏电。",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "严禁触碰潮湿电气线路",
+          "text": "在专业电工全面检测前，切勿自行合闸送电，严禁使用进水的发电机或电器。",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "严禁强行闯越警戒路障",
+          "text": "切勿驾车或步行强行通过封闭的积水道路与桥梁，切勿盲目跟从他人冒险。",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "water-drop",
+          "title": "严禁直接饮用未消毒水源",
+          "text": "洪涝混浊水及受污染供水极易引发霍乱、伤寒和甲型肝炎等严重传染病。",
+          "priority": "high"
+        }
+      ]
+    },
+    "fr": {
+      "name": "Inondation",
+      "tagline": "Montée des eaux, inondations urbaines et crues soudaines",
+      "description": "Les eaux montent plus vite qu'on ne le pense et véhiculent courant électrique, égouts et débris. La hauteur et l'éloignement sauvent des vies.",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "Mettre tout le monde en hauteur",
+          "text": "Déplacez immédiatement toutes les personnes, en particulier enfants, personnes âgées et malades, vers l'étage supérieur le plus sûr ou un point haut.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "Couper l'électricité et le gaz",
+          "text": "Si le disjoncteur principal et vos mains sont secs et accessibles, coupez l'électricité et fermez le robinet de gaz principal.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "Appeler les secours 1122",
+          "text": "Indiquez votre adresse exacte, le nombre de personnes présentes et signalez toute personne à mobilité réduite.",
+          "priority": "high"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "eye-watch",
+          "title": "Connaître votre niveau de risque",
+          "text": "Renseignez-vous pour savoir si votre rue ou sous-sol est inondable et repérez le terrain surélevé le plus proche.",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "kit-bag",
+          "title": "Préparer un sac d'urgence",
+          "text": "Gardez un sac près de la porte avec eau potable, médicaments, lampe torche, batterie externe, argent liquide et sifflet.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Stocker de l'eau potable",
+          "text": "Remplissez des récipients hermétiques d'eau potable. L'eau du robinet est souvent impropre pendant et après une crue.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "documents",
+          "title": "Protéger vos documents essentiels",
+          "text": "Scellez cartes d'identité, titres de propriété et dossiers médicaux dans du plastique et conservez des copies numériques.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "sandbag",
+          "title": "Surélever les biens et faire barrage",
+          "text": "Placez les appareils électriques et objets précieux en hauteur; bloquez les portes basses avec des sacs de sable si possible.",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "Gagner les étages supérieurs",
+          "text": "Montez dans les étages si l'eau entoure le bâtiment. Ne sortez à l'extérieur que si vous voyez un chemin parfaitement sec.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "water-flow",
+          "title": "Ne jamais entrer dans l'eau en mouvement",
+          "text": "Une eau en mouvement arrivant aux chevilles peut renverser un adulte; de l'eau aux genoux emporte une voiture.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Considérer toute eau comme sous tension",
+          "text": "Éloignez-vous des poteaux électriques, câbles rompus et prises immergées. N'allumez aucun équipement humide.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "radio",
+          "title": "Suivre les alertes officielles",
+          "text": "Gardez un téléphone chargé et suivez strictement les consignes de la PDMA, de la NDMA et des secours locaux.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "kit-bag",
+          "title": "Emporter uniquement l'essentiel",
+          "text": "En cas d'ordre d'évacuation, prenez votre sac d'urgence et vos papiers. Laissez les meubles et charges lourdes.",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Ne rentrer qu'après autorisation",
+          "text": "Ne regagnez votre domicile qu'après confirmation officielle des autorités, de jour, et en prévenant un proche.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "boil-water",
+          "title": "Bouillir ou traiter toute eau",
+          "text": "Faites bouillir l'eau potable au moins une minute ou utilisez des pastilles purifiantes jusqu'à déclaration officielle.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "wall-crack",
+          "title": "Vérifier la structure du bâtiment",
+          "text": "Repérez fissures, murs inclinés ou odeur de gaz. Au moindre doute sur la stabilité, restez dehors et alertez les secours.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "Surveiller blessures et infections",
+          "text": "Nettoyez et désinfectez les coupures; consultez un médecin en cas de fièvre, diarrhée ou éruptions cutanées.",
+          "priority": "high"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "no-swim",
+          "title": "Ne pas nager ni jouer dans l'eau",
+          "text": "L'eau de crue dissimule eaux usées, débris tranchants, regards d'égout ouverts et risques d'électrocution.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "Ne pas toucher aux câbles humides",
+          "text": "Ne rétablissez jamais le courant et n'utilisez aucun générateur ou appareil humide avant contrôle par un électricien.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "Ne pas franchir les barrages de sécurité",
+          "text": "Ne roulez pas et ne marchez pas sur une route ou un pont fermé, même si d'autres personnes le font.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "water-drop",
+          "title": "Ne pas boire d'eau non traitée",
+          "text": "L'eau d'inondation non filtrée transmet le choléra, la typhoïde et l'hépatite.",
+          "priority": "high"
+        }
+      ]
+    },
+    "de": {
+      "name": "Hochwasser & Überschwemmung",
+      "tagline": "Steigende Pegel, urbane Sturzfluten und Überschwemmungen",
+      "description": "Hochwasser steigt schneller als erwartet und führt Strom, Abwasser und Trümmer mit sich. Erhöhte Standorte und Distanz sichern das Überleben.",
+      "rightNow": [
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "Alle Personen in obere Etagen bringen",
+          "text": "Bringen Sie alle Bewohner, insbesondere Kinder, Senioren und Pflegebedürftige, sofort in das oberste Stockwerk oder auf Anhöhen.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "Strom und Gas sofort abstellen",
+          "text": "Schalten Sie den Hauptschalter und die Gaszufuhr ab, sofern Hände und Sicherungskasten trocken und gefahrlos erreichbar sind.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "phone-call",
+          "title": "Rettungsdienst 1122 verständigen",
+          "text": "Geben Sie den genauen Standort, die Personenzahl und eventuell gehbehinderte oder verletzte Personen an.",
+          "priority": "high"
+        }
+      ],
+      "before": [
+        {
+          "step": 1,
+          "icon": "eye-watch",
+          "title": "Überflutungsrisiken kennen",
+          "text": "Prüfen Sie, ob Ihre Straße oder Ihr Keller überflutungsgefährdet ist, und machen Sie die nächste Anhöhe ausfindig.",
+          "priority": "normal"
+        },
+        {
+          "step": 2,
+          "icon": "kit-bag",
+          "title": "Notfallgepäck griffbereit halten",
+          "text": "Packen Sie Trinkwasser, Notfallmedikamente, Taschenlampe, Powerbank, Bargeld und Trillerpfeife griffbereit an die Tür.",
+          "priority": "high"
+        },
+        {
+          "step": 3,
+          "icon": "water-drop",
+          "title": "Sauberes Trinkwasser bevorraten",
+          "text": "Füllen Sie saubere Behälter mit Trinkwasser. Leitungswasser ist während und nach Fluten häufig schwer verunreinigt.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "documents",
+          "title": "Wichtige Dokumente sichern",
+          "text": "Bewahren Sie Ausweise, Urkunden und medizinische Unterlagen wasserdicht verpackt auf und erstellen Sie digitale Kopien.",
+          "priority": "normal"
+        },
+        {
+          "step": 5,
+          "icon": "sandbag",
+          "title": "Wertgegenstände hochlagern",
+          "text": "Lagern Sie Elektrogeräte und Wertgegenstände in oberen Etagen; dichten Sie tiefe Türen mit Sandsäcken ab.",
+          "priority": "normal"
+        }
+      ],
+      "during": [
+        {
+          "step": 1,
+          "icon": "stairs",
+          "title": "Im Gebäude nach oben ausweichen",
+          "text": "Flüchten Sie nach oben statt ins Freie, wenn das Haus umspült wird. Verlassen Sie das Haus nur über nachweislich trockene Wege.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "water-flow",
+          "title": "Niemals fließendes Wasser betreten",
+          "text": "Bereits knöcheltiefes Fließwasser kann Erwachsene umreißen; knietiefes Wasser spült Autos fort.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "electric-hazard",
+          "title": "Flutwasser stets als stromführend behandeln",
+          "text": "Halten Sie Abstand zu Strommasten, herunterhängenden Leitungen und überfluteten Steckdosen; keine nassen Geräte berühren.",
+          "priority": "critical"
+        },
+        {
+          "step": 4,
+          "icon": "radio",
+          "title": "Behördliche Durchsagen befolgen",
+          "text": "Halten Sie ein Mobiltelefon betriebsbereit und folgen Sie strikt den Anweisungen von NDMA, PDMA und Rettungskräften.",
+          "priority": "high"
+        },
+        {
+          "step": 5,
+          "icon": "kit-bag",
+          "title": "Nur lebensnotwendige Dinge mitnehmen",
+          "text": "Nehmen Sie bei einer Evakuierung nur Notfallgepäck und Dokumente mit. Möbel und schwere Lasten zurücklassen.",
+          "priority": "normal"
+        }
+      ],
+      "after": [
+        {
+          "step": 1,
+          "icon": "shelter-home",
+          "title": "Rückkehr erst nach behördlicher Freigabe",
+          "text": "Betreten Sie das Überschwemmungsgebiet erst nach offizieller Freigabe, bei Tageslicht und in Begleitung.",
+          "priority": "high"
+        },
+        {
+          "step": 2,
+          "icon": "boil-water",
+          "title": "Trinkwasser abkochen oder desinfizieren",
+          "text": "Kochen Sie Trinkwasser mindestens eine Minute sprudelnd auf oder nutzen Sie Chlortabletten bis zur offiziellen Entwarnung.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "wall-crack",
+          "title": "Bausubstanz sorgfältig prüfen",
+          "text": "Achten Sie auf Mauerwerksrisse, geneigte Wände oder Gasgeruch. Bei Unsicherheiten das Haus keinesfalls betreten.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "first-aid",
+          "title": "Auf Verletzungen und Infektionen achten",
+          "text": "Wunden sofort desinfizieren; bei Fieber, Durchfall oder Hautentzündungen nach Flutkontakt umgehend zum Arzt.",
+          "priority": "high"
+        }
+      ],
+      "avoid": [
+        {
+          "step": 1,
+          "icon": "no-swim",
+          "title": "Nicht im Flutwasser waten oder baden",
+          "text": "Flutwasser enthält Fäkalien, gefährliche Trümmer, offene Kanalschächte und lebensgefährliche Stromspannungen.",
+          "priority": "critical"
+        },
+        {
+          "step": 2,
+          "icon": "electric-hazard",
+          "title": "Nasse Leitungen niemals berühren",
+          "text": "Schalten Sie den Strom keinesfalls selbst ein; nasse Generatoren und Verteiler erst vom Elektriker prüfen lassen.",
+          "priority": "critical"
+        },
+        {
+          "step": 3,
+          "icon": "no-entry",
+          "title": "Gesperrte Straßen nicht befahren",
+          "text": "Umfahren Sie keine Absperrungen an Straßen oder Brücken, selbst wenn andere Fahrzeuge es versuchen.",
+          "priority": "high"
+        },
+        {
+          "step": 4,
+          "icon": "water-drop",
+          "title": "Unbehandeltes Wasser niemals trinken",
+          "text": "Verunreinigtes Flutwasser birgt akute Risiken für Cholera, Typhus und Hepatitis.",
+          "priority": "high"
+        }
       ]
     }
   }

@@ -64,15 +64,15 @@ export default function IntelligenceHome() {
         <Metric
           label="M4+ Seismic Monitor (USGS)"
           value="14"
-          mode="live"
-          hint="Events within Pakistan bounding box (30 days)"
+          mode="sample"
+          hint="Sample benchmark — events within Pakistan bounding box (30 days)"
         />
         <Metric
           label="Precipitation Watch (Open-Meteo)"
           value="78"
           unit="mm"
-          mode="live"
-          hint="Peak 3-day forecast in monitored districts"
+          mode="sample"
+          hint="Sample benchmark — peak 3-day forecast in monitored districts"
         />
         <Metric
           label="Flagship Scenario Readiness"
