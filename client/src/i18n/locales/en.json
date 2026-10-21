@@ -12,14 +12,30 @@
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "skipToContent": "Skip to main content",
-    "primary": "Primary navigation"
+    "primary": "Primary navigation",
+    "intelligence": "Intelligence"
+  },
+  "intelNav": {
+    "overview": "Overview",
+    "risk": "Risk Index",
+    "simulator": "Simulator",
+    "evacuation": "Evacuation",
+    "resources": "Resources",
+    "map": "Map & Layers",
+    "live": "Live Feeds",
+    "methodology": "Methodology",
+    "demo": "Judge Demo",
+    "badge": "9-Step"
   },
   "lang": {
     "label": "Language",
     "select": "Select language",
     "en": "English",
     "ur": "اردو",
-    "hi": "हिन्दी"
+    "hi": "हिन्दी",
+    "zh-CN": "简体中文",
+    "fr": "Français",
+    "de": "Deutsch"
   },
   "status": {
     "aiReady": "AI assistant ready",
@@ -68,6 +84,12 @@
       "title": "Need help right now?",
       "text": "Call an official service directly. This app cannot contact them for you.",
       "cta": "See all emergency numbers"
+    },
+    "intelligence": {
+      "eyebrow": "Disaster Decision Support",
+      "title": "Explore Disaster Intelligence",
+      "subtitle": "Interactive risk maps, predictive flood simulation, and Dijkstra evacuation routing for Pakistan.",
+      "cta": "Launch Intelligence Suite"
     }
   },
   "disaster": {

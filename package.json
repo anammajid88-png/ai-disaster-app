@@ -17,8 +17,9 @@
     "preview": "npm run preview --prefix client",
     "assets": "node scripts/generate-assets.mjs",
     "validate": "node scripts/validate-content.mjs",
-    "test": "node scripts/validate-content.mjs && node scripts/test-detection.mjs",
+    "test": "node scripts/validate-content.mjs && node scripts/test-detection.mjs && npm run test --prefix client",
     "test:detection": "node scripts/test-detection.mjs",
+    "test:intelligence": "npm run test --prefix client",
     "test:smoke": "node scripts/smoke-test.mjs",
     "vercel-build": "npm install --prefix client && npm run build --prefix client"
   },

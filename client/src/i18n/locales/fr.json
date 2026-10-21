@@ -1,0 +1,331 @@
+{
+  "app": {
+    "name": "AI Disaster App",
+    "shortName": "AI Disaster",
+    "tagline": "Conseils d'urgence intelligents et multilingues quand chaque seconde compte."
+  },
+  "nav": {
+    "home": "Accueil",
+    "ai": "Aide IA",
+    "emergency": "Urgences",
+    "about": "À propos",
+    "openMenu": "Ouvrir le menu de navigation",
+    "closeMenu": "Fermer le menu de navigation",
+    "skipToContent": "Passer au contenu principal",
+    "primary": "Navigation principale",
+    "intelligence": "Renseignement"
+  },
+  "intelNav": {
+    "overview": "Vue d'ensemble",
+    "risk": "Indice de risque",
+    "simulator": "Simulateur",
+    "evacuation": "Évacuation",
+    "resources": "Ressources",
+    "map": "Carte & Couches",
+    "live": "Flux en direct",
+    "methodology": "Méthodologie",
+    "demo": "Démo Jury",
+    "badge": "9 étapes"
+  },
+  "lang": {
+    "label": "Langue",
+    "select": "Choisir la langue",
+    "en": "English",
+    "ur": "اردو",
+    "hi": "हिन्दी",
+    "zh-CN": "简体中文",
+    "fr": "Français",
+    "de": "Deutsch"
+  },
+  "status": {
+    "aiReady": "Assistant IA prêt",
+    "aiFallback": "IA hors ligne - conseils stockés",
+    "offline": "Vous êtes hors ligne. Les consignes de sécurité et numéros d'urgence restent disponibles.",
+    "backOnline": "Connexion rétablie.",
+    "checking": "Vérification de l'état du service"
+  },
+  "home": {
+    "hero": {
+      "badge": "Conçu pour le Pakistan",
+      "title": "AI Disaster App",
+      "subtitle": "Posez votre question dans votre langue et obtenez des étapes de sécurité claires et priorisées pour les inondations, incendies, séismes, tempêtes, accidents et urgences médicales.",
+      "ctaAi": "Demander à l'IA",
+      "ctaEmergency": "Aide d'urgence",
+      "note": "Fonctionne en anglais, ourdou, hindi, chinois, français et allemand. Les consignes essentielles fonctionnent hors ligne."
+    },
+    "stats": {
+      "disasters": "Catastrophes",
+      "languages": "Langues",
+      "contacts": "Numéros certifiés",
+      "offline": "Prêt hors ligne"
+    },
+    "disasters": {
+      "title": "Choisissez la situation en cours",
+      "subtitle": "Chaque guide commence par les actions vitales des premières minutes, puis détaille les mesures avant, pendant et après."
+    },
+    "how": {
+      "title": "Comment l'application vous aide",
+      "steps": [
+        {
+          "title": "Décrivez la situation",
+          "text": "Écrivez ou dictez dans votre langue (anglais, ourdou, hindi, chinois, français ou allemand)."
+        },
+        {
+          "title": "L'IA identifie le danger",
+          "text": "Votre question est analysée par Qwen sur notre serveur sécurisé, jamais dans votre navigateur."
+        },
+        {
+          "title": "Obtenez des actions prioritaires",
+          "text": "Des étapes courtes et ordonnées dans votre langue, avec le bon numéro d'urgence à appeler."
+        }
+      ]
+    },
+    "quickCall": {
+      "title": "Besoin d'aide immédiate ?",
+      "text": "Appelez directement un service officiel. Cette application ne peut pas passer d'appel pour vous.",
+      "cta": "Voir tous les numéros d'urgence"
+    },
+    "intelligence": {
+      "eyebrow": "Aide à la décision d'urgence",
+      "title": "Explorer le renseignement sur les catastrophes",
+      "subtitle": "Cartes de risque interactives, simulation prédictive des inondations et routage d'évacuation Dijkstra au Pakistan.",
+      "cta": "Lancer la suite de renseignement"
+    }
+  },
+  "disaster": {
+    "viewGuidelines": "Voir les consignes",
+    "askAi": "Consulter l'IA à ce sujet",
+    "risk": {
+      "label": "Risque",
+      "critical": "Risque critique",
+      "high": "Risque élevé",
+      "medium": "Risque modéré"
+    },
+    "season": {
+      "monsoon": "Plus fréquent pendant la mousson",
+      "summer": "Plus fréquent en été",
+      "winter": "Plus fréquent en hiver",
+      "any": "Peut survenir à tout moment"
+    }
+  },
+  "guidelines": {
+    "rightNow": "À faire immédiatement",
+    "before": "Avant",
+    "during": "Pendant",
+    "after": "Après",
+    "avoid": "À éviter",
+    "sections": "Sections du guide",
+    "close": "Fermer le guide",
+    "step": "Étape",
+    "callNow": "Appeler maintenant",
+    "callSection": "Numéros d'urgence pour cette situation",
+    "priority": {
+      "critical": "Critique",
+      "high": "Important",
+      "normal": "Conseillé"
+    },
+    "askAi": "Poser une question à l'IA sur ma situation",
+    "dialogLabel": "Consignes de sécurité"
+  },
+  "chat": {
+    "title": "Assistant de sécurité IA",
+    "subtitle": "Décrivez votre situation en une ou deux lignes. Les réponses sont brèves pour gagner du temps.",
+    "placeholder": "Exemple : l'eau commence à entrer dans ma maison",
+    "placeholderListening": "Écoute en cours...",
+    "send": "Envoyer",
+    "sendAria": "Envoyer le message",
+    "you": "Vous",
+    "assistant": "Assistant IA",
+    "typing": "Préparation des consignes...",
+    "clear": "Effacer la discussion",
+    "clearConfirm": "Voulez-vous effacer cette conversation ?",
+    "mic": {
+      "start": "Dicter votre question",
+      "stop": "Arrêter l'enregistrement",
+      "recording": "Enregistrement en cours - parlez maintenant",
+      "unsupported": "La saisie vocale n'est pas prise en charge par ce navigateur. Vous pouvez écrire votre question.",
+      "denied": "L'accès au micro a été refusé. Vous pouvez écrire votre question.",
+      "error": "La saisie vocale s'est arrêtée inopinément. Veuillez écrire votre question."
+    },
+    "speak": {
+      "listen": "Écouter",
+      "stop": "Arrêter",
+      "unsupported": "La synthèse vocale n'est pas disponible sur ce navigateur."
+    },
+    "suggestions": {
+      "title": "Exemples de questions",
+      "items": [
+        "Que faire si l'eau d'inondation pénètre dans ma maison ?",
+        "Que faire pendant un tremblement de terre ?",
+        "Il y a un incendie dans ma cuisine, que faire ?",
+        "Une personne saigne abondamment, que faire en premier ?"
+      ]
+    },
+    "empty": {
+      "title": "Comment puis-je vous aider ?",
+      "text": "Posez une question sur une catastrophe ou une urgence au Pakistan. En cas de réel danger, appelez d'abord les secours."
+    },
+    "source": {
+      "ai": "Réponse IA",
+      "fallback": "Consignes de sécurité stockées",
+      "aiTitle": "Généré en direct par Qwen sur notre serveur",
+      "fallbackTitle": "Issu des consignes de sécurité vérifiées de l'application, non généré par l'IA"
+    },
+    "detected": "Danger détecté : {disaster}",
+    "urgent": "Situation urgente ! Si une vie est en danger, appelez les services d'urgence sans attendre.",
+    "notice": {
+      "notConfigured": "Le service IA n'est pas connecté actuellement ; cette réponse provient des consignes de sécurité stockées.",
+      "unauthorized": "Le service IA a rejeté nos identifiants. Affichage des consignes stockées.",
+      "rateLimit": "Le service IA est occupé. Affichage des consignes stockées - veuillez réessayer dans un instant.",
+      "timeout": "Le service IA a mis trop de temps à répondre. Affichage des consignes stockées.",
+      "unavailable": "Le service IA est temporairement indisponible. Affichage des consignes stockées.",
+      "network": "Impossible de joindre le service IA. Affichage des consignes de sécurité stockées.",
+      "badResponse": "Le service IA a renvoyé une réponse inattendue. Affichage des consignes stockées."
+    },
+    "disclaimerShort": "Conseils généraux uniquement. Appelez les secours en cas d'urgence réelle."
+  },
+  "emergency": {
+    "title": "Aide d'urgence",
+    "subtitle": "Numéros d'urgence vérifiés au Pakistan, liste de matériel et localisation approximative.",
+    "contacts": {
+      "title": "Numéros d'urgence",
+      "subtitle": "Seuls les services nationaux certifiés et réseaux ambulanciers reconnus sont répertoriés. La disponibilité peut varier selon le district.",
+      "call": "Appeler",
+      "callAria": "Appeler {name} au {number}",
+      "useWhen": "Quand appeler",
+      "coverage": "Couverture",
+      "verified": "Certifié",
+      "source": "Source",
+      "note": "Cette application ne peut pas appeler pour vous. Appuyer sur Appeler ouvre le composeur téléphonique de votre appareil."
+    },
+    "tabs": {
+      "contacts": "Numéros",
+      "kit": "Kit d'urgence",
+      "location": "Position"
+    }
+  },
+  "kit": {
+    "title": "Kit d'urgence",
+    "subtitle": "À préparer avant une catastrophe. Votre progression est enregistrée uniquement sur cet appareil.",
+    "progress": "{done} / {total} Prêts",
+    "complete": "Votre kit est complet ! Vérifiez-le à nouveau tous les quelques mois.",
+    "essential": "Indispensable",
+    "reset": "Réinitialiser la liste",
+    "resetConfirm": "Effacer tous les éléments cochés ?",
+    "itemAria": "Marquer {item} comme prêt",
+    "recommendedFor": "Recommandé pour",
+    "note": "Adaptez les quantités à la taille de votre foyer, aux enfants, personnes âgées et patients."
+  },
+  "location": {
+    "title": "Votre position approximative",
+    "subtitle": "Utile lorsque vous devez communiquer vos coordonnées GPS à un opérateur de secours.",
+    "get": "Afficher ma position",
+    "retry": "Réessayer",
+    "loading": "Récupération de votre position...",
+    "unsupported": "Ce navigateur ne prend pas en charge la géolocalisation.",
+    "denied": "L'autorisation de localisation a été refusée. Indiquez plutôt votre point de repère le plus proche.",
+    "unavailable": "Impossible de déterminer votre position. Réessayez à l'extérieur ou près d'une fenêtre.",
+    "timeout": "La géolocalisation a mis trop de temps. Veuillez réessayer.",
+    "coordinates": "Coordonnées",
+    "accuracy": "Précision",
+    "accuracyValue": "environ {meters} m",
+    "copy": "Copier les coordonnées",
+    "copied": "Copié dans le presse-papiers",
+    "note": "Votre position reste dans votre navigateur. Elle n'est jamais transmise à nos serveurs ni à l'IA."
+  },
+  "about": {
+    "title": "À propos de l'application AI Disaster",
+    "subtitle": "Pourquoi cette application existe et comment elle fonctionne.",
+    "what": {
+      "title": "Qu'est-ce que l'application AI Disaster ?",
+      "text": "Une application web multilingue offrant aux habitants du Pakistan des consignes de sécurité claires et ordonnées face aux catastrophes les plus probables, en les reliant aux numéros d'urgence officiels existants."
+    },
+    "why": {
+      "title": "Pourquoi ce projet ?",
+      "text": "Lors d'une inondation, d'un incendie ou d'un séisme, chercher des conseils fiables fait perdre de précieuses minutes, et ces conseils sont souvent en anglais uniquement. Cette application répond dans la langue de l'utilisateur, privilégie des réponses courtes et fonctionne même hors ligne."
+    },
+    "who": {
+      "title": "À qui elle s'adresse",
+      "items": [
+        "Foyers situés dans les districts exposés aux inondations et à la mousson",
+        "Personnes plus à l'aise en ourdou, hindi, chinois, français ou allemand qu'en anglais",
+        "Toute personne devant contacter rapidement le bon service de secours",
+        "Familles préparant leur kit d'urgence avant une catastrophe"
+      ]
+    },
+    "how": {
+      "title": "Fonctionnement de l'IA",
+      "items": [
+        "Votre question passe par notre propre serveur Node/Express sécurisé, jamais directement au modèle.",
+        "Le serveur ajoute des consignes strictes de sécurité et sollicite Alibaba Cloud Model Studio (Qwen).",
+        "La clé d'API demeure sur le serveur et n'est jamais intégrée dans le code du navigateur.",
+        "Si l'IA est inaccessible, l'application puise dans ses consignes vérifiées hors ligne en toute transparence."
+      ]
+    },
+    "limits": {
+      "title": "Ce que l'application ne fait pas",
+      "items": [
+        "Elle ne contacte ni ne dépêche les secours à votre place.",
+        "Elle ne trace pas votre position et ne surveille pas l'état du terrain.",
+        "Elle ne fournit pas le niveau en temps réel des crues ni l'état officiel des routes.",
+        "Elle ne délivre aucun diagnostic ni prescription médicale.",
+        "L'assistant IA nécessite une connexion internet ; les consignes de sécurité stockées fonctionnent hors ligne."
+      ]
+    },
+    "stack": {
+      "title": "Technologies",
+      "items": [
+        "Frontend React et Vite, installable comme Progressive Web App (PWA)",
+        "API REST Node.js et Express",
+        "Alibaba Cloud Model Studio (Qwen), compatible OpenAI",
+        "Contenu de sécurité structuré en JSON partagé entre client et serveur"
+      ]
+    },
+    "sources": {
+      "title": "Origine des contenus",
+      "text": "Les numéros d'urgence indiquent l'organisation et la date de vérification. Les consignes suivent les normes de préparation aux catastrophes de la gestion nationale des urgences.",
+      "reviewed": "Numéros vérifiés le"
+    },
+    "hackathon": "Conçu pour l'Alibaba Cloud AI Hackathon Pakistan 2026."
+  },
+  "footer": {
+    "sections": "Rubriques",
+    "safety": "Sécurité",
+    "emergencyNumbers": "Numéros d'urgence",
+    "builtFor": "Conçu pour l'Alibaba Cloud AI Hackathon Pakistan 2026.",
+    "rights": "Utilisation libre et gratuite. Aucun compte requis, aucun traçage.",
+    "poweredBy": "Réponses IA propulsées par Alibaba Cloud Model Studio (Qwen)."
+  },
+  "disclaimer": {
+    "full": "Cette application fournit des informations générales de sécurité et ne remplace pas les secours officiels ni un avis médical professionnel.",
+    "short": "Informations générales uniquement - ne remplace pas les secours d'urgence.",
+    "callNow": "En cas d'urgence réelle, appelez immédiatement un service officiel."
+  },
+  "errors": {
+    "network": "Impossible de joindre le serveur. Vérifiez votre connexion et réessayez.",
+    "server": "Une erreur est survenue côté serveur. Veuillez réessayer.",
+    "rateLimited": "Trop de requêtes en peu de temps. Veuillez patienter un instant.",
+    "emptyMessage": "Veuillez d'abord écrire ou dicter votre question.",
+    "messageTooLong": "Votre message est trop long. Veuillez le raccourcir.",
+    "invalidRequest": "Requête non comprise. Veuillez réessayer.",
+    "notFound": "La ressource demandée est introuvable.",
+    "offline": "Vous êtes hors ligne, l'assistant IA est indisponible. Les consignes stockées et numéros restent fonctionnels.",
+    "pageTitle": "Page non trouvée",
+    "pageText": "La page demandée n'existe pas. Les consignes d'urgence sont accessibles depuis l'accueil.",
+    "goHome": "Retour à l'accueil",
+    "boundaryTitle": "Un problème est survenu sur cet écran",
+    "boundaryText": "Rechargez l'application pour continuer. En cas d'urgence vitale, appelez le 1122 ou le 15.",
+    "reload": "Recharger l'application"
+  },
+  "common": {
+    "close": "Fermer",
+    "back": "Retour",
+    "loading": "Chargement...",
+    "retry": "Réessayer",
+    "more": "Plus",
+    "less": "Moins",
+    "install": "Installer l'application",
+    "installText": "Installez l'application AI Disaster pour un accès rapide et un accès hors ligne aux consignes de sécurité.",
+    "dismiss": "Pas maintenant"
+  }
+}

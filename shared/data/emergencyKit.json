@@ -3,7 +3,10 @@
     "recommendedFor": {
       "en": "72 hours for one household",
       "ur": "ایک گھرانے کے لیے 72 گھنٹے",
-      "hi": "एक परिवार के लिए 72 घंटे"
+      "hi": "एक परिवार के लिए 72 घंटे",
+      "zh-CN": "一个家庭72小时的储备量",
+      "fr": "72 heures pour un foyer",
+      "de": "72 Stunden für einen Haushalt"
     },
     "maintainerNote": "Internal, never rendered. Based on general disaster preparedness guidance. Quantities should be adjusted for family size, children, elderly members and patients."
   },
@@ -12,110 +15,210 @@
       "id": "drinking-water",
       "icon": "water-drop",
       "essential": true,
-      "label": { "en": "Drinking water", "ur": "پینے کا پانی", "hi": "पीने का पानी" },
+      "label": {
+        "en": "Drinking water",
+        "ur": "پینے کا پانی",
+        "hi": "पीने का पानी",
+        "zh-CN": "饮用水",
+        "fr": "Eau potable",
+        "de": "Trinkwasser"
+      },
       "detail": {
         "en": "About 4 litres per person per day, in sealed containers.",
         "ur": "فی فرد روزانہ تقریباً 4 لیٹر، بند برتنوں میں۔",
-        "hi": "प्रति व्यक्ति प्रतिदिन लगभग 4 लीटर, बंद बर्तनों में।"
+        "hi": "प्रति व्यक्ति प्रतिदिन लगभग 4 लीटर, बंद बर्तनों में।",
+        "zh-CN": "每人每天约4升，储存在密封容器中。",
+        "fr": "Environ 4 litres par personne et par jour, dans des récipients scellés.",
+        "de": "Etwa 4 Liter pro Person und Tag in versiegelten Behältern."
       }
     },
     {
       "id": "first-aid-kit",
       "icon": "first-aid",
       "essential": true,
-      "label": { "en": "First aid kit", "ur": "فرسٹ ایڈ کٹ", "hi": "फ़र्स्ट एड किट" },
+      "label": {
+        "en": "First aid kit",
+        "ur": "فرسٹ ایڈ کٹ",
+        "hi": "फ़र्स्ट एड किट",
+        "zh-CN": "急救药箱",
+        "fr": "Trousse de premiers secours",
+        "de": "Erste-Hilfe-Kasten"
+      },
       "detail": {
         "en": "Gauze, bandages, tape, gloves, antiseptic and scissors.",
         "ur": "گاز، پٹیاں، ٹیپ، دستانے، اینٹی سیپٹک اور قینچی۔",
-        "hi": "गॉज़, पट्टियाँ, टेप, दस्ताने, एंटीसेप्टिक और कैंची।"
+        "hi": "गॉज़, पट्टियाँ, टेप, दस्ताने, एंटीसेप्टिक और कैंची।",
+        "zh-CN": "纱布、绷带、胶带、医用手套、消毒剂和医用剪刀。",
+        "fr": "Gazes, bandages, sparadrap, gants, antiseptique et ciseaux.",
+        "de": "Mullbinden, Pflaster, Verbandstape, Einweghandschuhe, Desinfektionsmittel und Verbandsschere."
       }
     },
     {
       "id": "flashlight",
       "icon": "flashlight",
       "essential": true,
-      "label": { "en": "Flashlight", "ur": "ٹارچ", "hi": "टॉर्च" },
+      "label": {
+        "en": "Flashlight",
+        "ur": "ٹارچ",
+        "hi": "टॉर्च",
+        "zh-CN": "应急手电筒",
+        "fr": "Lampe torche",
+        "de": "Taschenlampe"
+      },
       "detail": {
         "en": "With spare batteries. Safer than candles in a gas leak.",
         "ur": "اضافی بیٹریوں کے ساتھ۔ گیس لیک میں موم بتی سے محفوظ۔",
-        "hi": "अतिरिक्त बैटरी के साथ। गैस रिसाव में मोमबत्ती से सुरक्षित।"
+        "hi": "अतिरिक्त बैटरी के साथ। गैस रिसाव में मोमबत्ती से सुरक्षित।",
+        "zh-CN": "配有备用电池。燃气泄漏时比明火蜡烛更安全。",
+        "fr": "Avec piles de rechange. Plus sûr que des bougies en cas de fuite de gaz.",
+        "de": "Mit Ersatzbatterien. Sicherer als Kerzen bei möglicher Gasleckage."
       }
     },
     {
       "id": "medicines",
       "icon": "medicine",
       "essential": true,
-      "label": { "en": "Medicines", "ur": "دوائیں", "hi": "दवाएँ" },
+      "label": {
+        "en": "Medicines",
+        "ur": "دوائیں",
+        "hi": "दवाएँ",
+        "zh-CN": "常用及处方药品",
+        "fr": "Médicaments",
+        "de": "Medikamente"
+      },
       "detail": {
         "en": "At least one week of regular prescriptions, plus ORS.",
         "ur": "کم از کم ایک ہفتے کی مستقل دوائیں، اور او آر ایس۔",
-        "hi": "कम से कम एक सप्ताह की नियमित दवाएँ, और ORS।"
+        "hi": "कम से कम एक सप्ताह की नियमित दवाएँ, और ORS।",
+        "zh-CN": "至少一周的常规处方药，以及口服补液盐（ORS）。",
+        "fr": "Au moins une semaine de traitements réguliers, plus sachets de SRO.",
+        "de": "Mindestens eine Woche Dauermedikation plus Elektrolytlösung (ORS)."
       }
     },
     {
       "id": "documents",
       "icon": "documents",
       "essential": true,
-      "label": { "en": "Important documents", "ur": "اہم کاغذات", "hi": "ज़रूरी दस्तावेज़" },
+      "label": {
+        "en": "Important documents",
+        "ur": "اہم کاغذات",
+        "hi": "ज़रूरी दस्तावेज़",
+        "zh-CN": "重要身份与财产证件",
+        "fr": "Documents importants",
+        "de": "Wichtige Dokumente"
+      },
       "detail": {
         "en": "CNIC, B-Form, property and medical papers in a waterproof bag.",
         "ur": "شناختی کارڈ، ب فارم، جائیداد اور طبی کاغذات واٹر پروف بیگ میں۔",
-        "hi": "पहचान पत्र, बी-फ़ॉर्म, संपत्ति और मेडिकल काग़ज़ वॉटरप्रूफ़ बैग में।"
+        "hi": "पहचान पत्र, बी-फ़ॉर्म, संपत्ति और मेडिकल काग़ज़ वॉटरप्रूफ़ बैग में।",
+        "zh-CN": "身份证、出生证明、房产及医疗病历放于防水袋中密封。",
+        "fr": "Cartes d'identité, actes, titres de propriété et dossiers médicaux dans une pochette étanche.",
+        "de": "Ausweise, Geburtsurkunden, Eigentums- und Arztunterlagen in wasserdichter Tasche."
       }
     },
     {
       "id": "food",
       "icon": "food",
       "essential": true,
-      "label": { "en": "Food", "ur": "خوراک", "hi": "भोजन" },
+      "label": {
+        "en": "Food",
+        "ur": "خوراک",
+        "hi": "भोजन",
+        "zh-CN": "应急干粮",
+        "fr": "Nourriture",
+        "de": "Nahrungsmittel"
+      },
       "detail": {
         "en": "Dry, ready-to-eat food that needs no cooking: biscuits, dates, nuts.",
         "ur": "خشک اور فوری کھانے والی اشیاء جنہیں پکانا نہ پڑے: بسکٹ، کھجور، خشک میوہ۔",
-        "hi": "सूखा, तुरंत खाने योग्य भोजन जिसे पकाना न पड़े: बिस्कुट, खजूर, मेवे।"
+        "hi": "सूखा, तुरंत खाने योग्य भोजन जिसे पकाना न पड़े: बिस्कुट, खजूर, मेवे।",
+        "zh-CN": "免烹饪的耐存即食食品：饼干、椰枣、坚果等。",
+        "fr": "Nourriture sèche prête à consommer sans cuisson : biscuits, dattes, fruits secs.",
+        "de": "Haltbare, verzehrfertige Trockennahrung ohne Kochen: Kekse, Datteln, Nüsse."
       }
     },
     {
       "id": "power-bank",
       "icon": "power-bank",
       "essential": true,
-      "label": { "en": "Phone charger / power bank", "ur": "فون چارجر / پاور بینک", "hi": "फ़ोन चार्जर / पावर बैंक" },
+      "label": {
+        "en": "Phone charger / power bank",
+        "ur": "فون چارجر / پاور بینک",
+        "hi": "फ़ोन चार्जर / पावर बैंक",
+        "zh-CN": "手机充电宝 / 备用电源",
+        "fr": "Chargeur de téléphone / batterie externe",
+        "de": "Powerbank / Ladekabel"
+      },
       "detail": {
         "en": "Fully charged, with the right cable. Your phone is your lifeline.",
         "ur": "مکمل چارج شدہ، درست کیبل کے ساتھ۔ فون آپ کا سب سے اہم سہارا ہے۔",
-        "hi": "पूरी तरह चार्ज, सही केबल के साथ। फ़ोन आपकी सबसे बड़ी ज़रूरत है।"
+        "hi": "पूरी तरह चार्ज, सही केबल के साथ। फ़ोन आपकी सबसे बड़ी ज़रूरत है।",
+        "zh-CN": "充饱电并配齐对应数据线。手机是灾难中最关键的求生生命线。",
+        "fr": "Entièrement chargée, avec le bon câble. Votre téléphone est votre lien de survie.",
+        "de": "Voll aufgeladen mit passendem Kabel. Das Telefon ist Ihre Lebensader."
       }
     },
     {
       "id": "hygiene",
       "icon": "hygiene",
       "essential": false,
-      "label": { "en": "Hygiene supplies", "ur": "صفائی کا سامان", "hi": "स्वच्छता सामग्री" },
+      "label": {
+        "en": "Hygiene supplies",
+        "ur": "صفائی کا سامان",
+        "hi": "स्वच्छता सामग्री",
+        "zh-CN": "个人卫生用品",
+        "fr": "Produits d'hygiène",
+        "de": "Hygieneartikel"
+      },
       "detail": {
         "en": "Soap, sanitiser, sanitary items, towel and rubbish bags.",
         "ur": "صابن، سینیٹائزر، سینیٹری اشیاء، تولیہ اور کچرے کے تھیلے۔",
-        "hi": "साबुन, सैनिटाइज़र, सैनिटरी सामान, तौलिया और कचरा थैले।"
+        "hi": "साबुन, सैनिटाइज़र, सैनिटरी सामान, तौलिया और कचरा थैले।",
+        "zh-CN": "肥皂、免洗洗手液、卫生巾、毛巾及结实垃圾袋。",
+        "fr": "Savon, gel désinfectant, protections hygiéniques, serviette et sacs-poubelle.",
+        "de": "Seife, Desinfektionsmittel, Hygieneartikel, Handtuch und Müllbeutel."
       }
     },
     {
       "id": "clothing",
       "icon": "clothing",
       "essential": false,
-      "label": { "en": "Emergency clothing", "ur": "ہنگامی کپڑے", "hi": "आपातकालीन कपड़े" },
+      "label": {
+        "en": "Emergency clothing",
+        "ur": "ہنگامی کپڑے",
+        "hi": "आपातकालीन कपड़े",
+        "zh-CN": "备用衣物与鞋履",
+        "fr": "Vêtements de rechange",
+        "de": "Notfallkleidung"
+      },
       "detail": {
         "en": "One change per person plus closed shoes and a light sheet.",
         "ur": "فی فرد ایک جوڑا، بند جوتے اور ہلکی چادر۔",
-        "hi": "प्रति व्यक्ति एक जोड़ी, बंद जूते और हल्की चादर।"
+        "hi": "प्रति व्यक्ति एक जोड़ी, बंद जूते और हल्की चादर।",
+        "zh-CN": "每人一套换洗衣物，外加包头厚底鞋和保暖薄毯。",
+        "fr": "Une tenue de rechange par personne, chaussures fermées et couverture légère.",
+        "de": "Eine Garnitur Wechselkleidung pro Person, feste Schuhe und leichte Decke."
       }
     },
     {
       "id": "whistle",
       "icon": "whistle",
       "essential": true,
-      "label": { "en": "Whistle", "ur": "سیٹی", "hi": "सीटी" },
+      "label": {
+        "en": "Whistle",
+        "ur": "سیٹی",
+        "hi": "सीटी",
+        "zh-CN": "救生哨",
+        "fr": "Sifflet de détresse",
+        "de": "Signalpfeife"
+      },
       "detail": {
         "en": "A whistle carries much further than shouting if you are trapped.",
         "ur": "پھنس جانے پر سیٹی کی آواز چیخنے سے بہت دور تک جاتی ہے۔",
-        "hi": "फँसने पर सीटी की आवाज़ चिल्लाने से बहुत दूर तक जाती है।"
+        "hi": "फँसने पर सीटी की आवाज़ चिल्लाने से बहुत दूर तक जाती है।",
+        "zh-CN": "如不幸被困，哨声比大声呼喊能传得更远且节省体力。",
+        "fr": "Un sifflet porte bien plus loin que des cris si vous êtes piégé.",
+        "de": "Eine Pfeife ist bei Verschüttung viel weiter hörbar als Schreien und spart Kraft."
       }
     }
   ]

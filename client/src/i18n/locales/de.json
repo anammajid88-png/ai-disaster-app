@@ -1,0 +1,331 @@
+{
+  "app": {
+    "name": "AI Disaster App",
+    "shortName": "AI Disaster",
+    "tagline": "Intelligente, mehrsprachige Notfallhilfe, wenn jede Sekunde zählt."
+  },
+  "nav": {
+    "home": "Startseite",
+    "ai": "KI-Hilfe",
+    "emergency": "Notfall",
+    "about": "Über uns",
+    "openMenu": "Navigationsmenü öffnen",
+    "closeMenu": "Navigationsmenü schließen",
+    "skipToContent": "Zum Hauptinhalt springen",
+    "primary": "Hauptnavigation",
+    "intelligence": "Lagezentrum"
+  },
+  "intelNav": {
+    "overview": "Übersicht",
+    "risk": "Risikoindex",
+    "simulator": "Simulator",
+    "evacuation": "Evakuierung",
+    "resources": "Ressourcen",
+    "map": "Karte & Ebenen",
+    "live": "Live-Feeds",
+    "methodology": "Methodik",
+    "demo": "Jury-Demo",
+    "badge": "9 Schritte"
+  },
+  "lang": {
+    "label": "Sprache",
+    "select": "Sprache wählen",
+    "en": "English",
+    "ur": "اردو",
+    "hi": "हिन्दी",
+    "zh-CN": "简体中文",
+    "fr": "Français",
+    "de": "Deutsch"
+  },
+  "status": {
+    "aiReady": "KI-Assistent bereit",
+    "aiFallback": "KI offline - gespeicherte Notfallhilfe",
+    "offline": "Sie sind offline. Sicherheitsrichtlinien und Notrufnummern bleiben voll funktionsfähig.",
+    "backOnline": "Verbindung wiederhergestellt.",
+    "checking": "Dienststatus wird geprüft"
+  },
+  "home": {
+    "hero": {
+      "badge": "Entwickelt für Pakistan",
+      "title": "AI Disaster App",
+      "subtitle": "Fragen Sie in Ihrer eigenen Sprache nach klaren, priorisierten Sofortmaßnahmen bei Hochwasser, Brand, Erdbeben, Sturm, Verkehrsunfällen und medizinischen Notfällen.",
+      "ctaAi": "KI befragen",
+      "ctaEmergency": "Notfallhilfe",
+      "note": "Verfügbar auf Englisch, Urdu, Hindi, Chinesisch, Französisch und Deutsch. Wichtige Sicherheitsanweisungen funktionieren offline."
+    },
+    "stats": {
+      "disasters": "Notfallbereiche",
+      "languages": "Sprachen",
+      "contacts": "Geprüfte Notrufe",
+      "offline": "Offline-fähig"
+    },
+    "disasters": {
+      "title": "Wählen Sie das aktuelle Ereignis",
+      "subtitle": "Jeder Leitfaden beginnt mit den lebensrettenden Schritten der ersten Minuten und erklärt Maßnahmen für davor, währenddessen und danach."
+    },
+    "how": {
+      "title": "So hilft Ihnen die App",
+      "steps": [
+        {
+          "title": "Situation beschreiben",
+          "text": "Geben Sie Ihre Frage per Text oder Sprache auf Englisch, Urdu, Hindi, Chinesisch, Französisch oder Deutsch ein."
+        },
+        {
+          "title": "KI analysiert die Gefahr",
+          "text": "Ihre Anfrage wird sicher auf unserem Server durch Qwen analysiert, niemals im Browser."
+        },
+        {
+          "title": "Priorisierte Schritte erhalten",
+          "text": "Kurze, geordnete Sofortmaßnahmen in Ihrer Sprache mit der passenden offiziellen Notrufnummer."
+        }
+      ]
+    },
+    "quickCall": {
+      "title": "Benötigen Sie sofortige Hilfe?",
+      "text": "Wählen Sie direkt einen offiziellen Notdienst. Diese App kann keine Anrufe für Sie tätigen.",
+      "cta": "Alle Notrufnummern anzeigen"
+    },
+    "intelligence": {
+      "eyebrow": "Entscheidungsunterstützung im Katastrophenfall",
+      "title": "Lagezentrum & Katastrophen-Intelligenz",
+      "subtitle": "Interaktive Risikokarten, prädiktive Flutüberflutungssimulation und Dijkstra-Evakuierungsrouten für Pakistan.",
+      "cta": "Lagezentrum starten"
+    }
+  },
+  "disaster": {
+    "viewGuidelines": "Leitfaden anzeigen",
+    "askAi": "KI dazu befragen",
+    "risk": {
+      "label": "Risiko",
+      "critical": "Kritisches Risiko",
+      "high": "Hohes Risiko",
+      "medium": "Mäßiges Risiko"
+    },
+    "season": {
+      "monsoon": "Häufig während des Monsuns",
+      "summer": "Häufig im Sommer",
+      "winter": "Häufig im Winter",
+      "any": "Jederzeit möglich"
+    }
+  },
+  "guidelines": {
+    "rightNow": "Sofortmaßnahmen",
+    "before": "Vorher",
+    "during": "Währenddessen",
+    "after": "Danach",
+    "avoid": "Zu vermeiden",
+    "sections": "Abschnitte",
+    "close": "Schließen",
+    "step": "Schritt",
+    "callNow": "Jetzt anrufen",
+    "callSection": "Zuständige Notrufnummern",
+    "priority": {
+      "critical": "Kritisch",
+      "high": "Wichtig",
+      "normal": "Empfohlen"
+    },
+    "askAi": "KI zur eigenen Situation befragen",
+    "dialogLabel": "Sicherheitsleitfaden"
+  },
+  "chat": {
+    "title": "KI-Sicherheitsassistent",
+    "subtitle": "Beschreiben Sie Ihre Situation kurz in ein bis zwei Sätzen. Antworten sind bewusst prägnant gehalten.",
+    "placeholder": "Beispiel: Wasser dringt in mein Haus ein",
+    "placeholderListening": "Höre zu...",
+    "send": "Senden",
+    "sendAria": "Nachricht senden",
+    "you": "Sie",
+    "assistant": "KI-Assistent",
+    "typing": "Schritte werden vorbereitet...",
+    "clear": "Verlauf löschen",
+    "clearConfirm": "Möchten Sie diesen Chatverlauf wirklich löschen?",
+    "mic": {
+      "start": "Spracheingabe starten",
+      "stop": "Aufnahme beenden",
+      "recording": "Aufnahme läuft - sprechen Sie jetzt",
+      "unsupported": "Spracheingabe wird von diesem Browser nicht unterstützt. Sie können Ihre Frage tippen.",
+      "denied": "Mikrofonzugriff verweigert. Sie können Ihre Frage tippen.",
+      "error": "Spracheingabe unerwartet beendet. Bitte tippen Sie Ihre Frage."
+    },
+    "speak": {
+      "listen": "Vorlesen",
+      "stop": "Anhalten",
+      "unsupported": "Sprachausgabe ist in diesem Browser nicht verfügbar."
+    },
+    "suggestions": {
+      "title": "Beispielfragen",
+      "items": [
+        "Was soll ich tun, wenn Hochwasser ins Haus dringt?",
+        "Wie verhalte ich mich bei einem Erdbeben?",
+        "In meiner Küche brennt es. Was ist jetzt zu tun?",
+        "Jemand blutet stark. Was muss ich zuerst tun?"
+      ]
+    },
+    "empty": {
+      "title": "Wie kann ich helfen?",
+      "text": "Fragen Sie nach Katastrophenhilfe oder Notfallmaßnahmen in Pakistan. Im akuten Ernstfall rufen Sie stets zuerst den Notruf an."
+    },
+    "source": {
+      "ai": "KI-Antwort",
+      "fallback": "Gespeicherter Notfallleitfaden",
+      "aiTitle": "In Echtzeit von Qwen auf unserem Server generiert",
+      "fallbackTitle": "Aus den verifizierten Sicherheitsinhalten der App, nicht von der KI generiert"
+    },
+    "detected": "Erkannte Gefahr: {disaster}",
+    "urgent": "Dringende Notlage! Bei Lebensgefahr sofort den offiziellen Notdienst anrufen.",
+    "notice": {
+      "notConfigured": "Der KI-Dienst ist derzeit nicht verbunden. Diese Antwort stammt aus den geprüften Sicherheitsrichtlinien.",
+      "unauthorized": "Die KI-Anmeldedaten wurden abgelehnt. Zeige stattdessen geprüfte Sicherheitsrichtlinien an.",
+      "rateLimit": "Der KI-Dienst ist ausgelastet. Zeige gespeicherte Richtlinien - bitte gleich erneut versuchen.",
+      "timeout": "Der KI-Dienst hat nicht rechtzeitig geantwortet. Zeige geprüfte Richtlinien an.",
+      "unavailable": "Der KI-Dienst ist vorübergehend nicht erreichbar. Zeige geprüfte Richtlinien an.",
+      "network": "KI-Server nicht erreichbar. Zeige gespeicherte Sicherheitsrichtlinien an.",
+      "badResponse": "Unerwartetes Format vom KI-Dienst erhalten. Zeige gespeicherte Richtlinien an."
+    },
+    "disclaimerShort": "Nur zur allgemeinen Orientierung. Im Notfall immer den offiziellen Notruf wählen."
+  },
+  "emergency": {
+    "title": "Notfallhilfe",
+    "subtitle": "Verifizierte pakistanische Notrufnummern, Checkliste zur Vorsorge und Ihr ungefährer Standort.",
+    "contacts": {
+      "title": "Notrufnummern",
+      "subtitle": "Es sind nur staatlich anerkannte Notfalldienste und bekannte Rettungsdienste aufgeführt. Regionale Abdeckung kann variieren.",
+      "call": "Anrufen",
+      "callAria": "{name} unter {number} anrufen",
+      "useWhen": "Einsatzbereich",
+      "coverage": "Abdeckung",
+      "verified": "Verifiziert",
+      "source": "Quelle",
+      "note": "Diese App kann keine Notrufe automatisch ausführen. Ein Klick auf Anrufen öffnet die Telefon-App Ihres Geräts."
+    },
+    "tabs": {
+      "contacts": "Nummern",
+      "kit": "Notfallpaket",
+      "location": "Standort"
+    }
+  },
+  "kit": {
+    "title": "Notfallpaket-Checkliste",
+    "subtitle": "Vor einer Katastrophe vorbereiten. Ihr Fortschritt wird nur lokal auf diesem Gerät gespeichert.",
+    "progress": "{done} / {total} Bereit",
+    "complete": "Ihr Notfallpaket ist vollständig! Bitte alle paar Monate erneut überprüfen.",
+    "essential": "Erforderlich",
+    "reset": "Zurücksetzen",
+    "resetConfirm": "Möchten Sie alle Häkchen zurücksetzen?",
+    "itemAria": "{item} als bereit markieren",
+    "recommendedFor": "Empfohlen für",
+    "note": "Mengen an Haushaltsgröße, Kinder, ältere Personen und Kranke anpassen."
+  },
+  "location": {
+    "title": "Ihr ungefährer Standort",
+    "subtitle": "Hilfreich, wenn Sie der Rettungsleitstelle Ihre genauen GPS-Koordinaten durchgeben müssen.",
+    "get": "Meinen Standort ermitteln",
+    "retry": "Erneut versuchen",
+    "loading": "Standort wird ermittelt...",
+    "unsupported": "Dieser Browser unterstützt keine Standortbestimmung.",
+    "denied": "Standortzugriff wurde verweigert. Nennen Sie der Leitstelle stattdessen die nächste markante Landmarke.",
+    "unavailable": "Standort konnte nicht ermittelt werden. Bitte im Freien oder am Fenster erneut versuchen.",
+    "timeout": "Standortermittlung hat zu lange gedauert. Bitte erneut versuchen.",
+    "coordinates": "Koordinaten",
+    "accuracy": "Genauigkeit",
+    "accuracyValue": "ca. {meters} m",
+    "copy": "Koordinaten kopieren",
+    "copied": "In die Zwischenablage kopiert",
+    "note": "Ihr Standort verbleibt ausschließlich in Ihrem Browser und wird niemals an Server oder KI gesendet."
+  },
+  "about": {
+    "title": "Über die AI Disaster App",
+    "subtitle": "Hintergrund und Funktionsweise der Anwendung.",
+    "what": {
+      "title": "Was ist die AI Disaster App?",
+      "text": "Eine mehrsprachige Webanwendung, die Menschen in Pakistan klare, priorisierte Sicherheitsanweisungen für die wahrscheinlichsten Katastrophenszenarien bietet und direkten Zugriff auf offizielle Notrufnummern ermöglicht."
+    },
+    "why": {
+      "title": "Warum dieses Projekt existiert",
+      "text": "Bei Flut, Feuer oder Erdbeben geht wertvolle Zeit durch das Suchen nach verlässlichen Hinweisen verloren, die oft nur auf Englisch vorliegen. Diese App antwortet in der Sprache der Betroffenen, formuliert kurz und funktioniert auch offline."
+    },
+    "who": {
+      "title": "Für wen sie gedacht ist",
+      "items": [
+        "Haushalte in von Monsun und Überschwemmungen betroffenen Gebieten",
+        "Personen, die Urdu, Hindi, Chinesisch, Französisch oder Deutsch besser verstehen als Englisch",
+        "Jeder, der in der Notlage sekundenschnell die richtige Notrufnummer benötigt",
+        "Familien, die vor einer Katastrophe ein Notfallpaket zusammenstellen"
+      ]
+    },
+    "how": {
+      "title": "So funktioniert die KI",
+      "items": [
+        "Ihre Frage wird über unseren Node/Express-Server geleitet, nie direkt an das Modell.",
+        "Der Server ergänzt sicherheitsfokussierte Anweisungen und ruft Alibaba Cloud Model Studio (Qwen) auf.",
+        "Der API-Schlüssel verbleibt auf dem Server und gelangt niemals in den Browser-Code.",
+        "Ist die KI nicht erreichbar, greift die App transparent auf geprüfte, lokal gespeicherte Leitfäden zurück."
+      ]
+    },
+    "limits": {
+      "title": "Was diese App nicht leistet",
+      "items": [
+        "Sie alarmiert oder entsendet keine Rettungskräfte automatisch.",
+        "Sie verfolgt nicht Ihren Aufenthaltsort und überwacht keine Echtzeitbedingungen.",
+        "Sie liefert keine Live-Pegelstände oder amtlichen Straßensperren.",
+        "Sie ersetzt keine medizinische Diagnose oder Medikamentenverordnung.",
+        "Der KI-Chat benötigt eine Internetverbindung; die gespeicherten Sicherheitsleitfäden sind vollständig offline nutzbar."
+      ]
+    },
+    "stack": {
+      "title": "Technologie",
+      "items": [
+        "React- und Vite-Frontend, installierbar als Progressive Web App (PWA)",
+        "Node.js und Express REST-API",
+        "Alibaba Cloud Model Studio (Qwen), OpenAI-kompatibel",
+        "Strukturierte JSON-Sicherheitsdatenbank für Client und Server"
+      ]
+    },
+    "sources": {
+      "title": "Quellen und Überprüfung",
+      "text": "Notrufnummern verweisen auf die jeweilige Organisation und das Prüfdatum. Sicherheitsrichtlinien folgen den Standards des nationalen Katastrophenschutzes.",
+      "reviewed": "Kontaktdaten zuletzt geprüft"
+    },
+    "hackathon": "Entwickelt für den Alibaba Cloud AI Hackathon Pakistan 2026."
+  },
+  "footer": {
+    "sections": "Bereiche",
+    "safety": "Sicherheit",
+    "emergencyNumbers": "Notrufnummern",
+    "builtFor": "Entwickelt für den Alibaba Cloud AI Hackathon Pakistan 2026.",
+    "rights": "Kostenlos und frei nutzbar. Ohne Benutzerkonto, ohne Tracking.",
+    "poweredBy": "KI-Antworten powered by Alibaba Cloud Model Studio (Qwen)."
+  },
+  "disclaimer": {
+    "full": "Diese Anwendung dient der allgemeinen Information und ersetzt keinesfalls offizielle Rettungsdienste oder professionelle medizinische Beratung.",
+    "short": "Nur zur allgemeinen Orientierung - kein Ersatz für Rettungsdienste.",
+    "callNow": "Im akuten Ernstfall sofort den Notruf wählen."
+  },
+  "errors": {
+    "network": "Server nicht erreichbar. Bitte Internetverbindung prüfen und erneut versuchen.",
+    "server": "Ein Serverfehler ist aufgetreten. Bitte später erneut versuchen.",
+    "rateLimited": "Zu viele Anfragen in kurzer Zeit. Bitte einen Moment warten.",
+    "emptyMessage": "Bitte tippen oder sprechen Sie zuerst Ihre Frage.",
+    "messageTooLong": "Die Nachricht ist zu lang. Bitte kürzen.",
+    "invalidRequest": "Anfrage konnte nicht verarbeitet werden. Bitte erneut versuchen.",
+    "notFound": "Die angeforderte Seite oder Information wurde nicht gefunden.",
+    "offline": "Sie sind offline. Der KI-Assistent ist nicht verfügbar. Lokale Leitfäden, Notrufnummern und Ihr Notfallpaket funktionieren weiterhin.",
+    "pageTitle": "Seite nicht gefunden",
+    "pageText": "Die gesuchte Seite existiert nicht. Sie können jederzeit zur Startseite zurückkehren.",
+    "goHome": "Zur Startseite",
+    "boundaryTitle": "Ein Anzeigefehler ist aufgetreten",
+    "boundaryText": "Bitte laden Sie die App neu. Im akuten Notfall sofort Rescue 1122 oder Police 15 anrufen.",
+    "reload": "App neu laden"
+  },
+  "common": {
+    "close": "Schließen",
+    "back": "Zurück",
+    "loading": "Wird geladen...",
+    "retry": "Erneut versuchen",
+    "more": "Mehr",
+    "less": "Weniger",
+    "install": "App installieren",
+    "installText": "Installieren Sie die AI Disaster App für schnelleren Zugriff und Offline-Verfügbarkeit.",
+    "dismiss": "Jetzt nicht"
+  }
+}

@@ -81,6 +81,88 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---- Disaster Intelligence Preview ------------------------- */}
+      <section className="section" id="intelligence-preview">
+        <div className="container">
+          <div
+            style={{
+              background: 'linear-gradient(135deg, var(--blue-50) 0%, var(--surface) 100%)',
+              border: '1px solid var(--blue-200)',
+              borderRadius: 'var(--radius-xl)',
+              padding: 'clamp(1.5rem, 3vw, 2.5rem)',
+              boxShadow: 'var(--shadow-sm)',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: 'var(--space-6)',
+              alignItems: 'center',
+            }}
+          >
+            <div>
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  fontSize: 'var(--fs-xs)',
+                  fontWeight: 'var(--fw-bold)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  color: 'var(--primary)',
+                  marginBottom: 'var(--space-2)',
+                }}
+              >
+                <UiIcon name="shield" size={16} />
+                {t('home.intelligence.eyebrow')}
+              </span>
+              <h2 style={{ fontSize: 'var(--fs-h2)', margin: '0 0 var(--space-2)', color: 'var(--text)' }}>
+                {t('home.intelligence.title')}
+              </h2>
+              <p style={{ color: 'var(--text-soft)', fontSize: 'var(--fs-base)', lineHeight: 'var(--lh-body)', margin: '0 0 var(--space-5)' }}>
+                {t('home.intelligence.subtitle')}
+              </p>
+              <div style={{ display: 'flex', gap: 'var(--space-3)', flexWrap: 'wrap' }}>
+                <Link to="/intelligence" className="btn btn--primary">
+                  <UiIcon name="spark" size={18} />
+                  {t('home.intelligence.cta')}
+                </Link>
+                <Link to="/intelligence/demo" className="btn btn--secondary">
+                  9-Step Judge Showcase →
+                </Link>
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2, 1fr)',
+                gap: 'var(--space-3)',
+              }}
+            >
+              <div style={{ padding: 'var(--space-4)', background: 'var(--surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--muted)', textTransform: 'uppercase', fontWeight: 600 }}>Multi-Hazard Index</span>
+                <div style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'monospace', color: 'var(--primary)', marginTop: '0.25rem' }}>12 Districts</div>
+                <small style={{ color: 'var(--text-soft)' }}>Risk = H^0.5 · E^0.3 · A^0.2</small>
+              </div>
+              <div style={{ padding: 'var(--space-4)', background: 'var(--surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--muted)', textTransform: 'uppercase', fontWeight: 600 }}>Road Network Graph</span>
+                <div style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'monospace', color: 'var(--primary)', marginTop: '0.25rem' }}>4,251 Nodes</div>
+                <small style={{ color: 'var(--text-soft)' }}>Dijkstra Evacuation Routing</small>
+              </div>
+              <div style={{ padding: 'var(--space-4)', background: 'var(--surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--muted)', textTransform: 'uppercase', fontWeight: 600 }}>What-If Simulation</span>
+                <div style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'monospace', color: 'var(--ok)', marginTop: '0.25rem' }}>+18% Coverage</div>
+                <small style={{ color: 'var(--text-soft)' }}>Coordinated vs Uncoordinated</small>
+              </div>
+              <div style={{ padding: 'var(--space-4)', background: 'var(--surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--muted)', textTransform: 'uppercase', fontWeight: 600 }}>Offline Geodata</span>
+                <div style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'monospace', color: 'var(--text)', marginTop: '0.25rem' }}>100% Bundled</div>
+                <small style={{ color: 'var(--text-soft)' }}>Natural Earth Public Domain</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ---- How it helps ------------------------------------------- */}
       <section className="section how">
         <div className="container">

@@ -536,4 +536,31 @@ In a real emergency, call **Rescue 1122** (or the relevant service below) first.
 
 ---
 
+## Disaster Intelligence & Acknowledgments (Islamabad Final Round)
+
+For the **Islamabad National Final-Round Presentation**, the original application has been enhanced with an **Explainable Disaster Intelligence Workspace** located under `/intelligence` on branch `feature/raah-intelligence-integration`.
+
+### Key Enhancements
+- **INFORM Geometric Mean Risk Index**: District-level multi-hazard risk index `(H × V × L)^(1/3)` across 8 hazards.
+- **What-If Scenario Simulator**: Dynamic rainfall and levee breach parameter modeling with real-time relief supply deltas.
+- **Evacuation Road Routing**: Dijkstra shortest-path network calculation with dynamic road closure avoidance.
+- **Simulated Resource Dispatch**: Emergency asset inventory (boats, ambulances) with dispatch logging.
+- **Live Geological & Atmospheric Feeds**: Real-time USGS earthquake and Open-Meteo weather integration.
+- **Light Theme Cartography**: High-contrast D3-geo SVG vector map tailored to the student's blue-and-white design tokens.
+- **9-Step Judge Presentation Mode**: Built-in interactive showcase walkthrough at `/intelligence/demo`.
+
+### Attributions & Provenance
+In adherence to hackathon ethics and academic integrity:
+- **Reference Implementation**: Algorithmic domain engines (risk formulas, road graph, scenario definitions) were adapted from the open-source research prototype **RAAH Disaster Intelligence**.
+- **Project Owner**: Conceived, designed, and developed by **Anam Majid** (`https://github.com/anammajid88-png/ai-disaster-app`).
+- **Primary Ownership**: The original AI Disaster App remains the primary project, retaining its React 18 + Vite 5 + Express 4 architecture, Git history, and emergency assistance UX.
+- **Documentation**: Comprehensive engineering documentation is provided in the repository:
+  - [`docs/ORIGINAL_BASELINE.md`](docs/ORIGINAL_BASELINE.md) - Frozen commit baselines and test reports.
+  - [`docs/FEATURE_PROVENANCE.md`](docs/FEATURE_PROVENANCE.md) - Line-by-line file provenance and source licenses.
+  - [`docs/INTEGRATION_ARCHITECTURE.md`](docs/INTEGRATION_ARCHITECTURE.md) - System architecture and CSS token bridge.
+  - [`docs/TEST_REPORT.md`](docs/TEST_REPORT.md) - Regression test matrix, unit tests, and visual comparison.
+  - [`docs/JUDGE_DEMO.md`](docs/JUDGE_DEMO.md) - Presenter script for the Islamabad Final Round.
+
+---
+
 Built for the Alibaba Cloud AI Hackathon Pakistan 2026.

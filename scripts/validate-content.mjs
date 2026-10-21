@@ -5,7 +5,7 @@
  *
  * Catches the failure modes that only show up as broken text on screen:
  *  - a t('...') key used in the UI that no locale defines
- *  - a key present in English but missing from Urdu or Hindi (or the reverse)
+ *  - a key present in English but missing from Urdu, Hindi, Chinese, French, German (or the reverse)
  *  - a dynamic key built from data (season, risk level, tabs) with no entry
  *  - an icon name in the safety data that no icon component draws
  *  - safety content missing a language or a required section
@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = join(ROOT, 'client', 'src');
 const LOCALES = join(SRC, 'i18n', 'locales');
-const LANGUAGES = ['en', 'ur', 'hi'];
+const LANGUAGES = ['en', 'ur', 'hi', 'zh-CN', 'fr', 'de'];
 const SECTIONS = ['rightNow', 'before', 'during', 'after', 'avoid'];
 
 let problems = 0;
@@ -194,7 +194,7 @@ console.log('\nSafety data');
     }
   }
 
-  ok('disaster content checked in all three languages');
+  ok('disaster content checked in all six languages');
 }
 
 /* ------------------------------------------------------------------ Icons */
@@ -226,7 +226,7 @@ console.log('\nIcons referenced by data');
 
 console.log('\nEmergency contacts and kit');
 {
-  const allowed = new Set(['1122', '15', '16', '115', '130']);
+  const allowed = new Set(['1122', '15', '16', '115', '130', '1023']);
 
   for (const contact of emergencyContacts.contacts) {
     if (!allowed.has(contact.number)) fail(`contact ${contact.id} uses an unverified number ${contact.number}`);
@@ -254,7 +254,7 @@ console.log('\nEmergency contacts and kit');
     }
   }
 
-  ok('contacts and kit checked in all three languages');
+  ok('contacts and kit checked in all six languages');
 }
 
 console.log(problems === 0 ? '\nNo content problems found\n' : `\n${problems} problem(s) found\n`);

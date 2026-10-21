@@ -10,7 +10,9 @@ export function registerServiceWorker() {
   if (typeof navigator === 'undefined' || !('serviceWorker' in navigator)) return;
 
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).catch(() => {
+    const base = import.meta.env.BASE_URL || '/';
+    const swUrl = `${base.replace(/\/$/, '')}/service-worker.js`;
+    navigator.serviceWorker.register(swUrl, { scope: base }).catch(() => {
       // Offline caching is an enhancement, never a requirement.
     });
   });
